@@ -6,6 +6,8 @@ import Price from './components/Price/Price'
 import Team from './components/Team/Team'
 import About from './components/About/About'
 import Header from './components/Header/Header';
+import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/price" element={<Price />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
