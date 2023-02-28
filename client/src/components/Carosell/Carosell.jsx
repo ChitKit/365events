@@ -138,13 +138,13 @@ function Carosell() {
 
   return (
     <div className="slides">
-      <button onClick={() => dispatch({ type: "PREV" })}>‹</button>
+      <button className="Prev-Slide-Team" onClick={() => dispatch({ type: "PREV" })}>‹</button>
 
       {slides.map((slide, i) => {
         let offset = slides.length + (state.slideIndex - i);
         return <Slide slide={slide} offset={offset} key={i} />;
       })}
-      <button onClick={() => dispatch({ type: "NEXT" })}>›</button>
+      <button className="Next-Slide-Team" onClick={() => dispatch({ type: "NEXT" })}>›</button>
     </div>
   );
 }
