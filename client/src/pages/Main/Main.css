@@ -1,11 +1,27 @@
 .MainPage {
+    position: relative;
+    top: 5%;
     display: flex;
     flex-direction: column;
     height: 85%;
     justify-content: start;
-    
+    align-items: center;
     background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613676224_8-p-fon-dlya-prezentatsii-vremena-goda-9.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
+}
+.MainPageH1{
+    width: 30%;
+    border: 3px solid gray;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.541);
+    
+}
+.MainPageH2{
+    width: 30%;
+    border: 3px solid gray;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.541);
+    
 }
