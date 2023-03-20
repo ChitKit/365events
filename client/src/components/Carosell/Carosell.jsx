@@ -108,15 +108,16 @@ function Slide({ slide, offset }) {
       data-active={active}
       style={{
         "--offset": offset,
-        "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
+        "--dir": offset === 0 ? 1 : offset > 0 ? -1 : 1
       }}
     >
-      {/* <div
+      <div
         className="slideBackground"
         style={{
+          zIndex: '-5',
           backgroundImage: `url('${slide.image}')`
         }}
-      /> */}
+      />
       <div
         className="slideContent"
         style={{

@@ -1,5 +1,11 @@
 .MainPage {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    height: 85%;
+    justify-content: start;
+    
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613676224_8-p-fon-dlya-prezentatsii-vremena-goda-9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
 }
