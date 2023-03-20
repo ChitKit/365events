@@ -77,7 +77,7 @@ function useTilt(active) {
 }
 
 const initialState = {
-  slideIndex: 0
+  slideIndex: -1
 };
 const slidesReducer = (state, event) => {
     console.log(state.slideIndex);
@@ -139,13 +139,21 @@ function Carosell() {
 
   return (
     <div className="slides">
+      {state.slideIndex !== 1 ?
       <button className="Prev-Slide-Team" onClick={() => dispatch({ type: "PREV" })}>‹</button>
+      :
+      <button disabled className="Prev-Slide-Team" onClick={() => dispatch({ type: "PREV" })}>‹</button>
+      }
 
       {slides.map((slide, i) => {
         let offset = slides.length + (state.slideIndex - i);
         return <Slide slide={slide} offset={offset} key={i} />;
       })}
+      {state.slideIndex !== slides.length - 1 ?
       <button className="Next-Slide-Team" onClick={() => dispatch({ type: "NEXT" })}>›</button>
+      :
+      <button disabled className="Next-Slide-Team" onClick={() => dispatch({ type: "NEXT" })}>›</button>
+      }
     </div>
   );
 }
