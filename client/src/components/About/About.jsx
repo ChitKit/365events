@@ -1,7 +1,10 @@
 import React from 'react'
+import MainLayout from '../../Layout/MainLayout'
 
 export default function About() {
   return (
-    <div>About</div>
+    <MainLayout>
+      <div>About</div>
+    </MainLayout>
   )
 }

@@ -1,0 +1,10 @@
+.NavigationApp > a {
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px blue;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 16px;
+    /* border: 1px solid black;
+    border-radius: 15px; */
+}
