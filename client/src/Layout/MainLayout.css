@@ -65,6 +65,9 @@
     position: absolute;
     margin-top: -60px;
     margin-left: -60px;
+    /* border: 10px solid rgba(194, 194, 194, 0.199);
+    border-top: 10px solid rgba(255, 255, 255, 0.199);
+    border-radius: 50%; */
 
     -webkit-animation-name: spin;
     -webkit-animation-duration: 6000ms;

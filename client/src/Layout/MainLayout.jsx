@@ -31,11 +31,6 @@ export default function MainLayout() {
       setLoader(false)
     }
   },1000)
-  
-  // useEffect(() => {
-  //   setCurrentImg('img/Winter.jpeg')
-  //   setCurrentColorForImg('(197,222,229)')
-  // }, [])
 
   return (
     <>
@@ -44,18 +39,22 @@ export default function MainLayout() {
           <img className="Loader" src="logo512.png" alt="logo" />
         </div>
         :
-        <div style={{backgroundColor:`rgb${currentColorForImg}`, width:'100%', height: '100%'}}>
-            <div className="NavigationApp" style={{right:'15%', position:'fixed', zIndex:'2', top:'43%'}}>
-                <Link to={"/"}>Главная</Link>
-                <Link to={"/about"}>О нас</Link>
-                <Link to={"/price"}>Услуги</Link>
-                <Link to={"/team"}>Команда</Link>
-                <Link to={"/contacts"}>Контакты</Link>
+        <>
+          {currentImg !== undefined && currentColorForImg !== undefined &&
+            <div style={{backgroundColor:`rgb${currentColorForImg}`, width:'100%', height: '100%'}}>
+                <div className="NavigationApp" style={{right:'15%', position:'fixed', zIndex:'2', top:'43%'}}>
+                    <Link to={"/"}>Главная</Link>
+                    <Link to={"/about"}>О нас</Link>
+                    <Link to={"/price"}>Услуги</Link>
+                    <Link to={"/team"}>Команда</Link>
+                    <Link to={"/contacts"}>Контакты</Link>
+                </div>
+                <div style={{height: '100%', width:'100%', display:'flex', justifyContent:'flex-end',alignItems:'flex-end', position:'fixed', zIndex:'1'}} >
+                    <img style={{zIndex:'0'}} src={`${currentImg}`} alt="main_pic" ></img>
+                </div>
             </div>
-            <div style={{height: '100%', width:'100%', display:'flex', justifyContent:'flex-end',alignItems:'flex-end', position:'fixed', zIndex:'1'}} >
-                <img style={{zIndex:'0'}} src={`${currentImg}`} alt="main_pic" ></img>
-            </div>
-        </div>
+          }
+        </>
       }
     </>
   )

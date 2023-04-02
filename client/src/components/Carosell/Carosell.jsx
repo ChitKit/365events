@@ -107,6 +107,7 @@ function Slide({ slide, offset }) {
       className="slide"
       data-active={active}
       style={{
+        zIndex: '3',
         "--offset": offset,
         "--dir": offset === 0 ? 1 : offset > 0 ? -1 : 1
       }}
