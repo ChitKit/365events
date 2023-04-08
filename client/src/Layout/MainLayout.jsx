@@ -11,7 +11,7 @@ export default function MainLayout(props) {
   const [welcome, setWelcome] = useState(true)
 
   useEffect(() => {
-    const choicerTime = new Date().getMinutes()
+    const choicerTime = new Date().getSeconds()
     setLoader(true)
     if (choicerTime < 15) {
       setCurrentImg('img/Winter.jpg')
@@ -57,8 +57,8 @@ export default function MainLayout(props) {
   },1000 * 60)
   
   // useEffect(() => {
-  //   setCurrentImg('img/Winter.jpeg')
-  //   setCurrentColorForImg('(197,222,229)')
+  //   setCurrentImg('img/Summer.jpg')
+  //   setCurrentColorForImg('(243,219,121)')
   // }, [])
 
   return (
