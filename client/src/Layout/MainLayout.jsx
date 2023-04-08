@@ -1,36 +1,60 @@
-import React from 'react'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './MainLayout.css'
+import { Fireworks } from '@fireworks-js/react'
 
-export default function MainLayout() {
+export default function MainLayout(props) {
   const [currentImg, setCurrentImg] = useState(undefined)
   const [currentColorForImg, setCurrentColorForImg] = useState(undefined)
   const [loader, setLoader] = useState(false)
+  const [welcome, setWelcome] = useState(true)
 
-  setInterval(() => {
-    const choicerTime = new Date().getSeconds()
+  useEffect(() => {
+    const choicerTime = new Date().getMinutes()
     setLoader(true)
     if (choicerTime < 15) {
-      setCurrentImg('img/Winter.jpeg')
+      setCurrentImg('img/Winter.jpg')
       setCurrentColorForImg('(197,222,229)')
       setLoader(false)
     } else if (choicerTime > 15 && choicerTime < 30) {
-      setCurrentImg('img/Summer.jpeg')
+      setCurrentImg('img/Summer.jpg')
       setCurrentColorForImg('(243,219,121)')
       setLoader(false)
     } else if (choicerTime > 30 && choicerTime < 45) {
-      setCurrentImg('img/Spring.jpeg')
+      setCurrentImg('img/Spring.jpg')
       setCurrentColorForImg(`(194,230,122)`)
       setLoader(false)
-    } 
-    else if (choicerTime > 45) {
-      setCurrentImg('img/Autumn.jpeg')
+    } else if (choicerTime > 45) {
+      setCurrentImg('img/Autumn.jpg')
       setCurrentColorForImg('(241,177,139)')
       setLoader(false)
     }
-  },1000)
+  }, [])
+  
+
+  setTimeout(() => {setWelcome(false)},1000 * 10)
+  setInterval(() => {
+    const choicerTime = new Date().getMinutes()
+    setLoader(true)
+    if (choicerTime < 15) {
+      setCurrentImg('img/Winter.jpg')
+      setCurrentColorForImg('(197,222,229)')
+      setLoader(false)
+    } else if (choicerTime > 15 && choicerTime < 30) {
+      setCurrentImg('img/Summer.jpg')
+      setCurrentColorForImg('(243,219,121)')
+      setLoader(false)
+    } else if (choicerTime > 30 && choicerTime < 45) {
+      setCurrentImg('img/Spring.jpg')
+      setCurrentColorForImg(`(194,230,122)`)
+      setLoader(false)
+    } else if (choicerTime > 45) {
+      setCurrentImg('img/Autumn.jpg')
+      setCurrentColorForImg('(241,177,139)')
+      setLoader(false)
+    }
+  },1000 * 60)
   
   // useEffect(() => {
   //   setCurrentImg('img/Winter.jpeg')
@@ -45,16 +69,23 @@ export default function MainLayout() {
         </div>
         :
         <div style={{backgroundColor:`rgb${currentColorForImg}`, width:'100%', height: '100%'}}>
-            <div className="NavigationApp" style={{right:'15%', position:'fixed', zIndex:'2', top:'43%'}}>
-                <Link to={"/"}>Главная</Link>
-                <Link to={"/about"}>О нас</Link>
-                <Link to={"/price"}>Услуги</Link>
-                <Link to={"/team"}>Команда</Link>
-                <Link to={"/contacts"}>Контакты</Link>
+            <div className="NavigationApp">
+            <Link to={"/"}>Главная</Link>
+            <Link to={"/"}>Праздники</Link>
+            <Link to={"/"}>Аниматоры</Link>
+            <Link to={"/"}>Шоу</Link>
+            <Link to={"/"}>Мастер классы</Link>
+            {/* <Link to={"/price"}>Праздники</Link> */}
+            {/* <Link to={"/team"}>Аниматоры</Link> */}
+            {/* <Link to={"/show_programs"}>Шоу</Link> */}
+            {/* <Link to={"/additional_services"}>На заказ</Link> */}
+            <Link to={"/about"}>О нас</Link>
+            <Link to={"/contacts"}>Контакты</Link>
             </div>
-            <div style={{height: '100%', width:'100%', display:'flex', justifyContent:'flex-end',alignItems:'flex-end', position:'fixed', zIndex:'1'}} >
-                <img style={{zIndex:'0'}} src={`${currentImg}`} alt="main_pic" ></img>
+            <div style={{height: '100vh', width:'100vw', display:'flex', justifyContent:'flex-end',alignItems:'flex-end', position:'fixed', zIndex:'1'}} >
+                <img s style={{zIndex:'0',height: '100vh', width:'100vw',}} src={`${currentImg}`} alt={`${currentImg}`} ></img>
             </div>
+            <div className="Content">{props.children}</div>
         </div>
       }
     </>

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Main.css'
 import MainLayout from '../../Layout/MainLayout'
 
-export default function Main() {
 
+export default function Main() {
   return (
     <MainLayout>
       {/* <div className="MainPage" style={{backgroundColor:`rgb${currentColorForImg}`}}> */}
