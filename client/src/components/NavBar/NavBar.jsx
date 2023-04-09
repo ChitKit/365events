@@ -6,9 +6,11 @@ export default function NavBar() {
   return (
     <div className="NavBar">
       <Link to={"/"}>Главная</Link>
+      <Link to={"/price"}>Праздники</Link>
+      <Link to={"/team"}>Аниматоры</Link>
+      <Link to={"/show_programs"}>Шоу программы</Link>
+      <Link to={"/additional_services"}>Дополнительные услуги</Link>
       <Link to={"/about"}>О нас</Link>
-      <Link to={"/price"}>Услуги</Link>
-      <Link to={"/team"}>Команда</Link>
       <Link to={"/contacts"}>Контакты</Link>
     </div>
   )

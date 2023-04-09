@@ -1,0 +1,12 @@
+.About{
+    position: relative;
+    z-index: 10;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgba(128, 128, 128, 0.459);
+    border: 1px solid black;
+    border-radius: 25%;
+}
