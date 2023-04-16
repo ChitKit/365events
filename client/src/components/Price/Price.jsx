@@ -4,7 +4,7 @@ import MainLayout from '../../Layout/MainLayout'
 export default function Price() {
   return (
     <MainLayout>
-      <div>Price</div>
+      <div>Цены на услуги</div>
     </MainLayout>
   )
 }

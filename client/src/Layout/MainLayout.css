@@ -1,63 +1,73 @@
-.NavigationApp > a {
+.Content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavigationApp {
+    position: fixed;
+    left: 2%;
+    z-index: 998;
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.NavigationApp>a {
+    box-sizing: border-box;
+    width: 13em;
+    height: 3em;
     font-size: larger;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 10px blue;
-    font-weight: bold;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0 0 1em black;
+    color: rgb(0, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
+    /* font-weight: bold; */
     text-decoration: none;
-    margin: 16px;
-    
-    /* border: 1px solid black;
-    border-radius: 15px; */
 }
-.NavigationApp a:nth-child(1) {
-    position: fixed;
-    top: 50%;
-    right: 20%;
+
+.NavigationApp>a:nth-child(odd) {
+    background: linear-gradient(to
+    right, rgb(241,177,139), rgb(197,222,229));
+    text-align: left;
+    padding-left: 10%;
+    transform: perspective(500px)
+    rotateY(45deg);
 }
-.NavigationApp a:nth-child(2) {
-    position: fixed;
-    top: 55%;
-    right: 15%;
+
+.NavigationApp>a:nth-child(even) {
+    background: linear-gradient(to
+    right, rgb(194,230,122), rgb(243,219,121));
+    text-align: right;
+    padding-right: 10%;
+    transform: perspective(500px)
+    rotateY(-45deg);
 }
-.NavigationApp a:nth-child(3) {
-    position: fixed;
-    top: 45%;
-    right: 5%;
+
+.NavigationApp>a:nth-child(odd):hover {
+    background: linear-gradient(to
+    right, rgb(255, 162, 108), rgb(153, 228, 247));
+    transform: perspective(350px)
+    rotateY(45deg);    
+    box-shadow: 0 0 1em rgb(116, 116, 116);
+    padding-left: 25%;
 }
-.NavigationApp a:nth-child(4) {
-    position: fixed;
-    top: 30%;
-    right: 18%;
-}
-.NavigationApp a:nth-child(5) {
-    position: fixed;
-    top: 60%;
-    right: 23%;
-}
-.NavigationApp a:nth-child(1):hover {
-    color: blue;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px black;
-}
-.NavigationApp a:nth-child(2):hover {
-    color: blue;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px black;
-}
-.NavigationApp a:nth-child(3):hover {
-    color: blue;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px black;
-}
-.NavigationApp a:nth-child(4):hover {
-    color: blue;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px black;
-}
-.NavigationApp a:nth-child(5):hover {
-    color: blue;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px black;
+
+.NavigationApp>a:nth-child(even):hover {
+    background: linear-gradient(to
+    right, rgb(197, 247, 97), rgb(250, 218, 90));
+    transform: perspective(350px)
+    rotateY(-45deg);
+    box-shadow: 0 0 1em rgb(116, 116, 116);
+    padding-right: 25%;
 }
 
 .Loader {
@@ -89,31 +99,43 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-@-ms-keyframes spin { 
-    from { 
-        -ms-transform: rotate(0deg); 
-    } to { 
-        -ms-transform: rotate(360deg); 
+
+@-ms-keyframes spin {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
     }
 }
-@-moz-keyframes spin { 
-    from { 
-        -moz-transform: rotate(0deg); 
-    } to { 
-        -moz-transform: rotate(360deg); 
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
     }
 }
-@-webkit-keyframes spin { 
-    from { 
-        -webkit-transform: rotate(0deg); 
-    } to { 
-        -webkit-transform: rotate(360deg); 
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
     }
 }
-@keyframes spin { 
-    from { 
-        transform: rotate(0deg); 
-    } to { 
-        transform: rotate(360deg); 
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
