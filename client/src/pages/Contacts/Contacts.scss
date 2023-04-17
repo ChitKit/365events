@@ -1,0 +1,11 @@
+.Contacts{
+    position: relative;
+    z-index: 10;
+    width: 70vw;
+    height: 80vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 50px black;
+    border-radius: 3em;
+}

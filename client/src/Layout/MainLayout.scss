@@ -2,13 +2,29 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    position: relative;
+    right: 5%;
+    z-index: 2;
+}
+.MetaLayout{
+    display: flex;
+    flex-direction: column;
+
+}
+.LogoToHome{
+    width: 10rem;
+    height: 10rem;
+    position: fixed;
+    left: 5%;
+    z-index: 998;
 }
 .NavigationApp {
     position: fixed;
+    top: 4%;
     left: 2%;
-    z-index: 998;
+    z-index: 997;
     display: flex;
     width: 20vw;
     flex-direction: column;
@@ -20,7 +36,7 @@
     box-sizing: border-box;
     width: 13em;
     height: 3em;
-    font-size: larger;
+    font-size: 1.2em;
     border-radius: 0.5em;
     margin: 0.5em;
     box-shadow: 0 0 1em black;
