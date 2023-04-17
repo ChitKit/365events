@@ -47,7 +47,7 @@ export default function About({currentColorForImg}) {
         </div>
         <div style={{background:`rgb${currentColorForImg}, 0.82)`}} className="About-Content">
           <div className="About-Content-Inform">
-            <h2>Наша команда 365events организована в 2022 году</h2>
+            <h2 style={{textAlign:'center'}}>Наша команда 365events организована в 2022 году</h2>
             <h2>Мы молодая и активная команда профессионалов своего дела!</h2>
             <h2>Наша команда состоит из опытных организаторов, 
               которые готовы превратить вашу идею праздника в реальность. 
