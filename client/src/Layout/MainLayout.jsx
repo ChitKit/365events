@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './MainLayout.css'
-import { Fireworks } from '@fireworks-js/react'
+import './MainLayout.scss'
+// import { Fireworks } from '@fireworks-js/react'
 
 export default function MainLayout(props) {
   const [currentImg, setCurrentImg] = useState(undefined)
@@ -32,8 +32,6 @@ export default function MainLayout(props) {
     }
   }, [])
   
-
-  // setTimeout(() => {setWelcome(false)},1000 * 10)
   setInterval(() => {
     const choicerTime = new Date().getMinutes()
     setLoader(true)
@@ -69,27 +67,24 @@ export default function MainLayout(props) {
         </div>
         :
         <div style={{backgroundColor:`rgb${currentColorForImg}`, width:'100%', height: '100%'}}>
-            <div className='MetaLayout'>
+            {/* <div className='MetaLayout'>
               <Link to={"/"}>
                 <img className="LogoToHome" src="./logoHeader192.png" alt="logo" />
               </Link>
               <div className="NavigationApp">
               <Link to={"/"}>Главная</Link>
-              <Link to={"/"}>Праздники</Link>
-              <Link to={"/"}>Аниматоры</Link>
-              <Link to={"/"}>Шоу</Link>
-              <Link to={"/"}>Мастер классы</Link>
-              {/* <Link to={"/price"}>Праздники</Link> */}
-              {/* <Link to={"/team"}>Аниматоры</Link> */}
-              {/* <Link to={"/show_programs"}>Шоу</Link> */}
-              {/* <Link to={"/additional_services"}>На заказ</Link> */}
+              <Link to={"/events"}>Праздники</Link>
+              <Link to={"/animators"}>Аниматоры</Link>
+              <Link to={"/shows"}>Шоу</Link>
+              <Link to={"/master_classes"}>Мастер классы</Link>
+              <Link to={"/additional_services"}>На заказ</Link>
               <Link to={"/about"}>О нас</Link>
               <Link to={"/contacts"}>Контакты</Link>
               </div>
             </div>
             <div style={{height: '100vh', width:'100vw', display:'flex', justifyContent:'flex-end',alignItems:'flex-end', position:'fixed', zIndex:'1'}} >
                 <img s style={{zIndex:'0',height: '100vh', width:'100vw',}} src={`${currentImg}`} alt={`${currentImg}`} ></img>
-            </div>
+            </div> */}
             <div className="Content">{props.children}</div>
         </div>
       }

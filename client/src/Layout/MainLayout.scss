@@ -14,14 +14,15 @@
 
 }
 .LogoToHome{
-    width: 10em;
-    height: 10em;
+    width: 10rem;
+    height: 10rem;
     position: fixed;
     left: 5em;
     z-index: 998;
 }
 .NavigationApp {
     position: fixed;
+    top: 4%;
     left: 2%;
     z-index: 997;
     display: flex;
@@ -35,7 +36,7 @@
     box-sizing: border-box;
     width: 13em;
     height: 3em;
-    font-size: larger;
+    font-size: 1.2em;
     border-radius: 0.5em;
     margin: 0.5em;
     box-shadow: 0 0 1em black;
