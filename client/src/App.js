@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
+
 import Main from './pages/Main/Main';
 import About from './pages/About/About';
 import Price from './pages/Price/Price'
-import Team from './components/Team/Team'
+// import Team from './components/Team/Team'
 // import Header from './components/Header/Header';
 import Contacts from './pages/Contacts/Contacts';
 // import Footer from './components/Footer/Footer';
@@ -13,8 +14,8 @@ import Shows from './pages/Shows/Shows';
 import Events from './pages/Events/Events';
 import MasterClasses from './pages/MasterClasses/MasterClasses';
 
-
-
+import Administration from './components/Team/Administration/Administration';
+import Developers from './components/Team/Developers/Developers';
 
 function App() {
   const [currentImg, setCurrentImg] = useState(undefined)
@@ -97,7 +98,9 @@ function App() {
         <Route path="/about" element={<About currentColorForImg={currentColorForImg}/>} />
         <Route path="/master_classes" element={<MasterClasses currentColorForImg={currentColorForImg}/>} />
         <Route path="/contacts" element={<Contacts currentColorForImg={currentColorForImg}/>} />
-        <Route path="/team" element={<Team currentColorForImg={currentColorForImg}/>} />
+        <Route path="/administration" element={<Administration currentColorForImg={currentColorForImg}/>} />
+        <Route path="/developers" element={<Developers currentColorForImg={currentColorForImg}/>} />
+        {/* <Route path="/team" element={<Team currentColorForImg={currentColorForImg}/>} /> */}
       </Routes>
       {/* <Footer /> */}
     </div>

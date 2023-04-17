@@ -1,13 +1,12 @@
 import React from 'react'
-import Carosell from '../../Carosell/Carosell'
-import './Developers.css'
+import './Developers.scss'
 import MainLayout from '../../../Layout/MainLayout'
 
-export default function Developers() {
+export default function Developers({currentColorForImg}) {
   return (
     <MainLayout>
-      <div className="Developers-Main">
-        <Carosell />
+      <div style={{background:`rgba${currentColorForImg}, 0.7)`}} className="Developers">
+        <h1>Разработчики</h1>
       </div>
     </MainLayout>
 
