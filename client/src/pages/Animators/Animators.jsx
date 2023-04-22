@@ -24,56 +24,27 @@ import MainLayout from '../../Layout/MainLayout'
       description: 'Нежная и заботливая аниматорша, которая всегда подходит к детям с большой любовью и терпением. Она умеет наладить доверительные отношения с каждым ребенком и создать атмосферу домашнего уюта и тепла. Екатерина знает, как увлечь детей творчеством и помочь им раскрыть свой творческий потенциал.',
     }
   ]
-export default function Animators({currentColorForImg}) {
+export default function Animators({currentColorForImg, colorPuzzlePhoto}) {
+  const arrayPuzzle = ['LT', 'LB', 'RT', 'RB']
   const [count, setCount] = useState(0);
   const [mousedOver, setMousedOver] = useState(false);
   const [pause, setPause] = useState(false);
-  console.log(pause);
-  console.log(mousedOver);
+  const [colorPuzzleForm, setColorPuzzleForm] = useState(undefined)
+  console.log(colorPuzzleForm);
   useEffect(() => {
-    // set an interval timer if we are currently moused over
     if (!mousedOver) {
       if (!pause){
         const timer = setInterval(() => {
-          // cycle prevCount using mod instead of checking for hard-coded length
           setCount((prevCount) => (prevCount + 1) % images.length);
         }, 3000);
-        // automatically clear timer the next time this effect is fired or
-        // the component is unmounted
         return () => clearInterval(timer);
       }
     }
-    // the dependency on mousedOver means that this effect is fired
-    // every time mousedOver changes
   }, [mousedOver]);
-  // const [currentColorForImg, setBackGroundColorModule] = useState(undefined)
-
+  if (colorPuzzleForm === undefined) {
+    setColorPuzzleForm(arrayPuzzle[Math.floor(Math.random() * 4)])
+  }
   // //! Добавить MOBX в ПРОЕКТ !!! ( заменить состояние!!!!!)
-  // useEffect(() => {
-  //   const choicerTime = new Date().getSeconds()
-  //   if (choicerTime < 15) {
-  //     setBackGroundColorModule('(197,222,229')
-  //   } else if (choicerTime > 15 && choicerTime < 30) {
-  //     setBackGroundColorModule('(243,219,121')
-  //   } else if (choicerTime > 30 && choicerTime < 45) {
-  //     setBackGroundColorModule(`(194,230,122`)
-  //   } else if (choicerTime > 45) {
-  //     setBackGroundColorModule('(241,177,139')
-  //   }
-  // }, [])
-  
-  // setInterval(() => {
-  //   const choicerTime = new Date().getMinutes()
-  //   if (choicerTime < 15) {
-  //     setBackGroundColorModule('(197,222,229')
-  //   } else if (choicerTime > 15 && choicerTime < 30) {
-  //     setBackGroundColorModule('(243,219,121')
-  //   } else if (choicerTime > 30 && choicerTime < 45) {
-  //     setBackGroundColorModule(`(194,230,122`)
-  //   } else if (choicerTime > 45) {
-  //     setBackGroundColorModule('(241,177,139')
-  //   }
-  // },1000 * 60)
 
   return (
     <MainLayout>
@@ -85,17 +56,20 @@ export default function Animators({currentColorForImg}) {
               // just set mousedOver here instead of calling update/origCount
               onMouseOver={() => setMousedOver(true)}
               onMouseOut={() => setMousedOver(false)}
+              
             >
-              <img style={{width:'30em', height:'30em'}} src={images[count].source} alt={images.name} />
+              <img style={{position:"absolute", width:'30em', height:'30em'}} src={`/puzzleFormForTeam/${colorPuzzleForm}${colorPuzzlePhoto}.png`} alt="puzzleForm" />
+              <img style={{ width:'30em', height:'30em'}} src={images[count].source} alt={images.name} />
+              
               <div className="title"><h2>{images[count].name}</h2></div>
-              <p>count is: {count}</p>
+              {/* <p>count is: {count}</p> */}
             </div>
           </div>
             <div style={{display:'flex', flexDirection:'column', justifyContent:'space-between' }}>
               <h3 style={{position:'relative', top:'5em', boxShadow:'0 0 50px black', height:'10em', borderRadius:'2em', background:`rgba${currentColorForImg}, 0.6)`, padding:'1em'}}>{images[count].description}</h3>
               <div style={{display:'flex', flexDirection:'row'}}>
-                <button style={{width:'3em', height:'3em', margin:'0.5em'}} onClick={() => setPause(false)}>Play</button>
-                <button style={{width:'4em', height:'3em', margin:'0.5em'}} onClick={() => setPause(true)}>Pause</button>
+                {/* <button style={{width:'3em', height:'3em', margin:'0.5em'}} onClick={() => setPause(false)}>Play</button>
+                <button style={{width:'4em', height:'3em', margin:'0.5em'}} onClick={() => setPause(true)}>Pause</button> */}
               </div>
             </div>
         </div>

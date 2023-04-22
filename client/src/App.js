@@ -21,6 +21,7 @@ import NavBar from './components/NavBar/NavBar';
 function App() {
   const [currentImg, setCurrentImg] = useState(undefined)
   const [currentColorForImg, setCurrentColorForImg] = useState(undefined)
+  const [colorPuzzlePhoto, setColorPuzzlePhoto] = useState(undefined)
   const [loader, setLoader] = useState(false)
   // const [welcome, setWelcome] = useState(true)
 
@@ -30,18 +31,22 @@ function App() {
     if (choicerTime < 15) {
       setCurrentImg('img/Winter.jpg')
       setCurrentColorForImg('(197,222,229')
+      setColorPuzzlePhoto('C')
       setLoader(false)
     } else if (choicerTime > 15 && choicerTime < 30) {
       setCurrentImg('img/Summer.jpg')
       setCurrentColorForImg('(243,219,121')
+      setColorPuzzlePhoto('Y')
       setLoader(false)
     } else if (choicerTime > 30 && choicerTime < 45) {
       setCurrentImg('img/Spring.jpg')
       setCurrentColorForImg(`(194,230,122`)
+      setColorPuzzlePhoto('G')
       setLoader(false)
     } else if (choicerTime > 45) {
       setCurrentImg('img/Autumn.jpg')
       setCurrentColorForImg('(241,177,139')
+      setColorPuzzlePhoto('P')
       setLoader(false)
     }
   }, [])
@@ -75,7 +80,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main currentColorForImg={currentColorForImg}/>} />
         <Route path="/events" element={<Events currentColorForImg={currentColorForImg}/>} />
-        <Route path="/animators" element={<Animators currentColorForImg={currentColorForImg}/>} />
+        <Route path="/animators" element={<Animators currentColorForImg={currentColorForImg} colorPuzzlePhoto={colorPuzzlePhoto}/>} />
         <Route path="/shows" element={<Shows currentColorForImg={currentColorForImg}/>} />
         <Route path="/additional_services" element={<Price currentColorForImg={currentColorForImg}/>} />
         <Route path="/about" element={<About currentColorForImg={currentColorForImg}/>} />
