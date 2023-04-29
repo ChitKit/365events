@@ -1,0 +1,14 @@
+.NavBar {
+    font-size: larger;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.LogoToHome{
+    width: 8rem;
+    height: 8rem;
+    position: fixed;
+    left: 6.8%;
+    top: -2%;
+    z-index: 998;
+}

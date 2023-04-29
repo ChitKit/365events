@@ -1,17 +1,24 @@
 import React from 'react'
-import './Main.css'
+import './Main.scss'
 import MainLayout from '../../Layout/MainLayout'
 
 
 export default function Main() {
+
+  // h2 всплывает на красивом фоне (рамка )
   return (
     <MainLayout>
       {/* <div className="MainPage" style={{backgroundColor:`rgb${currentColorForImg}`}}> */}
       <div className="MainPage">
-          <h1 style={{position:'relative', zIndex:'2'}} className="MainPageH1">Главная страница агенства 365:events</h1>
+        <div className='MainPageH1Div'>
+          <h1 style={{position:'relative', zIndex:'2'}} className="MainPageH1">Агентство праздников 365:events</h1>
+        </div>
+        
+        <div className="MainPageH2Div">
           <h2 style={{position:'relative', zIndex:'2'}} className="MainPageH2">
-            Доставляем с любовью самые тёплые и волшебные праздники на дом, в детский садик, школу или офис! 365 дней в году.
+            Доставляем с любовью <br/> самые тёплые и волшебные праздники <br/> на дом, в детский садик, школу или офис!<br/> 365 дней в году.
           </h2>
+        </div>
       </div>
     </MainLayout>
 
