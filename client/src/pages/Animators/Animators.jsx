@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Reveal from 'reveal.js';
-import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
 import './Animators.scss'
 import MainLayout from '../../Layout/MainLayout'
 
