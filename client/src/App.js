@@ -13,9 +13,10 @@ import Animators from './pages/Animators/Animators';
 import Shows from './pages/Shows/Shows';
 import Events from './pages/Events/Events';
 import MasterClasses from './pages/MasterClasses/MasterClasses';
+import Services from './pages/Services/Services';
 
 import Administration from './components/Team/Administration/Administration';
-import Developers from './components/Team/Developers/Developers';
+// import Developers from './components/Team/Developers/Developers';
 import NavBar from './components/NavBar/NavBar';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   // const [welcome, setWelcome] = useState(true)
 
   useEffect(() => {
-    const choicerTime = new Date().getMinutes()
+    const choicerTime = new Date().getSeconds()
     setLoader(true)
     if (choicerTime < 15) {
       if (window.screen.width > 400 ) {
@@ -68,32 +69,53 @@ function App() {
   }, [])
   
   setInterval(() => {
-    const choicerTime = new Date().getMinutes()
+    const choicerTime = new Date().getSeconds()
     setLoader(true)
     if (choicerTime < 15) {
-      setCurrentImg('img/Winter.jpg')
+      if (window.screen.width > 400 ) {
+        setCurrentImg('img/Winter.jpg')
+      } else {
+        setCurrentImg('img/WinterMobile.jpg')
+      }
       setCurrentColorForImg('(197,222,229')
+      setColorPuzzlePhoto('C')
       setLoader(false)
     } else if (choicerTime > 15 && choicerTime < 30) {
-      setCurrentImg('img/Summer.jpg')
+      if (window.screen.width > 400) {
+        setCurrentImg('img/Summer.jpg')
+      } else {
+        setCurrentImg('img/SummerMobile.jpg')
+      }
       setCurrentColorForImg('(243,219,121')
+      setColorPuzzlePhoto('Y')
       setLoader(false)
     } else if (choicerTime > 30 && choicerTime < 45) {
-      setCurrentImg('img/Spring.jpg')
+      if (window.screen.width > 400) {
+        setCurrentImg('img/Spring.jpg')
+      } else {
+        setCurrentImg('img/SpringMobile.jpg')
+      }
       setCurrentColorForImg(`(194,230,122`)
+      setColorPuzzlePhoto('G')
       setLoader(false)
     } else if (choicerTime > 45) {
-      setCurrentImg('img/Autumn.jpg')
+      if (window.screen.width > 400) {
+        setCurrentImg('img/Autumn.jpg')
+      } else {
+        setCurrentImg('img/AutumnMobile.jpg')
+      }
       setCurrentColorForImg('(241,177,139')
+      setColorPuzzlePhoto('P')
       setLoader(false)
     }
-  },1000 * 60 )
+  },1000 )
 
   return (
     <div className="App">
       <NavBar currentImg={currentImg}/>
       <Routes>
         <Route path="/" element={<Main currentColorForImg={currentColorForImg}/>} />
+        <Route path="/services" element={<Services currentColorForImg={currentColorForImg}/>} />
         <Route path="/events" element={<Events currentColorForImg={currentColorForImg}/>} />
         <Route path="/animators" element={<Animators currentColorForImg={currentColorForImg} colorPuzzlePhoto={colorPuzzlePhoto}/>} />
         <Route path="/shows" element={<Shows currentColorForImg={currentColorForImg}/>} />

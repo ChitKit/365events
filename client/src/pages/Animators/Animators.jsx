@@ -106,21 +106,23 @@ export default function Animators({currentColorForImg, colorPuzzlePhoto}) {
     <MainLayout>
       <div style={{background:`rgba${currentColorForImg}, 0.7)`}} className="Animators">
         <h1>Аниматоры</h1>
-			<div style={{display:'flex', flexDirection:'row'}}>
-				<div style={{display:'flex', flexDirection:'column'}}>
+			<div className="MemberTeamMainCard">
+				<div className="MemerCard">
 					<div
 					// just set mousedOver here instead of calling update/origCount
 					onMouseOver={() => setMousedOver(true)}
 					onMouseOut={() => setMousedOver(false)}
 					
 					>
-						<img style={{position:"absolute", width:'25em'}} src={`/puzzleFormForTeam/${colorPuzzleForm}${colorPuzzlePhoto}.png`} alt="puzzleForm" />
-						<img style={{ width:'25em'}} src={images[count].source} alt={images.name} />
-						<div className="title"><h2>{images[count].name}</h2></div>
+						<div className="PhotoMemberTeam">
+							<img className="PhotoMemberTeam-Puzzle" src={`/puzzleFormForTeam/${colorPuzzleForm}${colorPuzzlePhoto}.png`} alt="puzzleForm" />
+							<img className="PhotoMemberTeam-OriginPhoto" src={images[count].source} alt={images.name} />
+						</div>
+						<h2 className="PhotoMemberTeam-MemberName">{images[count].name}</h2>
 						{/* <p>count is: {count}</p> */}
 					</div>
 				</div>
-				<div style={{display:'flex', flexDirection:'column', justifyContent:'space-between' }}>
+				<div className="AboutMemberTeam">
 					<h3 style={{position:'relative', top:'5em', boxShadow:'0 0 50px black', height:'10em', borderRadius:'2em', background:`rgba${currentColorForImg}, 0.6)`, padding:'1em'}}>{images[count].description}</h3>
 					<div style={{display:'flex', flexDirection:'row'}}>
 					{/* <button style={{width:'3em', height:'3em', margin:'0.5em'}} onClick={() => setPause(false)}>Play</button>

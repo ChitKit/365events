@@ -10,6 +10,10 @@ export default function NavBar({currentImg}) {
       setWidthScreen(window.screen.width)
     }
   },[])
+
+  useEffect(() => {
+    
+  },[currentImg])
   
   //TODO Сделать группировку group "Услуги праздники, шоу, мастер классы"
   return (
@@ -22,7 +26,7 @@ export default function NavBar({currentImg}) {
             </Link>
             <div className="NavigationApp">
             <Link to={"/"}>Главная</Link>
-            <Link to={"/events"}>Услуги</Link>
+            <Link to={"/services"}>Услуги</Link>
             {/* <Link to={"/animators"}>Аниматоры</Link> */}
             {/* <Link to={"/shows"}>Шоу</Link>  */}
             {/* <Link to={"/master_classes"}>Мастер классы</Link> */}
@@ -37,12 +41,12 @@ export default function NavBar({currentImg}) {
       </>
       :
       <>
-        {/* <div className='MetaLayout'>
+        <div className='MetaLayout'>
           <Link to={"/"}>
             <img className="LogoToHomeMobile" src="./logoHeader192.png" alt="logo" />
           </Link>
           <button className="MobileMenu">|||</button>
-        </div> */}
+        </div>
         <div className="BackgroundImageDiv" >
           <img className="BackgroundImage" src={`${currentImg}`} alt={`${currentImg}`} ></img>
         </div>

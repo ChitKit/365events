@@ -40,7 +40,7 @@ export default function Price({currentColorForImg}) {
   return (
     <MainLayout>
       <div style={{background:`rgba${currentColorForImg}, 0.7)`}} className="Price" >
-        <h1>Цены на услуги</h1>
+        <h1>Наши услуги</h1>
       </div>
     </MainLayout>
   )
