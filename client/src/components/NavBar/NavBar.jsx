@@ -41,6 +41,7 @@ export default function NavBar({currentImg}) {
           <Link to={"/"}>
             <img className="LogoToHomeMobile" src="./logoHeader192.png" alt="logo" />
           </Link>
+          <button className="MobileMenu">|||</button>
         </div>
         <div className="BackgroundImageDiv" >
           <img className="BackgroundImage" src={`${currentImg}`} alt={`${currentImg}`} ></img>

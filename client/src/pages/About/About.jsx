@@ -68,8 +68,10 @@ export default function About({currentColorForImg}) {
             <div className="About-Content-OtherInfo-Team">
               <h3>Наша команда</h3>
               <Link to={'/animators'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Аниматоры</Link>
+              <Link to={'/animators'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Иллюзионисты</Link>
+              <Link to={'/animators'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Мастер классы</Link>
+              <Link to={'/animators'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Медиа</Link>
               <Link to={'/administration'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Администрация</Link>
-              <Link to={'/developers'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}} >Разработчики</Link>
             </div>
           </div>
         </div>

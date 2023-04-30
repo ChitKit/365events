@@ -30,7 +30,7 @@ function App() {
     setLoader(true)
     if (choicerTime < 15) {
       if (window.screen.width > 400 ) {
-        setCurrentImg('img/Winter1.jpg')
+        setCurrentImg('img/Winter.jpg')
       } else {
         setCurrentImg('img/WinterMobile.jpg')
       }
@@ -39,7 +39,7 @@ function App() {
       setLoader(false)
     } else if (choicerTime > 15 && choicerTime < 30) {
       if (window.screen.width > 400) {
-        setCurrentImg('img/Summer1.jpg')
+        setCurrentImg('img/Summer.jpg')
       } else {
         setCurrentImg('img/SummerMobile.jpg')
       }
@@ -49,7 +49,7 @@ function App() {
       setLoader(false)
     } else if (choicerTime > 30 && choicerTime < 45) {
       if (window.screen.width > 400) {
-        setCurrentImg('img/Spring1.jpg')
+        setCurrentImg('img/Spring.jpg')
       } else {
         setCurrentImg('img/SpringMobile.jpg')
       }
@@ -58,7 +58,7 @@ function App() {
       setLoader(false)
     } else if (choicerTime > 45) {
       if (window.screen.width > 400) {
-        setCurrentImg('img/Autumn1.jpg')
+        setCurrentImg('img/Autumn.jpg')
       } else {
         setCurrentImg('img/AutumnMobile.jpg')
       }
