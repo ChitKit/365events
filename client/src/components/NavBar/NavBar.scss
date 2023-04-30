@@ -34,3 +34,84 @@
     height:  100vh;
     width: 100vw;
 }
+
+// !! NAVIGATION 
+
+.MetaLayout{
+    display: flex;
+    flex-direction: column;
+}
+.NavigationApp {
+    position: fixed;
+    top: 4%;
+    left: 2%;
+    z-index: 997;
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.NavigationApp>a {
+    box-sizing: border-box;
+    width: 13em;
+    height: 4em;
+    font-size: 1em;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0 0 1em black;
+    color: rgb(0, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
+    /* font-weight: bold; */
+    text-decoration: none;
+}
+
+.NavigationApp>a:nth-child(odd) {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background: linear-gradient(to
+    right, rgb(241,177,139), rgb(197,222,229));
+    text-align: left;
+    padding-left: 10%;
+    transform: perspective(500px)
+    rotateY(45deg);
+}
+
+.NavigationApp>a:nth-child(even) {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+    background: linear-gradient(to
+    right, #c2e67a, #f3db79);
+    text-align: right;
+    padding-right: 10%;
+    transform: perspective(500px)
+    rotateY(-45deg);
+}
+
+.NavigationApp>a:nth-child(odd):hover {
+    background: linear-gradient(to
+    right, #ffa26c, #99e4f7);
+    transform: perspective(350px)
+    rotateY(45deg);    
+    box-shadow: 0 0 1em rgb(116, 116, 116);
+    padding-left: 25%;
+}
+
+.NavigationApp>a:nth-child(even):hover {
+    background: linear-gradient(to
+    right, rgb(197, 247, 97), rgb(250, 218, 90));
+    transform: perspective(350px)
+    rotateY(-45deg);
+    box-shadow: 0 0 1em rgb(116, 116, 116);
+    padding-right: 25%;
+}
