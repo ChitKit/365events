@@ -11,6 +11,7 @@
         --width-divH2: 60%;
         --width-H2: 100%;
         --borderRadius-divH2: 5rem;
+        --main-Height: 100vh;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -26,6 +27,7 @@
         --width-divH2: 60%;
         --width-H2: 100%;
         --borderRadius-divH2: 5rem;
+        --main-Height: 100vh;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -41,6 +43,7 @@
         --width-divH2: 60%;
         --width-H2: 100%;
         --borderRadius-divH2: 5rem;
+        --main-Height: 100vh;
     }
 }
 @media screen and (max-width: 799px) {
@@ -56,6 +59,7 @@
         --width-divH2: 85%;
         --width-H2: 94%;
         --borderRadius-divH2: 2rem;
+        --main-Height: 99%;
     }
 }
     
@@ -66,7 +70,7 @@
     z-index: 99;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: var(--main-Height);
     justify-content: flex-start;
     align-items: center;
 }

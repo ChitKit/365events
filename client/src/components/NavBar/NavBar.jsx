@@ -36,9 +36,16 @@ export default function NavBar({currentImg}) {
           </div>
       </>
       :
-      <div className="BackgroundImageDiv" >
-        <img className="BackgroundImage" src={`${currentImg}`} alt={`${currentImg}`} ></img>
-      </div>
+      <>
+        <div className='MetaLayout'>
+          <Link to={"/"}>
+            <img className="LogoToHomeMobile" src="./logoHeader192.png" alt="logo" />
+          </Link>
+        </div>
+        <div className="BackgroundImageDiv" >
+          <img className="BackgroundImage" src={`${currentImg}`} alt={`${currentImg}`} ></img>
+        </div>
+      </>
     }
     </>
   )
