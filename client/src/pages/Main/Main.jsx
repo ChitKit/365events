@@ -11,7 +11,7 @@ export default function Main() {
       {/* <div className="MainPage" style={{backgroundColor:`rgb${currentColorForImg}`}}> */}
       <div className="MainPage">
         <div className='MainPageH1Div'>
-          <h1 style={{position:'relative', zIndex:'2'}} className="MainPageH1">Агентство праздников 365:events</h1>
+          <h1 style={{position:'relative', zIndex:'2'}} className="MainPageH1">Агентство праздников <br/>365:events</h1>
         </div>
         
         <div className="MainPageH2Div">

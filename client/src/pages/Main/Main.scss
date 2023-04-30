@@ -1,11 +1,72 @@
+@media screen and (min-width: 1280px) {
+    :root {
+        --text-sizeTextH1: 3em;
+        --text-sizeTextH2: 1.8em;
+        --width-mainpage: 90vw;
+        --height-divH1: 8em;
+        --height-H1: 2.2em;
+        --width-H1: 98%;
+        --width-divH1: 50%;
+        --height-divH2: 16em;
+        --width-divH2: 60%;
+        --width-H2: 100%;
+        --borderRadius-divH2: 5rem;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --text-sizeTextH1: 2.1em;
+        --text-sizeTextH2: 1.4em;
+        --width-mainpage: 80vw;
+        --height-divH1: 6em;
+        --height-H1: 2.2em;
+        --width-H1: 97%;
+        --width-divH1: 50%;
+        --height-divH2: 16em;
+        --width-divH2: 60%;
+        --width-H2: 100%;
+        --borderRadius-divH2: 5rem;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    :root {
+        --text-sizeTextH1: 1.6em;
+        --text-sizeTextH2: 1.2em;
+        --width-mainpage: 80vw;
+        --height-divH1: 4.5em;
+        --height-H1: 2em;
+        --width-H1: 96%;
+        --width-divH1: 50%;
+        --height-divH2: 16em;
+        --width-divH2: 60%;
+        --width-H2: 100%;
+        --borderRadius-divH2: 5rem;
+    }
+}
+@media screen and (max-width: 799px) {
+    :root {
+        --text-sizeTextH1: 1.2em;
+        --text-sizeTextH2: 1em;
+        --width-mainpage: 90vw;
+        --height-divH1: 5.4em;
+        --height-H1: 3.5em;
+        --width-divH1: 70%;
+        --width-H1: 94%;
+        --height-divH2: 11em;
+        --width-divH2: 85%;
+        --width-H2: 94%;
+        --borderRadius-divH2: 2rem;
+    }
+}
+    
 .MainPage {
     position: relative;
     /* top: 5%; */
-    width: 90vw;
+    width: var(--width-mainpage);
     z-index: 99;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     justify-content: flex-start;
     align-items: center;
 }
@@ -15,16 +76,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8em;
+    height: var(--height-divH1);
     border-radius: 1rem;
-    box-shadow: 0px 0px 50px rgb(129, 129, 129);
-    width: 50%;
+    box-shadow: 0px 50px 250px rgb(156, 156, 156);
+    width: var(--width-divH1);
     background: linear-gradient(45deg, rgba(243,219,121,1) 0%, rgba(153,228,247,1) 33%, rgba(194,230,122,1) 66%, rgba(255,162,108,1) 100%);
 
 }
 .MainPageH1{
-    font-size: 3em;
-    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--height-H1);
+    // font-size: 3em;
+    font-size: var(--text-sizeTextH1);
+    width: var(--width-H1);
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.26);
 }
@@ -34,19 +100,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:16em;
-    border-radius: 5rem;
-    width: 60%;
+    height:var(--height-divH2);
+    border-radius: var(--borderRadius-divH2);
+    width: var(--width-divH2);
     box-shadow: 0px 0px 50px rgb(141, 141, 141);
     background: linear-gradient(45deg, rgba(241, 215, 110, 0.65) 0%, rgb(135, 224, 247, 0.65) 33%, rgb(185, 226, 103, 0.65) 66%, rgb(245, 141, 81, 0.65) 100%);
 }
 .MainPageH2{
-    // letter-spacing: 0.1em;
     padding: 0.6em;
-    font-size: 1.8em;
-    width: 100%;
-    // box-shadow: 0px 0px 50px rgb(184, 184, 184);
-    /* border: 3px solid gray; */
+    font-size: var(--text-sizeTextH2);
+    width: var(--width-H2);
     border-radius: 1rem;
-    // background-color: rgba(255, 255, 255, 0.151);
 }

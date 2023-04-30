@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 
 import Main from './pages/Main/Main';
 import About from './pages/About/About';
@@ -29,22 +29,39 @@ function App() {
     const choicerTime = new Date().getMinutes()
     setLoader(true)
     if (choicerTime < 15) {
-      setCurrentImg('img/Winter.jpg')
+      if (window.screen.width > 400 ) {
+        setCurrentImg('img/Winter1.jpg')
+      } else {
+        setCurrentImg('img/WinterMobile.jpg')
+      }
       setCurrentColorForImg('(197,222,229')
       setColorPuzzlePhoto('C')
       setLoader(false)
     } else if (choicerTime > 15 && choicerTime < 30) {
-      setCurrentImg('img/Summer.jpg')
+      if (window.screen.width > 400) {
+        setCurrentImg('img/Summer1.jpg')
+      } else {
+        setCurrentImg('img/SummerMobile.jpg')
+      }
+      
       setCurrentColorForImg('(243,219,121')
       setColorPuzzlePhoto('Y')
       setLoader(false)
     } else if (choicerTime > 30 && choicerTime < 45) {
-      setCurrentImg('img/Spring.jpg')
+      if (window.screen.width > 400) {
+        setCurrentImg('img/Spring1.jpg')
+      } else {
+        setCurrentImg('img/SpringMobile.jpg')
+      }
       setCurrentColorForImg(`(194,230,122`)
       setColorPuzzlePhoto('G')
       setLoader(false)
     } else if (choicerTime > 45) {
-      setCurrentImg('img/Autumn.jpg')
+      if (window.screen.width > 400) {
+        setCurrentImg('img/Autumn1.jpg')
+      } else {
+        setCurrentImg('img/AutumnMobile.jpg')
+      }
       setCurrentColorForImg('(241,177,139')
       setColorPuzzlePhoto('P')
       setLoader(false)
@@ -90,6 +107,7 @@ function App() {
         <Route path="/developers" element={<Developers currentColorForImg={currentColorForImg}/>} />
       </Routes>
     </div>
+    
   );
 }
 
