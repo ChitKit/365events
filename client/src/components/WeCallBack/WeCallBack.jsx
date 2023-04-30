@@ -1,5 +1,5 @@
 import React from 'react';
-import './WeCallBack.css'
+import './WeCallBack.scss'
 
 export default function WeCallBack() {
   return (

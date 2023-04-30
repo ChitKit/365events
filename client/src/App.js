@@ -43,7 +43,6 @@ function App() {
       } else {
         setCurrentImg('img/SummerMobile.jpg')
       }
-      
       setCurrentColorForImg('(243,219,121')
       setColorPuzzlePhoto('Y')
       setLoader(false)
@@ -90,7 +89,6 @@ function App() {
     }
   },1000 * 60 )
 
-  
   return (
     <div className="App">
       <NavBar currentImg={currentImg}/>
@@ -104,7 +102,7 @@ function App() {
         <Route path="/master_classes" element={<MasterClasses currentColorForImg={currentColorForImg}/>} />
         <Route path="/contacts" element={<Contacts currentColorForImg={currentColorForImg}/>} />
         <Route path="/administration" element={<Administration currentColorForImg={currentColorForImg}/>} />
-        <Route path="/developers" element={<Developers currentColorForImg={currentColorForImg}/>} />
+        {/* <Route path="/developers" element={<Developers currentColorForImg={currentColorForImg}/>} /> */}
       </Routes>
     </div>
     
