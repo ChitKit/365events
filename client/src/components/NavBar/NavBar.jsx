@@ -25,7 +25,7 @@ export default function NavBar({currentImg}) {
               <img className="LogoToHome" src="./logoHeader192.png" alt="logo" />
             </Link>
             <div className="NavigationApp">
-            <Link to={"/"}>Главная</Link>
+              <Link to={"/"}>Главная</Link>
             <Link to={"/services"}>Услуги</Link>
             {/* <Link to={"/animators"}>Аниматоры</Link> */}
             {/* <Link to={"/shows"}>Шоу</Link>  */}
