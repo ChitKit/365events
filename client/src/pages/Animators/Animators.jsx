@@ -116,6 +116,7 @@ export default function Animators({currentColorForImg, colorPuzzlePhoto}) {
 					>
 						<div className="PhotoMemberTeam">
 							<img className="PhotoMemberTeam-Puzzle" src={`/puzzleFormForTeam/${colorPuzzleForm}${colorPuzzlePhoto}.png`} alt="puzzleForm" />
+							{/* <img className="PhotoMemberTeam-Puzzle" src={`/puzzleFormForTeam/RBY1.png`} alt="puzzleForm" /> */}
 							<img className="PhotoMemberTeam-OriginPhoto" src={images[count].source} alt={images.name} />
 						</div>
 						<h2 className="PhotoMemberTeam-MemberName">{images[count].name}</h2>
