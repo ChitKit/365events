@@ -9,7 +9,7 @@ export default function Services({currentColorForImg}) {
     <MainLayout>
       <div style={{background:`rgba${currentColorForImg}, 0.7)`}} className="Services" >
         <h1>Наши услуги</h1>
-        <div className="ServicesMenu">
+        <div style={{background:`rgba${currentColorForImg}, 0.82)`}} className="ServicesMenu">
           <Link className="ServicesMenu-Show" to="/shows"><div >Шоу</div></Link>
           <Link className="ServicesMenu-MK" to="/master_classes"><div>Мастер классы</div></Link>
           <Link className="ServicesMenu-Events" to="/events"><div >Праздники</div></Link>
