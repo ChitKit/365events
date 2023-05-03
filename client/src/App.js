@@ -112,7 +112,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar currentImg={currentImg}/>
+      <NavBar currentImg={currentImg} currentColorForImg={currentColorForImg} />
       <Routes>
         <Route path="/" element={<Main currentColorForImg={currentColorForImg}/>} />
         <Route path="/services" element={<Services currentColorForImg={currentColorForImg}/>} />
