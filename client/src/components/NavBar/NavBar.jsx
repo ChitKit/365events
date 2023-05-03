@@ -6,6 +6,7 @@ export default function NavBar({ currentImg, currentColorForImg }) {
 	const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [widthScreen, setWidthScreen] = useState(undefined);
 	const [hiddenMenu, setHiddenMenu] = useState(true)
+	const [hiddenButton, setHiddenButton] = useState(true)
 	console.log(openMobileMenu, 'OMM');
 	console.log(hiddenMenu, 'HID');
 
@@ -18,10 +19,16 @@ export default function NavBar({ currentImg, currentColorForImg }) {
 
 	useEffect(() => {
 		if (openMobileMenu === true) {
+			setHiddenButton(false)
+
 			setTimeout(() => {
 				setHiddenMenu(false)
 			}, 100);
+			setTimeout(() => {
+				setHiddenButton(true)
+			}, 2000);
 		}
+
 	},[openMobileMenu])
 
 	const goToLinkHandler = () => {
@@ -71,10 +78,14 @@ export default function NavBar({ currentImg, currentColorForImg }) {
                                 alt="logo"
                             />
                         </Link>
-						{openMobileMenu ? 
-                        <button onClick={goToLinkHandler} className="CloseMobileMenuButton">X</button>
-						: 
-                        <button onClick={() => {setOpenMobileMenu(!openMobileMenu)}} className="MobileMenuButton">|||</button>
+						{hiddenButton &&
+							<>
+								{!hiddenMenu ?
+								<button onClick={goToLinkHandler} className="CloseMobileMenuButton">X</button>
+								: 
+								<button onClick={() => {setOpenMobileMenu(!openMobileMenu)}} className="MobileMenuButton">|||</button>
+								}
+							</>
 						}
 						{openMobileMenu &&
                         <div

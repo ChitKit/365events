@@ -1,14 +1,75 @@
+@media screen and (min-width: 1280px) {
+    :root {
+        --main-service-height: 80vh;
+        --main-service-width: 70vw;
+        --main-service-padding: 1em;
+        --main-service-bord-rad: 3em;
+
+        --ServicesMenu-width: ;
+        --ServicesMenu-height: ;
+
+        --ServicesMenu-Block-Width: 45%;
+        --ServicesMenu-Block-Height: 40%;
+
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --main-service-height: 80vh;
+        --main-service-width: 70vw;
+        --main-service-padding: 1em;
+        --main-service-bord-rad: 3em;
+
+        --ServicesMenu-width: ;
+        --ServicesMenu-height: ;
+
+        --ServicesMenu-Block-Width: 45%;
+        --ServicesMenu-Block-Height: 40%;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    :root {
+        --main-service-height: 80vh;
+        --main-service-width: 70vw;
+        --main-service-padding: 1em;
+        --main-service-bord-rad: 3em;
+
+        --ServicesMenu-width: ;
+        --ServicesMenu-height: ;
+
+        --ServicesMenu-Block-Width: 45%;
+        --ServicesMenu-Block-Height: 40%;
+    }
+}
+@media screen and (max-width: 799px) {
+    :root {
+        --main-service-height: 90vh;
+        --main-service-width: 90vw;
+        --main-service-padding: .5em;
+        --main-service-bord-rad: 1.5em;
+
+        --ServicesMenu-width: ;
+        --ServicesMenu-height: ;
+
+        --ServicesMenu-Block-Width: 80vw;
+        --ServicesMenu-Block-Height: 30vh;
+    }
+}
+
+
 .Services{
     position: relative;
     z-index: 10;
-    width: 70vw;
-    height: 80vh;
-    padding: 1em;
+    width: var(--main-service-width);
+    height: var(--main-service-height);
+    //! auto для верстки мобильной!!!!!! перенести в переменную!!!
+    // height: auto;
+    padding: var(--main-service-padding);
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 50px black;
-    border-radius: 3em;
+    border-radius: var(--main-service-bord-rad);
 }
 .ServicesMenu{
     width: 98.8%;
@@ -26,8 +87,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 45%;
-        height: 40%;
+        width: var(--ServicesMenu-Block-Width);
+        height: var(--ServicesMenu-Block-Height);
         box-shadow: 0 0 25px black;
         border-radius: 1.5em;
         text-decoration: none;
@@ -39,8 +100,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 45%;
-        height: 40%;
+        width: var(--ServicesMenu-Block-Width);
+        height: var(--ServicesMenu-Block-Height);
         box-shadow: 0 0 25px black;
         border-radius: 1.5em;
         text-decoration: none;
@@ -52,8 +113,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 45%;
-        height: 40%;
+        width: var(--ServicesMenu-Block-Width);
+        height: var(--ServicesMenu-Block-Height);
         box-shadow: 0 0 25px black;        
         border-radius: 1.5em;
         text-decoration: none;
@@ -65,8 +126,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 45%;
-        height: 40%;
+        width: var(--ServicesMenu-Block-Width);
+        height: var(--ServicesMenu-Block-Height);
         box-shadow: 0 0 25px black;
         border-radius: 1.5em;
         text-decoration: none;
