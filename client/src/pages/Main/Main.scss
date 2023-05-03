@@ -59,7 +59,7 @@
         --width-divH2: 85%;
         --width-H2: 94%;
         --borderRadius-divH2: 2rem;
-        --main-Height: 99%;
+        --main-Height: 100%;
     }
 }
     
@@ -67,10 +67,10 @@
     position: relative;
     /* top: 5%; */
     width: var(--width-mainpage);
+    height: var(--main-Height);
     z-index: 99;
     display: flex;
     flex-direction: column;
-    height: var(--main-Height);
     justify-content: flex-start;
     align-items: center;
 }

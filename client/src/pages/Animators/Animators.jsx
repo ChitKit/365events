@@ -105,7 +105,7 @@ export default function Animators({currentColorForImg, colorPuzzlePhoto}) {
   return (
     <MainLayout>
       <div style={{background:`rgba${currentColorForImg}, 0.7)`}} className="Animators">
-        <h1>Аниматоры</h1>
+        <h1>Актёры</h1>
 			<div className="MemberTeamMainCard">
 				<div className="MemerCard">
 					<div

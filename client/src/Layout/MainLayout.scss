@@ -1,6 +1,28 @@
+@media screen and (min-width: 1280px) {
+    :root {
+        --main-Height_App: 100vh;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --main-Height_App: 100vh;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    :root {
+        --main-Height_App: 100vh;
+    }
+}
+@media screen and (max-width: 799px) {
+    :root {
+        --main-Height_App: 80%;
+    }
+}
+
+
 .Content{
     width: 100vw;
-    height: 100vh;
+    height: var(--main-Height_App);
     display: flex;
     justify-content: flex-end;
     align-items: center;
