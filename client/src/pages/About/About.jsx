@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 export default function About({currentColorForImg}) {
   
   return (
-    <MainLayout>
-      <div style={{background:`rgb${currentColorForImg}, 0.7)`}} className="About">
+      <div className="About">
         <div className="About-Header">
           <h1 className='About-Title'>О нас</h1>
         </div>
@@ -42,6 +41,5 @@ export default function About({currentColorForImg}) {
           </div>
         </div>
       </div>
-    </MainLayout>
   )
 }

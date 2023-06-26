@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./Main.scss";
+import '../About/About.scss'
 import MainLayout from "../../Layout/MainLayout";
+import About from "../About/About";
+import Price from "../Price/Price";
+import Contacts from "../Contacts/Contacts";
+import { Link } from "react-router-dom";
 
 export default function Main({}) {
     // h2 всплывает на красивом фоне (рамка )
     return (
-        <MainLayout>
+        <div className="Application-Content">
             <div className="MainPage">
                 <div className="MainPageH1Div">
                     <h1
@@ -22,13 +27,15 @@ export default function Main({}) {
                         style={{ position: "relative", zIndex: "2" }}
                         className="MainPageH2"
                     >
-                        Доставляем с любовью <br /> самые тёплые и волшебные
-                        праздники <br /> на дом, в детский садик, школу или
-                        офис!
-                        <br /> 365 дней в году.
+                        Доставляем с любовью самые тёплые и волшебные
+                        праздники 365 дней в году.
                     </h2>
                 </div>
             </div>
-        </MainLayout>
+            {/* //! About */}
+            <About />
+            <Price />
+            <Contacts />
+        </div>
     );
 }

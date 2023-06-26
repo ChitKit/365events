@@ -1,11 +1,14 @@
 .Contacts{
+    background:rgba(0, 0, 0, 0.534);
+    color: rgb(255, 255, 0);
     position: relative;
     z-index: 10;
     width: 70vw;
     height: 80vh;
+    margin: 10em;
     padding: 1em;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 0 50px rgb(217, 255, 0);
     border-radius: 3em;
 }

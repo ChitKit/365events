@@ -18,6 +18,7 @@ import Services from './pages/Services/Services';
 import Administration from './components/Team/Administration/Administration';
 // import Developers from './components/Team/Developers/Developers';
 import NavBar from './components/NavBar/NavBar';
+import Header from './components/Header/Header';
 
 function App() {
   const [currentImg, setCurrentImg] = useState(undefined)
@@ -112,10 +113,11 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar currentImg={currentImg} currentColorForImg={currentColorForImg} />
+      {/* <NavBar currentImg={currentImg} currentColorForImg={currentColorForImg} /> */}
+      <Header />
       <Routes>
-        <Route path="/" element={<Main currentColorForImg={currentColorForImg}/>} />
-        <Route path="/services" element={<Services currentColorForImg={currentColorForImg}/>} />
+        <Route path="/" element={<Main />} />
+        {/* <Route path="/services" element={<Services currentColorForImg={currentColorForImg}/>} />
         <Route path="/events" element={<Events currentColorForImg={currentColorForImg}/>} />
         <Route path="/animators" element={<Animators currentColorForImg={currentColorForImg} colorPuzzlePhoto={colorPuzzlePhoto}/>} />
         <Route path="/shows" element={<Shows currentColorForImg={currentColorForImg}/>} />
@@ -123,7 +125,7 @@ function App() {
         <Route path="/about" element={<About currentColorForImg={currentColorForImg}/>} />
         <Route path="/master_classes" element={<MasterClasses currentColorForImg={currentColorForImg}/>} />
         <Route path="/contacts" element={<Contacts currentColorForImg={currentColorForImg}/>} />
-        <Route path="/administration" element={<Administration currentColorForImg={currentColorForImg}/>} />
+        <Route path="/administration" element={<Administration currentColorForImg={currentColorForImg}/>} /> */}
         {/* <Route path="/developers" element={<Developers currentColorForImg={currentColorForImg}/>} /> */}
       </Routes>
     </div>

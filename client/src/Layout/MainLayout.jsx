@@ -60,7 +60,8 @@ export default function MainLayout(props) {
           <img className="Loader" src="logo512.png" alt="logo" />
         </div>
         :
-        <div style={{backgroundColor:`rgb${currentColorForImg}`, width:'100%', height: '100%'}}>
+        // <div style={{backgroundColor:`rgb${currentColorForImg}`, width:'100%', height: '100%'}}>
+        <div style={{backgroundImage:`url(./backgroundSpice.jpeg)`, width:'100%', height: '100%'}}>
             <div className="Content">{props.children}</div>
         </div>
       }

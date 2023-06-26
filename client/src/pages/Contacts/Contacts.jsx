@@ -34,11 +34,9 @@ export default function Contacts({currentColorForImg}) {
   // },1000 * 60)
 
   return (
-    <MainLayout>
-      <div style={{background:`rgba${currentColorForImg}, 0.7)`}} className="Contacts">
+      <div  className="Contacts">
         <h1>Контакты</h1>
       </div>
-    </MainLayout>
 
   )
 }

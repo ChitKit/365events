@@ -38,10 +38,8 @@ export default function Price({currentColorForImg}) {
   // }, [])
 
   return (
-    <MainLayout>
-      <div style={{background:`rgba${currentColorForImg}, 0.7)`}} className="Price" >
+      <div className="Price" >
         <h1>Наши услуги</h1>
       </div>
-    </MainLayout>
   )
 }

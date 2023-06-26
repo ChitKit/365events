@@ -1,42 +1,12 @@
-@media screen and (min-width: 1280px) {
-    :root {
-        --main-Height_App: 100vh;
-        --main-Content-JustifyContent: flex-end;
-        --main-Position-Right: 5%;
-    }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-    :root {
-        --main-Height_App: 100vh;
-        --main-Content-JustifyContent: flex-end;
-        --main-Position-Right: 5%;
-    }
-}
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-    :root {
-        --main-Height_App: 100vh;
-        --main-Content-JustifyContent: flex-end;
-        --main-Position-Right: 5%;
-    }
-}
-@media screen and (max-width: 799px) {
-    :root {
-        --main-Height_App: 100vh;
-        --main-Content-JustifyContent: center;
-        --main-Position-Right: 0;
-    }
-}
-
-
 .Content{
     width: 100vw;
-    height: var(--main-Height_App);
+    height: 100vh;
     display: flex;
-    justify-content: var(--main-Content-JustifyContent);
+    justify-content: flex-end;
     align-items: center;
     position: relative;
-    right: var(--main-Position-Right);
-    z-index: 1;
+    right: 5%;
+    z-index: 2;
 }
 .Loader {
     float: left;
