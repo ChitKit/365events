@@ -11,7 +11,7 @@ export default function Main({}) {
     // h2 всплывает на красивом фоне (рамка )
     return (
         <div className="Application-Content">
-            <div className="MainPage">
+            <div id="main" className="MainPage">
                 <div className="MainPageH1Div">
                     <h1
                         style={{ position: "relative", zIndex: "2" }}
@@ -32,7 +32,6 @@ export default function Main({}) {
                     </h2>
                 </div>
             </div>
-            {/* //! About */}
             <About />
             <Price />
             <Contacts />

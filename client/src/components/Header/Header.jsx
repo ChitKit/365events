@@ -1,17 +1,66 @@
-import React from 'react';
-import NavBar from '../NavBar/NavBar';
-import './Header.scss'
+import React, { useEffect } from "react";
+import NavBar from "../NavBar/NavBar";
+import "./Header.scss";
+import { useState } from "react";
 
 export default function Header() {
-  return (
-    <div className="Header">
-      {/* <div className="Logo">
-        
-      </div> */}
-        <NavBar />
-      {/* <div className="Content">
+  
+  const [colorHeader, setColorHeader] = useState(null);
+  console.log(window);
+  console.log(colorHeader);
+  const listenScrollEvent = () => {
+      window.scrollY > 10 ? setColorHeader({background: '#1c0035', border: '1px solid #ffff0078'}) : setColorHeader({background: 'transparent', border: '1px solid transparent'});
+  }
 
-      </div> */}
-    </div>
-  )
+  useEffect(() => {
+      window.addEventListener('scroll', listenScrollEvent)
+      return () => {
+          window.removeEventListener('scroll', listenScrollEvent)
+      }
+  }, [])
+
+  const clicklHanler = (path) => {
+    console.log(path);
+    if (path === 'main') {
+        document.querySelector('#main').scrollIntoView({ behavior: 'smooth' });
+    } else if (path === 'about') {
+        document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+    } else if (path === 'price') {
+        document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });
+    } else if (path === 'contacts') {
+        document.querySelector('#contacts').scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+    return (
+        <div
+            className="Header"
+            style={{
+                backgroundColor: colorHeader && colorHeader.background,
+                borderBottom: colorHeader && colorHeader.border,
+                // height
+            }}
+        >
+            <ul className="Header-Ul">
+                <li className="Header-Ul-Li">
+                    {/* <a href="#main">Главная</a> */}
+                    <a onClick={() => {clicklHanler('main')}}>Главная</a>
+                </li>
+                <li className="Header-Ul-Li">
+                    {/* <a href="#about">О нас</a> */}
+                    <a onClick={() => {clicklHanler('about')}}>О нас</a>
+                </li>
+                <li className="Header-Ul-Li">
+                    {/* <a href="#services">Услуги</a> */}
+                    <a onClick={() => {clicklHanler('price')}}>Услуги</a>
+                </li>
+                <li className="Header-Ul-Li">
+                    {/* <a href="#contacts">Контакты</a> */}
+                    <a onClick={() => {clicklHanler('contacts')}}>Контакты</a>
+                </li>
+            </ul>
+
+            {/* <NavBar /> */}
+        </div>
+    );
 }

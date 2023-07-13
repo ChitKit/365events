@@ -1,12 +1,73 @@
-.Header{
+:root {
+    --scrollbarBg: rgba(2, 142, 74, 1);
+    --scrollbarThumb: rgba(255, 255, 255, 0.8);
+    --scrollbarWidth: 18px;
+    --scrollbarBorder: 30px solid var(--scrollbarBg);
+    --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 8);
+  }
+
+
+// .Header{
+//     z-index: 100;
+//     width: 100%;
+//     height: 10%;
+//     // background-color: aquamarine;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     position: fixed;
+//     border-bottom: 1px solid rgba(255, 255, 0, 0.356);
+// }
+
+/* scrol */
+.Header {
+    position: fixed;
+    top: 0;
     z-index: 100;
     width: 100%;
-    height: 10%;
-    // background-color: aquamarine;
+    height: 6%;
+
+    // background: rgb(32, 32, 32) !important;
+    scrollbar-width: 0px;
+    scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+    transition: 1s;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    background: rgb(32, 32, 32) !important;
-    border-bottom: 1px solid rgba(255, 255, 0, 0.356);
-}
+    &-Ul{
+      margin-left: 15px;
+      display: flex;
+      &-Li{
+        
+        margin: 30px;
+      }
+      &-Li a {
+        cursor: pointer;
+        color: rgb(247, 196, 68);
+      }
+      &-Li a:hover {
+        cursor: pointer;
+        color: rgb(247, 235, 68);
+      }
+    }
+  }
+  .Header::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+    transition: 2s;
+  }
+  .Header::-webkit-scrollbar-track {
+    background: var(--scrollbarBg);
+    background: var(--scrollbarBgColor);
+    border-radius: var(--scrollbarBorderRadius);
+  }
+  .Header::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    background-color: var(--scrollbarThumbColor);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+    background-image: linear-gradient(
+      180deg,
+      var(--scrollbarThumbColor) 0%,
+      var(--scrollbarThumbColorSecond) 90%
+    );
+  }

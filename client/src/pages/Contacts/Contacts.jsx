@@ -34,7 +34,7 @@ export default function Contacts({currentColorForImg}) {
   // },1000 * 60)
 
   return (
-      <div  className="Contacts">
+      <div id='contacts' className="Contacts">
         <h1>Контакты</h1>
       </div>
 

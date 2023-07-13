@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function About({currentColorForImg}) {
   
   return (
-      <div className="About">
+      <div id='about' className="About">
         <div className="About-Header">
           <h1 className='About-Title'>О нас</h1>
         </div>

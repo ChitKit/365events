@@ -38,7 +38,7 @@ export default function Price({currentColorForImg}) {
   // }, [])
 
   return (
-      <div className="Price" >
+      <div id='services' className="Price" >
         <h1>Наши услуги</h1>
       </div>
   )
