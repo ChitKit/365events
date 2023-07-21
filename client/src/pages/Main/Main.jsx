@@ -24,13 +24,25 @@ export default function Main({}) {
                 </div>
 
                 <div className="MainPageH2Div">
-                    <h2
-                        style={{ position: "relative", zIndex: "2" }}
-                        className="MainPageH2"
-                    >
-                        Доставляем с любовью самые тёплые и волшебные
-                        праздники 365 дней в году.
-                    </h2>
+                    <div className="MainPageH2">
+                        <br />
+                            <span>Доставляем </span>
+                            <span> с </span>
+                            <span> любовью </span>
+                            <br />
+                            <span> самые </span>
+                            <span> тёплые </span>
+                            <span> и </span>
+                            <span> волшебные </span>
+                            <span> праздники </span>
+                            <br />
+                            <span> 365 </span>
+                            <span> дней </span>
+                            <span> в </span>
+                            <span> году </span>
+                            <span>.</span>
+                            <br />
+                    </div>
                 </div>
             </div>
             <About />
