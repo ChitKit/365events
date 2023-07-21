@@ -4,11 +4,24 @@ import './About.scss'
 import { Link } from 'react-router-dom'
 
 export default function About({currentColorForImg}) {
+
+  const clicklHanler = (path) => {
+    console.log(path);
+    if (path === 'main') {
+        document.querySelector('#main').scrollIntoView({ behavior: 'smooth' });
+    } else if (path === 'about') {
+        document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+    } else if (path === 'price') {
+        document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });
+    } else if (path === 'contacts') {
+        document.querySelector('#contacts').scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   
   return (
       <div id='about' className="About">
         <div className="About-Header">
-          <h1 className='About-Title'>О нас</h1>
+          <h2 className='About-Title'>О нас</h2>
         </div>
         <div style={{background:`rgb${currentColorForImg}, 0.82)`}} className="About-Content">
           <div className="About-Content-Inform">
@@ -32,11 +45,11 @@ export default function About({currentColorForImg}) {
             </div>
             <div className="About-Content-OtherInfo-Team">
               <h3 className="About-Content-OtherInfo-H3">Наша команда</h3>
-              <Link to={'/animators'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Актёры</Link>
-              <Link to={'/animators'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Иллюзионисты</Link>
-              <Link to={'/animators'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Мастер классы</Link>
-              <Link to={'/animators'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Медиа</Link>
-              <Link to={'/administration'} style={{width:'0', position:'relative', left:'-10%', marginTop:'1em'}}>Администрация</Link>
+              <p onClick={() => {clicklHanler('main')}} style={{width:'20', height: '0', marginTop:'.5em'}}>Артисты</p>
+              <p onClick={() => {clicklHanler('main')}} style={{width:'20', height: '0', marginTop:'2em'}}>Иллюзионисты</p>
+              <p onClick={() => {clicklHanler('main')}} style={{width:'20', height: '0', marginTop:'2em'}}>Мастер классы</p>
+              <p onClick={() => {clicklHanler('main')}} style={{width:'20', height: '0', marginTop:'2em'}}>Медиа</p>
+              <p onClick={() => {clicklHanler('main')}} style={{width:'20', height: '0', marginTop:'2em'}}>Администрация</p>
             </div>
           </div>
         </div>

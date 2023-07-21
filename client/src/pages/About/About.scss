@@ -10,10 +10,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0 50px rgb(171, 173, 0);
+    box-shadow: 0 0 25px rgb(171, 173, 0);
     border-radius: 3em;
     &-Title{
-        font-size: 2em;
+        // font-size: 2em;
     }
     &-Header{
         position: relative;
@@ -26,7 +26,7 @@
     &-Content{
         display: flex;
         flex-direction: column;
-        box-shadow: 0 0 50px rgb(171, 173, 0);
+        // box-shadow: 0 0 25px rgb(171, 173, 0);
         border-radius: 2em;
         width:98.4%;
         padding: 0.5em;
@@ -50,8 +50,11 @@
             &-H3{
                 font-size: 1.1em;
             }
+            &-H3 p{
+                margin: 0;
+            }
             &-Contacts{
-                box-shadow: 0 0 50px rgb(171, 173, 0);
+                box-shadow: inset 0 0 50px rgb(171, 173, 0);
                 margin: 0em 1em 1em 1em;
                 // border: 2px solid black;
                 width: 50%;
@@ -59,7 +62,7 @@
                 height: 95%;
             }
             &-Team{
-                box-shadow: 0 0 50px rgb(171, 173, 0);
+                box-shadow: inset 0 0 50px rgb(171, 173, 0);
                 margin: 0em 1em 1em 1em;
                 display: flex;
                 flex-direction: column;

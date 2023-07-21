@@ -6,6 +6,7 @@ import About from "../About/About";
 import Price from "../Price/Price";
 import Contacts from "../Contacts/Contacts";
 import { Link } from "react-router-dom";
+import Team from "../Team/Team";
 
 export default function Main({}) {
     // h2 всплывает на красивом фоне (рамка )
@@ -33,6 +34,7 @@ export default function Main({}) {
                 </div>
             </div>
             <About />
+            <Team />
             <Price />
             <Contacts />
         </div>
