@@ -19,23 +19,26 @@ export default function About({currentColorForImg}) {
   }
   
   return (
-      <div id='about' className="About">
+      <div className="About">
         <div className="About-Header">
           <h2 className='About-Title'>О нас</h2>
         </div>
         <div style={{background:`rgb${currentColorForImg}, 0.82)`}} className="About-Content">
           <div className="About-Content-Inform">
-            <h2 className="About-Content-Inform-H2" style={{textAlign:'center'}}>Наша команда 365events организована в 2022 году</h2>
-            <h2 className="About-Content-Inform-H2">Мы молодая и активная команда профессионалов своего дела!</h2>
-            <h2 className="About-Content-Inform-H2">Наша команда состоит из опытных организаторов, 
+            <p className="About-Content-Inform-H2" style={{textAlign:'center'}}>Наша команда 365events организована в 2022 году</p>
+            <p className="About-Content-Inform-H2">Мы молодая и активная команда профессионалов своего дела!</p>
+            <p className="About-Content-Inform-H2">Наша команда состоит из опытных организаторов, 
               которые готовы превратить вашу идею праздника в реальность. 
               Мы предлагаем индивидуальный подход к каждому клиенту, 
               чтобы создать мероприятие, которое отвечает всем требованиям и пожеланиям. 
               У нас есть уникальные и оригинальные идеи для каждого случая, 
-              чтобы сделать ваш праздник незабываемым.</h2>
+              чтобы сделать ваш праздник незабываемым.</p>
             
           </div>
-          <div className="About-Content-OtherInfo">
+          <div className='Rotate_Animation'>
+            <img src="./logo512.png" style={{width:'40%'}} alt="" />
+          </div>
+          {/* <div className="About-Content-OtherInfo">
             <div className="About-Content-OtherInfo-Contacts">
               <h3 className="About-Content-OtherInfo-H3">Наши контакты</h3>
               <h3 className="About-Content-OtherInfo-H3">Адресс:</h3>
@@ -51,7 +54,7 @@ export default function About({currentColorForImg}) {
               <p onClick={() => {clicklHanler('main')}} style={{width:'20', height: '0', marginTop:'2em'}}>Медиа</p>
               <p onClick={() => {clicklHanler('main')}} style={{width:'20', height: '0', marginTop:'2em'}}>Администрация</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
   )

@@ -4,22 +4,26 @@
 }
 @media screen and (min-width: 1280px) {
   :root {
-      --height-app: 100vh
+      --height-app: 100vh;
+      --shadow_box: 0 0 100px rgba(170, 173, 0, 0.2);
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   :root {
-      --height-app:100vh
+      --height-app:100vh;
+      --shadow_box: 0 0 100px rgba(170, 173, 0, 0.2);
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   :root {
-      --height-app:100vh
+      --height-app:100vh;
+      --shadow_box: 0 0 100px rgba(170, 173, 0, 0.2);
   }
 }
 @media screen and (max-width: 799px) {
   :root {
-      --height-app:80vh
+      --height-app:80vh;
+      --shadow_box: 0 0 50px rgba(170, 173, 0, 0.4);
   }
 }
 

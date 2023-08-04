@@ -92,7 +92,7 @@ export default function Team({ currentColorForImg, colorPuzzlePhoto }) {
     console.log(colorPuzzleForm);
 
     const settings = {
-        dots: true,
+        // dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -120,15 +120,15 @@ export default function Team({ currentColorForImg, colorPuzzlePhoto }) {
             style={{ background: `rgba${currentColorForImg}, 0.7)` }}
             className="Team"
         >
-            <h2 style={{ position: "absolute", top: "0" }}>Актёры</h2>
+            <h2 style={{position: "absolute", top: "0", fontSize:'var(--tittle_module_font_size)' }}>Артисты</h2>
             <div className="Team-Carousel">
                 <Slider {...settings}>
                 {images.map((el) => (
-                    <div className="Team-Carousel-Card" style={{ display:'flex', flexDirection:'row' }}>
-                        <img style={{ width: "45%" }} alt={el.name} src={el.source} />
+                    <div className="Team-Carousel-Card" style={{ display:'flex', flexDirection:'row', justifyContent:'center', width:'100%' }}>
+                        <img className="Image-Carousel" alt={el.name} src={el.source} />
                         <div className="Team-Carousel-Card-Name_And_Description">
-                            <h3>{el.name}</h3>
-                            <h5>{el.description}</h5>
+                            <h3 className="Team-Carousel-Card-Name_And_Description-H3">{el.name}</h3>
+                            <h5 className="Team-Carousel-Card-Name_And_Description-H5">{el.description}</h5>
                         </div>
                     </div>
                 ))}

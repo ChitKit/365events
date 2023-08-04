@@ -1,12 +1,46 @@
+@media screen and (min-width: 1280px) {
+    :root {
+        --height_content_price: 80vh;
+        --width_content_price: 70vw;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --height_content_price: 80vh;
+        --width_content_price: 70vw;
+    }
+  }
+  @media screen and (min-width: 800px) and (max-width: 1023px) {
+    :root {
+        --height_content_price: 80vh;
+        --width_content_price: 70vw;
+    }
+  }
+  @media screen and (max-width: 799px) {
+    :root {
+        --height_content_price: 65vh;
+        --width_content_price: 85vw;
+    }
+  }
+
 .Price{
     background:rgba(0, 0, 0, 0.534);
     color: rgb(255, 255, 0);
     z-index: 10;
-    width: 70vw;
-    height: 100vh;
-    margin: 10em;
+    width: var(--width_content_price);
+    height: var(--height_content_price);
+    margin: 9em;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 50px rgb(165, 194, 0);
-    border-radius: 3em;
+    box-shadow: var(--shadow_box);
+    border-radius: 2em 0 2em 0;
+    &-CardList::-webkit-scrollbar {
+        width: 10px;
+        // background-color: aqua;
+      }
+    &-CardList::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: goldenrod;
+        box-shadow: inset 0 0 8px rgb(255, 217, 0);
+    }
 }

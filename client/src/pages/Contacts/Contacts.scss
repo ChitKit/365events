@@ -1,14 +1,39 @@
+@media screen and (min-width: 1280px) {
+    :root {
+        --height_content_contacts: 80vh;
+        --width_content_contacts: 70vw;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --height_content_contacts: 80vh;
+        --width_content_contacts: 70vw;
+    }
+  }
+  @media screen and (min-width: 800px) and (max-width: 1023px) {
+    :root {
+        --height_content_contacts: 80vh;
+        --width_content_contacts: 70vw;
+    }
+  }
+  @media screen and (max-width: 799px) {
+    :root {
+        --height_content_contacts: 65vh;
+        --width_content_contacts: 85vw;
+    }
+  }
+
 .Contacts{
     background:rgba(0, 0, 0, 0.534);
     color: rgb(255, 255, 0);
     position: relative;
     z-index: 10;
-    width: 70vw;
-    height: 80vh;
-    margin: 10em;
+    width: var(--width_content_contacts);
+    height: var(--height_content_contacts);
+    margin: 0 9em 9em 9em;
     padding: 1em;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 50px rgb(217, 255, 0);
-    border-radius: 3em;
+    box-shadow: var(--shadow_box);
+    border-radius: 2em 0 2em 0;;
 }

@@ -9,21 +9,31 @@ import { Link } from "react-router-dom";
 import Team from "../Team/Team";
 
 export default function Main({}) {
+    const [openRecallMe, setOpenRecallMe] = useState(false)
     // h2 всплывает на красивом фоне (рамка )
     return (
         <div className="Application-Content">
             <div id="main" className="MainPage">
-                <h1 style={{ position: "absolute", top:'5%', zIndex: "2" }}
+                <div className="MainPageH1Div1">
+                    <br />
+                    <span>
+                    Агентство праздников
+                    </span>
+                </div>
+                {/* <h1 style={{ position: "absolute", top:'5%', zIndex: "2" }}
                     className="MainPageH1-Top">
                     Агентство праздников
-                </h1>
+                </h1> */}
                 <div className="MainPageH1Div">
-                    <h1
-                        style={{ position: "relative", zIndex: "2" }}
-                        className="MainPageH1-Logo"
-                    >
-                        365:events
-                    </h1>
+                    <br />
+                    <span>
+                        {/* <h1
+                            style={{ position: "relative", zIndex: "2" }}
+                            className="MainPageH1-Logo"
+                        > */}
+                            365:events
+                        {/* </h1> */}
+                    </span>
                 </div>
                 <div className="MainPageH2Div">
                     <div className="MainPageH2">
@@ -44,10 +54,15 @@ export default function Main({}) {
                     </div>
                 </div>
             </div>
+            <div id='about' className="AnchorIdAbout"></div>
             <About />
+            <div></div>
             <Team />
+            <div id='services' className="AnchorIdServices"></div>
             <Price />
+            <div id='contacts' className="AnchorIdContacts"></div>
             <Contacts />
+            {/* <div onClick={() => {setOpenRecallMe(!openRecallMe)}} className={openRecallMe ? "RecallMe_Active" : "RecallMe"}></div> */}
         </div>
     );
 }

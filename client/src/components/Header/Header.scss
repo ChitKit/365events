@@ -1,10 +1,28 @@
-:root {
-    --scrollbarBg: rgba(2, 142, 74, 1);
-    --scrollbarThumb: rgba(255, 255, 255, 0.8);
-    --scrollbarWidth: 18px;
-    --scrollbarBorder: 30px solid var(--scrollbarBg);
-    --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 8);
+@media screen and (min-width: 1280px) {
+  :root {
+    --li-margin:25px;
+    --logo_size: 4%;
   }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  :root {
+    --li-margin:25px;
+    --logo_size: 10%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  :root {
+    --li-margin:25px;
+    --logo_size: 10%;
+  }
+}
+@media screen and (max-width: 799px) {
+  :root {
+    --li-margin:12px;
+    --logo_size: 15%;
+  }
+}
+
 
 
 // .Header{
@@ -34,12 +52,26 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    &-logo{
+      width: var(--logo_size);
+      margin-right: 0;
+    }
+    &-Integrations{
+      position: absolute;
+      right: 2em;
+      display: flex;
+      flex-direction: row;
+    }
+    &-Integrations :only-child{
+      width: 50%;
+      // height: 40%;
+      margin-right: .5em;
+    }
     &-Ul{
-      margin-left: 15px;
       display: flex;
       &-Li{
         
-        margin: 30px;
+        margin: var(--li-margin);
       }
       &-Li a {
         cursor: pointer;
