@@ -8,9 +8,8 @@ import Contacts from "../Contacts/Contacts";
 import { Link } from "react-router-dom";
 import Team from "../Team/Team";
 
-export default function Main({}) {
-    const [openRecallMe, setOpenRecallMe] = useState(false)
-    // h2 всплывает на красивом фоне (рамка )
+export default function Main() {
+    
     return (
         <div className="Application-Content">
             <div id="main" className="MainPage">

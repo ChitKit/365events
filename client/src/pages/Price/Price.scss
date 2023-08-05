@@ -34,8 +34,12 @@
     flex-direction: column;
     box-shadow: var(--shadow_box);
     border-radius: 2em 0 2em 0;
+    &-CardList{
+      display: flex;
+      justify-content: center;
+    }
     &-CardList::-webkit-scrollbar {
-        width: 10px;
+        width: 4px;
         // background-color: aqua;
       }
     &-CardList::-webkit-scrollbar-thumb{

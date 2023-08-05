@@ -21,6 +21,7 @@
         --shadow-Block-Inset: inset 0px 0px 20px rgba(255, 238, 0, 0.459);
         --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
         --main-overflow: auto;
+        --background_image: url('../../../public//img/backgroundSpice.jpeg');
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -95,9 +96,14 @@
         --postiion_top_tittle: 10em;
         --postiion_bottom_tittle: 13em;
         --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        --background_image: url('../../../public//img/mobile_background_image.jpeg');
+        
     }
 }
 .AnchorIdAbout{
+  height: 8em;
+}
+.AnchorIdContacts{
   height: 8em;
 }
 .Application-Content{
@@ -105,12 +111,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../../../public//img/backgroundSpice.jpeg');
+    background-image: var(--background_image);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed, scroll;
-
 }
+
     
 .MainPage {
     position: relative;

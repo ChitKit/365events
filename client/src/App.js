@@ -6,10 +6,18 @@ import Main from './pages/Main/Main';
 import Header from './components/Header/Header';
 
 function App() {
+  const [firstLoadApp, setFirstLoadApp] = useState(false)
+  useEffect(() => {
+      if (firstLoadApp === false) {
+          setTimeout(() => {
+              setFirstLoadApp(true)
+          }, 3000);
+      }
+  }, [])
   return (
     <div className="App">
       {/* <NavBar currentImg={currentImg} currentColorForImg={currentColorForImg} /> */}
-      <Header />
+      <Header firstLoadApp={firstLoadApp} />
       <Routes>
         <Route path="/" element={<Main />} />
         {/* <Route path="/services" element={<Services currentColorForImg={currentColorForImg}/>} />

@@ -3,11 +3,10 @@ import React, { useEffect } from "react";
 import "./Header.scss";
 import { useState } from "react";
 
-export default function Header() {
+export default function Header({firstLoadApp}) {
     const [colorHeader, setColorHeader] = useState(null);
-    
     const [widthScreen, setWidthScreen] = useState(undefined);
-
+    console.log(firstLoadApp);
     useEffect(() => {
         if (widthScreen === undefined) {
             setWidthScreen(window.screen.width);
@@ -54,7 +53,7 @@ export default function Header() {
 
     return (
         <div
-            className="Header"
+            className={firstLoadApp ? "Header" : "Header_Hiden"}
             style={{
                 backgroundColor: colorHeader && colorHeader.background,
                 borderBottom: colorHeader && colorHeader.border,
