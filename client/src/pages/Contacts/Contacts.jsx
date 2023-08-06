@@ -36,15 +36,17 @@ export default function Contacts({currentColorForImg}) {
   return (
       <div className="Contacts">
           <h1 style={{fontSize:'var(--tittle_module_font_size)'}}>Контакты</h1>
-          <a target="_blank" href="https://vk.com/agency365">
-              <img src="/img/icons8-vk-50.png" alt="image_vk" />
-          </a>
-          <a
-              target="_blank"
-              href="https://wa.me/+79890490402?text=Здравствуйте, хочу заказать у вас праздник"
-          >
-              <img src="/img/icons8-whatsapp-50.png" alt="image_whatsapp" />
-          </a>
+          <div className="Contacts-Links">
+            <a target="_blank" href="https://vk.com/agency365">
+                <img src="/img/icons8-vk-50.png" alt="image_vk" />
+            </a>
+            <a
+                target="_blank"
+                href="https://wa.me/+79890490402?text=Здравствуйте, хочу заказать у вас праздник"
+            >
+                <img src="/img/icons8-whatsapp-50.png" alt="image_whatsapp" />
+            </a>
+          </div>
       </div>
   );
 }

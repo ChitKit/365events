@@ -36,4 +36,11 @@
     flex-direction: column;
     box-shadow: var(--shadow_box);
     border-radius: 2em 0 2em 0;;
+    &-Links{
+      display: flex;
+      justify-content: center;
+    }
+    &-Links a img:only-child{
+      margin: 10px;
+    }
 }
