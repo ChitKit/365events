@@ -9,8 +9,11 @@ import { Link } from "react-router-dom";
 import Team from "../Team/Team";
 
 export default function Main() {
+
+    
     
     return (
+        
         <div className="Application-Content">
             <div id="main" className="MainPage">
                 <div className="MainPageH1Div1">
