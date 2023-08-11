@@ -1,5 +1,6 @@
 @media screen and (min-width: 1280px) {
     :root {
+        --position_top: 15em;
         --font_color_main: #e7c862;
         --position_cupon_left: -25em;
         --position_cupon_bottom: 2em;
@@ -27,6 +28,7 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     :root {
+        --position_top: 9em;
         --font_color_main: #c9a97b;
         --text-sizeTextH1: 2.1em;
         --text-sizeTextH2: 1.4em;
@@ -54,6 +56,7 @@
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
     :root {
+        --position_top: 9em;
         --font_color_main: #c9a97b;
         --text-sizeTextH1: 1.6em;
         --text-sizeTextH2: 1.2em;
@@ -81,6 +84,7 @@
 }
 @media screen and (max-width: 799px) {
     :root {
+        --position_top: 15em;
         --font_color_main: #c9a97b;
         --position_cupon_left: -6em;
         --position_cupon_bottom: 2em;
