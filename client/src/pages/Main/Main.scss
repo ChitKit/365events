@@ -84,7 +84,7 @@
 }
 @media screen and (max-width: 799px) {
     :root {
-        --position_top: 20vh;
+        --position_top: 15em;
         --font_color_main: #c9a97b;
         --position_cupon_left: -6em;
         --position_cupon_bottom: 2em;
@@ -344,7 +344,7 @@ span :nth-child(1) {
 }
 .MainPageH2Div{
     position: relative;
-    top: 15em;
+    top: var(--position_top);
     display: flex;
     justify-content: center;
     align-items: center;
