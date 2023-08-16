@@ -41,7 +41,7 @@
 
 .About{
     background:rgba(0, 0, 0, 0.534);
-    color: rgb(255, 255, 0);
+    color: var(--font_color_app);
     position: relative;
     z-index: 10;
     width: var(--width_content);
@@ -121,53 +121,83 @@
     width:'100%';
     display:'flex';
     justify-content:'center';
+    transition-duration: 2000s;
     
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 20000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
+    // -webkit-animation-name: spin;
+    // -webkit-animation-duration: 20000ms;
+    // -webkit-animation-iteration-count: infinite;
+    // -webkit-animation-timing-function: linear;
 
-    -moz-animation-name: spin;
-    -moz-animation-duration: 20000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
+    // -moz-animation-name: spin;
+    // -moz-animation-duration: 20000ms;
+    // -moz-animation-iteration-count: infinite;
+    // -moz-animation-timing-function: linear;
 
-    -ms-animation-name: spin;
-    -ms-animation-duration: 20000ms;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
+    // -ms-animation-name: spin;
+    // -ms-animation-duration: 20000ms;
+    // -ms-animation-iteration-count: infinite;
+    // -ms-animation-timing-function: linear;
 
-    animation-name: spin;
-    animation-duration: 20000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    // animation-name: spin;
+    // animation-duration: 20000ms;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
 
-    @-ms-keyframes spin { 
-        from { 
-            -ms-transform: rotate(0deg); 
-        } to { 
-            -ms-transform: rotate(360deg); 
+    // @-ms-keyframes spin { 
+    //     from { 
+    //         -ms-transform: rotate(0deg); 
+    //     } to { 
+    //         -ms-transform: rotate(360deg); 
+    //     }
+    // }
+    // @-moz-keyframes spin { 
+    //     from { 
+    //         -moz-transform: rotate(0deg); 
+    //     } to { 
+    //         -moz-transform: rotate(360deg); 
+    //     }
+    // }
+    // @-webkit-keyframes spin { 
+    //     from { 
+    //         -webkit-transform: rotate(0deg); 
+    //     } to { 
+    //         -webkit-transform: rotate(360deg); 
+    //     }
+    // }
+    // @keyframes spin { 
+    //     from { 
+    //         transform: rotate(0deg); 
+    //         transform: scale(1); 
+    //     } to { 
+    //         transform: rotate(360deg); 
+    //         transform: scale(0.2); 
+    //     }
+    // }
+    &-Logo{
+        backface-visibility: visible !important;
+        animation: flip 2s ease infinite;
         }
-    }
-    @-moz-keyframes spin { 
-        from { 
-            -moz-transform: rotate(0deg); 
-        } to { 
-            -moz-transform: rotate(360deg); 
+        @keyframes flip {
+            0% {
+                transform: perspective(400px) rotateY(0);
+                animation-timing-function: ease-out;
+            }
+            40% {
+                transform: perspective(400px) translateZ(150px) rotateY(170deg);
+                animation-timing-function: ease-out;
+            }
+            50% {
+                transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+                animation-timing-function: ease-in;
+            }
+            80% {
+                transform: perspective(400px) rotateY(360deg) scale(.95);
+                animation-timing-function: ease-in;
+            }
+            100% {
+                transform: perspective(400px) scale(1);
+                animation-timing-function: ease-in;
+            }
         }
-    }
-    @-webkit-keyframes spin { 
-        from { 
-            -webkit-transform: rotate(0deg); 
-        } to { 
-            -webkit-transform: rotate(360deg); 
-        }
-    }
-    @keyframes spin { 
-        from { 
-            transform: rotate(0deg); 
-        } to { 
-            transform: rotate(360deg); 
-        }
-    }
+        
 }

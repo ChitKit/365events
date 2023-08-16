@@ -25,7 +25,7 @@
 
 .Contacts{
     background:rgba(0, 0, 0, 0.534);
-    color: rgb(255, 255, 0);
+    color: var(--font_color_app);
     position: relative;
     z-index: 10;
     width: var(--width_content_contacts);

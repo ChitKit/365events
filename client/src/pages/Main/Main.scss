@@ -1,7 +1,6 @@
 @media screen and (min-width: 1280px) {
     :root {
         --position_top: 20vh;
-        --font_color_main: #e7c862;
         --position_cupon_left: -25em;
         --position_cupon_bottom: 2em;
         --postiion_top_tittle: 5%;
@@ -21,7 +20,9 @@
         --borderRadius-divH2: 3rem;
         --main-Height: 100vh;
         --shadow-Block-Inset: inset 0px 0px 20px rgba(255, 238, 0, 0.459);
-        --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        // --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        --shadow-Block-OutSide: 0px 0px 20px #e7c862;
+        
         --main-overflow: auto;
         --background_image: url('../../../public//img/backgroundSpice.jpeg');
     }
@@ -29,7 +30,6 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     :root {
         --position_top: 20vh;
-        --font_color_main: #c9a97b;
         --text-sizeTextH1: 2.1em;
         --text-sizeTextH2: 1.4em;
         --width-mainpage: 80vw;
@@ -49,7 +49,8 @@
         --postiion_bottom_tittle: 10%;
         --position_cupon_left: -20em;
         --position_cupon_bottom: 2em;
-        --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        // --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        --shadow-Block-OutSide: 0px 0px 20px #e7c862;
         --background_image: url('../../../public//img/backgroundSpice.jpeg');
         --postiion_top_tittle: 5%;
     }
@@ -57,7 +58,6 @@
 @media screen and (min-width: 800px) and (max-width: 1023px) {
     :root {
         --position_top: 20vh;
-        --font_color_main: #c9a97b;
         --text-sizeTextH1: 1.6em;
         --text-sizeTextH2: 1.2em;
         --width-mainpage: 80vw;
@@ -77,7 +77,8 @@
         --postiion_bottom_tittle: 10%;
         --position_cupon_left: -15em;
         --position_cupon_bottom: 2em;
-        --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        // --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        --shadow-Block-OutSide: 0px 0px 20px #e7c862;
         --background_image: url('../../../public//img/backgroundSpice.jpeg');
         --postiion_top_tittle: 5%;
     }
@@ -85,7 +86,6 @@
 @media screen and (max-width: 799px) {
     :root {
         --position_top: 15em;
-        --font_color_main: #c9a97b;
         --position_cupon_left: -6em;
         --position_cupon_bottom: 2em;
         --text-sizeTextH1: 1.2em;
@@ -105,7 +105,8 @@
         --main-overflow: hidden;
         --postiion_top_tittle: 10em;
         --postiion_bottom_tittle: 13em;
-        --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        // --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+        --shadow-Block-OutSide: 0px 0px 20px #e7c862;
         --background_image: url('../../../public//img/mobile_background_image.jpeg');
         
     }
@@ -151,7 +152,7 @@
   justify-content: center;
   align-items: center;
   height: var(--height-divH1);
-  color: var(--font_color_main);
+  color: var(--font_color_app);
   text-align: center;
   transform: scale(0.94);
   animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -184,7 +185,7 @@ span :nth-child(1) {
     justify-content: center;
     align-items: center;
     height: var(--height-divH1);
-    color: var(--font_color_main);
+    color: var(--font_color_app);
     text-align: center;
     transform: scale(0.94);
     animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -351,7 +352,7 @@ span :nth-child(1) {
     height:var(--height-divH2);
     border-radius: var(--borderRadius-divH2);
     width: var(--width-divH2);
-    color: var(--font_color_main);
+    color: var(--font_color_app);
     &-Text{
         height: 5%;
         display: flex;

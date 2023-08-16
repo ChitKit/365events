@@ -58,7 +58,7 @@
 .Team{
     margin-top: 8em;
     background:rgba(0, 0, 0, 0.534);
-    color: rgb(255, 255, 0);
+    color: var(--font_color_app);
     position: relative;
     z-index: 10;
     width: var(--width_content_team);
@@ -102,11 +102,14 @@
     margin-left: 15px;
 }
 .slick-dots li button:before{
-    color: rgba(255, 255, 0, 0.63);
+    color: var(--font_color_app);
     font-size: 16px;
 }
+.slick-slider{
+    width: 103%;
+}
 .slick-dots li.slick-active button:before{
-    color: rgb(255, 255, 0);
+    color: var(--font_color_app);
 }
 .MemberTeamMainCard{
     margin-top: 1.5em;
