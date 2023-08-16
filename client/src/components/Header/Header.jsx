@@ -21,7 +21,7 @@ export default function Header({firstLoadApp}) {
     const listenScrollEvent = () => {
         window.scrollY > 10
             ? setColorHeader({
-                  background: "#1c0035",
+                  background: null,
                   border: "1px solid #ffff0078",
               })
             : setColorHeader({
@@ -55,7 +55,7 @@ export default function Header({firstLoadApp}) {
         <div
             className={firstLoadApp ? "Header" : "Header_Hiden"}
             style={{
-                backgroundColor: colorHeader && colorHeader.background,
+                backgroundColor: colorHeader && colorHeader.background !== null && colorHeader.background,
                 borderBottom: colorHeader && colorHeader.border,
                 // height
             }}

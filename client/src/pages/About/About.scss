@@ -6,6 +6,7 @@
         --height_content: 80vh;
         --width_content: 70vw;
         --position_rotate_logo: 0;
+        --logo_width_bouncing: 20%;
     }
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -16,6 +17,7 @@
         --height_content: 80vh;
         --width_content: 70vw;
         --position_rotate_logo: 0;
+        --logo_width_bouncing: 20%;
     }
   }
   @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -26,6 +28,7 @@
         --height_content: 80vh;
         --width_content: 70vw;
         --position_rotate_logo: 0px;
+        --logo_width_bouncing: 20%;
     }
   }
   @media screen and (max-width: 799px) {
@@ -36,6 +39,7 @@
         --height_content: 65vh;
         --width_content: 85vw;
         --position_rotate_logo: 50px;
+        --logo_width_bouncing: 30%;
     }
   }
 
@@ -176,6 +180,7 @@
     &-Logo{
         backface-visibility: visible !important;
         animation: flip 2s ease infinite;
+        width: var(--logo_width_bouncing);
         }
         @keyframes flip {
             0% {

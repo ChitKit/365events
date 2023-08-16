@@ -55,7 +55,7 @@ export default function About({ currentColorForImg }) {
                     </p>
                 </div>
                 <div className="Rotate_Animation">
-                    <img className="Rotate_Animation-Logo" src="./logo512.png" style={{ width: "30%" }} alt="" />
+                    <img className="Rotate_Animation-Logo" src="./logo512.png" alt="" />
                 </div>
                 {/* <div className="About-Content-OtherInfo">
             <div className="About-Content-OtherInfo-Contacts">
