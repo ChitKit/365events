@@ -10,7 +10,7 @@ import Team from "../Team/Team";
 
 export default function Main() {
 
-    
+
     
     return (
         
@@ -55,6 +55,7 @@ export default function Main() {
                             <span>.</span>
                     </div>
                 </div>
+            <a href="/" class="btn-flip" data-back="Заказать праздник" data-front="Заказать праздник"></a>
             </div>
             <div id='about' className="AnchorIdAbout"></div>
             <About />

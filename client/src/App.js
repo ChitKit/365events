@@ -31,6 +31,7 @@ function App() {
         <Route path="/administration" element={<Administration currentColorForImg={currentColorForImg}/>} /> */}
         {/* <Route path="/developers" element={<Developers currentColorForImg={currentColorForImg}/>} /> */}
       </Routes>
+      
     </div>
     
   );
