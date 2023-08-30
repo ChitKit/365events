@@ -9,9 +9,15 @@ import { Link } from "react-router-dom";
 import Team from "../Team/Team";
 
 export default function Main() {
+    const [loadDescription, setLoadDescription] = useState(false)
 
-
+    useEffect(() => {
+        setTimeout(() => {
+            setLoadDescription(true)
+        }, 2500);
+    }, [])
     
+
     return (
         
         <div className="Application-Content">
@@ -38,28 +44,30 @@ export default function Main() {
                     </span>
                 </div>
                 <div className="MainPageH2Div">
-                    <div className="MainPageH2">
-                            <br />
-                            <span>Доставляем </span>
-                            <span> с </span>
-                            <span> любовью </span>
-                            <span> самые </span>
-                            <span> тёплые </span>
-                            <span> и </span>
-                            <span> волшебные </span>
-                            <span> праздники </span>
-                            <span> 365 </span>
-                            <span> дней </span>
-                            <span> в </span>
-                            <span> году </span>
-                            <span>.</span>
-                    </div>
+                    {loadDescription &&
+                        <div className="MainPageH2">
+                                <br />
+                                <span>Доставляем </span>
+                                <span> с </span>
+                                <span> любовью </span>
+                                <span> самые </span>
+                                <span> тёплые </span>
+                                <span> и </span>
+                                <span> волшебные </span>
+                                <span> праздники </span>
+                                <span> 365 </span>
+                                <span> дней </span>
+                                <span> в </span>
+                                <span> году </span>
+                                <span>.</span>
+                        </div>
+                    }
                 </div>
-            <a href="/" class="btn-flip" data-back="Заказать праздник" data-front="Заказать праздник"></a>
+            {/* <a href="/" class="btn-flip" data-back="Заказать праздник" data-front="Заказать праздник"></a> */}
             </div>
             <div id='about' className="AnchorIdAbout"></div>
             <About />
-            <div></div>
+            <div id='team' className="AnchorIdTeam"></div>
             <Team />
             <div id='services' className="AnchorIdServices"></div>
             <Price />

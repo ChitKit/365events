@@ -5,21 +5,9 @@ import { useState } from "react";
 export default function About({ currentColorForImg }) {
     const clicklHanler = (path) => {
         console.log(path);
-        if (path === "main") {
+        if (path === "team") {
             document
-                .querySelector("#main")
-                .scrollIntoView({ behavior: "smooth" });
-        } else if (path === "about") {
-            document
-                .querySelector("#about")
-                .scrollIntoView({ behavior: "smooth" });
-        } else if (path === "price") {
-            document
-                .querySelector("#services")
-                .scrollIntoView({ behavior: "smooth" });
-        } else if (path === "contacts") {
-            document
-                .querySelector("#contacts")
+                .querySelector("#team")
                 .scrollIntoView({ behavior: "smooth" });
         }
     };
@@ -27,7 +15,7 @@ export default function About({ currentColorForImg }) {
     return (
         <div className="About">
             <div className="About-Header">
-                <h2 className="About-Title">О нас</h2>
+                <h2 className="About-Title">Познакомимся?</h2>
             </div>
             <div
                 style={{ background: `rgb${currentColorForImg}, 0.82)` }}
@@ -56,6 +44,11 @@ export default function About({ currentColorForImg }) {
                 </div>
                 <div className="Rotate_Animation">
                     <img className="Rotate_Animation-Logo" src="./logo512.png" alt="" />
+                </div>
+                <h4>Наша команда</h4>
+                <div className="arrow-4" onClick={() => {clicklHanler("team")}}>
+                    <div className="arrow-4-left"></div>
+                    <div className="arrow-4-right"></div>
                 </div>
                 {/* <div className="About-Content-OtherInfo">
             <div className="About-Content-OtherInfo-Contacts">

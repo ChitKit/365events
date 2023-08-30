@@ -70,10 +70,28 @@
     box-shadow: var(--shadow_box);
     border-radius: 2em 0 2em 0;
     &-Carousel{
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 10em;
-        width: 85%;
+        width: 95%;
         height: 90%;
         max-height: 50%;
+        &-Card_Window{
+            display: flex;
+            flex-direction: column;
+            width: 17%;
+            margin: .5em 2em;
+            transition: 1s;
+        }
+        &-Card_Window:hover{
+            cursor: pointer;
+            img{
+                width: 105%;
+                box-shadow: 10px 10px 40px var(--font_color_app);
+                transition: .5s;
+            }
+            transition: 1s;
+        }
         &-Card{
             display: flex;
             flex-direction: var(--orientation_carousel_card);
