@@ -82,18 +82,18 @@ const images = [
       "Есть настроение - ТВОРЮ! 🤩🎉 Нет настроения - вытворяю!😈😅"`,
     },
     //! ФОТО-ВИДЕО
-    // {
-    //     source: "/imgTeam/Victoriya_photograph1.jpg",
-    //     role: 'Фотограф',
-    //     name: "Виктория",
-    //     description: "Фотограф",
-    // },
-    // {
-    //     source: "/imgTeam/Sergey_video1.jpg",
-    //     role: 'Видеограф',
-    //     name: "Сергей",
-    //     description: "Видеограф",
-    // },
+    {
+        source: "/imgTeam/Victoriya_photograph1.jpg",
+        role: 'Фотограф',
+        name: "Виктория",
+        description: "Фотограф",
+    },
+    {
+        source: "/imgTeam/Sergey_video1.jpg",
+        role: 'Видеограф',
+        name: "Сергей",
+        description: "Видеограф",
+    },
 ];
 export default function Team({ currentColorForImg }) {
 
@@ -133,7 +133,7 @@ export default function Team({ currentColorForImg }) {
         <div
             className="Team"
         >
-            <h2 style={{position: "absolute", top: "0", fontSize:'var(--tittle_module_font_size)', marginBottom:'0'}}>Артисты</h2>
+            <h2 style={{position: "absolute", top: "0", fontSize:'var(--tittle_module_font_size)', marginBottom:'0'}}>Команда 365:events</h2>
             <div className="Team-Carousel">
                 {images && 
                     images.map((el) => (

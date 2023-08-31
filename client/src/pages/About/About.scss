@@ -79,7 +79,7 @@
             text-align: left;
             // border: 2px solid black;
             width: 98%;
-            height: 50%;
+            height: 40%;
             &-H2{
                 font-size: var(--text-size-About-Content);
             }
@@ -211,16 +211,20 @@
 
 .arrow-4 {
     margin-top: 1em;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 30px;
+    &-main{
+        display: flex;
+        cursor: pointer;
+        width: 10%;
+    }
 }
 .arrow-4-left {
-    position: absolute;
+    // position: absolute;
     left: 45.7%;
-    background-color: transparent;
+    // background-color: transparent;
     background-color: var(--font_color_app);
     width: 40px;
     height: 5px;
@@ -230,27 +234,32 @@
     border-radius: 4px;
     transition: .5s;
 }
-.arrow-4:hover .arrow-4-left {
+.arrow-4-main:hover .arrow-4-left {
     box-shadow: 0 0 10px goldenrod;
     height: 10px;
     transition: .5s;
 }
  
-.arrow-4-right {
-    position: absolute;
+.arrow-4-button {
+    position: sticky;
+    cursor: pointer;
     left: 49.3%;
-    background-color: transparent;
-    background-color: var(--font_color_app);
+    // background-color: transparent;
+    border-right: 6px solid var(--font_color_app);
+    border-bottom: 6px solid var(--font_color_app);
+    // background-color: var(--font_color_app);
     width: 40px;
-    height: 5px;
+    height: 40px;
     display: block;
-    transform: rotate(-35deg);
+    transform: rotate(45deg);
     float: right;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: .5s;
 }
-.arrow-4:hover .arrow-4-right {
-    box-shadow: 0 0 10px goldenrod;
-    height: 10px;
-    transition: .5s;
+.arrow-4-button:hover {
+    box-shadow: 0 0 20px goldenrod;
+    transition: 1s;
+    border-radius: 6px;
+    border-right: 8px solid goldenrod;
+    border-bottom: 8px solid goldenrod;
 }
