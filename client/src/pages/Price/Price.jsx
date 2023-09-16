@@ -3,6 +3,17 @@ import MainLayout from '../../Layout/MainLayout'
 import './Price.scss'
 
 export default function Price() {
+
+    const [category, setCategory] = useState(null)
+    const categoryList = [
+        {path:'./img/category/Artist.jpeg', category:'Артисты'},
+        {path:'./img/category/Programms.jpeg', category:'Программы'},
+        {path:'./img/category/MasterClass.jpeg', category:'Мастер классы'},
+        {path:'./img/category/NewYear.jpeg', category:'Новый год'},
+        {path:'./img/category/OtherServices.jpeg', category:'Другие услуги'},
+        {path:'./img/category/ComingSoon.jpeg', category:'Готовим'},
+    ]
+
   const imgList = [
     './img/services/a1.jpg', './img/services/a2.jpg', './img/services/a3.jpg', './img/services/a4.jpg', './img/services/m1.jpg', './img/services/m2.jpg', './img/services/m3.jpg', './img/services/m4.jpg',
     './img/services/m5.jpg', './img/services/m6.jpg', './img/services/mk1.jpg', './img/services/mk2.jpg', './img/services/mk3.jpg', './img/services/mk4.jpg', './img/services/mk5.jpg', './img/services/mk6.jpg',
@@ -13,15 +24,36 @@ export default function Price() {
 
     return (
         <div className="Price">
-            <h1 style={{fontSize:'var(--tittle_module_font_size)'}}>Наши услуги</h1>
-            <div className='Price-CardList' style={{display:'flex', width:'100%', flexWrap:'wrap', padding:'1em', maxHeight:'80%', overflowY:'auto'}}>
-                {imgList && imgList.map((el) => {
-                    return (
-                        <img style={{width:'16%', margin:'1em'}} src={el} alt="" />
-                    )
+            {category !== null &&
+                <button style={{position:'absolute', left:'20%'}} onClick={() => {setCategory(null)}}>X</button>
+            }
+            <h1 style={{fontSize:'var(--tittle_module_font_size)'}}>
+                {category === null ?
+                'Наши услуги'
+                :
+                category
                 }
-                )}
-            </div>
+            </h1>
+            {category === null ?
+                <div className="Price-CategoryList">
+                    <>    
+                        {categoryList && categoryList.map((el) => {
+                            return (
+                                <img onClick={() => {setCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
+                                )
+                        })}
+                    </>
+                </div>
+                :
+                <div className='Price-CardList' style={{display:'flex', width:'100%', flexWrap:'wrap', maxHeight:'68%', overflowY:'auto'}}>
+                    {imgList && imgList.map((el) => {
+                        return (
+                            <img style={{width:'16%', margin:'1em'}} src={el} alt="" />
+                        )
+                    }
+                    )}
+                </div>
+                }
         </div>
     )
 }
