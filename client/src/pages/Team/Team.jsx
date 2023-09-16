@@ -104,6 +104,7 @@ export default function Team({ currentColorForImg }) {
     const [pause, setPause] = useState(false);
     const [colorPuzzleForm, setColorPuzzleForm] = useState(undefined);
     console.log(colorPuzzleForm);
+    const [personalCardData, setPersonalCardData] = useState(null);
 
     const settings = {
         // dots: true,
@@ -133,11 +134,15 @@ export default function Team({ currentColorForImg }) {
         <div
             className="Team"
         >
-            <h2 style={{position: "absolute", top: "0", fontSize:'var(--tittle_module_font_size)', marginBottom:'0'}}>Команда 365:events</h2>
+            <h2 style={{position: "absolute", top: "0", fontSize:'var(--tittle_module_font_size)', marginBottom:'0'}}>
+                Команда 365:events
+            </h2>
             <div className="Team-Carousel">
                 {images && 
                     images.map((el) => (
-                        <div className="Team-Carousel-Card_Window">
+                        <div className="Team-Carousel-Card_Window"
+                            onClick={() => {setPersonalCardData(el)}}
+                        >
                             <img style={{width:'100%'}} alt={el.name} src={el.source} />
                             <div >
                                 <h6 >{el.role}</h6>
@@ -157,6 +162,16 @@ export default function Team({ currentColorForImg }) {
                 ))}
                 </Slider> */}
             </div>
+            {personalCardData &&
+                <div className={personalCardData !== null ? "Team-Personal_Card" : "Team-Personal_Card_Hide"}>
+                    <button onClick={() => {setPersonalCardData(null)}} className="Team-Personal_Card-Button_Close">X</button>
+                    <img style={{width:'50%', borderRadius: '1em'}} src={personalCardData.source} alt={personalCardData.name} />
+                    <div className="Team-Personal_Card-Info">
+                        <p>{personalCardData.name}</p>
+                        <p>{personalCardData.description}</p>
+                    </div>
+                </div>
+            }
         </div>
     );
 }

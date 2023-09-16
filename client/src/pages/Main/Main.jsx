@@ -50,11 +50,13 @@ export default function Main() {
                                 <span>Доставляем </span>
                                 <span> с </span>
                                 <span> любовью </span>
+                                <br />
                                 <span> самые </span>
                                 <span> тёплые </span>
                                 <span> и </span>
                                 <span> волшебные </span>
                                 <span> праздники </span>
+                                <br />
                                 <span> 365 </span>
                                 <span> дней </span>
                                 <span> в </span>
