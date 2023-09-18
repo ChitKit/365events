@@ -35,6 +35,16 @@
     align-items: center;
     box-shadow: var(--shadow_box);
     border-radius: 2em 0 2em 0;
+    &-Button_Close_Category{
+      width: 2%;
+      margin-top: 2em;
+      transition: .2s;
+    }
+    &-Button_Close_Category:hover{
+      cursor: pointer;
+      width: 2.2%;
+      transition: .2s;
+    }
     &-CategoryList{
       width: 80%;
       display: flex;
@@ -42,12 +52,12 @@
       justify-content: center;
       &-Card{
         width: 20%;
-        margin: .5em 2em;
+        margin: 2em 2em;
         transition: 1s;
       }
       &-Card:hover{
         cursor: pointer;
-        margin: .2em 3.1em;
+        margin: 2em 3.1em;
         width: 21%;
         box-shadow: 5px 5px 20px var(--font_color_app);
         transition: 1s;

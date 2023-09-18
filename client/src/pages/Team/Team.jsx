@@ -103,8 +103,15 @@ export default function Team({ currentColorForImg }) {
     const [mousedOver, setMousedOver] = useState(false);
     const [pause, setPause] = useState(false);
     const [colorPuzzleForm, setColorPuzzleForm] = useState(undefined);
-    console.log(colorPuzzleForm);
     const [personalCardData, setPersonalCardData] = useState(null);
+    const [viewCard, setViewCard] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setViewCard(!viewCard)
+        }, 200);
+    }, [personalCardData])
+    
 
     const settings = {
         // dots: true,
@@ -163,10 +170,10 @@ export default function Team({ currentColorForImg }) {
                 </Slider> */}
             </div>
             {personalCardData &&
-                <div className={personalCardData !== null ? "Team-Personal_Card" : "Team-Personal_Card_Hide"}>
-                    <button onClick={() => {setPersonalCardData(null)}} className="Team-Personal_Card-Button_Close">X</button>
-                    <img style={{width:'50%', borderRadius: '1em'}} src={personalCardData.source} alt={personalCardData.name} />
-                    <div className="Team-Personal_Card-Info">
+                <div className={viewCard ? "Team-Personal_Card" : "Team-Personal_Card_Hide"}>
+                    <div onClick={() => {setPersonalCardData(null)}} className={viewCard ? "Team-Personal_Card-Button_Close" : "Team-Personal_Card-Button_Close_Hide"}>X</div>
+                    <img style={{width:'60%', height:'60%', borderRadius: '1em'}} src={personalCardData.source} alt={personalCardData.name} />
+                    <div className={viewCard ? "Team-Personal_Card-Info" : "Team-Personal_Card-Info_Hide"}>
                         <p>{personalCardData.name}</p>
                         <p>{personalCardData.description}</p>
                     </div>

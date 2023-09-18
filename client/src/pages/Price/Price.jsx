@@ -5,10 +5,12 @@ import './Price.scss'
 export default function Price() {
 
     const [category, setCategory] = useState(null)
-    const categoryList = [
+    const categoryListFirst = [
         {path:'./img/category/Artist.jpeg', category:'Артисты'},
         {path:'./img/category/Programms.jpeg', category:'Программы'},
         {path:'./img/category/MasterClass.jpeg', category:'Мастер классы'},
+    ]
+    const categoryListSecond = [
         {path:'./img/category/NewYear.jpeg', category:'Новый год'},
         {path:'./img/category/OtherServices.jpeg', category:'Другие услуги'},
         {path:'./img/category/ComingSoon.jpeg', category:'Готовим'},
@@ -25,7 +27,7 @@ export default function Price() {
     return (
         <div className="Price">
             {category !== null &&
-                <button style={{position:'absolute', left:'20%'}} onClick={() => {setCategory(null)}}>X</button>
+                <img src='/IconBack.png' alt='buttonBack' className='Price-Button_Close_Category' style={{position:'absolute', left:'20%'}} onClick={() => {setCategory(null)}} />
             }
             <h1 style={{fontSize:'var(--tittle_module_font_size)'}}>
                 {category === null ?
@@ -37,7 +39,12 @@ export default function Price() {
             {category === null ?
                 <div className="Price-CategoryList">
                     <>    
-                        {categoryList && categoryList.map((el) => {
+                        {categoryListFirst && categoryListFirst.map((el) => {
+                            return (
+                                <img onClick={() => {setCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
+                                )
+                        })}
+                        {categoryListSecond && categoryListSecond.map((el) => {
                             return (
                                 <img onClick={() => {setCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
                                 )
