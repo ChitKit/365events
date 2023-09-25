@@ -14,12 +14,11 @@ export default function Main() {
     useEffect(() => {
         setTimeout(() => {
             setLoadDescription(true)
-        }, 2500);
+        }, 5500);
     }, [])
     
 
     return (
-        
         <div className="Application-Content">
             <div id="main" className="MainPage">
                 <div className="MainPageH1Div1">

@@ -45,12 +45,14 @@ export default function About({ currentColorForImg }) {
                 <div className="Rotate_Animation">
                     <img className="Rotate_Animation-Logo" src="./logo512.png" alt="" />
                 </div>
-                <h4>Наша команда</h4>
-                <div className="arrow-4">
-                    {/* <div className="arrow-4-main" onClick={() => {clicklHanler("team")}}> */}
-                        {/* <div className="arrow-4-left"></div> */}
-                        <div className="arrow-4-button" onClick={() => {clicklHanler("team")}}></div>
-                    {/* </div> */}
+                <div className="Go_To_Team">
+                    <h4>Наша команда</h4>
+                    <div className="arrow-4">
+                        {/* <div className="arrow-4-main" onClick={() => {clicklHanler("team")}}> */}
+                            {/* <div className="arrow-4-left"></div> */}
+                            <div className="arrow-4-button" onClick={() => {clicklHanler("team")}}></div>
+                        {/* </div> */}
+                    </div>
                 </div>
                 {/* <div className="About-Content-OtherInfo">
             <div className="About-Content-OtherInfo-Contacts">

@@ -34,11 +34,21 @@
       --shadow_box: 20px 20px 10x #e7c8623b;
   }
 }
+.App_Intro{
+  background-color: #191a22f9;
+  overflow: hidden;
+  &-Intro_Logo{
+    width: 100vw;
+    height: 99.3vh;
+    overflow: hidden;
+  }
 
+}
 .App {
   scroll-behavior: smooth;
   text-align: center;
   height: var(--height-app);
   font-family: ArialRound;
   width: 100%;
+  // overflow-x: hidden;
 }

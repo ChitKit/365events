@@ -6,8 +6,13 @@ import Main from './pages/Main/Main';
 import Header from './components/Header/Header';
 
 function App() {
+  const [intro, setIntro] = useState(false);
   const [firstLoadApp, setFirstLoadApp] = useState(false)
   useEffect(() => {
+    
+    setTimeout(() => {
+        setIntro(true)
+    }, 2000);
       if (firstLoadApp === false) {
           setTimeout(() => {
               setFirstLoadApp(true)
@@ -15,6 +20,12 @@ function App() {
       }
   }, [])
   return (
+    <>
+    {intro === false ?
+    <div className='App_Intro'>
+      <img src='./video/intro.gif' className='Intro_Logo' alt='inro'></img>
+    </div>
+    :
     <div className="App">
       {/* <NavBar currentImg={currentImg} currentColorForImg={currentColorForImg} /> */}
       <Header firstLoadApp={firstLoadApp} />
@@ -33,8 +44,9 @@ function App() {
       </Routes>
       
     </div>
-    
-  );
+    }
+  </>
+  )
 }
 
 export default App;

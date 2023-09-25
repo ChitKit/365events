@@ -5,6 +5,8 @@ import './Price.scss'
 export default function Price() {
 
     const [category, setCategory] = useState(null)
+    const [categoryPhoto, setCategoryPhoto] = useState([])
+
     const categoryListFirst = [
         {path:'./img/category/Artist.jpeg', category:'Артисты'},
         {path:'./img/category/Programms.jpeg', category:'Программы'},
@@ -16,13 +18,43 @@ export default function Price() {
         {path:'./img/category/ComingSoon.jpeg', category:'Готовим'},
     ]
 
-  const imgList = [
-    './img/services/a1.jpg', './img/services/a2.jpg', './img/services/a3.jpg', './img/services/a4.jpg', './img/services/m1.jpg', './img/services/m2.jpg', './img/services/m3.jpg', './img/services/m4.jpg',
-    './img/services/m5.jpg', './img/services/m6.jpg', './img/services/mk1.jpg', './img/services/mk2.jpg', './img/services/mk3.jpg', './img/services/mk4.jpg', './img/services/mk5.jpg', './img/services/mk6.jpg',
-    './img/services/mk7.jpg', './img/services/mk8.jpg', './img/services/mk9.jpg', './img/services/mk10.jpg', './img/services/mk11.jpg', './img/services/mk12.jpg', './img/services/mk13.jpg', './img/services/mk14.jpg',
-    './img/services/s1.jpg', './img/services/s2.jpg', './img/services/s3.jpg', './img/services/v1.jpg', './img/services/v2.jpg', './img/services/v3.jpg', './img/services/w1.jpg', './img/services/w2.jpg',
-    './img/services/w3.jpg', './img/services/w4.jpg', './img/services/w5.jpg', './img/services/w6.jpg', './img/services/w7.jpg', './img/services/w8.jpg', './img/services/w9.jpg'
-]
+    const programms = [ 
+        './img/Services/Programms/BirthdDay.jpeg', './img/Services/Programms/DJ.jpeg', './img/Services/Programms/Illusions.jpeg', 
+        './img/Services/Programms/InteractiveSpectacle.jpeg', './img/Services/Programms/KidOut.jpeg', './img/Services/Programms/Quest.jpeg', 
+        './img/Services/Programms/Quiz.jpeg', './img/Services/Programms/Show.jpeg', './img/Services/Programms/ShowMan.jpeg',
+    ]
+    const newYear = [
+        './img/Services/NewYear/DedMoroz.jpeg'
+    ]
+
+    const forSell = [
+        './img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg', './img/Services/ForSell/BentaCake.jpeg', './img/Services/ForSell/CakePops2.jpeg', 
+        './img/Services/ForSell/PhotoAndVideo.jpeg', './img/Services/ForSell/PhotoZone.jpeg', './img/Services/ForSell/Pinyata.jpeg', './img/Services/ForSell/Pryaniki.jpeg'
+    ]
+
+    const imgMK = [
+        './img/Services/MK/CakePops.jpeg', './img/Services/MK/CatchSleep.jpeg', './img/Services/MK/Capitoshki.jpeg', 
+        './img/Services/MK/ClothDecoration.jpeg', './img/Services/MK/Florarium.jpeg', './img/Services/MK/Pryaniki2.jpeg', 
+        './img/Services/MK/SinelnayaRipe.jpeg', './img/Services/MK/Slime.jpeg', './img/Services/MK/Tvisting.jpeg'
+    ]
+
+    const handlerChoiceCategory = (category) => {
+        setCategory(category)
+
+        if (category === 'Артисты') {
+            setCategoryPhoto()
+        } else if (category === 'Программы') {
+            setCategoryPhoto(programms)
+        } else if (category === 'Мастер классы') {
+            setCategoryPhoto(imgMK)
+        } else if (category === 'Новый год') {
+            setCategoryPhoto(newYear)
+        } else if (category === 'Другие услуги') {
+            setCategoryPhoto(forSell)
+        } else if (category === 'Готовим') {
+            setCategoryPhoto()
+        }
+    }
 
     return (
         <div className="Price">
@@ -41,19 +73,19 @@ export default function Price() {
                     <>    
                         {categoryListFirst && categoryListFirst.map((el) => {
                             return (
-                                <img onClick={() => {setCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
+                                <img onClick={() => {handlerChoiceCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
                                 )
                         })}
                         {categoryListSecond && categoryListSecond.map((el) => {
                             return (
-                                <img onClick={() => {setCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
+                                <img onClick={() => {handlerChoiceCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
                                 )
                         })}
                     </>
                 </div>
                 :
                 <div className='Price-CardList' style={{display:'flex', width:'100%', flexWrap:'wrap', maxHeight:'68%', overflowY:'auto'}}>
-                    {imgList && imgList.map((el) => {
+                    {categoryPhoto && categoryPhoto.map((el) => {
                         return (
                             <img style={{width:'16%', margin:'1em'}} src={el} alt="" />
                         )
