@@ -42,15 +42,18 @@ export default function About({ currentColorForImg }) {
                         праздник незабываемым.
                     </p>
                 </div>
-                <div className="Rotate_Animation">
+                
+                {/* <div className="Rotate_Animation">
                     <img className="Rotate_Animation-Logo" src="./logo512.png" alt="" />
-                </div>
+                </div> */}
                 <div className="Go_To_Team">
                     <h4>Наша команда</h4>
-                    <div className="arrow-4">
+                    <div className="arrow-4" onClick={() => {clicklHanler("team")}}>
+                    <div class="arrow arrow-first"></div>
+                    <div class="arrow arrow-second"></div>  
                         {/* <div className="arrow-4-main" onClick={() => {clicklHanler("team")}}> */}
                             {/* <div className="arrow-4-left"></div> */}
-                            <div className="arrow-4-button" onClick={() => {clicklHanler("team")}}></div>
+                            {/* <div className="arrow-4-button" onClick={() => {clicklHanler("team")}}></div> */}
                         {/* </div> */}
                     </div>
                 </div>

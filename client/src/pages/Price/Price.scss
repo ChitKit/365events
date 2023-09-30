@@ -79,16 +79,21 @@
       }
     }
     &-CardList{
+      height: 100%;
       display: flex;
       justify-content: center;
+      align-items: center;
       &-CardServices{
-        width: 16%;
+        width: 18%;
+        height: auto;
         margin: 1em;
         transition: 1s;
+        border-radius: 2em 0;
         &:hover{
           cursor: pointer;
+          border-radius: 0 2em;
           box-shadow: 5px 5px 20px var(--font_color_app);
-          width: 16.2%;
+          width: 18.4%;
           margin: 0.8em;
           transition: 1s;
         }
