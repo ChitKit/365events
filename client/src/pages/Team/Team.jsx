@@ -170,10 +170,10 @@ export default function Team({ currentColorForImg }) {
                 </Slider> */}
             </div>
             {personalCardData &&
-                <div className={viewCard ? "Team-Personal_Card" : "Team-Personal_Card_Hide"}>
-                    <div onClick={() => {setPersonalCardData(null)}} className={viewCard ? "Team-Personal_Card-Button_Close" : "Team-Personal_Card-Button_Close_Hide"}>X</div>
-                    <img style={{width:'60%', height:'60%', borderRadius: '1em'}} src={personalCardData.source} alt={personalCardData.name} />
-                    <div className={viewCard ? "Team-Personal_Card-Info" : "Team-Personal_Card-Info_Hide"}>
+                <div className="Team-Personal_Card">
+                    <div onClick={() => {setPersonalCardData(null)}} className="Team-Personal_Card-Button_Close">X</div>
+                    <img style={{width:'60%', height:'60%', borderRadius: '2em 0em'}} src={personalCardData.source} alt={personalCardData.name} />
+                    <div className="Team-Personal_Card-Info">
                         <p>{personalCardData.name}</p>
                         <p>{personalCardData.description}</p>
                     </div>

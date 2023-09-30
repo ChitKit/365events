@@ -6,6 +6,7 @@ export default function Price() {
 
     const [category, setCategory] = useState(null)
     const [categoryPhoto, setCategoryPhoto] = useState([])
+    const [servicesCardData, setServicesCardData] = useState(null)
 
     const categoryListFirst = [
         {path:'./img/category/Artist.jpeg', category:'Артисты'},
@@ -18,31 +19,50 @@ export default function Price() {
         {path:'./img/category/ComingSoon.jpeg', category:'Готовим'},
     ]
 
+    const artists = [
+        {img:'./img/Services/Artists/Illusions.jpeg', name:'Иллюзионисты', description:''},
+        {img:'./img/Services/Artists/ShowMan.jpeg', name:'Ведущие', description:''},
+        {img:'./img/Services/Artists/Artist_Services.jpeg', name:'Артисты', description:''},
+    ]
     const programms = [ 
-        './img/Services/Programms/BirthdDay.jpeg', './img/Services/Programms/DJ.jpeg', './img/Services/Programms/Illusions.jpeg', 
-        './img/Services/Programms/InteractiveSpectacle.jpeg', './img/Services/Programms/KidOut.jpeg', './img/Services/Programms/Quest.jpeg', 
-        './img/Services/Programms/Quiz.jpeg', './img/Services/Programms/Show.jpeg', './img/Services/Programms/ShowMan.jpeg',
+        {img:'./img/Services/Programms/BirthdDay.jpeg', name:'Дни рождения', description:''},
+        {img:'./img/Services/Programms/KidOut.jpeg', name:'Детские выпускные', description:''},
+        {img:'./img/Services/Programms/Quest.jpeg', name:'Квесты', description:''},
+        {img:'./img/Services/Programms/Quiz.jpeg', name:'Квизы', description:''},
+        {img:'./img/Services/Programms/Show.jpeg', name:'Шоу', description:''},
     ]
     const newYear = [
-        './img/Services/NewYear/DedMoroz.jpeg'
+        {img:'./img/Services/NewYear/DedMoroz.jpeg', name:'Дед Мороз и Снегурочка', description:''},
+        {img:'./img/Services/NewYear/InteractiveSpectacle.jpeg', name:'Интерактивный спектакль', description:''},
     ]
 
     const forSell = [
-        './img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg', './img/Services/ForSell/BentaCake.jpeg', './img/Services/ForSell/CakePops2.jpeg', 
-        './img/Services/ForSell/PhotoAndVideo.jpeg', './img/Services/ForSell/PhotoZone.jpeg', './img/Services/ForSell/Pinyata.jpeg', './img/Services/ForSell/Pryaniki.jpeg'
+        {img:'./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg', name:'Аквагрим и Бьюти-бар', description:''},
+        {img:'./img/Services/ForSell/BentaCake.jpeg', name:'Бенто-торты', description:''},
+        {img:'./img/Services/ForSell/CakePops2.jpeg', name:'Кейк-попсы', description:''},
+        {img:'./img/Services/ForSell/PhotoAndVideo.jpeg', name:'Фото и Видео услуги', description:''},
+        {img:'./img/Services/ForSell/PhotoZone.jpeg', name:'Фотозона', description:''},
+        {img:'./img/Services/ForSell/Pinyata.jpeg', name:'Пиньята', description:''},
+        {img:'./img/Services/ForSell/Pryaniki.jpeg', name:'Архангельские пряники', description:''},
     ]
 
     const imgMK = [
-        './img/Services/MK/CakePops.jpeg', './img/Services/MK/CatchSleep.jpeg', './img/Services/MK/Capitoshki.jpeg', 
-        './img/Services/MK/ClothDecoration.jpeg', './img/Services/MK/Florarium.jpeg', './img/Services/MK/Pryaniki2.jpeg', 
-        './img/Services/MK/SinelnayaRipe.jpeg', './img/Services/MK/Slime.jpeg', './img/Services/MK/Tvisting.jpeg'
+        {img:'./img/Services/MK/CakePops.jpeg', name:'Кейк-попсы', description:''},
+        {img:'./img/Services/MK/CatchSleep.jpeg', name:'Ловцы снов', description:''},
+        {img:'./img/Services/MK/Capitoshki.jpeg', name:'Капитошки', description:''},
+        {img:'./img/Services/MK/ClothDecoration.jpeg', name:'Декорирование одежды', description:''},
+        {img:'./img/Services/MK/Florarium.jpeg', name:'Флорариум', description:''},
+        {img:'./img/Services/MK/Pryaniki2.jpeg', name:'Архангельские пряники', description:''},
+        {img:'./img/Services/MK/SinelnayaRipe.jpeg', name:'Синельная проволока', description:''},
+        {img:'./img/Services/MK/Slime.jpeg', name:'Слаймы', description:''},
+        {img:'./img/Services/MK/Tvisting.jpeg', name:'Твистинг', description:''},
     ]
 
     const handlerChoiceCategory = (category) => {
         setCategory(category)
 
         if (category === 'Артисты') {
-            setCategoryPhoto()
+            setCategoryPhoto(artists)
         } else if (category === 'Программы') {
             setCategoryPhoto(programms)
         } else if (category === 'Мастер классы') {
@@ -52,7 +72,7 @@ export default function Price() {
         } else if (category === 'Другие услуги') {
             setCategoryPhoto(forSell)
         } else if (category === 'Готовим') {
-            setCategoryPhoto()
+            setCategoryPhoto([])
         }
     }
 
@@ -87,12 +107,22 @@ export default function Price() {
                 <div className='Price-CardList' style={{display:'flex', width:'100%', flexWrap:'wrap', maxHeight:'68%', overflowY:'auto'}}>
                     {categoryPhoto && categoryPhoto.map((el) => {
                         return (
-                            <img style={{width:'16%', margin:'1em'}} src={el} alt="" />
+                            <img onClick={() => {setServicesCardData(el)}} className="Price-CardList-CardServices" src={el.img} alt="" />
                         )
                     }
                     )}
                 </div>
                 }
+            {servicesCardData &&
+            <div className="Price-Services_Card">
+                <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>
+                <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={servicesCardData.img} alt={servicesCardData.name} />
+                <div className="Price-Services_Card-Info">
+                    <p>{servicesCardData.name}</p>
+                    <p>{servicesCardData.description}</p>
+                </div>
+            </div>
+            }
         </div>
     )
 }

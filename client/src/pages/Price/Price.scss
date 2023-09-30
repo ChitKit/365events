@@ -2,24 +2,39 @@
     :root {
         --height_content_price: 80vh;
         --width_content_price: 70vw;
+        --width-category-card: 21vh;
+        --width-category-card-hover: 21.2vh;
+        --margin-category-card: 3.5vh 2.2vw;
+        --margin-category-card-hover: 3.5vh 2.8vw;
     }
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     :root {
         --height_content_price: 80vh;
         --width_content_price: 70vw;
+        --width-category-card: 19vh;
+        --width-category-card-hover: 19.2vh;
+        --margin-category-card: 3.5vh 2.2vw;
+        --margin-category-card-hover: 3.5vh 2.8vw;
     }
   }
   @media screen and (min-width: 800px) and (max-width: 1023px) {
     :root {
         --height_content_price: 80vh;
         --width_content_price: 70vw;
+        --width-category-card: 18vh;
+        --width-category-card-hover: 18.2vh;
+        --margin-category-card: 3.5vh 2.2vw;
+        --margin-category-card-hover: 3.5vh 2.8vw;
     }
   }
   @media screen and (max-width: 799px) {
     :root {
       --height_content_price: 65vh;
       --width_content_price: 85vw;
+      --width-category-card: 15vh;
+      --width-category-card-hover: 16vh;
+      --margin-category-card: 2vh 2vw;
     }
   }
 
@@ -51,14 +66,14 @@
       flex-wrap: wrap;
       justify-content: center;
       &-Card{
-        width: 20%;
-        margin: 2em 2em;
+        width: var(--width-category-card);
+        margin: var(--margin-category-card);
         transition: 1s;
       }
       &-Card:hover{
         cursor: pointer;
-        margin: 2em 3.1em;
-        width: 21%;
+        margin: var(--margin-category-card-hover);
+        width: var(--width-category-card-hover);
         box-shadow: 5px 5px 20px var(--font_color_app);
         transition: 1s;
       }
@@ -66,6 +81,18 @@
     &-CardList{
       display: flex;
       justify-content: center;
+      &-CardServices{
+        width: 16%;
+        margin: 1em;
+        transition: 1s;
+        &:hover{
+          cursor: pointer;
+          box-shadow: 5px 5px 20px var(--font_color_app);
+          width: 16.2%;
+          margin: 0.8em;
+          transition: 1s;
+        }
+      }
     }
     &-CardList::-webkit-scrollbar {
       width: 4px;
@@ -76,4 +103,41 @@
       background-color: #e7c862;
       box-shadow: inset 0 0 8px #e7c862;
     }
+    &-Services_Card{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: var(--width_content_price);
+      height: var(--height_content_price);
+      position: absolute;
+      border-radius: 1em;
+      background-color: rgb(27, 27, 27);
+      border-radius: 2em 0 2em 0;
+      box-shadow: 0 0 50px var(--font_color_app);
+      transition: .5s;
+      &-Info{
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 3em;
+          font-size: large;
+          color: white;
+      }
+      &-Button_Close{
+          color: white;
+          position: absolute;
+          right: 1em;
+          top: 1em;
+          background: none;
+          border: unset;
+      }
+      &-Button_Close:hover{
+          cursor: pointer;
+          color: gold;
+          text-shadow: 0 0 5px gold;
+      }
+  }
 }

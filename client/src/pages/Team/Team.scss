@@ -73,12 +73,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 100%;
         height: auto;
         position: absolute;
-        top: 3em;
         border-radius: 1em;
         background-color: rgb(27, 27, 27);
+        border-radius: 2em 0 2em 0;
         box-shadow: 0 0 50px var(--font_color_app);
         transition: .5s;
         &-Info{
