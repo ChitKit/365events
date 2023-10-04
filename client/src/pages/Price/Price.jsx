@@ -104,7 +104,7 @@ export default function Price() {
                     </>
                 </div>
                 :
-                <div className='Price-CardList' style={{display:'flex', width:'100%', flexWrap:'wrap', maxHeight:'68%', overflowY:'auto'}}>
+                <div className='Price-CardList'>
                     {categoryPhoto && categoryPhoto.map((el) => {
                         return (
                             <img onClick={() => {setServicesCardData(el)}} className="Price-CardList-CardServices" src={el.img} alt="" />

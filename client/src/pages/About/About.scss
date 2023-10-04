@@ -276,8 +276,8 @@
 
 //! ANUMATION ARROW 2
 
-$ani-speed: 2s;
-$ani-delay: 1s;
+$ani-speed: 4s;
+$ani-delay: 2s;
 
 
 .arrow {
@@ -304,7 +304,7 @@ $ani-delay: 1s;
     display: block;
     height: 3px; 
     position: absolute;
-        top: 0;
+        top: 2%;
         left: 0;
     width: 30px;
 }
