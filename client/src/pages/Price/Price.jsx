@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import MainLayout from '../../Layout/MainLayout'
 import './Price.scss'
+import {
+    artists,
+    programms,
+    newYear,
+    forSell,
+    imgMK
+} from './servicesCatalog'
+import NewYearAndSanta from './ServicesPage/NewYearAndSanta/NewYearAndSanta'
 
 export default function Price() {
 
@@ -19,44 +27,6 @@ export default function Price() {
         {path:'./img/category/ComingSoon.jpeg', category:'Готовим'},
     ]
 
-    const artists = [
-        {img:'./img/Services/Artists/Illusions.jpeg', name:'Иллюзионисты', description:''},
-        {img:'./img/Services/Artists/ShowMan.jpeg', name:'Ведущие', description:''},
-        {img:'./img/Services/Artists/Artist_Services.jpeg', name:'Артисты', description:''},
-    ]
-    const programms = [ 
-        {img:'./img/Services/Programms/BirthdDay.jpeg', name:'Дни рождения', description:''},
-        {img:'./img/Services/Programms/KidOut.jpeg', name:'Детские выпускные', description:''},
-        {img:'./img/Services/Programms/Quest.jpeg', name:'Квесты', description:''},
-        {img:'./img/Services/Programms/Quiz.jpeg', name:'Квизы', description:''},
-        {img:'./img/Services/Programms/Show.jpeg', name:'Шоу', description:''},
-    ]
-    const newYear = [
-        {img:'./img/Services/NewYear/DedMoroz.jpeg', name:'Дед Мороз и Снегурочка', description:''},
-        {img:'./img/Services/NewYear/InteractiveSpectacle.jpeg', name:'Интерактивный спектакль', description:''},
-    ]
-
-    const forSell = [
-        {img:'./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg', name:'Аквагрим и Бьюти-бар', description:''},
-        {img:'./img/Services/ForSell/BentaCake.jpeg', name:'Бенто-торты', description:''},
-        {img:'./img/Services/ForSell/CakePops2.jpeg', name:'Кейк-попсы', description:''},
-        {img:'./img/Services/ForSell/PhotoAndVideo.jpeg', name:'Фото и Видео услуги', description:''},
-        {img:'./img/Services/ForSell/PhotoZone.jpeg', name:'Фотозона', description:''},
-        {img:'./img/Services/ForSell/Pinyata.jpeg', name:'Пиньята', description:''},
-        {img:'./img/Services/ForSell/Pryaniki.jpeg', name:'Архангельские пряники', description:''},
-    ]
-
-    const imgMK = [
-        {img:'./img/Services/MK/CakePops.jpeg', name:'Кейк-попсы', description:''},
-        {img:'./img/Services/MK/CatchSleep.jpeg', name:'Ловцы снов', description:''},
-        {img:'./img/Services/MK/Capitoshki.jpeg', name:'Капитошки', description:''},
-        {img:'./img/Services/MK/ClothDecoration.jpeg', name:'Декорирование одежды', description:''},
-        {img:'./img/Services/MK/Florarium.jpeg', name:'Флорариум', description:''},
-        {img:'./img/Services/MK/Pryaniki2.jpeg', name:'Архангельские пряники', description:''},
-        {img:'./img/Services/MK/SinelnayaRipe.jpeg', name:'Синельная проволока', description:''},
-        {img:'./img/Services/MK/Slime.jpeg', name:'Слаймы', description:''},
-        {img:'./img/Services/MK/Tvisting.jpeg', name:'Твистинг', description:''},
-    ]
 
     const handlerChoiceCategory = (category) => {
         setCategory(category)
@@ -113,13 +83,21 @@ export default function Price() {
                     )}
                 </div>
                 }
-            {servicesCardData &&
+            {servicesCardData && servicesCardData.name === 'Дед Мороз и Снегурочка' ?
+                <NewYearAndSanta setServicesCardData={setServicesCardData} />
+            : 
+            servicesCardData &&
             <div className="Price-Services_Card">
                 <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>
                 <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={servicesCardData.img} alt={servicesCardData.name} />
                 <div className="Price-Services_Card-Info">
                     <p>{servicesCardData.name}</p>
-                    <p>{servicesCardData.description}</p>
+                    <div
+                        style={{width:'90%'}}    
+                    >
+                        <p style={{textAlign:'left'}}>{servicesCardData.description}</p>
+                    </div>
+                    <p style={{marginBottom:'3em'}}>{servicesCardData.price}</p>
                 </div>
             </div>
             }
