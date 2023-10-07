@@ -9,6 +9,8 @@ import {
     imgMK
 } from './servicesCatalog'
 import NewYearAndSanta from './ServicesPage/NewYearAndSanta/NewYearAndSanta'
+import Illusioniists from './ServicesPage/Artists/Illusioniists/Illusioniists'
+import Shows from './ServicesPage/Shows/Shows'
 
 export default function Price() {
 
@@ -85,7 +87,13 @@ export default function Price() {
                 }
             {servicesCardData && servicesCardData.name === 'Дед Мороз и Снегурочка' ?
                 <NewYearAndSanta setServicesCardData={setServicesCardData} />
-            : 
+            :
+            servicesCardData && servicesCardData.name === 'Иллюзионисты' ?
+                <Illusioniists setServicesCardData={setServicesCardData} />
+            :
+            servicesCardData && servicesCardData.name === 'Шоу' ?
+                <Shows setServicesCardData={setServicesCardData} />
+            :
             servicesCardData &&
             <div className="Price-Services_Card">
                 <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>

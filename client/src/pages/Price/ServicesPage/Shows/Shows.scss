@@ -1,0 +1,22 @@
+
+.Show_Active{
+    font-weight: bold;
+    box-shadow:  0 0 15px rgba(255, 217, 0, 0.8);
+    border-radius: .8em;
+    // border: 1px solid gray;
+    padding: .5em 1em;
+    :only-child{
+        margin: 0;
+    }
+}
+.Show_Choice{
+    margin: 0;
+    // border: 1px solid gray;
+    padding: .5em 1em;
+    :only-child{
+        margin: 0;
+    }
+    :hover{
+        cursor: pointer;
+    }
+}
