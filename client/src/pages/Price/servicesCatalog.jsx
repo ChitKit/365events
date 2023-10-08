@@ -24,9 +24,8 @@ export const artists = [
         img:'./img/Services/Artists/Illusions.jpeg', 
         name:'Иллюзионисты',
         description:
-        `В нашем агентстве есть 3 потрясающих иллюзиониста. 
-        У каждого своя программа.`,
-        price:'От 7000 ₽ / час',
+        `В нашем агентстве есть 3 потрясающих иллюзиониста.У каждого своя программа.`,
+        price:'',
     },
 ]
 export const programms = [ 

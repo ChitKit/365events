@@ -1,0 +1,29 @@
+.Illusionists{
+    display: flex;
+    flex-direction: column;
+    &-Tittle{
+        margin-top: 5vh;
+        font-size: 1.1vw;
+    }
+    &-Member_List{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &-Member_Card{
+            margin: 1vw;
+            &-Photo{
+                width: 20vw;
+                transition: 5s;
+            }
+            &-Photo:hover{
+                cursor: pointer;
+                box-shadow: 0 0 20px rgba(186, 80, 247, 0.527);
+                transition: 2s;
+            }
+            &-Name{
+                font-size: 1.2vw;
+            }
+        }
+    }
+}
