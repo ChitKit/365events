@@ -15,7 +15,7 @@ export default function Shows({ setServicesCardData }) {
     }, []);
 
     return (
-        <div className="Price-Services_Card" style={{display:'flex', flexDirection:'column'}}>
+        <div className="Price-Services_Card Shows" style={{display:'flex', flexDirection:'column'}}>
             <div
                 onClick={() => {
                     setServicesCardData(null);

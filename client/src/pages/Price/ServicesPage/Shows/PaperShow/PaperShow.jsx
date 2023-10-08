@@ -3,15 +3,35 @@ import "./PaperShow.scss";
 
 export default function PaperShow({ data }) {
     return (
-        <div className="Papper_Show">
-			<div className="Papper_Show-Info">
-				<div className="Papper_Show-Info-Description">
+		<div className="Paper_Show">
+			<div className="Paper_Show-Info">
+				<div className="Paper_Show-Info-Description">
 					<p>{data.description}</p>
 				</div>
-				<div className="Papper_Show-Info-Main_Info_Show">
-					<img className="Papper_Show-Info-Main_Info_Show-Img" src={data.img} alt="" />
+				<div className="Paper_Show-Info-Main_Info_Show">
+					<img
+						className="Paper_Show-Info-Main_Info_Show-Img"
+						src={data.img}
+						alt=""
+					/>
+					<img
+						className="Paper_Show-Info-Main_Info_Show-Img"
+						src={data.img}
+						alt=""
+					/>
+					<img
+						className="Paper_Show-Info-Main_Info_Show-Img"
+						src={data.img}
+						alt=""
+					/>
+				</div>
+				<div className="Paper_Show-Info-Buy">
+					<p>{data.price}</p>
+					<div
+						className='Paper_Show-Info-Buy-Button'
+					>Заказать</div>
 				</div>
 			</div>
-        </div>
+		</div>
     );
 }

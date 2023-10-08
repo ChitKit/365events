@@ -14,6 +14,22 @@ export default function BubbleShow({ data }) {
                         src={data.img}
                         alt=""
                     />
+                    <img
+                        className="Bubble_Show-Info-Main_Info_Show-Img"
+                        src={data.img}
+                        alt=""
+                    />
+                    <img
+                        className="Bubble_Show-Info-Main_Info_Show-Img"
+                        src={data.img}
+                        alt=""
+                    />
+                </div>
+                <div className="Bubble_Show-Info-Buy">
+                    <p>{data.price}</p>
+                    <div
+                        className='Bubble_Show-Info-Buy-Button'
+                    >Заказать</div>
                 </div>
             </div>
         </div>

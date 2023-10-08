@@ -1,4 +1,4 @@
-.Papper_Show{
+.Paper_Show{
     width: 100%;
     height: 90%;
     display: flex;
@@ -12,9 +12,12 @@
             width: 100%;
             margin-top: 2em;
             display: flex;
+            justify-content: center;
+            align-items: center;
             &-Img{
-                width: clamp(10%, 30vw, 35%);
-                height: clamp(10%, 30vw, 35%);;
+                margin: .5vw;
+                width: clamp(10%, 30vw, 30%);
+                height: clamp(10%, 30vw, 30%);;
             }
         }
         &-Description{
@@ -22,6 +25,85 @@
             display: flex;
             justify-content: center;
             text-align: left;
+        }
+        &-Buy{
+            position: absolute;
+            bottom: clamp(1%, 30vw, 3%);
+            right: clamp(3%, 30vw, 20%);
+            &-Button{
+                padding: .2vw;
+                color: green;
+                border-radius: 2vw;
+                box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
+                animation: colorize 10s ease infinite;
+                
+                @keyframes colorize {
+                    0% {
+                        box-shadow: 0 0 10px;
+                        color: rgb(197, 222, 229);
+                    }
+                    10% {
+                        box-shadow: 0 0 5px;
+                        color: rgb(243, 219, 121);
+                    }
+                    20% {
+                        box-shadow: 0 0 15px;
+                        color: rgb(194, 230, 122);
+                    }
+                    30% {
+                        box-shadow: 0 0 3px;
+                        color: rgb(241, 177, 139);
+                    }
+                    40% {
+                        box-shadow: 0 0 8px;
+                        color: rgb(197, 222, 229);
+                    }
+                    50% {
+                        box-shadow: 0 0 7px;
+                        color: rgb(243, 219, 121);
+                    }
+                    60% {
+                        box-shadow: 0 0 15px;
+                        color: rgb(194, 230, 122);
+                    }
+                    70% {
+                        box-shadow: 0 0 4px;
+                        color: rgb(241, 177, 139);
+                    }
+                    80% {
+                        box-shadow: 0 0 18px;
+                        color: rgb(197, 222, 229);
+                    }
+                    90% {
+                        box-shadow: 0 0 9px;
+                        color: rgb(243, 219, 121);
+                    }
+                    100% {
+                        box-shadow: 0 0 20px;
+                        color: rgb(194, 230, 122);
+                    }
+                }
+                
+                @keyframes colorize_Focus {
+                    0% {
+                        box-shadow: 0 0 15px;
+                        color: rgb(148, 129, 19);
+                    }
+                    50% {
+                        box-shadow: 0 0 5px;
+                        color: rgb(194, 160, 25);
+                    }
+                    100% {
+                        box-shadow: 0 0 15px;
+                        color: rgb(148, 129, 19);
+                    }
+                }
+            }
+            &-Button:hover{
+                cursor: pointer;
+                animation: colorize_Focus 2s ease infinite;
+
+            }
         }
     }
 }

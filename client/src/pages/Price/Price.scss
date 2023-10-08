@@ -7,8 +7,8 @@
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
     }
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
     :root {
         --height_content_price: 80vh;
         --width_content_price: 70vw;
@@ -17,8 +17,8 @@
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
     }
-  }
-  @media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
     :root {
         --height_content_price: 80vh;
         --width_content_price: 70vw;
@@ -27,19 +27,19 @@
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
     }
-  }
-  @media screen and (max-width: 799px) {
+}
+@media screen and (max-width: 799px) {
     :root {
-      --height_content_price: 65vh;
-      --width_content_price: 85vw;
-      --width-category-card: 15vh;
-      --width-category-card-hover: 16vh;
-      --margin-category-card: 2vh 2vw;
+        --height_content_price: 65vh;
+        --width_content_price: 85vw;
+        --width-category-card: 15vh;
+        --width-category-card-hover: 16vh;
+        --margin-category-card: 2vh 2vw;
     }
-  }
+}
 
-.Price{
-    background:rgba(0, 0, 0, 0.534);
+.Price {
+    background: rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);
     z-index: 10;
     width: var(--width_content_price);
@@ -50,104 +50,110 @@
     align-items: center;
     box-shadow: var(--shadow_box);
     border-radius: 2em 0 2em 0;
-    &-Button_Close_Category{
-      width: 2%;
-      margin-top: 2em;
-      transition: .2s;
+    font-size: clamp(1px, 2vw, 15px);
+    user-select: none;
+    &-Button_Close_Category {
+        width: 2%;
+        margin-top: 2em;
+        transition: 0.2s;
     }
-    &-Button_Close_Category:hover{
-      cursor: pointer;
-      width: 2.2%;
-      transition: .2s;
-    }
-    &-CategoryList{
-      width: 80%;
-      height: 80%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      &-Card{
-        width: var(--width-category-card);
-        margin: var(--margin-category-card);
-        transition: 1s;
-      }
-      &-Card:hover{
+    &-Button_Close_Category:hover {
         cursor: pointer;
-        margin: var(--margin-category-card-hover);
-        width: var(--width-category-card-hover);
-        box-shadow: 5px 5px 20px var(--font_color_app);
-        transition: 1s;
-      }
+        width: 2.2%;
+        transition: 0.2s;
     }
-    &-CardList{
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      flex-wrap: wrap;
-      max-height: 80%;
-      overflow-Y: auto;
-      &-CardServices{
-        width: 18%;
-        height: auto;
-        margin: 1em;
-        transition: 1s;
-        border-radius: 2em 0;
-        &:hover{
-          cursor: pointer;
-          border-radius: 0 2em;
-          box-shadow: 5px 5px 20px var(--font_color_app);
-          width: 18.4%;
-          margin: 0.8em;
-          transition: 1s;
+    &-CategoryList {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-Card {
+            width: var(--width-category-card);
+            margin: var(--margin-category-card);
+            box-shadow: -5px -5px 20px rgba(218, 165, 32, 0.25);
+            border-radius: 2em 0;
+            transition: 1s;
         }
-      }
+        &-Card:hover {
+            cursor: pointer;
+            margin: var(--margin-category-card-hover);
+            width: var(--width-category-card-hover);
+            box-shadow: 5px 5px 20px var(--font_color_app);
+            border-radius: 0 2em;
+            transition: 1s;
+        }
+    }
+    &-CardList {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        max-height: 80%;
+        overflow-y: auto;
+        &-CardServices {
+            width: 18%;
+            height: auto;
+            margin: 1em;
+            transition: 1s;
+            box-shadow: -5px -5px 20px rgba(218, 165, 32, 0.25);
+            border-radius: 2em 0;
+            &:hover {
+                cursor: pointer;
+                border-radius: 0 2em;
+                box-shadow: 5px 5px 20px var(--font_color_app);
+                width: 18.4%;
+                margin: 0.8em;
+                transition: 1s;
+            }
+        }
     }
     &-CardList::-webkit-scrollbar {
-      width: 4px;
-      // background-color: aqua;
+        width: 4px;
+        // background-color: aqua;
     }
-    &-CardList::-webkit-scrollbar-thumb{
-      border-radius: 10px;
-      background-color: #e7c862;
-      box-shadow: inset 0 0 8px #e7c862;
+    &-CardList::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #e7c862;
+        box-shadow: inset 0 0 8px #e7c862;
     }
-    &-Services_Card{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: var(--width_content_price);
-      height: var(--height_content_price);
-      position: absolute;
-      border-radius: 1em;
-      background-color: rgb(27, 27, 27);
-      border-radius: 2em 0 2em 0;
-      box-shadow: 0 0 50px var(--font_color_app);
-      transition: .5s;
-      &-Info{
-          width: 50%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 3em;
-          font-size: large;
-          color: white;
-      }
-      &-Button_Close{
-          color: white;
-          position: absolute;
-          right: 1em;
-          top: 1em;
-          background: none;
-          border: unset;
-      }
-      &-Button_Close:hover{
-          cursor: pointer;
-          color: gold;
-          text-shadow: 0 0 5px gold;
-      }
-  }
+    &-Services_Card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--width_content_price);
+        height: var(--height_content_price);
+        position: absolute;
+        border-radius: 1em;
+        background-color: rgb(27, 27, 27);
+        border-radius: 2em 0 2em 0;
+        box-shadow: 0 0 50px var(--font_color_app);
+        transition: 0.5s;
+        &-Info {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3em;
+            font-size: large;
+            color: white;
+        }
+        &-Button_Close {
+            color: white;
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            background: none;
+            border: unset;
+        }
+        &-Button_Close:hover {
+            cursor: pointer;
+            color: gold;
+            text-shadow: 0 0 5px gold;
+        }
+    }
 }
