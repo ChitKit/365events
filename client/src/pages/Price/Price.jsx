@@ -103,7 +103,7 @@ export default function Price() {
                     <div
                         style={{width:'90%'}}    
                     >
-                        <p style={{textAlign:'left'}}>{servicesCardData.description}</p>
+                        <p className="Price-Services_Card-Info-Description"  style={{textAlign:'left'}}>{servicesCardData.description}</p>
                     </div>
                     <p style={{marginBottom:'3em'}}>{servicesCardData.price}</p>
                 </div>

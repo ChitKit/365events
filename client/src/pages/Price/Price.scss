@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: kindentosca;
+    src: url('../../../public/fonts/kindentosca.otf');
+  }
+
 @media screen and (min-width: 1280px) {
     :root {
         --height_content_price: 80vh;
@@ -53,13 +59,13 @@
     font-size: clamp(1px, 2vw, 15px);
     user-select: none;
     &-Button_Close_Category {
-        width: 2%;
+        width: 3vw;
         margin-top: 2em;
         transition: 0.2s;
     }
     &-Button_Close_Category:hover {
         cursor: pointer;
-        width: 2.2%;
+        width: 3.1vw;
         transition: 0.2s;
     }
     &-CategoryList {
@@ -141,6 +147,15 @@
             margin-top: 3em;
             font-size: large;
             color: white;
+            &-Description{
+                color: #dbcb94;
+            }
+            &-Description::first-letter{
+                font-family: kindentosca;
+                initial-letter: 1.8;
+                color: #e7c862;
+                margin-right: .3vw;
+            }
         }
         &-Button_Close {
             color: white;
