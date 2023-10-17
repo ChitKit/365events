@@ -11,6 +11,7 @@ import NewYearAndSanta from './ServicesPage/NewYearAndSanta/NewYearAndSanta'
 import Illusioniists from './ServicesPage/Artists/Illusioniists/Illusioniists'
 import Shows from './ServicesPage/Shows/Shows'
 import Quests from './ServicesPage/Quests/Quests'
+import BirthDay from './ServicesPage/BirthDay/BirthDay'
 
 export default function Price() {
 
@@ -96,6 +97,9 @@ export default function Price() {
             :
             servicesCardData && servicesCardData.name === 'Квесты' ?
                 <Quests setServicesCardData={setServicesCardData} />
+            :
+            servicesCardData && servicesCardData.name === 'Дни рождения' ?
+                <BirthDay setServicesCardData={setServicesCardData} />
             :
             servicesCardData &&
             <div className="Price-Services_Card">

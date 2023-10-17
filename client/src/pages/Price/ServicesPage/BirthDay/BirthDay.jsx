@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./BirthDay.scss";
-import { shows } from "../../servicesCatalog";
+import { birthDay } from "../../servicesCatalog";
+import Base from "./Base/Base";
+import Standart from "./Standart/Standart";
+import VIP from "./VIP/VIP";
 
 export default function BirthDay({ setServicesCardData }) {
-    const [choiceShow, setChoiceShow] = useState(shows[0]);
-
-    useEffect(() => {
-        return () => {
-            setChoiceShow(shows[0]);
-        };
-    }, []);
+    const [choiceBirthDay, setChoiceBirthDay] = useState('info');
+    console.log();
 
     return (
         <div className="Price-Services_Card BirthDay" style={{display:'flex', flexDirection:'column'}}>
@@ -30,29 +28,39 @@ export default function BirthDay({ setServicesCardData }) {
                     alignItems: "center",
                 }}
             >
-                {shows.map((el) => {
+                
+                {choiceBirthDay !== null && birthDay.map((el) => {
                     return (
-                        <div className={choiceShow.name === el.name ? "BirthDay_Active" : "BirthDay_Choice"} >
+                        <div className={choiceBirthDay && choiceBirthDay.name === el.name ? "BirthDay_Active" : "BirthDay_Choice"} >
                             {/* <img
                                 style={{ width: "25vh" }}
                                 src={el.img}
                                 alt=""
                             /> */}
-                            <p onClick={() => {setChoiceShow(el)}} >{el.name}</p>
+                            <p onClick={() => {setChoiceBirthDay(el)}} >{el.name}</p>
                         </div>
                     );
                 })}
             </div>
-            {/* {
-                choiceShow.name === 'Химическое шоу' ?
-                    <AlchimyShow setServicesCardData={setServicesCardData} data={choiceShow}/>
-                :
-                choiceShow.name === 'Шоу мыльных пузырей' ?
-                    <BubbleShow setServicesCardData={setServicesCardData} data={choiceShow}/>
-                :
-                choiceShow.name === 'Бумажное шоу' &&
-                    <PaperShow setServicesCardData={setServicesCardData} data={choiceShow}/>
-            } */}
+                {
+                    choiceBirthDay.name === 'Базовый' ?
+                    <Base setServicesCardData={setServicesCardData} data={choiceBirthDay}/>
+                    :
+                    choiceBirthDay.name === 'Стандарт' ?
+                    <Standart setServicesCardData={setServicesCardData} data={choiceBirthDay}/>
+                    :
+                    choiceBirthDay.name === 'VIP' ?
+                    <VIP setServicesCardData={setServicesCardData} data={choiceBirthDay}/>
+                    :
+                    choiceBirthDay === 'info' &&
+                    <div className="BirthDay-Info">
+                        <p>
+                            Поможем организовать День рождения в любом формате под ключ🗝️ 
+                            У нас есть 3 варианта программ и всегда подарки от агентства! 
+                            Прежде, чем решить вопрос с Днем рождения, прочтите нашу статью <a target="_blank"  href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> 
+                        </p>
+                    </div>
+                }
         </div>
     );
 }
