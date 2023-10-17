@@ -1,6 +1,62 @@
 .Illusionists{
     display: flex;
     flex-direction: column;
+    &-Services_Card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--width_content_price);
+        height: var(--height_content_price);
+        position: absolute;
+        border-radius: 1em;
+        background-color: rgb(27, 27, 27);
+        border-radius: 2em 0 2em 0;
+        box-shadow: 0 0 50px var(--font_color_app);
+        transition: 0.5s;
+        &-Info {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3em;
+            font-size: large;
+            &-Description{
+                font-size: 1.2vw;
+                color: #dbcb94;
+                &-Title{
+                    margin-top: 1vw;
+                    font-size: 2vw;
+                    color: #dbcb94;
+                }
+                &-Price{
+                    
+                    color: #dbcb94;
+                }
+            }
+            &-Description::first-letter{
+                // font-size: 3vw;
+                // font-family: kindentosca;
+                // initial-letter: 1.8;
+                // color: #e7c862;
+                // margin-right: .5vw;
+            }
+        }
+        &-Button_Close {
+            color: white;
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            background: none;
+            border: unset;
+        }
+        &-Button_Close:hover {
+            cursor: pointer;
+            color: gold;
+            text-shadow: 0 0 5px gold;
+        }
+    }
     &-Tittle{
         margin-top: 5vh;
         font-size: 1.1vw;
@@ -19,7 +75,7 @@
             &-Photo:hover{
                 cursor: pointer;
                 box-shadow: 0 0 20px rgba(186, 80, 247, 0.527);
-                transition: 2s;
+                transition: 1s;
             }
             &-Name{
                 font-size: 1.2vw;

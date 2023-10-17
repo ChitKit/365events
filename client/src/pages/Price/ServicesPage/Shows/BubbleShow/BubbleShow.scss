@@ -16,12 +16,15 @@
             align-items: center;
             &-Img{
                 margin: .5vw;
-                width: clamp(10%, 30vw, 25%);
-                height: clamp(10%, 30vw, 25%);;
+                width: clamp(100px, 25vw, 250px);
+                height: clamp(100px, 25vw, 250px);
             }
         }
         &-Description{
-            margin-top: 2em;
+            font-size: 1.2vw;
+            height: 10vw;
+            max-height: 10vw;
+            margin: 2em;
             display: flex;
             justify-content: center;
             text-align: left;
@@ -30,7 +33,11 @@
             position: absolute;
             bottom: clamp(1%, 30vw, 3%);
             right: clamp(3%, 30vw, 20%);
+            &-Price{
+                font-size: .9vw;
+            }
             &-Button{
+                font-size: .9vw;
                 padding: .2vw;
                 color: green;
                 border-radius: 2vw;

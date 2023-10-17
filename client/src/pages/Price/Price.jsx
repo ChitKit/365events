@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import MainLayout from '../../Layout/MainLayout'
+import React, {  useState } from 'react'
 import './Price.scss'
 import {
     artists,
@@ -11,6 +10,7 @@ import {
 import NewYearAndSanta from './ServicesPage/NewYearAndSanta/NewYearAndSanta'
 import Illusioniists from './ServicesPage/Artists/Illusioniists/Illusioniists'
 import Shows from './ServicesPage/Shows/Shows'
+import Quests from './ServicesPage/Quests/Quests'
 
 export default function Price() {
 
@@ -94,18 +94,21 @@ export default function Price() {
             servicesCardData && servicesCardData.name === 'Шоу' ?
                 <Shows setServicesCardData={setServicesCardData} />
             :
+            servicesCardData && servicesCardData.name === 'Квесты' ?
+                <Quests setServicesCardData={setServicesCardData} />
+            :
             servicesCardData &&
             <div className="Price-Services_Card">
                 <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>
                 <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={servicesCardData.img} alt={servicesCardData.name} />
                 <div className="Price-Services_Card-Info">
-                    <p>{servicesCardData.name}</p>
+                    <p className="Price-Services_Card-Info-Description-Title" >{servicesCardData.name}</p>
                     <div
                         style={{width:'90%'}}    
                     >
                         <p className="Price-Services_Card-Info-Description"  style={{textAlign:'left'}}>{servicesCardData.description}</p>
                     </div>
-                    <p style={{marginBottom:'3em'}}>{servicesCardData.price}</p>
+                    <p className="Price-Services_Card-Info-Description-Price" style={{marginBottom:'3em'}}>{servicesCardData.price}</p>
                 </div>
             </div>
             }

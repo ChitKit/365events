@@ -1,16 +1,38 @@
 import React from 'react'
 import './Flint.scss'
 
-export default function Flint({setServicesCardData}) {
+export default function Flint({data}) {
 
   return (
-    <div className="Price-Services_Card">
-        <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>
-        {/* <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={servicesCardData.img} alt={servicesCardData.name} />
-        <div className="Price-Services_Card-Info">
-            <p>{servicesCardData.name}</p>
-            <p>{servicesCardData.description}</p>
-        </div> */}
+    <div className="Flint">
+        <div className="Flint-Info">
+            <div className="Flint-Info-Description">
+                <p>{data.description}</p>
+            </div>
+            <div className="Flint-Info-Main_Info_Show">
+                <img
+                    className="Flint-Info-Main_Info_Show-Img"
+                    src={data.img}
+                    alt=""
+                />
+                <img
+                    className="Flint-Info-Main_Info_Show-Img"
+                    src={data.img}
+                    alt=""
+                />
+                <img
+                    className="Flint-Info-Main_Info_Show-Img"
+                    src={data.img}
+                    alt=""
+                />
+            </div>
+            <div className="Flint-Info-Buy">
+                <p className="Bubble_Show-Info-Buy-Price">{data.price}</p>
+                <div
+                    className='Flint-Info-Buy-Button'
+                >Заказать</div>
+            </div>
+        </div>
     </div>
   )
 }

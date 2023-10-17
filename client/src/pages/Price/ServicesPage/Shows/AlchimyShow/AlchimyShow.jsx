@@ -27,7 +27,7 @@ export default function AlchimyShow({ data }) {
                 />
             </div>
             <div className="Alchimy_Show-Info-Buy">
-                <p>{data.price}</p>
+                <p className="Bubble_Show-Info-Buy-Price">{data.price}</p>
                 <div
                     className='Alchimy_Show-Info-Buy-Button'
                 >Заказать</div>

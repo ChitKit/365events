@@ -1,16 +1,39 @@
 import React from 'react'
 import './FortTreasure.scss'
 
-export default function FortTreasure({setServicesCardData}) {
+export default function FortTreasure({data}) {
 
   return (
-    <div className="Price-Services_Card">
-        <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>
-        {/* <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={servicesCardData.img} alt={servicesCardData.name} />
-        <div className="Price-Services_Card-Info">
-            <p>{servicesCardData.name}</p>
-            <p>{servicesCardData.description}</p>
-        </div> */}
+    <div className="FortTreasure">
+        <div className="FortTreasure-Info">
+            <div className="FortTreasure-Info-Description">
+                <p>{data.description}</p>
+                <p className="FortTreasure-Info-Description-More">Подробности <a target="_blank" href="https://vk.com/@agency365-v-poiskah-sokrovischa-forta" rel="noreferrer">тут</a></p>
+            </div>
+            <div className="FortTreasure-Info-Main_Info_Show">
+                <img
+                    className="FortTreasure-Info-Main_Info_Show-Img"
+                    src={data.img}
+                    alt=""
+                />
+                <img
+                    className="FortTreasure-Info-Main_Info_Show-Img"
+                    src={data.img}
+                    alt=""
+                />
+                <img
+                    className="FortTreasure-Info-Main_Info_Show-Img"
+                    src={data.img}
+                    alt=""
+                />
+            </div>
+            <div className="FortTreasure-Info-Buy">
+                <p className="Bubble_Show-Info-Buy-Price">{data.price}</p>
+                <div
+                    className='FortTreasure-Info-Buy-Button'
+                >Заказать</div>
+            </div>
+        </div>
     </div>
   )
 }

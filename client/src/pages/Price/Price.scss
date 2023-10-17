@@ -148,13 +148,24 @@
             font-size: large;
             color: white;
             &-Description{
+                font-size: 1.2vw;
                 color: #dbcb94;
+                &-Title{
+                    margin-top: 1vw;
+                    font-size: 2vw;
+                    color: #dbcb94;
+                }
+                &-Price{
+                    
+                    color: #dbcb94;
+                }
             }
             &-Description::first-letter{
-                font-family: kindentosca;
-                initial-letter: 1.8;
-                color: #e7c862;
-                margin-right: .3vw;
+                // font-size: 3vw;
+                // font-family: kindentosca;
+                // initial-letter: 1.8;
+                // color: #e7c862;
+                // margin-right: .5vw;
             }
         }
         &-Button_Close {

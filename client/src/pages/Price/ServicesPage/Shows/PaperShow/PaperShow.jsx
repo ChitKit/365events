@@ -26,7 +26,7 @@ export default function PaperShow({ data }) {
 					/>
 				</div>
 				<div className="Paper_Show-Info-Buy">
-					<p>{data.price}</p>
+					<p className="Bubble_Show-Info-Buy-Price">{data.price}</p>
 					<div
 						className='Paper_Show-Info-Buy-Button'
 					>Заказать</div>

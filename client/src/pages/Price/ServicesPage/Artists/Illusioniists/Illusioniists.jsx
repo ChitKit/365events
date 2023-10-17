@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Illusioniists.scss';
-import {illusionistsList} from './dataillusions'
+import { illusionistsList } from './dataillusions'
 
 export default function Illusioniists({setServicesCardData}) {
+	const [choiceIllusionits, setChoiceIllusionits] = useState(null)
 
   return (
     <div className="Price-Services_Card Illusionists">
@@ -12,15 +13,9 @@ export default function Illusioniists({setServicesCardData}) {
 			{illusionistsList.map((el) => {
 				return (
 					<div className="Illusionists-Member_List-Member_Card">
-					{el.name === 'Дилан' ?
-							<img className='Illusionists-Member_List-Member_Card-Photo' src="./imgTeam/Dilan_illusionist1.jpg" alt="Дилан" />
-						:
-						el.name === 'Максим' ?
-							<img className='Illusionists-Member_List-Member_Card-Photo' src="" alt="Максим" />
-						:
-						el.name === 'Сергей' &&
-							<img className='Illusionists-Member_List-Member_Card-Photo' src="./imgTeam/Sergey_illusionist1.jpg" alt="Сергей" />
-					}
+					<img 
+						onClick={() => {setChoiceIllusionits(el)}}
+						className='Illusionists-Member_List-Member_Card-Photo' src={el.img} alt={el.name} />
 					<p className='Illusionists-Member_List-Member_Card-Name'>{el.name}</p>
 
 					</div>
@@ -32,6 +27,21 @@ export default function Illusioniists({setServicesCardData}) {
         <div className="Price-Services_Card-Info">
             <p>{servicesCardData.description}</p>
         </div> */}
+		{choiceIllusionits &&
+			<div className="Illusionists-Services_Card">
+                <div onClick={() => {setChoiceIllusionits(null)}} className="Illusionists-Services_Card-Button_Close">X</div>
+                <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={choiceIllusionits.img} alt={choiceIllusionits.name} />
+                <div className="Illusionists-Services_Card-Info">
+                    <p className="Illusionists-Services_Card-Info-Description-Title" >{choiceIllusionits.name}</p>
+                    <div
+                        style={{width:'90%'}}    
+                    >
+                        <p className="Illusionists-Services_Card-Info-Description"  style={{textAlign:'left'}}>{choiceIllusionits.description}</p>
+                    </div>
+                    <p className="Illusionists-Services_Card-Info-Description-Price" style={{marginBottom:'3em'}}>{choiceIllusionits.price}</p>
+                </div>
+            </div>
+		}
     </div>
   )
 }

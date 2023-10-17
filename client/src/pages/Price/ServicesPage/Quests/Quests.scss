@@ -1,8 +1,8 @@
-.Shows{
+.Quests{
     font-size: clamp(1px, 2vw, 15px);
     user-select: none;
 }
-.Show_Active{
+.Quest_Active{
     font-size: 1.1vw;
     font-weight: bold;
     box-shadow:  0 5px 10px rgba(255, 217, 0, 0.8);
@@ -14,7 +14,7 @@
         margin: 0;
     }
 }
-.Show_Choice{
+.Quest_Choice{
     font-size: 1.1vw;
     color: rgba(255, 217, 0, 0.5);
     margin: 0;

@@ -1,5 +1,6 @@
 export const illusionistsList = [
     {
+        img:'',
         name:'Максим',
         description:
         `Интерактивное шоу - 20 минут. Микромагия на встрече гостей 
@@ -9,6 +10,7 @@ export const illusionistsList = [
         price:'от 8000 ₽'
     },
     {
+        img:'/imgTeam/Sergey_illusionist1.jpg',
         name:'Сергей',
         description:
         `У его не только платок исчезнет в руке и перчатки превратятся в 
@@ -19,6 +21,7 @@ export const illusionistsList = [
         price:'от 7000 ₽'
     },
     {
+        img:'/imgTeam/Dilan_illusionist1.jpg',
         name:'Дилан',
         description:
         `В его арсенале более 20 фокусов, среди них: фокусы с деньгами и 
