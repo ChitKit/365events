@@ -42,7 +42,7 @@
                 color: green;
                 border-radius: 2vw;
                 box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
-                animation: colorize 10s ease infinite;
+                animation: colorize 12s ease infinite;
             }
             &-Button:hover{
                 cursor: pointer;
@@ -50,67 +50,5 @@
 
             }
         }
-    }
-}
-
-@keyframes colorize {
-    0% {
-        box-shadow: 0 0 10px;
-        color: rgb(197, 222, 229);
-    }
-    10% {
-        box-shadow: 0 0 5px;
-        color: rgb(243, 219, 121);
-    }
-    20% {
-        box-shadow: 0 0 15px;
-        color: rgb(194, 230, 122);
-    }
-    30% {
-        box-shadow: 0 0 3px;
-        color: rgb(241, 177, 139);
-    }
-    40% {
-        box-shadow: 0 0 8px;
-        color: rgb(197, 222, 229);
-    }
-    50% {
-        box-shadow: 0 0 7px;
-        color: rgb(243, 219, 121);
-    }
-    60% {
-        box-shadow: 0 0 15px;
-        color: rgb(194, 230, 122);
-    }
-    70% {
-        box-shadow: 0 0 4px;
-        color: rgb(241, 177, 139);
-    }
-    80% {
-        box-shadow: 0 0 18px;
-        color: rgb(197, 222, 229);
-    }
-    90% {
-        box-shadow: 0 0 9px;
-        color: rgb(243, 219, 121);
-    }
-    100% {
-        box-shadow: 0 0 20px;
-        color: rgb(194, 230, 122);
-    }
-}
-
-@keyframes colorize_Focus {
-    0% {
-        box-shadow: 0 0 15px;
-        color: rgb(148, 129, 19);
-    }
-    50% {
-        box-shadow: 0 0 5px;
-        color: rgb(194, 160, 25);
-    }
-    100% {
-        box-shadow: 0 0 15px;
-        color: rgb(148, 129, 19);
     }
 }

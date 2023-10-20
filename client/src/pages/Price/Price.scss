@@ -142,7 +142,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             margin-top: 3em;
             font-size: large;
@@ -151,13 +151,34 @@
                 font-size: 1.2vw;
                 color: #dbcb94;
                 &-Title{
-                    margin-top: 1vw;
+                    margin-top: .5vw;
+                    padding-bottom: 1vw;
                     font-size: 2vw;
                     color: #dbcb94;
+                    width: 100%;
+                    // border-bottom: 1px solid #dbcb94;
                 }
-                &-Price{
-                    
-                    color: #dbcb94;
+                &-Buy{
+                    position: absolute;
+                    bottom: clamp(1%, 30vw, 3%);
+                    right: clamp(3%, 30vw, 20%);
+                    &-Price{
+                        color: #dbcb94;
+                        font-size: .9vw;
+                    }
+                    &-Button{
+                        font-size: .9vw;
+                        padding: .2vw;
+                        color: green;
+                        border-radius: 2vw;
+                        box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
+                        animation: colorize 12s ease infinite;
+                    }
+                    &-Button:hover{
+                        cursor: pointer;
+                        animation: colorize_Focus 2s ease infinite;
+                        
+                    }
                 }
             }
             &-Description::first-letter{
@@ -181,5 +202,78 @@
             color: gold;
             text-shadow: 0 0 5px gold;
         }
+    }
+}
+
+@keyframes colorize {
+    0% {
+        border-radius: 2em;
+        box-shadow: 0 0 10px;
+        color: rgb(197, 222, 229);
+    }
+    10% {
+        border-radius: 3em;
+        box-shadow: 0 0 5px;
+        color: rgb(243, 219, 121);
+    }
+    20% {
+        border-radius: 2em;
+        box-shadow: 0 0 15px;
+        color: rgb(194, 230, 122);
+    }
+    30% {
+        border-radius: .5em;
+        box-shadow: 0 0 3px;
+        color: rgb(241, 177, 139);
+    }
+    40% {
+        border-radius: 3em;
+        box-shadow: 0 0 8px;
+        color: rgb(197, 222, 229);
+    }
+    50% {
+        border-radius: 1em;
+        box-shadow: 0 0 7px;
+        color: rgb(243, 219, 121);
+    }
+    60% {
+        border-radius: 3em;
+        box-shadow: 0 0 15px;
+        color: rgb(194, 230, 122);
+    }
+    70% {
+        border-radius: .5em;
+        box-shadow: 0 0 4px;
+        color: rgb(241, 177, 139);
+    }
+    80% {
+        border-radius: 2em;
+        box-shadow: 0 0 18px;
+        color: rgb(197, 222, 229);
+    }
+    90% {
+        border-radius: 1em;
+        box-shadow: 0 0 9px;
+        color: rgb(243, 219, 121);
+    }
+    100% {
+        border-radius: 3em;
+        box-shadow: 0 0 20px;
+        color: rgb(194, 230, 122);
+    }
+}
+
+@keyframes colorize_Focus {
+    0% {
+        box-shadow: 0 0 15px;
+        color: rgb(148, 129, 19);
+    }
+    50% {
+        box-shadow: 0 0 5px;
+        color: rgb(194, 160, 25);
+    }
+    100% {
+        box-shadow: 0 0 15px;
+        color: rgb(148, 129, 19);
     }
 }

@@ -14,7 +14,7 @@ export default function Main() {
     useEffect(() => {
         setTimeout(() => {
             setLoadDescription(true)
-        }, 5500);
+        }, 2000);
     }, [])
     
 

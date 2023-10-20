@@ -38,7 +38,12 @@ export default function Illusioniists({setServicesCardData}) {
                     >
                         <p className="Illusionists-Services_Card-Info-Description"  style={{textAlign:'left'}}>{choiceIllusionits.description}</p>
                     </div>
-                    <p className="Illusionists-Services_Card-Info-Description-Price" style={{marginBottom:'3em'}}>{choiceIllusionits.price}</p>
+                    <div className="Illusionists-Services_Card-Info-Description-Buy">
+                        <p className="Illusionists-Services_Card-Info-Description-Buy-Price">{choiceIllusionits.price}</p>
+                        <div
+                            className='Illusionists-Services_Card-Info-Description-Buy-Button'
+                        >Заказать</div>
+                    </div>
                 </div>
             </div>
 		}

@@ -12,6 +12,7 @@ import Illusioniists from './ServicesPage/Artists/Illusioniists/Illusioniists'
 import Shows from './ServicesPage/Shows/Shows'
 import Quests from './ServicesPage/Quests/Quests'
 import BirthDay from './ServicesPage/BirthDay/BirthDay'
+import Outday from './ServicesPage/Outday/Outday'
 
 export default function Price() {
 
@@ -101,6 +102,9 @@ export default function Price() {
             servicesCardData && servicesCardData.name === 'Дни рождения' ?
                 <BirthDay setServicesCardData={setServicesCardData} />
             :
+            servicesCardData && servicesCardData.name === 'Детские выпускные' ?
+                <Outday setServicesCardData={setServicesCardData} />
+            :
             servicesCardData &&
             <div className="Price-Services_Card">
                 <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>
@@ -112,7 +116,12 @@ export default function Price() {
                     >
                         <p className="Price-Services_Card-Info-Description"  style={{textAlign:'left'}}>{servicesCardData.description}</p>
                     </div>
-                    <p className="Price-Services_Card-Info-Description-Price" style={{marginBottom:'3em'}}>{servicesCardData.price}</p>
+                    <div className="Price-Services_Card-Info-Description-Buy">
+                        <p className="Price-Services_Card-Info-Description-Buy-Price">{servicesCardData.price}</p>
+                        <div
+                            className='Price-Services_Card-Info-Description-Buy-Button'
+                        >Заказать</div>
+                    </div>
                 </div>
             </div>
             }

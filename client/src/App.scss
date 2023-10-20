@@ -37,10 +37,14 @@
 .App_Intro{
   background-color: #191a22f9;
   overflow: hidden;
-  &-Intro_Logo{
-    width: 100vw;
+  &-Video{
     // height: 99.3vh;
     overflow: hidden;
+  }
+  &-Intro_Logo{
+    // width: 100vw;
+    height: 99.3vh;
+    // overflow: hidden;
   }
 
 }

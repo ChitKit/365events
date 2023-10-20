@@ -1,0 +1,55 @@
+.Outday{
+    font-size: clamp(1px, 2vw, 15px);
+    user-select: none;
+    &-Info{
+        height: 90%;
+        font-size: 1.2vw;
+    }
+    &-Buy{
+        position: absolute;
+        bottom: clamp(1%, 30vw, 3%);
+        right: clamp(3%, 30vw, 20%);
+        &-Price{
+            color: #dbcb94;
+            font-size: .9vw;
+        }
+        &-Button{
+            font-size: .9vw;
+            padding: .2vw;
+            color: green;
+            border-radius: 2vw;
+            box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
+            animation: colorize 12s ease infinite;
+        }
+        &-Button:hover{
+            cursor: pointer;
+            animation: colorize_Focus 2s ease infinite;
+            
+        }
+    }
+}
+.Outday_Active{
+    font-size: 1.1vw;
+    font-weight: bold;
+    box-shadow:  0 5px 10px rgba(255, 217, 0, 0.8);
+    color: rgba(255, 217, 0, 0.8);
+    border-radius: .6em;
+    // border: 1px solid gray;
+    padding: .5em 1em;
+    :only-child{
+        margin: 0;
+    }
+}
+.Outday_Choice{
+    font-size: 1.1vw;
+    color: rgba(255, 217, 0, 0.5);
+    margin: 0;
+    // border: 1px solid gray;
+    padding: .5em 1em;
+    :only-child{
+        margin: 0;
+    }
+    :hover{
+        cursor: pointer;
+    }
+}
