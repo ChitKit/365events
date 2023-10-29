@@ -1,6 +1,6 @@
 export const illusionistsList = [
     {
-        img:'',
+        img:'/imgTeam/Max_illusionist.jpeg',
         name:'Максим',
         description:
         `Интерактивное шоу - 20 минут. Микромагия на встрече гостей 

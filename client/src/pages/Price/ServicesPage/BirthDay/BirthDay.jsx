@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./BirthDay.scss";
 import { birthDay } from "../../servicesCatalog";
 import Base from "./Base/Base";
@@ -6,8 +6,11 @@ import Standart from "./Standart/Standart";
 import VIP from "./VIP/VIP";
 
 export default function BirthDay({ setServicesCardData }) {
-    const [choiceBirthDay, setChoiceBirthDay] = useState('info');
+    const [choiceBirthDay, setChoiceBirthDay] = useState(null);
     console.log();
+    useEffect(() => {
+        setChoiceBirthDay(birthDay[0])
+    },[])
 
     return (
         <div className="Price-Services_Card BirthDay" style={{display:'flex', flexDirection:'column'}}>
@@ -49,17 +52,8 @@ export default function BirthDay({ setServicesCardData }) {
                     choiceBirthDay.name === 'Стандарт' ?
                     <Standart setServicesCardData={setServicesCardData} data={choiceBirthDay}/>
                     :
-                    choiceBirthDay.name === 'VIP' ?
+                    choiceBirthDay.name === 'VIP' &&
                     <VIP setServicesCardData={setServicesCardData} data={choiceBirthDay}/>
-                    :
-                    choiceBirthDay === 'info' &&
-                    <div className="BirthDay-Info">
-                        <p>
-                            Поможем организовать День рождения в любом формате под ключ🗝️ 
-                            У нас есть 3 варианта программ и всегда подарки от агентства! 
-                            Прежде, чем решить вопрос с Днем рождения, прочтите нашу статью <a target="_blank"  href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> 
-                        </p>
-                    </div>
                 }
         </div>
     );

@@ -10,7 +10,6 @@ import Team from "../Team/Team";
 
 export default function Main() {
     const [loadDescription, setLoadDescription] = useState(false)
-
     useEffect(() => {
         setTimeout(() => {
             setLoadDescription(true)
@@ -41,6 +40,7 @@ export default function Main() {
                             365:events
                         {/* </h1> */}
                     </span>
+                    {/* <p>{navigator.platform}</p> */}
                 </div>
                 <div className="MainPageH2Div">
                     {loadDescription &&
@@ -66,13 +66,13 @@ export default function Main() {
                 </div>
             {/* <a href="/" class="btn-flip" data-back="Заказать праздник" data-front="Заказать праздник"></a> */}
             </div>
-            <div id='about' className="AnchorIdAbout"></div>
+            <div id='about' className="Anchor-IdAbout"></div>
             <About />
-            <div id='team' className="AnchorIdTeam"></div>
+            <div id='team' className="Anchor-IdTeam"></div>
             <Team />
-            <div id='services' className="AnchorIdServices"></div>
+            <div id='services' className="Anchor-IdServices"></div>
             <Price />
-            <div id='contacts' className="AnchorIdContacts"></div>
+            <div id='contacts' className="Anchor-IdContacts"></div>
             <Contacts />
             {/* <div onClick={() => {setOpenRecallMe(!openRecallMe)}} className={openRecallMe ? "RecallMe_Active" : "RecallMe"}></div> */}
         </div>
