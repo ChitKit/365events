@@ -6,7 +6,7 @@ import Standart from "./Standart/Standart";
 import VIP from "./VIP/VIP";
 
 export default function BirthDay({ setServicesCardData }) {
-    const [choiceBirthDay, setChoiceBirthDay] = useState(null);
+    const [choiceBirthDay, setChoiceBirthDay] = useState(birthDay[0]);
     console.log();
     useEffect(() => {
         setChoiceBirthDay(birthDay[0])

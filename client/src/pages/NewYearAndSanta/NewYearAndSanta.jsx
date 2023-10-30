@@ -3,7 +3,7 @@ import './NewYearAndSanta.scss'
 
 export default function NewYearAndSanta({setServicesCardData}) {
   
-  const [choiceShow, setChoiceShow] = useState();
+  const [choiceNewYearAndSanta, setChoiceNewYearAndSanta] = useState();
   const shows = []
   useEffect(() => {
       return () => {
@@ -12,12 +12,12 @@ export default function NewYearAndSanta({setServicesCardData}) {
   }, []);
 
   return (
-      <div className="Price-Services_Card Shows" style={{display:'flex', flexDirection:'column'}}>
+      <div className="NewYearAndSanta" style={{display:'flex', flexDirection:'column'}}>
           <div
               onClick={() => {
                   setServicesCardData(null);
               }}
-              className="Price-Services_Card-Button_Close"
+              className="NewYearAndSanta-Button_Close"
           >
               X
           </div>
@@ -32,16 +32,17 @@ export default function NewYearAndSanta({setServicesCardData}) {
           >
               {shows.map((el) => {
                   return (
-                      <div className={choiceShow.name === el.name ? "Show_Active" : "Show_Choice"} >
+                      <div className={choiceNewYearAndSanta.name === el.name ? "NewYearAndSanta_Active" : "NewYearAndSanta_Choice"} >
                           {/* <img
                               style={{ width: "25vh" }}
                               src={el.img}
                               alt=""
                           /> */}
-                          <p onClick={() => {setChoiceShow(el)}} >{el.name}</p>
+                          <p onClick={() => {setChoiceNewYearAndSanta(el)}} >{el.name}</p>
                       </div>
                   );
               })}
+
           </div>
           {/* {
               choiceShow.name === 'Химическое шоу' ?

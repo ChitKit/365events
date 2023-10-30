@@ -7,7 +7,7 @@ import {
     forSell,
     imgMK
 } from './servicesCatalog'
-import NewYearAndSanta from './ServicesPage/NewYearAndSanta/NewYearAndSanta'
+// import NewYearAndSanta from './ServicesPage/NewYearAndSanta/NewYearAndSanta'
 import Illusioniists from './ServicesPage/Artists/Illusioniists/Illusioniists'
 import Shows from './ServicesPage/Shows/Shows'
 import Quests from './ServicesPage/Quests/Quests'
@@ -26,7 +26,7 @@ export default function Price() {
         {path:'./img/category/MasterClass.jpeg', category:'Мастер классы'},
     ]
     const categoryListSecond = [
-        {path:'./img/category/NewYear.jpeg', category:'Новый год'},
+        // {path:'./img/category/NewYear.jpeg', category:'Новый год'},
         {path:'./img/category/OtherServices.jpeg', category:'Другие услуги'},
         {path:'./img/category/ComingSoon.jpeg', category:'Готовим'},
     ]
@@ -41,8 +41,8 @@ export default function Price() {
             setCategoryPhoto(programms)
         } else if (category === 'Мастер классы') {
             setCategoryPhoto(imgMK)
-        } else if (category === 'Новый год') {
-            setCategoryPhoto(newYear)
+        // } else if (category === 'Новый год') {
+        //     setCategoryPhoto(newYear)
         } else if (category === 'Другие услуги') {
             setCategoryPhoto(forSell)
         } else if (category === 'Готовим') {
@@ -87,9 +87,10 @@ export default function Price() {
                     )}
                 </div>
                 }
-            {servicesCardData && servicesCardData.name === 'Дед Мороз и Снегурочка' ?
-                <NewYearAndSanta setServicesCardData={setServicesCardData} />
-            :
+            {
+            // servicesCardData && servicesCardData.name === 'Дед Мороз и Снегурочка' ?
+            //     <NewYearAndSanta setServicesCardData={setServicesCardData} />
+            // :
             servicesCardData && servicesCardData.name === 'Иллюзионисты' ?
                 <Illusioniists setServicesCardData={setServicesCardData} />
             :

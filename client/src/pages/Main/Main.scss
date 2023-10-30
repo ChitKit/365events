@@ -149,6 +149,27 @@
     height: var(--main-Height);
     justify-content: center;
     align-items: center;
+    &-Bell_New_Year_Hide{
+      opacity: 1;
+      width: 20%;
+      position: absolute;
+      top: -22em;
+      right: 6%;
+      transition: 1s;
+    }
+    &-Bell_New_Year{
+      width: 20%;
+      position: absolute;
+      top: 3em;
+      right: 6%;
+      transition: 2s;
+    }
+    &-Bell_New_Year:hover {
+      cursor: pointer;
+        width: 22%;
+        right: 5%;
+        transition: 1s;
+    }
 
     span {
       user-select:none;

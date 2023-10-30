@@ -7,15 +7,26 @@ import Price from "../Price/Price";
 import Contacts from "../Contacts/Contacts";
 import { Link } from "react-router-dom";
 import Team from "../Team/Team";
+import NewYearAndSanta from "../NewYearAndSanta/NewYearAndSanta";
 
 export default function Main() {
     const [loadDescription, setLoadDescription] = useState(false)
+    const [loadNYimg, setLoadNYimg] = useState(false)
     useEffect(() => {
         setTimeout(() => {
             setLoadDescription(true)
         }, 2000);
+        setTimeout(() => {
+            setLoadNYimg(true)
+        }, 4000);
     }, [])
     
+    const goToNYhandler = () => {
+        
+        document
+        .querySelector("#newYear")
+        .scrollIntoView({ behavior: "smooth" });
+    }
 
     return (
         <div className="Application-Content">
@@ -65,6 +76,7 @@ export default function Main() {
                     }
                 </div>
             {/* <a href="/" class="btn-flip" data-back="Заказать праздник" data-front="Заказать праздник"></a> */}
+            <img onClick={goToNYhandler} className={loadNYimg ? "MainPage-Bell_New_Year" : "MainPage-Bell_New_Year_Hide"} src="./img/Ball.png" alt="bell" />
             </div>
             <div id='about' className="Anchor-IdAbout"></div>
             <About />
@@ -72,6 +84,8 @@ export default function Main() {
             <Team />
             <div id='services' className="Anchor-IdServices"></div>
             <Price />
+            <div id='newYear' className="Anchor-IdNewYear"></div>
+            <NewYearAndSanta />
             <div id='contacts' className="Anchor-IdContacts"></div>
             <Contacts />
             {/* <div onClick={() => {setOpenRecallMe(!openRecallMe)}} className={openRecallMe ? "RecallMe_Active" : "RecallMe"}></div> */}
