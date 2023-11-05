@@ -6,23 +6,83 @@ import NY2 from './Category/NY2';
 import NY3 from './Category/NY3';
 import NYOutdoor from './Category/NYOutdoor';
 import NYinOrganization from './Category/NYinOrganization';
+import KidNY from './KidNY';
 
 const categoryList = [
-  'ИНТЕРАКТИВНЫЙ СПЕКТАКЛЬ', 'ДЕД МОРОЗ И СНЕГУРОЧКА на дом к ДЕТЯМ', 'ДЕД МОРОЗ И СНЕГУРОЧКА на дом к ВЗРОСЛЫМ', 
-  'ДЕД МОРОЗ И СНЕГУРОЧКА на корпоратив', 'ДЕД МОРОЗ И СНЕГУРОЧКА на улице (30 минут)', 'ДЕД МОРОЗ И СНЕГУРОЧКА в учреждении (45 минут)'
-      ]
+    {
+        title: 'Дед мороз для детей',
+        photo: './img/NY/DedMorozDeti.jpg',
+    }, 
+    {
+        title: 'Дед мороз для взрослых',
+        photo: './img/NY/DedMorozVzroslym.jpg',
+    }, 
+    {
+        title: 'Дед мороз вне дома',
+        photo: './img/NY/DedMorozVneDoma.jpg',
+    }
+//   'ИНТЕРАКТИВНЫЙ СПЕКТАКЛЬ', 'ДЕД МОРОЗ И СНЕГУРОЧКА на дом к ДЕТЯМ', 'ДЕД МОРОЗ И СНЕГУРОЧКА на дом к ВЗРОСЛЫМ', 
+//   'ДЕД МОРОЗ И СНЕГУРОЧКА на корпоратив', 'ДЕД МОРОЗ И СНЕГУРОЧКА на улице (30 минут)', 'ДЕД МОРОЗ И СНЕГУРОЧКА в учреждении (45 минут)'
+    ]
+const forBiggest = [
+    {
+        title: 'Корпоратив',
+        descryption: '',
+        price: '',
+        photo: {
+            
+        }
+    },
+    {
+        title: '15 минутная программа',
+        descryption: '',
+        price: '',
+        photo: {
+            
+        }
+    },
+    {
+        title: '30 минутная программа',
+        descryption: '',
+        price: '',
+        photo: {
+            
+        }
+    },
+    {
+        title: '45 минутная программа',
+        descryption: '',
+        price: '',
+        photo: {
+            
+        }
+    },
+]
+
+const forOthers = [
+    {
+        title: 'Дед Мороз и Снегурочка на улице',
+        descryption: '',
+        price: '',
+        photo: {
+            
+        }
+    },
+    {
+        title: 'Дед Мороз и Снегурочка в учреждении',
+        descryption: '',
+        price: '',
+        photo: {
+            
+        }
+    }
+]
 
 export default function NewYearAndSanta() {
 
-
-  const [serviceCardData, setServiceCardData] = useState(false);
-  const [choiceNewYearAndSanta, setChoiceNewYearAndSanta] = useState();
-  useEffect(() => {
-    setChoiceNewYearAndSanta(categoryList[0])
-      return () => {
-          // setChoiceShow(shows[0]);
-      };
-  }, []);
+    const [isModalCard, setIsModalCard] = useState(false)
+    const [serviceCardData, setServiceCardData] = useState(false);
+    const [choiceNewYearAndSanta, setChoiceNewYearAndSanta] = useState();
 
   return (
       <div className="NewYearAndSanta" style={{display:'flex', flexDirection:'column'}}>
@@ -53,62 +113,58 @@ export default function NewYearAndSanta() {
                       <div 
                         style={{
                             width: "30%",
-                            height: "50%",
+                            height: "80%",
+                            display:'flex',
+                            flexDirection:'column',
+                            alignItems:'center'
                         }}
-                        onClick={() => {setChoiceNewYearAndSanta(el)}} 
-                        className={choiceNewYearAndSanta === el ? "NewYearAndSanta_Active" : "NewYearAndSanta_Choice"} >
+                        >
                           {/* <img
                               style={{ width: "25vh" }}
                               src={el.img}
                               alt=""
-                          /> */}
-                          <p>{el}</p>
+                            /> */}
+                          <img 
+                            onClick={() => {setChoiceNewYearAndSanta(el); setIsModalCard(true)}} 
+                            className='NewYearAndSanta-Category_Card'
+                            style={{
+                                width: "65%",
+                            }} src={el.photo} alt="" />
+                          <p
+                          >{el.title}</p>
                       </div>
                   );
               })}
           </div>
-          {
-              choiceNewYearAndSanta === 'Химическое шоу' ?
-                    <InteractiveShow
-                        serviceCardData={serviceCardData} 
-                        setIsModalCard={setServiceCardData} 
-                        data={choiceNewYearAndSanta}
-                    />
-                :
-                choiceNewYearAndSanta === 'Шоу мыльных пузырей' ?
-                    <NY1 
-                        serviceCardData={serviceCardData} 
-                        setIsModalCard={setServiceCardData} 
-                        data={choiceNewYearAndSanta}
-                    />
-                :
-                choiceNewYearAndSanta === 'Бумажное шоу' ?
-                    <NY2 
-                        serviceCardData={serviceCardData} 
-                        setIsModalCard={setServiceCardData} 
-                        data={choiceNewYearAndSanta}
-                    />
-                :
-                choiceNewYearAndSanta === 'Шоу мыльных пузырей' ?
-                    <NY3
-                        serviceCardData={serviceCardData} 
-                        setIsModalCard={setServiceCardData} 
-                        data={choiceNewYearAndSanta}
-                    />
-                :
-                choiceNewYearAndSanta === 'Бумажное шоу' ?
-                    <NYOutdoor
-                        serviceCardData={serviceCardData} 
-                        setIsModalCard={setServiceCardData} 
-                        data={choiceNewYearAndSanta}
-                    />
-                :
-                choiceNewYearAndSanta === 'Бумажное шоу' &&
-                    <NYinOrganization
-                        serviceCardData={serviceCardData} 
-                        setIsModalCard={setServiceCardData} 
-                        data={choiceNewYearAndSanta}
-                    />
+          {isModalCard &&
+            <>
+                {choiceNewYearAndSanta && 
+                    <>
+                        {
+                            choiceNewYearAndSanta.title === 'Дед мороз для детей' ?
+                                    <KidNY
+                                        serviceCardData={serviceCardData} 
+                                        data={choiceNewYearAndSanta}
+                                        setIsModalCard={setIsModalCard} 
+                                    />
+                                :
+                                choiceNewYearAndSanta.title === 'Дед мороз для взрослых' ?
+                                    <NY1 
+                                        serviceCardData={serviceCardData} 
+                                        setIsModalCard={setServiceCardData} 
+                                        data={choiceNewYearAndSanta}
+                                    />
+                                :
+                                choiceNewYearAndSanta.title === 'Дед мороз вне дома' &&
+                                    <NYinOrganization
+                                        serviceCardData={serviceCardData} 
+                                        setIsModalCard={setServiceCardData} 
+                                        data={choiceNewYearAndSanta}
+                                    />
+                        }
+                    </>
+                }
+            </>
           }
       </div>
   )
