@@ -76,7 +76,7 @@ export default function Main() {
                     }
                 </div>
             {/* <a href="/" class="btn-flip" data-back="Заказать праздник" data-front="Заказать праздник"></a> */}
-            <img onClick={goToNYhandler} className={loadNYimg ? "MainPage-Bell_New_Year" : "MainPage-Bell_New_Year_Hide"} src="./img/Ball.png" alt="bell" />
+            <img onClick={goToNYhandler} className={loadNYimg ? "MainPage-Bell_New_Year" : "MainPage-Bell_New_Year_Hide"} src="./img/NYPNG.png" alt="bell" />
             </div>
             <div id='about' className="Anchor-IdAbout"></div>
             <About />

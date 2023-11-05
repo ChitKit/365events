@@ -12,14 +12,41 @@
     border-radius: 2em 0 2em 0;
     font-size: clamp(1px, 2vw, 15px);
     user-select: none;
-    &-Button_Close_Category {
-        width: 3vw;
-        margin-top: 2em;
-        transition: 0.2s;
+    &-Main_description{
+        text-align: left;
+        font-size: .9vw;
+        width: 90%;
     }
-    &-Button_Close_Category:hover {
+}
+
+.NewYearAndSanta_Active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+    font-weight: bold;
+    box-shadow:  0 5px 10px rgba(0, 217, 255, 0.8);
+    color: rgba(0, 217, 255, 0.8);
+    border-radius: .6em;
+    // border: 1px solid gray;
+    padding: .5em 1em;
+    :only-child{
+        margin: 0;
+    }
+}
+.NewYearAndSanta_Choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+    color: rgba(255, 17, 0, 0.788);
+    margin: 0;
+    // border: 1px solid gray;
+    padding: .5em 1em;
+    :only-child{
+        margin: 0;
+    }
+    :hover{
         cursor: pointer;
-        width: 3.1vw;
-        transition: 0.2s;
     }
 }
