@@ -1,5 +1,8 @@
 @media screen and (min-width: 1280px) {
     :root {
+        --ticket_widht: 17%;
+        --ticket_widht_hover: 18;
+        --ticket_position_top: 5em;
         --position_top: 20vh;
         --position_cupon_left: -25em;
         --position_cupon_bottom: 2em;
@@ -29,6 +32,9 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     :root {
+        --ticket_widht: 17%;
+        --ticket_widht_hover: 18;
+        --ticket_position_top: 5em;
         --position_top: 20vh;
         --text-sizeTextH1: 2.1em;
         --text-sizeTextH2: 1.4em;
@@ -57,6 +63,9 @@
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
     :root {
+        --ticket_widht: 17%;
+        --ticket_widht_hover: 18;
+        --ticket_position_top: 5em;
         --position_top: 20vh;
         --text-sizeTextH1: 1.6em;
         --text-sizeTextH2: 1.2em;
@@ -83,8 +92,11 @@
         --postiion_top_tittle: 5%;
     }
 }
-@media screen and (max-width: 799px) {
+@media (orientation: portrait) {
     :root {
+        --ticket_widht: 30%;
+        --ticket_widht_hover: 21%;
+        --ticket_position_top: 15em;
         --position_top: 15em;
         --position_cupon_left: -6em;
         --position_cupon_bottom: 2em;
@@ -151,24 +163,24 @@
     align-items: center;
     &-Bell_New_Year_Hide{
       opacity: 1;
-      width: 10%;
+      width: var(--ticket_widht);
       position: absolute;
       top: -50em;
-      right: 6%;
+      right: .6%;
       transition: 1s;
     }
     &-Bell_New_Year{
-      width: 17%;
+      width: var(--ticket_widht);
       position: absolute;
-      top: 3em;
-      right: 6%;
+      top: var(--ticket_position_top);
+      right: .6%;
       transition: 2s;
     }
     &-Bell_New_Year:hover {
       cursor: pointer;
-        width: 18%;
-        right: 5.5%;
-        top: 2.7em;
+        width: var(--ticket_widht_hover);
+        right: 0;
+        top: var(--ticket_position_top);
         transition: 1s;
     }
 

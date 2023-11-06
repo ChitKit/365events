@@ -27,7 +27,7 @@
       --shadow_box: 10px 10px 30px #e7c8623b;
   }
 }
-@media screen and (max-width: 799px) {
+@media (orientation: portrait) {
   :root {
       --height-app:80vh;
       // --shadow_box: 20px 20px 10x rgba(170, 173, 0, 0.4);      

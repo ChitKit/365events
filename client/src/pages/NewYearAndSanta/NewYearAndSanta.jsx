@@ -116,7 +116,7 @@ export default function NewYearAndSanta() {
                             height: "80%",
                             display:'flex',
                             flexDirection:'column',
-                            alignItems:'center'
+                            alignItems:'center',
                         }}
                         >
                           {/* <img

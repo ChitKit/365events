@@ -1,5 +1,6 @@
 @media screen and (min-width: 1280px) {
     :root {
+        --personal_card_width: 13%;
         --width_image_carousel: 30%;
         --height_image_carousel: 45%;
         --text_H3_image_description_size: 16px;
@@ -14,6 +15,7 @@
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     :root {
+        --personal_card_width: 13%;
         --width_image_carousel: 45%;
         --height_image_carousel: 45%;
         --text_H3_image_description_size: 16px;
@@ -28,6 +30,7 @@
   }
   @media screen and (min-width: 800px) and (max-width: 1023px) {
     :root {
+        --personal_card_width: 13%;
         --width_image_carousel: 45%;
         --height_image_carousel: 45%;
         --text_H3_image_description_size: 16px;
@@ -40,8 +43,9 @@
         --height_content_team: 75vh;
     }
   }
-  @media screen and (max-width: 799px) {
-    :root {
+  @media (orientation: portrait) {
+      :root {
+        --personal_card_width: 30%;
         --width_image_carousel: 80%;
         --height_image_carousel: 80%;
         --text_H3_image_description_size: 16px;
@@ -118,14 +122,13 @@
         &-Card_Window{
             display: flex;
             flex-direction: column;
-            width: 13%;
+            width: var(--personal_card_width);
             margin: .5em 2em;
             transition: 1s;
         }
         &-Card_Window:hover{
             cursor: pointer;
             img{
-                // width: 105%;
                 box-shadow: 5px 5px 20px var(--font_color_app);
                 transition: .5s;
             }
