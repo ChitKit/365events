@@ -11,6 +11,8 @@
         --margin_left_card: 2em;
         --width_content_team: 70vw;
         --height_content_team: 75vh;
+        --personal_card_info_directional: row;
+        --width_image_personal_card: 40%;
     }
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -26,6 +28,8 @@
         --margin_left_card: 2em;
         --width_content_team: 70vw;
         --height_content_team: 75vh;
+        --personal_card_info_directional: row;
+        --width_image_personal_card: 40%;
     }
   }
   @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -41,6 +45,8 @@
         --margin_left_card: 2em;
         --width_content_team: 70vw;
         --height_content_team: 75vh;
+        --personal_card_info_directional: row;
+        --width_image_personal_card: 40%;
     }
   }
   @media (orientation: portrait) {
@@ -55,12 +61,13 @@
         --align_items_card: center;
         --margin_left_card: 0;
         --width_content_team: 85vw;
-        --height_content_team: 80vh;
+        --height_content_team: 75vh;
+        --personal_card_info_directional: column;
+        --width_image_personal_card: 60%;
     }
 }
 
 .Team{
-    margin-top: 8em;
     background:rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);
     position: relative;
@@ -75,20 +82,37 @@
     border-radius: 2em 0 2em 0;
     &-Personal_Card{
         display: flex;
+        flex-direction: var(--personal_card_info_directional);
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: auto;
+        height: 100%;
         position: absolute;
         border-radius: 1em;
         background-color: rgb(27, 27, 27);
         border-radius: 2em 0 2em 0;
         box-shadow: 0 0 50px var(--font_color_app);
         transition: .5s;
+        &-Image{
+            padding: 1em;
+            border-radius: 2em 0em;
+            width: var(--width_image_personal_card);
+        }
         &-Info{
             margin-top: 3em;
             font-size: large;
             color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            &-Name{
+                font-size: larger;
+            }
+            &-Description{
+                text-align: center;
+                width: 90%;
+    
+            }
         }
         &-Button_Close{
             color: white;

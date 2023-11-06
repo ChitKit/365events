@@ -4,7 +4,6 @@
     z-index: 10;
     width: var(--width_content_price);
     height: var(--height_content_price);
-    margin: 9em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +80,7 @@
     font-weight: bold;
     box-shadow:  0 5px 10px rgba(255, 255, 255, 0.8);
     color: rgba(255, 255, 255, 0.8);
-    border-radius: .6em;
+    border-radius: 0 0 .6em .6em;
     // border: 1px solid gray;
     padding: .5em 1em;
     :only-child{
@@ -89,6 +88,42 @@
     }
 }
 .KidNY_Choice{
+    font-size: 1.1vw;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    // border: 1px solid gray;
+    padding: .5em 1em;
+    :only-child{
+        margin: 0;
+    }
+    :hover{
+        cursor: pointer;
+    }
+}
+
+.ForBigNY{
+    font-size: clamp(1px, 2vw, 15px);
+    user-select: none;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.781) !important;
+    transition: 2s;
+}
+.ForBigNY_change{
+    box-shadow: 0 0 70px rgb(0, 138, 41) !important;
+    transition: 2s;
+}
+.ForBigNY_Active{
+    font-size: 1.1vw;
+    font-weight: bold;
+    box-shadow:  0 5px 10px rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 .6em .6em;
+    // border: 1px solid gray;
+    padding: .5em 1em;
+    :only-child{
+        margin: 0;
+    }
+}
+.ForBigNY_Choice{
     font-size: 1.1vw;
     color: rgb(255, 255, 255);
     margin: 0;

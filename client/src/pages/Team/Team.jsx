@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Team.scss";
-import Slider from "react-slick";
 
 const images = [
     {
@@ -158,7 +157,7 @@ export default function Team({ currentColorForImg }) {
                         >
                             <img style={{width:'100%'}} alt={el.name} src={el.source} />
                             <div >
-                                <h6 >{el.role}</h6>
+                                <h6>{el.role}</h6>
                             </div>
                         </div>
                     ))
@@ -178,10 +177,10 @@ export default function Team({ currentColorForImg }) {
             {personalCardData &&
                 <div className="Team-Personal_Card">
                     <div onClick={() => {setPersonalCardData(null)}} className="Team-Personal_Card-Button_Close">X</div>
-                    <img style={{width:'60%', height:'60%', borderRadius: '2em 0em'}} src={personalCardData.source} alt={personalCardData.name} />
+                    <img className="Team-Personal_Card-Image" src={personalCardData.source} alt={personalCardData.name} />
                     <div className="Team-Personal_Card-Info">
-                        <p>{personalCardData.name}</p>
-                        <p>{personalCardData.description}</p>
+                        <p className="Team-Personal_Card-Info-Name">{personalCardData.name}</p>
+                        <p className="Team-Personal_Card-Info-Description">{personalCardData.description}</p>
                     </div>
                 </div>
             }

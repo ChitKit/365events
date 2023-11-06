@@ -34,9 +34,9 @@
         --margin-category-card-hover: 3.5vh 2.8vw;
     }
 }
-@media screen and (max-width: 799px) {
+@media (orientation: portrait) {
     :root {
-        --height_content_price: 65vh;
+        --height_content_price: 75vh;
         --width_content_price: 85vw;
         --width-category-card: 13vh;
         --width-category-card-hover: 16vh;
@@ -50,7 +50,6 @@
     z-index: 10;
     width: var(--width_content_price);
     height: var(--height_content_price);
-    margin: 9em;
     display: flex;
     flex-direction: column;
     align-items: center;

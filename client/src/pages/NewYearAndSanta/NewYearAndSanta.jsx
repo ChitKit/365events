@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import './NewYearAndSanta.scss'
-import InteractiveShow from './Category/InteractiveShow';
-import NY1 from './Category/NY1';
-import NY2 from './Category/NY2';
-import NY3 from './Category/NY3';
-import NYOutdoor from './Category/NYOutdoor';
 import NYinOrganization from './Category/NYinOrganization';
 import KidNY from './KidNY';
+import ForBigNY from './ForBigNY';
 
 const categoryList = [
     {
@@ -23,40 +19,6 @@ const categoryList = [
     }
 //   'ИНТЕРАКТИВНЫЙ СПЕКТАКЛЬ', 'ДЕД МОРОЗ И СНЕГУРОЧКА на дом к ДЕТЯМ', 'ДЕД МОРОЗ И СНЕГУРОЧКА на дом к ВЗРОСЛЫМ', 
 //   'ДЕД МОРОЗ И СНЕГУРОЧКА на корпоратив', 'ДЕД МОРОЗ И СНЕГУРОЧКА на улице (30 минут)', 'ДЕД МОРОЗ И СНЕГУРОЧКА в учреждении (45 минут)'
-    ]
-const forBiggest = [
-    {
-        title: 'Корпоратив',
-        descryption: '',
-        price: '',
-        photo: {
-            
-        }
-    },
-    {
-        title: '15 минутная программа',
-        descryption: '',
-        price: '',
-        photo: {
-            
-        }
-    },
-    {
-        title: '30 минутная программа',
-        descryption: '',
-        price: '',
-        photo: {
-            
-        }
-    },
-    {
-        title: '45 минутная программа',
-        descryption: '',
-        price: '',
-        photo: {
-            
-        }
-    },
 ]
 
 const forOthers = [
@@ -149,17 +111,17 @@ export default function NewYearAndSanta() {
                                     />
                                 :
                                 choiceNewYearAndSanta.title === 'Дед мороз для взрослых' ?
-                                    <NY1 
+                                    <ForBigNY
                                         serviceCardData={serviceCardData} 
-                                        setIsModalCard={setServiceCardData} 
                                         data={choiceNewYearAndSanta}
+                                        setIsModalCard={setIsModalCard} 
                                     />
                                 :
                                 choiceNewYearAndSanta.title === 'Дед мороз вне дома' &&
                                     <NYinOrganization
                                         serviceCardData={serviceCardData} 
-                                        setIsModalCard={setServiceCardData} 
                                         data={choiceNewYearAndSanta}
+                                        setIsModalCard={setIsModalCard} 
                                     />
                         }
                     </>

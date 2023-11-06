@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Main.scss";
 import '../About/About.scss'
-import MainLayout from "../../Layout/MainLayout";
 import About from "../About/About";
 import Price from "../Price/Price";
 import Contacts from "../Contacts/Contacts";

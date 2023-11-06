@@ -28,6 +28,7 @@
         
         --main-overflow: auto;
         --background_image: url('../../../public//img/backgroundSpice.jpeg');
+        --height_anchor: 8em;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -58,6 +59,7 @@
         // --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
         --shadow-Block-OutSide: 0px 0px 20px #e7c862;
         --background_image: url('../../../public//img/backgroundSpice.jpeg');
+        --height_anchor: 8em;
         --postiion_top_tittle: 5%;
     }
 }
@@ -89,12 +91,13 @@
         // --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
         --shadow-Block-OutSide: 0px 0px 20px #e7c862;
         --background_image: url('../../../public//img/backgroundSpice.jpeg');
+        --height_anchor: 8em;
         --postiion_top_tittle: 5%;
     }
 }
 @media (orientation: portrait) {
     :root {
-        --ticket_widht: 30%;
+        --ticket_widht: 25%;
         --ticket_widht_hover: 21%;
         --ticket_position_top: 15em;
         --position_top: 15em;
@@ -120,6 +123,7 @@
         // --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
         --shadow-Block-OutSide: 0px 0px 20px #e7c862;
         --background_image: url('../../../public//img/mobile_background_image.jpeg');
+        --height_anchor: 5em;
         
     }
 }
@@ -128,14 +132,26 @@
   width: 100vw;
   height: 100vh;
 }
-.Anchor-IdAbout{
+.Anchor{
   width: 100%;
-  height: 8em;
-}
-.Anchor-IdContacts{
-  height: 8em;
+  &-IdAbout{
+    height: var(--height_anchor);
+  }
+  &-IdContacts{
+    height: var(--height_anchor);
+  }
+  &-IdTeam{
+    height: var(--height_anchor);
+  }
+  &-IdServices{
+    height: var(--height_anchor);
+  }
+  &-IdNewYear{
+    height: var(--height_anchor);
+  }
 }
 .Application-Content{
+    height: auto;
     overflow: var(--main-overflow);
     display: flex;
     flex-direction: column;
