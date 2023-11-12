@@ -65,53 +65,82 @@
     }
 }
 
-.KidNY{
+.ForBigNY, .OutDoorNY, .KidNY{
     font-size: clamp(1px, 2vw, 15px);
     user-select: none;
-    box-shadow: 0 0 50px rgba(255, 0, 0, 0.781) !important;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
     transition: 2s;
-}
-.KidNY_change{
-    box-shadow: 0 0 70px rgb(0, 138, 41) !important;
-    transition: 2s;
-}
-.KidNY_Active{
-    font-size: 1.1vw;
-    font-weight: bold;
-    box-shadow:  0 5px 10px rgba(255, 255, 255, 0.8);
-    color: rgba(255, 255, 255, 0.8);
-    border-radius: 0 0 .6em .6em;
-    // border: 1px solid gray;
-    padding: .5em 1em;
-    :only-child{
-        margin: 0;
-    }
-}
-.KidNY_Choice{
-    font-size: 1.1vw;
-    color: rgb(255, 255, 255);
-    margin: 0;
-    // border: 1px solid gray;
-    padding: .5em 1em;
-    :only-child{
-        margin: 0;
-    }
-    :hover{
-        cursor: pointer;
-    }
-}
+    &-Content{
+        width: 100%;
+        height: 100%;
+        display: flex;
 
-.ForBigNY{
-    font-size: clamp(1px, 2vw, 15px);
-    user-select: none;
-    box-shadow: 0 0 50px rgba(255, 0, 0, 0.781) !important;
-    transition: 2s;
+        &-Left_Content{
+            width: 50%;
+            height: 100%;
+            &-MainPhoto{
+                height: 77%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 70%;
+                }
+            }
+            &-PhotoList{
+                overflow-x: auto;
+                display: flex;
+                max-width: 100%;
+                height: 22%;
+                padding-bottom: 1em;
+                &-Select_Card{
+                    width: 15%;
+                    box-shadow: 0 0 15px rgba(0, 255, 255, 0.719);
+                    margin: 1em;
+                }
+                &-Card{
+                    width: 15%;
+                    margin: 1em;
+                }
+                :hover{
+                    cursor: pointer;
+                    box-shadow: 0 0 10px white;
+                }
+                
+            }
+            &-PhotoList::-webkit-scrollbar {
+                height: 10px;
+                width: 2px;
+                // background-color: aqua;
+            }
+            &-PhotoList::-webkit-scrollbar-thumb{
+                border-radius: 10px;
+                background-color: #e7c862;
+                box-shadow: inset 0 0 8px #e7c862;
+            }
+        }
+        &-Right_Content{
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+            height: 100%;
+            &-Description{
+                padding: 5em;
+                width: 100%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            &-Price{
+                height: 10%;
+            }
+        }
+    }
 }
-.ForBigNY_change{
-    box-shadow: 0 0 70px rgb(0, 138, 41) !important;
-    transition: 2s;
-}
-.ForBigNY_Active{
+.ForBigNY_Active, .OutDoorNY_Active, .KidNY_Active{
     font-size: 1.1vw;
     font-weight: bold;
     box-shadow:  0 5px 10px rgba(255, 255, 255, 0.8);
@@ -123,7 +152,7 @@
         margin: 0;
     }
 }
-.ForBigNY_Choice{
+.ForBigNY_Choice, .OutDoorNY_Choice, .KidNY_Choice{
     font-size: 1.1vw;
     color: rgb(255, 255, 255);
     margin: 0;

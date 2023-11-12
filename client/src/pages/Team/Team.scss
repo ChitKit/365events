@@ -67,6 +67,24 @@
     }
 }
 
+@media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
+    :root {
+      --personal_card_width: 30%;
+      --width_image_carousel: 80%;
+      --height_image_carousel: 80%;
+      --text_H3_image_description_size: 16px;
+      --text_H5_image_description_size: 12px;
+      --orientation_carousel_card: column;
+      --margin_img_carousel: 0;
+      --align_items_card: center;
+      --margin_left_card: 0;
+      --width_content_team: 85vw;
+      --height_content_team: 75vh;
+      --personal_card_info_directional: column;
+      --width_image_personal_card: 60%;
+  }
+}
+
 .Team{
     background:rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);

@@ -12,6 +12,7 @@
         --width-category-card-hover: 21.2vh;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
+        --services_card_width: 18%;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -22,6 +23,7 @@
         --width-category-card-hover: 19.2vh;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
+        --services_card_width: 18%;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -32,15 +34,29 @@
         --width-category-card-hover: 18.2vh;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
+        --services_card_width: 18%;
     }
 }
 @media (orientation: portrait) {
     :root {
         --height_content_price: 75vh;
         --width_content_price: 85vw;
-        --width-category-card: 13vh;
+        --width-category-card: 15vh;
         --width-category-card-hover: 16vh;
         --margin-category-card: 2vh 2vw;
+        --services_card_width: 40%;
+    }
+}
+
+@media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
+    :root {
+        --height_content_price: 75vh;
+        --width_content_price: 85vw;
+        --width-category-card: 13vw;
+        --width-category-card-hover: 14vw;
+        --margin-category-card: 2vh 2vw;
+        --services_card_width: 18%;
+        --services_card_width: 25%;
     }
 }
 
@@ -99,7 +115,7 @@
         max-height: 80%;
         overflow-y: auto;
         &-CardServices {
-            width: 18%;
+            width: var(--services_card_width);
             height: auto;
             margin: 1em;
             transition: 1s;

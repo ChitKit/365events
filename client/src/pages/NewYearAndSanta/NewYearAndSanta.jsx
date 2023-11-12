@@ -1,8 +1,8 @@
 import React, {  useState } from 'react'
 import './NewYearAndSanta.scss'
-import NYinOrganization from './Category/NYinOrganization';
 import KidNY from './KidNY';
 import ForBigNY from './ForBigNY';
+import OutDoorNY from './OutDoorNY';
 
 const categoryList = [
     {
@@ -19,25 +19,6 @@ const categoryList = [
     }
 //   'ИНТЕРАКТИВНЫЙ СПЕКТАКЛЬ', 'ДЕД МОРОЗ И СНЕГУРОЧКА на дом к ДЕТЯМ', 'ДЕД МОРОЗ И СНЕГУРОЧКА на дом к ВЗРОСЛЫМ', 
 //   'ДЕД МОРОЗ И СНЕГУРОЧКА на корпоратив', 'ДЕД МОРОЗ И СНЕГУРОЧКА на улице (30 минут)', 'ДЕД МОРОЗ И СНЕГУРОЧКА в учреждении (45 минут)'
-]
-
-const forOthers = [
-    {
-        title: 'Дед Мороз и Снегурочка на улице',
-        descryption: '',
-        price: '',
-        photo: {
-            
-        }
-    },
-    {
-        title: 'Дед Мороз и Снегурочка в учреждении',
-        descryption: '',
-        price: '',
-        photo: {
-            
-        }
-    }
 ]
 
 export default function NewYearAndSanta() {
@@ -118,7 +99,7 @@ export default function NewYearAndSanta() {
                                     />
                                 :
                                 choiceNewYearAndSanta.title === 'Дед мороз вне дома' &&
-                                    <NYinOrganization
+                                    <OutDoorNY
                                         serviceCardData={serviceCardData} 
                                         data={choiceNewYearAndSanta}
                                         setIsModalCard={setIsModalCard} 

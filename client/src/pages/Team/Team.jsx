@@ -100,13 +100,7 @@ const images = [
         description: "Видеограф",
     },
 ];
-export default function Team({ currentColorForImg }) {
-
-
-    const arrayPuzzle = ["LT", "LB", "RT", "RB"];
-    const [count, setCount] = useState(0);
-    const [mousedOver, setMousedOver] = useState(false);
-    const [pause, setPause] = useState(false);
+export default function Team () {
     const [colorPuzzleForm, setColorPuzzleForm] = useState(undefined);
     const [personalCardData, setPersonalCardData] = useState(null);
     const [viewCard, setViewCard] = useState(false);
@@ -115,32 +109,7 @@ export default function Team({ currentColorForImg }) {
         setTimeout(() => {
             setViewCard(!viewCard)
         }, 200);
-    }, [personalCardData])
-    
-
-    const settings = {
-        // dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // autoplay: true,
-      };
-
-    useEffect(() => {
-        if (!mousedOver) {
-            if (!pause) {
-                const timer = setInterval(() => {
-                    setCount((prevCount) => (prevCount + 1) % images.length);
-                }, 3000);
-                return () => clearInterval(timer);
-            }
-        }
-    }, [mousedOver]);
-    if (colorPuzzleForm === undefined) {
-        setColorPuzzleForm(arrayPuzzle[Math.floor(Math.random() * 4)]);
-    }
-    // //! Добавить MOBX в ПРОЕКТ !!! ( заменить состояние!!!!!)
+    }, [personalCardData, viewCard])
 
     return (
         <div

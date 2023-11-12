@@ -4,7 +4,6 @@ import '../About/About.scss'
 import About from "../About/About";
 import Price from "../Price/Price";
 import Contacts from "../Contacts/Contacts";
-import { Link } from "react-router-dom";
 import Team from "../Team/Team";
 import NewYearAndSanta from "../NewYearAndSanta/NewYearAndSanta";
 

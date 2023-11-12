@@ -37,7 +37,7 @@
         --logo_width_bouncing: 20%;
     }
   }
-  @media (orientation: portrait) {
+  @media (orientation: portrait) and (max-height: 428px) and (max-width: 926px) {
     :root {
         --position_left_arrow_button: 47%;
         --size_arrow_button: 25px;
@@ -51,6 +51,19 @@
     }
   }
 
+  @media (orientation: landscape) and (max-height: 428px) and (max-width: 926px) {
+    :root {
+        --position_left_arrow_button: 47%;
+        --size_arrow_button: 25px;
+        --tittle_module_font_size: 2em;
+        --text-size-About-Content: .8em;
+        --module_contacts_font_size: .5em;
+        --height_content: 75vh;
+        --width_content: 85vw;
+        --position_rotate_logo: 50px;
+        --logo_width_bouncing: 30%;
+    }
+  }
 .About{
     background:rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);

@@ -128,6 +128,37 @@
     }
 }
 
+@media (orientation: landscape) and (max-height: 428px) and (max-width: 926px) {
+  :root {
+      --ticket_widht: 15%;
+      --ticket_widht_hover: 16%;
+      --ticket_position_top: 7em;
+      --position_top: 15em;
+      --position_cupon_left: -6em;
+      --position_cupon_bottom: 2em;
+      --text-sizeTextH1: 1.2em;
+      --text-sizeTextH2: 1em;
+      --width-mainpage: 100vw;
+      --height-span1: 4em;
+      --height-span12: 2em;
+      --height-divH1: 5.4em;
+      --height-H1: 3.5em;
+      --width-divH1: 70%;
+      --width-H1: 94%;
+      --height-divH2: 7em;
+      --width-divH2: 85%;
+      --width-H2: 94%;
+      --borderRadius-divH2: 2rem;
+      --main-Height: 100vh;
+      --main-overflow: hidden;
+      --postiion_top_tittle: 2em;
+      --postiion_bottom_tittle: 60%;
+      // --shadow-Block-OutSide: 0px 0px 20px rgb(255, 251, 0);
+      --shadow-Block-OutSide: 0px 0px 20px #e7c862;
+      --background_image: url('../../../public//img/mobile_background_image.jpeg');
+      --height_anchor: 5em;
+  }
+}
 .Intro_Logo{
   width: 100vw;
   height: 100vh;
