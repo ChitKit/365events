@@ -6,8 +6,10 @@ import Price from "../Price/Price";
 import Contacts from "../Contacts/Contacts";
 import Team from "../Team/Team";
 import NewYearAndSanta from "../NewYearAndSanta/NewYearAndSanta";
+import { Fireworks } from 'fireworks-js'
 
 export default function Main() {
+    const [salut, setSalut] = useState(false)
     const [loadDescription, setLoadDescription] = useState(false)
     const [loadNYimg, setLoadNYimg] = useState(false)
     useEffect(() => {
@@ -19,12 +21,49 @@ export default function Main() {
         }, 4000);
     }, [])
     
+    let collection = ''
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Р") {
+            collection += "Р"
+        }
+        if (collection[0] === "Р" && event.key === "и") {
+            if (collection.length === 1) {
+                collection += "и"
+            }
+        }
+        if (collection[0] === "Р" && collection[1] === "и" && event.key === "т") {
+            if (collection.length === 2) {
+                collection += "т"
+            }
+        }
+        if (collection[0] === "Р" && collection[1] === "и" && collection[2] === "т" && event.key === "а") {
+            if (collection.length === 3) {
+                collection += "а"
+                console.log(collection.legnth);
+                if (collection === "Рита") {
+                    setSalut(true)
+                    document
+                    .querySelector("#main")
+                    .scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        }
+        if (collection === "Рита" && event.key === "Escape") {
+            setSalut(false)
+        }
+    });
+
     const goToNYhandler = () => {
         
         document
         .querySelector("#newYear")
         .scrollIntoView({ behavior: "smooth" });
     }
+
+    const text = 'Привет, эту пасхалку я сделал в самом начале проекта.'
+    const msg = text.split()
+  
+
 
     return (
         <div className="Application-Content">
@@ -75,6 +114,20 @@ export default function Main() {
                 </div>
             {/* <a href="/" class="btn-flip" data-back="Заказать праздник" data-front="Заказать праздник"></a> */}
             <img onClick={goToNYhandler} className={loadNYimg ? "MainPage-Bell_New_Year" : "MainPage-Bell_New_Year_Hide"} src="./img/NYPNG.png" alt="bell" />
+            
+            {salut &&
+                <div  className="Salut">
+                    <div className="Salut-Container">
+                        <div id="content" className="Salut-Container-Text">
+                            {msg.map((el) => {
+                                return (
+                                    <p>{el}</p>
+                                )
+                            })}
+                        </div>
+                    </div>
+                </div>
+            }
             </div>
             <div id='about' className="Anchor-IdAbout"></div>
             <About />

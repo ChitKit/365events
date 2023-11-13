@@ -546,5 +546,47 @@ $speed: 0.5s;
     background: #323237;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
+ 
+  }
+}
+
+.Salut{
+  z-index: 1000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00458b82;
+  transition: 5s;
+  &-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40%;
+    border: 1px solid rgba(0, 255, 255, 0.445);
+    background-color: #000053;
+    animation: texting 6s;
+    &-Text{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      color: white;
+    }
+  }
+}
+#container{
+  z-index: 1001;
+}
+
+@keyframes texting {
+  0% {
+    transform: translateY(-40px) rotate(45deg);
+    opacity: .5;
   }
 }
