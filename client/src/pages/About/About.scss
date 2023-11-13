@@ -37,15 +37,15 @@
         --logo_width_bouncing: 20%;
     }
   }
-  @media (orientation: portrait) and (max-height: 428px) and (max-width: 926px) {
+  @media (orientation: portrait) {
     :root {
         --position_left_arrow_button: 47%;
         --size_arrow_button: 25px;
-        --tittle_module_font_size: 2em;
+        --tittle_module_font_size: 25px;
         --text-size-About-Content: .8em;
         --module_contacts_font_size: .5em;
         --height_content: 75vh;
-        --width_content: 85vw;
+        --width_content: 95vw;
         --position_rotate_logo: 50px;
         --logo_width_bouncing: 30%;
     }
@@ -55,7 +55,7 @@
     :root {
         --position_left_arrow_button: 47%;
         --size_arrow_button: 25px;
-        --tittle_module_font_size: 2em;
+        --tittle_module_font_size: 1.5em;
         --text-size-About-Content: .8em;
         --module_contacts_font_size: .5em;
         --height_content: 75vh;
@@ -249,57 +249,6 @@
         width: 10%;
     }
 }
-.arrow-4-left {
-    // position: absolute;
-    left: 45.7%;
-    // background-color: transparent;
-    background-color: var(--font_color_app);
-    width: 30px;
-    height: 5px;
-    display: block;
-    transform: rotate(35deg);
-    float: right;
-    border-radius: 4px;
-    transition: .5s;
-}
-.arrow-4-main:hover .arrow-4-left {
-    box-shadow: 0 0 10px goldenrod;
-    height: 10px;
-    transition: .5s;
-}
- 
-.arrow-4-button {
-    position: sticky;
-    cursor: pointer;
-    left: 45.7%;
-    // background-color: transparent;
-    border-right: 6px solid var(--font_color_app);
-    border-bottom: 6px solid var(--font_color_app);
-    // background-color: var(--font_color_app);
-    width: 40px;
-    height: 40px;
-    display: block;
-    transform: rotate(45deg);
-    float: right;
-    border-radius: 6px;
-    transition: .5s;
-}
-.arrow-4:hover {
-    cursor: pointer;
-    
-    .arrow-first::after,
-    .arrow-first::before,
-    .arrow-second::after,
-    .arrow-second::before{
-        box-shadow: 0 0 10px goldenrod;
-    }
-    // box-shadow: 0 0 20px goldenrod;
-    // transition: 1s;
-    // border-radius: 6px;
-    // border-right: 8px solid goldenrod;
-    // border-bottom: 8px solid goldenrod;
-}
-
 //! ANUMATION ARROW 2
 
 $ani-speed: 4s;

@@ -30,7 +30,7 @@ export default function Illusioniists({setServicesCardData}) {
 		{choiceIllusionits &&
 			<div className="Illusionists-Services_Card">
                 <div onClick={() => {setChoiceIllusionits(null)}} className="Illusionists-Services_Card-Button_Close">X</div>
-                <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={choiceIllusionits.img} alt={choiceIllusionits.name} />
+                <img className='Illusionists-Services_Card-Img' style={{borderRadius: '2em 0em'}} src={choiceIllusionits.img} alt={choiceIllusionits.name} />
                 <div className="Illusionists-Services_Card-Info">
                     <p className="Illusionists-Services_Card-Info-Description-Title" >{choiceIllusionits.name}</p>
                     <div

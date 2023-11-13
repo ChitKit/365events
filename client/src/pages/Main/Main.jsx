@@ -6,7 +6,6 @@ import Price from "../Price/Price";
 import Contacts from "../Contacts/Contacts";
 import Team from "../Team/Team";
 import NewYearAndSanta from "../NewYearAndSanta/NewYearAndSanta";
-import { Fireworks } from 'fireworks-js'
 
 export default function Main() {
     const [salut, setSalut] = useState(false)
@@ -113,7 +112,6 @@ export default function Main() {
                         </div>
                     }
                 </div>
-            {/* <a href="/" class="btn-flip" data-back="Заказать праздник" data-front="Заказать праздник"></a> */}
             <img onClick={goToNYhandler} className={loadNYimg ? "MainPage-Bell_New_Year" : "MainPage-Bell_New_Year_Hide"} src="./img/NYPNG.png" alt="bell" />
             
             {salut &&

@@ -50,11 +50,7 @@ export default function About({ currentColorForImg }) {
                     <h4>Наша команда</h4>
                     <div className="arrow-4" onClick={() => {clicklHanler("team")}}>
                     <div class="arrow arrow-first"></div>
-                    <div class="arrow arrow-second"></div>  
-                        {/* <div className="arrow-4-main" onClick={() => {clicklHanler("team")}}> */}
-                            {/* <div className="arrow-4-left"></div> */}
-                            {/* <div className="arrow-4-button" onClick={() => {clicklHanler("team")}}></div> */}
-                        {/* </div> */}
+                    <div class="arrow arrow-second"></div>
                     </div>
                 </div>
                 {/* <div className="About-Content-OtherInfo">

@@ -29,7 +29,7 @@ export default function NewYearAndSanta() {
 
   return (
       <div className="NewYearAndSanta" style={{display:'flex', flexDirection:'column'}}>
-            <h1 style={{fontSize:'var(--tittle_module_font_size)'}}>
+            <h1 className='NewYearAndSanta-Title' style={{fontSize:'var(--tittle_module_font_size)'}}>
                 Новый год
             </h1>
           <p className="NewYearAndSanta-Main_description">

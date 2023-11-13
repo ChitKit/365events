@@ -8,43 +8,51 @@
     :root {
         --height_content_price: 80vh;
         --width_content_price: 70vw;
+        --width_content_card: 10vw;
         --width-category-card: 21vh;
         --width-category-card-hover: 21.2vh;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
         --services_card_width: 18%;
+        --button_go_back_to_category: 3vw;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     :root {
         --height_content_price: 80vh;
         --width_content_price: 70vw;
+        --width_content_card: 10vw;
         --width-category-card: 19vh;
         --width-category-card-hover: 19.2vh;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
         --services_card_width: 18%;
+        --button_go_back_to_category: 3vw;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
     :root {
         --height_content_price: 80vh;
         --width_content_price: 70vw;
+        --width_content_card: 10vw;
         --width-category-card: 18vh;
         --width-category-card-hover: 18.2vh;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
         --services_card_width: 18%;
+        --button_go_back_to_category: 3vw;
     }
 }
 @media (orientation: portrait) {
     :root {
         --height_content_price: 75vh;
-        --width_content_price: 85vw;
-        --width-category-card: 15vh;
+        --width_content_price: 95vw;
+        --width_content_card: 10vw;
+        --width-category-card: 12vh;
         --width-category-card-hover: 16vh;
         --margin-category-card: 2vh 2vw;
         --services_card_width: 40%;
+        --button_go_back_to_category: 5vw;
     }
 }
 
@@ -52,11 +60,12 @@
     :root {
         --height_content_price: 75vh;
         --width_content_price: 85vw;
-        --width-category-card: 13vw;
-        --width-category-card-hover: 14vw;
-        --margin-category-card: 2vh 2vw;
+        --width_content_card: 10vw;
+        --width-category-card: 12vw;
+        --width-category-card-hover: 12.2vw;
+        --margin-category-card: 1vh .5vw;
         --services_card_width: 18%;
-        --services_card_width: 25%;
+        --button_go_back_to_category: 5vw;
     }
 }
 
@@ -64,8 +73,11 @@
     background: rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);
     z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: var(--width_content_price);
     height: var(--height_content_price);
+    max-height: var(--height_content_price);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,18 +86,18 @@
     font-size: clamp(1px, 2vw, 15px);
     user-select: none;
     &-Button_Close_Category {
-        width: 3vw;
+        width: var(--button_go_back_to_category);
         margin-top: 2em;
         transition: 0.2s;
     }
     &-Button_Close_Category:hover {
         cursor: pointer;
-        width: 3.1vw;
+        width: calc(var(--button_go_back_to_category) + .1vw);
         transition: 0.2s;
     }
     &-CategoryList {
         width: 80%;
-        height: 80%;
+        // height: 80%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

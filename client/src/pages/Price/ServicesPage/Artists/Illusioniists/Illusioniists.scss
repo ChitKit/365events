@@ -1,3 +1,56 @@
+@media screen and (min-width: 1280px) {
+    :root {
+        --width-category-card_illusions: 20vw;
+        --category_photo_illusions: 18vw;
+        --img_card: ;
+        --description_size_text_card: 1.2vw;
+        --card_name: ;
+        --size_tittle_font: 1.2vw;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --width-category-card_illusions: 20vw;
+        --category_photo_illusions: 15vw;
+        --img_card: ;
+        --description_size_text_card: 1.2vw;
+        --card_name: ;
+        --size_tittle_font: 1.2vw;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    :root {
+        --width-category-card_illusions: 20vw;
+        --category_photo_illusions: 7vw;
+        --img_card: ;
+        --description_size_text_card: 1.2vw;
+        --card_name: ;
+        --size_tittle_font: 1.2vw;
+    }
+}
+@media (orientation: portrait) {
+    :root {
+        --width-category-card_illusions: 40vw;
+        --category_photo_illusions: 30vw;
+        --img_card: 50vw;
+        --description_size_text_card: 5vw;
+        --card_name: ;
+        --size_tittle_font: 3vw;
+    
+    }
+}
+@media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
+    :root {
+        --width-category-card_illusions: 18vw;
+        --category_photo_illusions: 18vw;
+        --img_card: ;
+        --description_size_text_card: 2vw;
+        --card_name: ;
+        --size_tittle_font: 2.5vw;
+    }
+}
+
+
 .Illusionists{
     display: flex;
     flex-direction: column;
@@ -13,9 +66,11 @@
         border-radius: 2em 0 2em 0;
         box-shadow: 0 0 50px var(--font_color_app);
         transition: 0.5s;
+        &-Img{
+            width: var(--img_card)
+        }
         &-Info {
-            width: 50%;
-            height: 100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -23,10 +78,12 @@
             margin-top: 3em;
             font-size: large;
             &-Description{
-                font-size: 1.2vw;
+                width: 100%;
+                font-size: var(--description_size_text_card);
                 color: #dbcb94;
                 &-Title{
                     margin-top: 1vw;
+                    width: 50%;
                     font-size: 2vw;
                     color: #dbcb94;
                 }
@@ -56,13 +113,6 @@
                     }
                 }
             }
-            &-Description::first-letter{
-                // font-size: 3vw;
-                // font-family: kindentosca;
-                // initial-letter: 1.8;
-                // color: #e7c862;
-                // margin-right: .5vw;
-            }
         }
         &-Button_Close {
             color: white;
@@ -79,18 +129,22 @@
         }
     }
     &-Tittle{
+        width: 80%;
         margin-top: 5vh;
-        font-size: 1.1vw;
+        font-size: var(--size_tittle_font);
     }
     &-Member_List{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        flex-wrap: wrap;
         &-Member_Card{
+            width: var(--width-category-card_illusions);
             margin: 1vw;
             &-Photo{
-                width: 20vw;
+                width: var(--category_photo_illusions);
                 transition: 5s;
             }
             &-Photo:hover{

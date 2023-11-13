@@ -1,3 +1,34 @@
+@media screen and (min-width: 1280px) {
+    :root {
+        --size_description_main_NY: ;
+        --readius_category_card: 2em 0;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+:root {
+    --size_description_main_NY: ;
+    --readius_category_card: 2em 0;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+:root {
+    --size_description_main_NY: ;
+    --readius_category_card: 2em 0;
+    }
+}
+@media (orientation: portrait) {
+:root {
+    --size_description_main_NY: 12px;
+    --readius_category_card: 1em 0;
+    }
+}
+@media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
+    :root {
+        --size_description_main_NY: 12px;
+        --readius_category_card: 1em 0;
+    }
+}
+
 .NewYearAndSanta {
     background: rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);
@@ -11,17 +42,20 @@
     border-radius: 2em 0 2em 0;
     font-size: medium;
     user-select: none;
+    &-Title{
+        margin: 1em 0;
+    }
     &-Main_description{
-        //! STOP POINT
+        margin-top: 0;
         text-align: left;
-        font-size: 15px;
+        font-size: var(--size_description_main_NY);
         width: 90%;
     }
     &-Category_Card {
         width: var(--width-category-card);
         // margin: var(--margin-category-card);
         box-shadow: -5px -5px 20px rgba(218, 165, 32, 0.411);
-        border-radius: 2em 0;
+        border-radius: var(--readius_category_card);
         transition: 1s;
     }
     &-Category_Card:hover {

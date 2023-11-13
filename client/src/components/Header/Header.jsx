@@ -6,7 +6,6 @@ import { useState } from "react";
 export default function Header({firstLoadApp}) {
     const [colorHeader, setColorHeader] = useState(null);
     const [widthScreen, setWidthScreen] = useState(undefined);
-    console.log(firstLoadApp);
     useEffect(() => {
         if (widthScreen === undefined) {
             setWidthScreen(window.screen.width);
@@ -31,7 +30,6 @@ export default function Header({firstLoadApp}) {
     };
 
     const clicklHanler = (path) => {
-        console.log(path);
         if (path === "main") {
             document
                 .querySelector("#main")
