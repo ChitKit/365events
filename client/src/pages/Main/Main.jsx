@@ -51,6 +51,7 @@ export default function Main() {
         if (collection === "Рита" && event.key === "Escape") {
             setSalut(false)
         }
+        console.log(collection);
     });
 
     const goToNYhandler = () => {
