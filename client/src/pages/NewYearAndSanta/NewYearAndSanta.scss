@@ -9,11 +9,12 @@
     align-items: center;
     box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.4);
     border-radius: 2em 0 2em 0;
-    font-size: clamp(1px, 2vw, 15px);
+    font-size: medium;
     user-select: none;
     &-Main_description{
+        //! STOP POINT
         text-align: left;
-        font-size: .9vw;
+        font-size: 15px;
         width: 90%;
     }
     &-Category_Card {
@@ -66,7 +67,7 @@
 }
 
 .ForBigNY, .OutDoorNY, .KidNY{
-    font-size: clamp(1px, 2vw, 15px);
+    font-size: large;
     user-select: none;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
     transition: 2s;
