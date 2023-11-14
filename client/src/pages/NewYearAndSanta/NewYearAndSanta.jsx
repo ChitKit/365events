@@ -54,13 +54,7 @@ export default function NewYearAndSanta() {
               {categoryList.map((el) => {
                   return (
                       <div 
-                        style={{
-                            width: "30%",
-                            height: "80%",
-                            display:'flex',
-                            flexDirection:'column',
-                            alignItems:'center',
-                        }}
+                      className='NewYearAndSanta-Category_Card'
                         >
                           {/* <img
                               style={{ width: "25vh" }}
@@ -69,11 +63,12 @@ export default function NewYearAndSanta() {
                             /> */}
                           <img 
                             onClick={() => {setChoiceNewYearAndSanta(el); setIsModalCard(true)}} 
-                            className='NewYearAndSanta-Category_Card'
+                            className='NewYearAndSanta-Category_Card-Img'
                             style={{
                                 width: "65%",
                             }} src={el.photo} alt="" />
-                          <p
+                          <p 
+                            className='NewYearAndSanta-Category_Card-Title'
                           >{el.title}</p>
                       </div>
                   );

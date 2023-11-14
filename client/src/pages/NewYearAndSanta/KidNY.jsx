@@ -136,7 +136,7 @@ export default function KidNY({ setIsModalCard }) {
             </div>
             <div
                 style={{
-                    width: "100%",
+                    width: "90%",
                     height: "10%",
                     display: "flex",
                     justifyContent: "center",
@@ -147,18 +147,13 @@ export default function KidNY({ setIsModalCard }) {
                     return (
                         <>
                             <div className={choiceShow.title === el.title ? "KidNY_Active" : "KidNY_Choice"} >
-                                {/* <img
-                                    style={{ width: "25vh" }}
-                                    src={el.img}
-                                    alt=""
-                                /> */}
-                                <p onClick={() => {setChoiceShow(el)}} >{el.title}</p>
+                                <p  onClick={() => {setChoiceShow(el)}} >{el.title}</p>
                             </div>
                         </>
                     );
                 })}
             </div>
-            {choiceShow && 
+            {choiceShow &&
                 <>
                     <div className="OutDoorNY-Content">
                         <div className="OutDoorNY-Content-Left_Content">
@@ -186,7 +181,7 @@ export default function KidNY({ setIsModalCard }) {
                                     <ul>
                                         {choiceShow.inServises.map((el) => {
                                             return (
-                                                <li>{el}</li>
+                                                <li className="OutDoorNY-Content-Right_Content-Description-Text">{el}</li>
                                             )
                                         })}
                                     </ul>

@@ -120,7 +120,7 @@ export default function Main() {
                         <div id="content" className="Salut-Container-Text">
                             {msg.map((el) => {
                                 return (
-                                    <p>{el}</p>
+                                <p>{el}</p>
                                 )
                             })}
                         </div>
