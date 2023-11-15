@@ -155,40 +155,42 @@ export default function KidNY({ setIsModalCard }) {
             </div>
             {choiceShow &&
                 <>
-                    <div className="OutDoorNY-Content">
-                        <div className="OutDoorNY-Content-Left_Content">
+                    <div className="KidNY-Content">
+                        <div className="KidNY-Content-Left_Content">
                             {choiceShow.photo &&
                                 <>
-                                    <div className="OutDoorNY-Content-Left_Content-MainPhoto">
+                                    <div className="KidNY-Content-Left_Content-MainPhoto">
                                         <img id="" src={selectImage.card} alt='mainPhoto' />
                                     </div>
-                                    <div className="OutDoorNY-Content-Left_Content-PhotoList">
-                                        {choiceShow.photo.map((el) => {
-                                            return (
-                                                <img onClick={() => {setSelectImage(el)}} className={selectImage.id === el.id ? "OutDoorNY-Content-Left_Content-PhotoList-Select_Card" : "OutDoorNY-Content-Left_Content-PhotoList-Card"} id={el.id} src={el.card} alt={`${el.card}${el.id}`} />
-                                            )
-                                        })}
+                                    <div className="KidNY-Content-Left_Content-PhotoList">
+                                        <div className="KidNY-Content-Left_Content-PhotoList-Slider">
+                                            {choiceShow.photo.map((el) => {
+                                                return (
+                                                    <img onClick={() => {setSelectImage(el)}} className={selectImage.id === el.id ? "KidNY-Content-Left_Content-PhotoList-Slider-Select_Card" : "KidNY-Content-Left_Content-PhotoList-Slider-Card"} id={el.id} src={el.card} alt={`${el.card}${el.id}`} />
+                                                )
+                                            })}
+                                        </div>
                                     </div>
                                 </>
                             }
                         </div>
-                        <div className="OutDoorNY-Content-Right_Content">
-                            <div className="OutDoorNY-Content-Right_Content-Description">
-                                <p className="OutDoorNY-Content-Right_Content-Description-Text">
+                        <div className="KidNY-Content-Right_Content">
+                            <div className="KidNY-Content-Right_Content-Description">
+                                <p className="KidNY-Content-Right_Content-Description-Text">
                                     {choiceShow.descryption}
                                 </p>
                                 {choiceShow.inServises &&
                                     <ul>
                                         {choiceShow.inServises.map((el) => {
                                             return (
-                                                <li className="OutDoorNY-Content-Right_Content-Description-Text">{el}</li>
+                                                <li className="KidNY-Content-Right_Content-Description-Text">{el}</li>
                                             )
                                         })}
                                     </ul>
                                 } 
                             </div>
-                            <div className="OutDoorNY-Content-Right_Content-Price">
-                                <p className="OutDoorNY-Content-Right_Content-Price-Text">
+                            <div className="KidNY-Content-Right_Content-Price">
+                                <p className="KidNY-Content-Right_Content-Price-Text">
                                     {choiceShow.price}
                                 </p>
                             </div>

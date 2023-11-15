@@ -12,14 +12,14 @@
         --margin_main_module_title: 1em 0;
     }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
 :root {
         --size_description_main_NY: 16px;
         --readius_category_card: 2em 0;
         --size_category_NY_width: 25%;
         --title_card_size: 18px;
         --size_font_category_meny: 20px;
-        --descryption_category_NY_size_font: 16px;
+        --descryption_category_NY_size_font: 14px;
         --padding_descryption_block: 5em;
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
@@ -130,9 +130,9 @@
         justify-content: center;
         &-Left_Content{
             width: 50%;
-            height: 100%;
+            height: 90%;
             &-MainPhoto{
-                height: 77%;
+                height: 80%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -143,20 +143,30 @@
             &-PhotoList{
                 overflow-x: auto;
                 display: flex;
+                overflow: hidden;
                 max-width: 100%;
                 padding-bottom: 1em;
-                &-Select_Card{
-                    width: 15%;
-                    box-shadow: 0 0 15px rgba(0, 255, 255, 0.719);
-                    margin: 1em;
-                }
-                &-Card{
-                    width: 15%;
-                    margin: 1em;
-                }
-                :hover{
-                    cursor: pointer;
-                    box-shadow: 0 0 10px white;
+                position: relative;
+                &-Slider{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    max-height: 20%;
+                    position: relative;
+                    animation: move_bg 50s linear infinite alternate;
+                    &-Select_Card{
+                        width: 15%;
+                        box-shadow: 0 0 15px #00ffffb7;
+                        margin: 1em;
+                    }
+                    &-Card{
+                        width: 15%;
+                        margin: 1em;
+                    }
+                    :hover{
+                        cursor: pointer;
+                        box-shadow: 0 0 10px white;
+                    }
                 }
                 
             }
@@ -176,7 +186,7 @@
             flex-direction: column;
 
             width: 50%;
-            height: 100%;
+            height: 90%;
             &-Description{
                 padding: var(--padding_descryption_block);
                 width: 100%;
@@ -226,4 +236,15 @@
 .ForBigNY_Choice, .OutDoorNY_Choice, .KidNY_Choice p {
     font-size: var(--size_font_category_meny);
 
- }
+}
+
+@keyframes move_bg {
+    from {
+        background-position: 0 0;
+        right: -45em;
+    }
+    to {
+        background-position: 100px 0;
+        right: 45em;
+    }
+}
