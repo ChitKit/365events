@@ -9,6 +9,7 @@
         --padding_descryption_block: 5em;
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
+        --margin_main_module_title: 1em 0;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -22,6 +23,7 @@
         --padding_descryption_block: 5em;
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
+        --margin_main_module_title: .4em 0;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -35,6 +37,7 @@
         --padding_descryption_block: 5em;
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
+        --margin_main_module_title: .4em 0;
     }
 }
 @media (orientation: portrait) {
@@ -48,6 +51,7 @@
         --padding_descryption_block: 0;
         --padding_category_button: .3em;
         --button_width_category_meny: 25%;
+        --margin_main_module_title: .4em 0;
     }
 }
 @media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
@@ -61,6 +65,7 @@
         --padding_descryption_block: 0;
         --padding_category_button: .3em;
         --button_width_category_meny: 25%;
+        --margin_main_module_title: .4em 0;
     }
 }
 
@@ -78,7 +83,7 @@
     font-size: medium;
     user-select: none;
     &-Title{
-        margin: 1em 0;
+        margin: var(--margin_main_module_title);
     }
     &-Main_description{
         margin-top: 0;
