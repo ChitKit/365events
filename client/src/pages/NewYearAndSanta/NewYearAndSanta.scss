@@ -144,6 +144,7 @@
                 overflow-x: auto;
                 display: flex;
                 overflow: hidden;
+                width: 100%;
                 max-width: 100%;
                 padding-bottom: 1em;
                 position: relative;
@@ -151,6 +152,7 @@
                     width: 100%;
                     height: 20%;
                     display: flex;
+                    justify-content: flex-start;
                     max-height: 20%;
                     position: relative;
                     animation: move_bg 50s linear infinite alternate;
@@ -241,7 +243,7 @@
 @keyframes move_bg {
     from {
         background-position: 0 0;
-        right: -45em;
+        right: -35em;
     }
     to {
         background-position: 100px 0;
