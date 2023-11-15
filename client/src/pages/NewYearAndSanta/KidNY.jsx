@@ -121,19 +121,22 @@ const forLittle = [
 ]
 
 export default function KidNY({ setIsModalCard }) {
+    const [fullSizeImg, setFullSizeImg] = useState(null)
     const [choiceShow, setChoiceShow] = useState(forLittle[0]);
     const [selectImage, setSelectImage] = useState(forLittle[0].photo[0])
 
     return (
         <div className="Price-Services_Card KidNY" style={{display:'flex', flexDirection:'column'}}>
-            <div
-                onClick={() => {
-                    setIsModalCard(false);
-                }}
-                className="Price-Services_Card-Button_Close"
-            >
-                X
-            </div>
+            {!fullSizeImg &&
+                <div
+                    onClick={() => {
+                        setIsModalCard(false);
+                    }}
+                    className="Price-Services_Card-Button_Close"
+                >
+                    X
+                </div>
+            }
             <div
                 style={{
                     width: "90%",
@@ -160,7 +163,7 @@ export default function KidNY({ setIsModalCard }) {
                             {choiceShow.photo &&
                                 <>
                                     <div className="KidNY-Content-Left_Content-MainPhoto">
-                                        <img id="" src={selectImage.card} alt='mainPhoto' />
+                                        <img className="KidNY-Content-Left_Content-MainPhoto-Img" onClick={() => setFullSizeImg(selectImage.card)} id="" src={selectImage.card} alt='mainPhoto' />
                                     </div>
                                     <div className="KidNY-Content-Left_Content-PhotoList">
                                         <div className="KidNY-Content-Left_Content-PhotoList-Slider">
@@ -195,6 +198,19 @@ export default function KidNY({ setIsModalCard }) {
                                 </p>
                             </div>
                         </div>
+                        {fullSizeImg &&
+                            <div onClick={() => setFullSizeImg(null)} className="KidNY-FullIMG">
+                            <div
+                               onClick={() => {
+                                   setFullSizeImg(null);
+                               }}
+                               className="KidNY-FullIMG-Btn_Close"
+                           >
+                               X
+                           </div>
+                                <img onClick={() => setFullSizeImg(null)} className="KidNY-FullIMG-Img" src={fullSizeImg} alt="" />
+                            </div>
+                        }
                     </div>
                 </>
             }

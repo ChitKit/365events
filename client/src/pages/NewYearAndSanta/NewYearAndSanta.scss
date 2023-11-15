@@ -10,6 +10,7 @@
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: 1em 0;
+        --full_size_open_img: 38vw
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
@@ -24,6 +25,7 @@
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: .4em 0;
+        --full_size_open_img: 38vw
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -38,6 +40,7 @@
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: .4em 0;
+        --full_size_open_img: 38vw
     }
 }
 @media (orientation: portrait) {
@@ -52,6 +55,7 @@
         --padding_category_button: .3em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: .4em 0;
+        --full_size_open_img: 45vh;
     }
 }
 @media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
@@ -66,6 +70,8 @@
         --padding_category_button: .3em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: .4em 0;
+        --full_size_open_img: 45vh;
+        
     }
 }
 
@@ -136,8 +142,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
+                &-Img{
                     width: 70%;
+                    cursor: pointer;
                 }
             }
             &-PhotoList{
@@ -208,6 +215,25 @@
                     font-size: var(--descryption_category_NY_size_font);
                 }
             }
+        }
+    }
+    &-FullIMG{
+        background-color: rgba(68, 68, 68, 0.445);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        &-Img{
+            width: var(--full_size_open_img);
+        }
+        &-Btn_Close{
+            position: absolute;
+            top: 1em;
+            right: 1em;
         }
     }
 }

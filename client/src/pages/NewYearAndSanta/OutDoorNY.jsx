@@ -89,19 +89,22 @@ const forLittle = [
 ]
 
 export default function OutDoorNY({ setIsModalCard }) {
+    const [fullSizeImg, setFullSizeImg] = useState(null)
     const [choiceShow, setChoiceShow] = useState(forLittle[0]);
     const [selectImage, setSelectImage] = useState(forLittle[0].photo[0])
 
     return (
         <div className="Price-Services_Card OutDoorNY" style={{display:'flex', flexDirection:'column'}}>
-            <div
-                onClick={() => {
-                    setIsModalCard(false);
-                }}
-                className="Price-Services_Card-Button_Close"
-            >
-                X
-            </div>
+            {!fullSizeImg &&
+                <div
+                    onClick={() => {
+                        setIsModalCard(false);
+                    }}
+                    className="Price-Services_Card-Button_Close"
+                >
+                    X
+                </div>
+            }
             <div
                 style={{
                     width: "100%",
@@ -133,14 +136,16 @@ export default function OutDoorNY({ setIsModalCard }) {
                             {choiceShow.photo &&
                                 <>
                                     <div className="OutDoorNY-Content-Left_Content-MainPhoto">
-                                        <img id="" src={selectImage.card} alt='mainPhoto' />
+                                        <img className="OutDoorNY-Content-Left_Content-MainPhoto-Img" onClick={() => setFullSizeImg(selectImage.card)} id="" src={selectImage.card} alt='mainPhoto' />
                                     </div>
                                     <div className="OutDoorNY-Content-Left_Content-PhotoList">
-                                        {choiceShow.photo.map((el) => {
-                                            return (
-                                                <img onClick={() => {setSelectImage(el)}} className={selectImage.id === el.id ? "OutDoorNY-Content-Left_Content-PhotoList-Select_Card" : "OutDoorNY-Content-Left_Content-PhotoList-Card"} id={el.id} src={el.card} alt={`${el.card}${el.id}`} />
-                                            )
-                                        })}
+                                        <div className="OutDoorNY-Content-Left_Content-PhotoList-Slider">
+                                            {choiceShow.photo.map((el) => {
+                                                return (
+                                                    <img onClick={() => {setSelectImage(el)}} className={selectImage.id === el.id ? "OutDoorNY-Content-Left_Content-PhotoList-Slider-Select_Card" : "OutDoorNY-Content-Left_Content-PhotoList-Slider-Card"} id={el.id} src={el.card} alt={`${el.card}${el.id}`} />
+                                                )
+                                            })}
+                                        </div>
                                     </div>
                                 </>
                             }
@@ -167,6 +172,19 @@ export default function OutDoorNY({ setIsModalCard }) {
                             </div>
                         </div>
                     </div>
+                        {fullSizeImg &&
+                            <div onClick={() => setFullSizeImg(null)} className="OutDoorNY-FullIMG">
+                            <div
+                               onClick={() => {
+                                   setFullSizeImg(null);
+                               }}
+                               className="OutDoorNY-FullIMG-Btn_Close"
+                           >
+                               X
+                           </div>
+                                <img onClick={() => setFullSizeImg(null)} className="OutDoorNY-FullIMG-Img" src={fullSizeImg} alt="" />
+                            </div>
+                        }
                 </>
             }
         </div>
