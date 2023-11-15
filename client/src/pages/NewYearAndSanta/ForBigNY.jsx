@@ -145,7 +145,7 @@ export default function ForBigNY({ setIsModalCard }) {
                                     <ul>
                                         {choiceShow.inServises.map((el) => {
                                             return (
-                                                <li>{el}</li>
+                                                <li className="ForBigNY-Content-Right_Content-Description-Text">{el}</li>
                                             )
                                         })}
                                     </ul>

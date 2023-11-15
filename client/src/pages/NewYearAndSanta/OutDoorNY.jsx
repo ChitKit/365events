@@ -154,7 +154,7 @@ export default function OutDoorNY({ setIsModalCard }) {
                                     <ul>
                                         {choiceShow.inServises.map((el) => {
                                             return (
-                                                <li>{el}</li>
+                                                <li className="OutDoorNY-Content-Right_Content-Description-Text">{el}</li>
                                             )
                                         })}
                                     </ul>

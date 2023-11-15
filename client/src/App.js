@@ -7,7 +7,6 @@ import Main from "./pages/Main/Main";
 import Header from "./components/Header/Header";
 
 function App() {
-    const [intro, setIntro] = useState(false);
     const [firstLoadApp, setFirstLoadApp] = useState(false);
 
     useEffect(() => {
@@ -16,11 +15,7 @@ function App() {
         }, 3000);
     }, []);
     // <>
-    // {intro === false ?
-    //   <>
     //     {/* <img src='./video/intro.gif' className='Intro_Logo' alt='inro'></img> */}
-    //     <video autoPlay src='./video/intro.mp4'></video>
-    //   </>
     // :
     return (
         <div className="App">
@@ -29,14 +24,14 @@ function App() {
             <Routes>
                 <Route path="/" element={<Main />} />
                 {/* <Route path="/services" element={<Services currentColorForImg={currentColorForImg}/>} />
-        <Route path="/events" element={<Events currentColorForImg={currentColorForImg}/>} />
-        <Route path="/animators" element={<Animators currentColorForImg={currentColorForImg} colorPuzzlePhoto={colorPuzzlePhoto}/>} />
-        <Route path="/shows" element={<Shows currentColorForImg={currentColorForImg}/>} />
-        <Route path="/additional_services" element={<Price currentColorForImg={currentColorForImg}/>} />
-        <Route path="/about" element={<About currentColorForImg={currentColorForImg}/>} />
-        <Route path="/master_classes" element={<MasterClasses currentColorForImg={currentColorForImg}/>} />
-        <Route path="/contacts" element={<Contacts currentColorForImg={currentColorForImg}/>} />
-        <Route path="/administration" element={<Administration currentColorForImg={currentColorForImg}/>} /> */}
+                <Route path="/events" element={<Events currentColorForImg={currentColorForImg}/>} />
+                <Route path="/animators" element={<Animators currentColorForImg={currentColorForImg} colorPuzzlePhoto={colorPuzzlePhoto}/>} />
+                <Route path="/shows" element={<Shows currentColorForImg={currentColorForImg}/>} />
+                <Route path="/additional_services" element={<Price currentColorForImg={currentColorForImg}/>} />
+                <Route path="/about" element={<About currentColorForImg={currentColorForImg}/>} />
+                <Route path="/master_classes" element={<MasterClasses currentColorForImg={currentColorForImg}/>} />
+                <Route path="/contacts" element={<Contacts currentColorForImg={currentColorForImg}/>} />
+                <Route path="/administration" element={<Administration currentColorForImg={currentColorForImg}/>} /> */}
                 {/* <Route path="/developers" element={<Developers currentColorForImg={currentColorForImg}/>} /> */}
             </Routes>
         </div>

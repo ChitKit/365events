@@ -8,6 +8,7 @@
         --descryption_category_NY_size_font: 16px;
         --padding_descryption_block: 5em;
         --padding_category_button: .5em 1em;
+        --button_width_category_meny: 25%;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -20,6 +21,7 @@
         --descryption_category_NY_size_font: 16px;
         --padding_descryption_block: 5em;
         --padding_category_button: .5em 1em;
+        --button_width_category_meny: 25%;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -32,6 +34,7 @@
         --descryption_category_NY_size_font: 16px;
         --padding_descryption_block: 5em;
         --padding_category_button: .5em 1em;
+        --button_width_category_meny: 25%;
     }
 }
 @media (orientation: portrait) {
@@ -41,9 +44,10 @@
         --size_category_NY_width: 33%;
         --title_card_size: 12px;
         --size_font_category_meny: 10px;
-        --descryption_category_NY_size_font: 12px;
+        --descryption_category_NY_size_font: 10px;
         --padding_descryption_block: 0;
-        --padding_category_button: 0;
+        --padding_category_button: .3em;
+        --button_width_category_meny: 25%;
     }
 }
 @media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
@@ -55,7 +59,8 @@
         --size_font_category_meny: 10px;
         --descryption_category_NY_size_font: 12px;
         --padding_descryption_block: 0;
-        --padding_category_button: 0;
+        --padding_category_button: .3em;
+        --button_width_category_meny: 25%;
     }
 }
 
@@ -182,6 +187,9 @@
             }
             &-Price{
                 height: 10%;
+                &-Text{
+                    font-size: var(--descryption_category_NY_size_font);
+                }
             }
         }
     }
