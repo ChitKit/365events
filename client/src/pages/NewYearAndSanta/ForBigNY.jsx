@@ -93,7 +93,7 @@ export default function ForBigNY({ setIsModalCard }) {
                     }}
                     className="Price-Services_Card-Button_Close"
                     >
-                        X
+                        <img src="/icons/icon_close.png" alt="button_Close" />
                 </div>
             }
             <div
@@ -170,7 +170,7 @@ export default function ForBigNY({ setIsModalCard }) {
                                     }}
                                     className="ForBigNY-FullIMG-Btn_Close"
                                 >
-                                    X
+                                    <img src="/icons/icon_close.png" alt="button_Close" />
                                 </div>
                                 <img onClick={() => setFullSizeImg(null)} className="ForBigNY-FullIMG-Img" src={fullSizeImg} alt="" />
                             </div>

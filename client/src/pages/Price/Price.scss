@@ -70,18 +70,18 @@
 }
 
 .Price {
-    background: rgba(0, 0, 0, 0.534);
+    // background: rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);
     z-index: 10;
     overflow-y: auto;
     overflow-x: hidden;
     width: var(--width_content_price);
-    height: var(--height_content_price);
-    max-height: var(--height_content_price);
+    // height: var(--height_content_price);
+    min-height: var(--height_content_price);
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: var(--shadow_box);
+    // box-shadow: var(--shadow_box);
     border-radius: 2em 0 2em 0;
     font-size: clamp(1px, 2vw, 15px);
     user-select: none;
@@ -160,9 +160,9 @@
         height: var(--height_content_price);
         position: absolute;
         border-radius: 1em;
-        background-color: rgb(27, 27, 27);
+        // background-color: rgb(27, 27, 27);
         border-radius: 2em 0 2em 0;
-        box-shadow: 0 0 50px var(--font_color_app);
+        // box-shadow: 0 0 50px var(--font_color_app);
         transition: 0.5s;
         &-Info {
             width: 50%;
@@ -217,17 +217,12 @@
             }
         }
         &-Button_Close {
-            color: white;
             position: absolute;
             right: 1em;
             top: 1em;
-            background: none;
-            border: unset;
         }
         &-Button_Close:hover {
             cursor: pointer;
-            color: gold;
-            text-shadow: 0 0 5px gold;
         }
     }
 }
@@ -302,5 +297,160 @@
     100% {
         box-shadow: 0 0 15px;
         color: rgb(148, 129, 19);
+    }
+}
+
+
+.PriceCard{
+    font-size: large;
+    user-select: none;
+    // box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
+    transition: 2s;
+    &-Content{
+        width: 100%;
+        display: flex;
+        height: calc(100% - 15px);
+        justify-content: center;
+        &-Left_Content{
+            width: 50%;
+            height: 90%;
+            &-MainPhoto{
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &-Img{
+                    width: 70%;
+                    cursor: pointer;
+                }
+            }
+            &-PhotoList{
+                overflow-x: auto;
+                display: flex;
+                overflow: hidden;
+                width: 100%;
+                max-width: 100%;
+                padding-bottom: 1em;
+                position: relative;
+                &-Slider{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: flex-start;
+                    max-height: 20%;
+                    position: relative;
+                    animation: move_bg 35s linear infinite alternate;
+                    &-Select_Card{
+                        width: 15%;
+                        box-shadow: 0 0 15px #00ffffb7;
+                        margin: 1em;
+                    }
+                    &-Card{
+                        width: 15%;
+                        margin: 1em;
+                    }
+                    :hover{
+                        cursor: pointer;
+                        box-shadow: 0 0 10px white;
+                    }
+                }
+                
+            }
+            &-PhotoList::-webkit-scrollbar {
+                height: 10px;
+                width: 2px;
+                // background-color: aqua;
+            }
+            &-PhotoList::-webkit-scrollbar-thumb{
+                border-radius: 10px;
+                background-color: #e7c862;
+                box-shadow: inset 0 0 8px #e7c862;
+            }
+        }
+        &-Right_Content{
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+            height: 90%;
+            &-Description{
+                padding: var(--padding_descryption_block);
+                width: 100%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                &-Text{
+                    font-size: var(--descryption_category_NY_size_font);
+                }
+            }
+            &-Price{
+                height: 10%;
+                &-Text{
+                    font-size: var(--descryption_category_NY_size_font);
+                }
+            }
+        }
+    }
+    &-FullIMG{
+        background-color: rgba(68, 68, 68, 0.445);
+        box-shadow: 0 0 50px rgba(68, 68, 68, 0.445);
+        border: 2px solid gray;
+        border-radius: 2em 0 2em 0;;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        &-Img{
+            width: var(--full_size_open_img);
+        }
+        &-Btn_Close{
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
+    }
+}
+.PriceCard_Active {
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: .6em;
+    // border: 1px solid gray;
+    padding: var(--padding_category_button);
+    :only-child{
+        margin: 0;
+    }
+}
+.PriceCard_Choice {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    // border: 1px solid gray;
+    padding: var(--padding_category_button);
+    :only-child{
+        margin: 0;
+    }
+    :hover{
+        cursor: pointer;
+    }
+}
+.PriceCard_Active p {
+    font-size: var(--size_font_category_meny);
+
+}
+
+@keyframes move_bg {
+    from {
+        background-position: 0 0;
+        right: -25em;
+    }
+    to {
+        background-position: 100px 0;
+        right: 15em;
     }
 }

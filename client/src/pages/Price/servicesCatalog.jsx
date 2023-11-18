@@ -7,6 +7,32 @@ export const artists = [
         `Наши ведущие проведут любое мероприятие от начала и 
         до конца на высшем уровне! Равнодушным не уйдёт никто!`,
         price:'От 7000 ₽ / час',
+        photo: [
+            {
+                card: "./img/Services/Artists/ShowMan.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Artists/ShowMan.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Artists/ShowMan.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Artists/ShowMan.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Artists/ShowMan.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Artists/ShowMan.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Artists/Artist_Services.jpeg', 
@@ -17,6 +43,32 @@ export const artists = [
         и т.д. Они с лёгкостью найдут контакт с любым, даже 
         самым скованным ребёнком или взрослым.`,
         price:'2500–3500 ₽ / час',
+        photo: [
+            {
+                card: "./img/Services/Artists/Artist_Services.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Artists/Artist_Services.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Artists/Artist_Services.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Artists/Artist_Services.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Artists/Artist_Services.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Artists/Artist_Services.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Artists/Illusions.jpeg', 
@@ -24,6 +76,32 @@ export const artists = [
         description:
         `В нашем агентстве есть 3 потрясающих иллюзиониста.У каждого своя программа.`,
         price:'',
+        photo: [
+            {
+                card: "./img/Services/Artists/Illusions.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Artists/Illusions.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Artists/Illusions.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Artists/Illusions.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Artists/Illusions.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Artists/Illusions.jpeg",
+                id: 6,
+            }
+        ]
     },
 ]
 export const programms = [ 
@@ -32,30 +110,160 @@ export const programms = [
         name:'Шоу',
         description:``,
         price:'',
+        photo: [
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/Quest.jpeg', 
         name:'Квесты',
         description:``,
         price:'',
+        photo: [
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/Quiz.jpeg', 
         name:'Квизы',
         description:``,
         price:'',
+        photo: [
+            {
+                card: "./img/Services/Programms/Quiz.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/Quiz.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/Quiz.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/Quiz.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/Quiz.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/Quiz.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/BirthdDay.jpeg', 
         name:'Дни рождения',
         description:``,
         price:'От 30 000 руб',
+        photo: [
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/KidOut.jpeg', 
         name:'Детские выпускные',
         description:``,
         price:'',
+        photo: [
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 6,
+            }
+        ]
     },
 ]
 export const birthDay = [
@@ -70,6 +278,32 @@ export const birthDay = [
         Шоколадный фонтан с фруктами, оформление площадки для 
         праздника, фотоуслуги`,
         price:'от 30 000 руб',
+        photo: [
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/BirthdDay.jpeg', 
@@ -83,6 +317,32 @@ export const birthDay = [
         фонтан с фруктами, оформление площадки для праздника,  
         дискотека, организация фуршета, фото или видео услуги`,
         price:'от 50 000 руб',
+        photo: [
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/BirthdDay.jpeg', 
@@ -97,6 +357,32 @@ export const birthDay = [
         фотозона, дискотека с DJ, организация фуршета, фото 
         и видео услуги`,
         price:'от 80 000 руб',
+        photo: [
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/BirthdDay.jpeg",
+                id: 6,
+            }
+        ]
     },
 ]
 export const outDay = [
@@ -111,6 +397,32 @@ export const outDay = [
         представление с шоколадным фонтаном и фруктами, 
         оформление площадки для праздника, фотоуслуги. `,
         price:'от 45 000 руб',
+        photo: [
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/KidOut.jpeg', 
@@ -125,6 +437,32 @@ export const outDay = [
         для праздника, дискотека, организация фуршета, 
         фото или видео услуги. `,
         price:'от 60 000 руб',
+        photo: [
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/KidOut.jpeg', 
@@ -139,6 +477,32 @@ export const outDay = [
         оформление площадки для праздника, дискотека с 
         DJ, организация фуршета, фото и видео услуги.`,
         price:'от 80 000 руб',
+        photo: [
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/KidOut.jpeg",
+                id: 6,
+            }
+        ]
     },
 ]
 export const quests = [
@@ -158,6 +522,32 @@ export const quests = [
         – от 1,5 часов. Музыкальное сопровождение, талантливые 
         актеры и уникальные костюмы и реквизит. `,
         price:'от 30000 ₽',
+        photo: [
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/Quest.jpeg', 
@@ -172,6 +562,32 @@ export const quests = [
         от агентства. Музыкальное сопровождение, талантливые 
         актеры и уникальные костюмы и реквизит.`,
         price:'от 12000 ₽',
+        photo: [
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/Quest.jpeg",
+                id: 6,
+            }
+        ]
     },
 ]
 export const shows = [
@@ -185,6 +601,32 @@ export const shows = [
         гостей вкуснейшее мороженое из азота, которое 
         отличается не только необычным вкусом, но и полезно!`,
         price:`от 9000 ₽`,
+        photo: [
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/Show.jpeg', 
@@ -197,6 +639,32 @@ export const shows = [
         загадать желание внутри огромного мыльного 
         пузыря. Время мероприятия 30 минут`,
         price:'от 12000 ₽',
+        photo: [
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/Programms/Show.jpeg', 
@@ -212,6 +680,32 @@ export const shows = [
         и вида бумажных лент (Белоснежное, Серебряное 
         или Золотое, Цветное).`,
         price:'От 6000 ₽',
+        photo: [
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/Programms/Show.jpeg",
+                id: 6,
+            }
+        ]
     },
 ]
 export const newYear = [
@@ -222,12 +716,64 @@ export const newYear = [
         `Для детских учреждений – «В поисках Нового года». Дед Мороз и Снегурочка, 
         плюс два-три  аниматора-персонажа. Продолжительность 40 минут. `,
         price:'от 30 000 ₽',
+        photo: [
+            {
+                card: "./img/Services/NewYear/InteractiveSpectacle.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/NewYear/InteractiveSpectacle.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/NewYear/InteractiveSpectacle.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/NewYear/InteractiveSpectacle.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/NewYear/InteractiveSpectacle.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/NewYear/InteractiveSpectacle.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/NewYear/DedMoroz.jpeg', 
         name:'Дед Мороз и Снегурочка',
         description:``,
         price:'',
+        photo: [
+            {
+                card: "./img/Services/NewYear/DedMoroz.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/NewYear/DedMoroz.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/NewYear/DedMoroz.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/NewYear/DedMoroz.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/NewYear/DedMoroz.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/NewYear/DedMoroz.jpeg",
+                id: 6,
+            }
+        ]
     },
 ]
 export const forSell = [
@@ -243,6 +789,32 @@ export const forSell = [
             -Репортажная видеосъёмка мероприятия, события, промо. Отчетный ролик 3-5 минут 
             -Срок готовности видеоролика: 5−7 дней`,
         price:'от 10 000 ₽ час',
+        photo: [
+            {
+                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/ForSell/PhotoZone.jpeg', 
@@ -251,6 +823,32 @@ export const forSell = [
             `С шарами, пайетками и многое другое – на любой праздник!
             Изготовление – от 7500 ₽ в зависимости от сроков, объема, сложности исполнения.`,
         price:'Аренда – от 7500 ₽ в сутки',
+        photo: [
+            {
+                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg', 
@@ -268,6 +866,32 @@ export const forSell = [
             Дополнительный час 3000 руб 
             Продолжительность 2 часа`,
         price:'от 6000 ₽ за услугу',
+        photo: [
+            {
+                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/ForSell/Pinyata.jpeg', 
@@ -280,6 +904,32 @@ export const forSell = [
             сложности и наполнения. В услугу входит - создание пиньяты, бита, 
             конфеты и конфетти.`,
         price:'От 3500 ₽',
+        photo: [
+            {
+                card: "./img/Services/ForSell/Pinyata.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/ForSell/Pinyata.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/ForSell/Pinyata.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/ForSell/Pinyata.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/ForSell/Pinyata.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/ForSell/Pinyata.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/ForSell/CakePops2.jpeg', 
@@ -292,6 +942,32 @@ export const forSell = [
             Судя по отзывам, наши кей-попсы нравятся и детям, и взрослым, ведь у 
             нас есть небольшой секрет!`,
         price:'От 100 ₽',
+        photo: [
+            {
+                card: "./img/Services/ForSell/CakePops2.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/ForSell/CakePops2.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/ForSell/CakePops2.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/ForSell/CakePops2.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/ForSell/CakePops2.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/ForSell/CakePops2.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/ForSell/BentaCake.jpeg', 
@@ -305,6 +981,32 @@ export const forSell = [
             5 часов. Дополнительно – любое оформление: подарочная упаковка, 
             свечки, подарочная открытка ручной работы.`,
         price:'От 700 ₽',
+        photo: [
+            {
+                card: "./img/Services/ForSell/BentaCake.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/ForSell/BentaCake.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/ForSell/BentaCake.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/ForSell/BentaCake.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/ForSell/BentaCake.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/ForSell/BentaCake.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/ForSell/DJ.jpeg', 
@@ -313,12 +1015,64 @@ export const forSell = [
             `Музыка на любой вкус, полное техническое сопровождение 
             (компьютер, микшер, колонки, микрофоны)`,
         price:'От 6000₽ в час ',
+        photo: [
+            {
+                card: "./img/Services/ForSell/DJ.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/ForSell/DJ.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/ForSell/DJ.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/ForSell/DJ.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/ForSell/DJ.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/ForSell/DJ.jpeg",
+                id: 6,
+            }
+        ]
     },
     // {
     //     img:'./img/Services/ForSell/Pryaniki.jpeg', 
     //     name:'Архангельские пряники',
     //     description:``,
     //     price:'',
+    //     photo: [
+    //         {
+    //             card: "./img/Services/ForSell/Pryaniki",
+    //             id: 1,
+    //         }, 
+    //         {
+    //             card: "./img/Services/ForSell/Pryaniki",
+    //             id: 2,
+    //         }, 
+    //         {
+    //             card: "./img/Services/ForSell/Pryaniki",
+    //             id: 3,
+    //         }, 
+    //         {
+    //             card: "./img/Services/ForSell/Pryaniki",
+    //             id: 4,
+    //         }, 
+    //         {
+    //             card: "./img/Services/ForSell/Pryaniki",
+    //             id: 5,
+    //         }, 
+    //         {
+    //             card: "./img/Services/ForSell/Pryaniki",
+    //             id: 6,
+    //         }
+    //     ]
     // },
 ]
 export const imgMK = [
@@ -334,6 +1088,32 @@ export const imgMK = [
             Время проведения мастер-класса от 1 часа до 2,5 часов (в зависимости 
             от сложности поделки). Расходные материалы включены в стоимость.`,
         price:'От 1300р  с человека',
+        photo: [
+            {             
+                card: "./img/Services/MK/CatchSleep.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/CatchSleep.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/CatchSleep.jpeg",
+                id: 3,
+            },
+            {             
+                card: "./img/Services/MK/CatchSleep.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/CatchSleep.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/CatchSleep.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/MK/ClothDecoration.jpeg', 
@@ -344,6 +1124,32 @@ export const imgMK = [
             персонажей, любые узоры и все, что придет в голову!! Время проведения 
             мастер-класса 1 час. Расходные материалы включены в стоимость.`,
         price:'От 1200р с человека',
+        photo: [
+            {
+                card: "./img/Services/MK/ClothDecoration.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/ClothDecoration.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/ClothDecoration.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/MK/ClothDecoration.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/ClothDecoration.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/ClothDecoration.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/MK/Florarium.jpeg', 
@@ -358,6 +1164,32 @@ export const imgMK = [
             Время проведения мастер-класса от 30 минут до 1 часа. Расходные 
             материалы включены в стоимость.`,
         price:'От 2500р с человека',
+        photo: [
+            {
+                card: "./img/Services/MK/Florarium.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/Florarium.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/Florarium.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/MK/Florarium.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/Florarium.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/Florarium.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/MK/Pryaniki2.jpeg', 
@@ -369,6 +1201,32 @@ export const imgMK = [
             рассказываем процесс их изготовления. Время проведения мастер-класса 
             от 1,5 до 2 часов. Расходные материалы включены в стоимость.`,
         price:'От 1000р  с человека',
+        photo: [
+            {
+                card: "./img/Services/MK/Pryaniki2.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/Pryaniki2.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/Pryaniki2.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/MK/Pryaniki2.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/Pryaniki2.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/Pryaniki2.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/MK/CakePops.jpeg', 
@@ -381,6 +1239,32 @@ export const imgMK = [
             Время проведения мастер-класса от 1,5 до 2 часов. Расходные материалы 
             включены в стоимость.`,
         price:'От 1500р с человека',
+        photo: [
+            {
+                card: "./img/Services/MK/CakePops.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/CakePops.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/CakePops.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/MK/CakePops.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/CakePops.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/CakePops.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/MK/Slime.jpeg', 
@@ -390,6 +1274,32 @@ export const imgMK = [
             как с ними можно играть. Время проведения мастер-класса 1 час. 
             Расходные материалы включены в стоимость.`,
         price:'1100р с человека',
+        photo: [
+            {
+                card: "./img/Services/MK/Slime.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/Slime.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/Slime.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/MK/Slime.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/Slime.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/Slime.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/MK/SinelnayaRipe.jpeg', 
@@ -402,6 +1312,32 @@ export const imgMK = [
             от 30 минут до 1,5 часа (в зависимости от сложности поделки). 
             Расходные материалы включены в стоимость.`,
         price:'От 1000р с человека',
+        photo: [
+            {
+                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/MK/Capitoshki.jpeg', 
@@ -413,6 +1349,32 @@ export const imgMK = [
             Время проведения мастер-класса 1 час. Расходные материалы включены 
             в стоимость.`,
         price:'От 700р с человека',
+        photo: [
+            {
+                card: "./img/Services/MK/Capitoshki.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/Capitoshki.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/Capitoshki.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/MK/Capitoshki.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/Capitoshki.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/Capitoshki.jpeg",
+                id: 6,
+            }
+        ]
     },
     {
         img:'./img/Services/MK/Tvisting.jpeg', 
@@ -423,6 +1385,32 @@ export const imgMK = [
             создать фантазия, - это интересный вид аэродизайна из шариков-колбасок🎈🎈🎈 
             Время проведения мастер-класса 1 час. Расходные материалы включены в стоимость.`,
         price:'500р с человека',
+        photo: [
+            {
+                card: "./img/Services/MK/Tvisting.jpeg",
+                id: 1,
+            }, 
+            {
+                card: "./img/Services/MK/Tvisting.jpeg",
+                id: 2,
+            }, 
+            {
+                card: "./img/Services/MK/Tvisting.jpeg",
+                id: 3,
+            }, 
+            {
+                card: "./img/Services/MK/Tvisting.jpeg",
+                id: 4,
+            }, 
+            {
+                card: "./img/Services/MK/Tvisting.jpeg",
+                id: 5,
+            }, 
+            {
+                card: "./img/Services/MK/Tvisting.jpeg",
+                id: 6,
+            }
+        ]
     },
 ]
 

@@ -124,7 +124,7 @@ export default function Team () {
                         <div className="Team-Carousel-Card_Window"
                             onClick={() => {setPersonalCardData(el)}}
                         >
-                            <img style={{width:'100%'}} alt={el.name} src={el.source} />
+                            <img className="Team-Carousel-Card_Window-Img" style={{width:'100%'}} alt={el.name} src={el.source} />
                             <div >
                                 <h6>{el.role}</h6>
                             </div>
@@ -145,7 +145,8 @@ export default function Team () {
             </div>
             {personalCardData &&
                 <div className="Team-Personal_Card">
-                    <div onClick={() => {setPersonalCardData(null)}} className="Team-Personal_Card-Button_Close">X</div>
+                    <div onClick={() => {setPersonalCardData(null)}} className="Team-Personal_Card-Button_Close">
+                        <img src="/icons/icon_close.png" alt="button_Close" /></div>
                     <img className="Team-Personal_Card-Image" src={personalCardData.source} alt={personalCardData.name} />
                     <div className="Team-Personal_Card-Info">
                         <p className="Team-Personal_Card-Info-Name">{personalCardData.name}</p>

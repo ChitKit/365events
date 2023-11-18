@@ -24,21 +24,33 @@
   }
 
 .Contacts{
-    background:rgba(0, 0, 0, 0.534);
+    // background:rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);
     position: relative;
     z-index: 10;
     width: var(--width_content_contacts);
-    height: var(--height_content_contacts);
+    // height: var(--height_content_contacts);
+    height: 40vh;
     margin: 0 9em 9em 9em;
     padding: 1em;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    box-shadow: var(--shadow_box);
-    border-radius: 2em 0 2em 0;;
-    &-Links{
+    // box-shadow: var(--shadow_box);
+    border-radius: 2em 0 2em 0;
+    &-Data{
       display: flex;
-      justify-content: center;
+      width: 80%;
+      justify-content: space-around;
+    }
+    &-Title{
+      margin: .5em 0;
+      font-size: var(--tittle_module_font_size);
+    }
+    &-Links{
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
     }
     &-Links a img:only-child{
       margin: 10px;

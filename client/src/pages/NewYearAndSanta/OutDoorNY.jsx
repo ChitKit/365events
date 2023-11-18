@@ -102,7 +102,7 @@ export default function OutDoorNY({ setIsModalCard }) {
                     }}
                     className="Price-Services_Card-Button_Close"
                 >
-                    X
+                    <img src="/icons/icon_close.png" alt="button_Close" />
                 </div>
             }
             <div
@@ -180,7 +180,7 @@ export default function OutDoorNY({ setIsModalCard }) {
                                }}
                                className="OutDoorNY-FullIMG-Btn_Close"
                            >
-                               X
+                                <img src="/icons/icon_close.png" alt="button_Close" />
                            </div>
                                 <img onClick={() => setFullSizeImg(null)} className="OutDoorNY-FullIMG-Img" src={fullSizeImg} alt="" />
                             </div>

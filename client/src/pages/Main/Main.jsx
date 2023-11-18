@@ -6,6 +6,7 @@ import Price from "../Price/Price";
 import Contacts from "../Contacts/Contacts";
 import Team from "../Team/Team";
 import NewYearAndSanta from "../NewYearAndSanta/NewYearAndSanta";
+import axios from 'axios';
 
 export default function Main() {
     const [salut, setSalut] = useState(false)
@@ -19,39 +20,45 @@ export default function Main() {
             setLoadNYimg(true)
         }, 4000);
     }, [])
+
+    //! Get запрос на определение ip
+    // axios.get('https://api.ipify.org/')
+    // .then((response) => {
+    //     console.log(response.data);
+    //     let collection = ''
+    //     document.addEventListener("keydown", function (event) {
+    //         if (event.key === "Р") {
+    //             collection += "Р"
+    //         }
+    //         if (collection[0] === "Р" && event.key === "и") {
+    //             if (collection.length === 1) {
+    //                 collection += "и"
+    //             }
+    //         }
+    //         if (collection[0] === "Р" && collection[1] === "и" && event.key === "т") {
+    //             if (collection.length === 2) {
+    //                 collection += "т"
+    //             }
+    //         }
+    //         if (collection[0] === "Р" && collection[1] === "и" && collection[2] === "т" && event.key === "а") {
+    //             if (collection.length === 3) {
+    //                 collection += "а"
+    //                 console.log(collection.legnth);
+    //                 if (collection === "Рита") {
+    //                     setSalut(true)
+    //                     document
+    //                     .querySelector("#main")
+    //                     .scrollIntoView({ behavior: "smooth" });
+    //                 }
+    //             }
+    //         }
+    //         if (collection === "Рита" && event.key === "Escape") {
+    //             setSalut(false)
+    //         }
+    //         console.log(collection);
+    //     });
+    // });
     
-    let collection = ''
-    document.addEventListener("keydown", function (event) {
-        if (event.key === "Р") {
-            collection += "Р"
-        }
-        if (collection[0] === "Р" && event.key === "и") {
-            if (collection.length === 1) {
-                collection += "и"
-            }
-        }
-        if (collection[0] === "Р" && collection[1] === "и" && event.key === "т") {
-            if (collection.length === 2) {
-                collection += "т"
-            }
-        }
-        if (collection[0] === "Р" && collection[1] === "и" && collection[2] === "т" && event.key === "а") {
-            if (collection.length === 3) {
-                collection += "а"
-                console.log(collection.legnth);
-                if (collection === "Рита") {
-                    setSalut(true)
-                    document
-                    .querySelector("#main")
-                    .scrollIntoView({ behavior: "smooth" });
-                }
-            }
-        }
-        if (collection === "Рита" && event.key === "Escape") {
-            setSalut(false)
-        }
-        console.log(collection);
-    });
 
     const goToNYhandler = () => {
         

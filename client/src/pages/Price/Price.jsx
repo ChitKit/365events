@@ -13,6 +13,7 @@ import Shows from './ServicesPage/Shows/Shows'
 import Quests from './ServicesPage/Quests/Quests'
 import BirthDay from './ServicesPage/BirthDay/BirthDay'
 import Outday from './ServicesPage/Outday/Outday'
+import PriceCard from './PriceCard'
 
 export default function Price() {
 
@@ -52,45 +53,49 @@ export default function Price() {
 
     return (
         <div className="Price">
-            {category !== null &&
+            {category !== null && servicesCardData === null &&
                 <img src='/IconBack.png' alt='buttonBack' className='Price-Button_Close_Category' style={{position:'absolute', left:'20%'}} onClick={() => {setCategory(null)}} />
             }
-            <h1 style={{fontSize:'var(--tittle_module_font_size)'}}>
-                {category === null ?
-                'Наши услуги'
-                :
-                category
-                }
-            </h1>
-            {category === null ?
-                <div className="Price-CategoryList">
-                    <>    
-                        {categoryListFirst && categoryListFirst.map((el) => {
-                            return (
-                                <img onClick={() => {handlerChoiceCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
-                                )
-                        })}
-                        {categoryListSecond && categoryListSecond.map((el) => {
-                            return (
-                                <img onClick={() => {handlerChoiceCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
-                                )
-                        })}
-                    </>
-                </div>
-                :
-                <div className='Price-CardList'>
-                    {categoryPhoto && categoryPhoto.map((el) => {
-                        return (
-                            <img onClick={() => {setServicesCardData(el)}} className="Price-CardList-CardServices" src={el.img} alt="" />
-                        )
+            {!servicesCardData &&
+                <h1 style={{fontSize:'var(--tittle_module_font_size)'}}>
+                    {category === null ?
+                    'Наши услуги'
+                    :
+                    category
                     }
-                    )}
-                </div>
-                }
+                </h1>
+            }
+            {servicesCardData === null && 
+                <>
+                    { category === null ?
+                        <div className="Price-CategoryList">
+                            <>    
+                                {categoryListFirst && categoryListFirst.map((el) => {
+                                    return (
+                                        <img onClick={() => {handlerChoiceCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
+                                        )
+                                })}
+                                {categoryListSecond && categoryListSecond.map((el) => {
+                                    return (
+                                        <img onClick={() => {handlerChoiceCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
+                                        )
+                                })}
+                            </>
+                        </div>
+                        :
+                        <div className='Price-CardList'>
+                            {categoryPhoto && categoryPhoto.map((el) => {
+                                return (
+                                    <img onClick={() => {setServicesCardData(el)}} className="Price-CardList-CardServices" src={el.img} alt="" />
+                                )
+                            }
+                            )}
+                        </div>
+                    }
+                </>
+            }
+            
             {
-            // servicesCardData && servicesCardData.name === 'Дед Мороз и Снегурочка' ?
-            //     <NewYearAndSanta setServicesCardData={setServicesCardData} />
-            // :
             servicesCardData && servicesCardData.name === 'Иллюзионисты' ?
                 <Illusioniists setServicesCardData={setServicesCardData} />
             :
@@ -107,24 +112,27 @@ export default function Price() {
                 <Outday setServicesCardData={setServicesCardData} />
             :
             servicesCardData &&
-            <div className="Price-Services_Card">
-                <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>
-                <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={servicesCardData.img} alt={servicesCardData.name} />
-                <div className="Price-Services_Card-Info">
-                    <p className="Price-Services_Card-Info-Description-Title" >{servicesCardData.name}</p>
-                    <div
-                        style={{width:'90%'}}    
-                    >
-                        <p className="Price-Services_Card-Info-Description"  style={{textAlign:'left'}}>{servicesCardData.description}</p>
-                    </div>
-                    <div className="Price-Services_Card-Info-Description-Buy">
-                        <p className="Price-Services_Card-Info-Description-Buy-Price">{servicesCardData.price}</p>
-                        <div
-                            className='Price-Services_Card-Info-Description-Buy-Button'
-                        >Заказать</div>
-                    </div>
-                </div>
-            </div>
+            <PriceCard dataCard={servicesCardData} setData={setServicesCardData} />
+            // <div className="Price-Services_Card">
+            //     <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">
+            //         <img src="/icons/icon_close.png" alt="button_Close" />
+            //     </div>
+            //     <img style={{width:'var(--width-content_price)', height:'var(--height_content_price)', borderRadius: '2em 0em'}} src={servicesCardData.img} alt={servicesCardData.name} />
+            //     <div className="Price-Services_Card-Info">
+            //         <p className="Price-Services_Card-Info-Description-Title" >{servicesCardData.name}</p>
+            //         <div
+            //             style={{width:'90%'}}    
+            //         >
+            //             <p className="Price-Services_Card-Info-Description"  style={{textAlign:'left'}}>{servicesCardData.description}</p>
+            //         </div>
+            //         <div className="Price-Services_Card-Info-Description-Buy">
+            //             <p className="Price-Services_Card-Info-Description-Buy-Price">{servicesCardData.price}</p>
+            //             <div
+            //                 className='Price-Services_Card-Info-Description-Buy-Button'
+            //             >Заказать</div>
+            //         </div>
+            //     </div>
+            // </div>
             }
         </div>
     )

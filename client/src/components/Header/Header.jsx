@@ -104,10 +104,10 @@ export default function Header({firstLoadApp}) {
             {widthScreen > 700 &&
                 <div className="Header-Integrations">
                     <a target="_blank" href="https://vk.com/agency365">
-                        <img src="/img/icons8-vk-50.png" alt="image_vk" />
+                        <img src="/icons/icon_VK.png" alt="image_vk" />
                     </a>
                     <a target="_blank" href="https://wa.me/+79890490402?text=Здравствуйте, хочу заказать у вас праздник">
-                        <img src="/img/icons8-whatsapp-50.png" alt="image_whatsapp" />
+                        <img src="/icons/icon_WA.png" alt="image_whatsapp" />
                     </a>
                 </div>
             }

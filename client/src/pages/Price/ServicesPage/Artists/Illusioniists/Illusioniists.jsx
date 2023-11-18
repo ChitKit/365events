@@ -7,7 +7,9 @@ export default function Illusioniists({setServicesCardData}) {
 
   return (
     <div className="Price-Services_Card Illusionists">
-        <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">X</div>
+        <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">
+            <img src="/icons/icon_close.png" alt="button_Close" />
+        </div>
         <p className='Illusionists-Tittle'>В нашем агентстве есть 3 потрясающих иллюзиониста. У каждого своя программа.</p>
 		<div className="Illusionists-Member_List">
 			{illusionistsList.map((el) => {
@@ -29,7 +31,8 @@ export default function Illusioniists({setServicesCardData}) {
         </div> */}
 		{choiceIllusionits &&
 			<div className="Illusionists-Services_Card">
-                <div onClick={() => {setChoiceIllusionits(null)}} className="Illusionists-Services_Card-Button_Close">X</div>
+                <div onClick={() => {setChoiceIllusionits(null)}} className="Illusionists-Services_Card-Button_Close">
+                    <img src="/icons/icon_close.png" alt="button_Close" /></div>
                 <img className='Illusionists-Services_Card-Img' style={{borderRadius: '2em 0em'}} src={choiceIllusionits.img} alt={choiceIllusionits.name} />
                 <div className="Illusionists-Services_Card-Info">
                     <p className="Illusionists-Services_Card-Info-Description-Title" >{choiceIllusionits.name}</p>

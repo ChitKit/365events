@@ -20,7 +20,7 @@ export default function BirthDay({ setServicesCardData }) {
                 }}
                 className="Price-Services_Card-Button_Close"
             >
-                X
+                <img src="/icons/icon_close.png" alt="button_Close" />
             </div>
             <div
                 style={{

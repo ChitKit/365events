@@ -76,7 +76,7 @@
 }
 
 .NewYearAndSanta {
-    background: rgba(0, 0, 0, 0.534);
+    // background: rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);
     z-index: 10;
     width: var(--width_content_price);
@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.4);
+    // box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.4);
     border-radius: 2em 0 2em 0;
     font-size: medium;
     user-select: none;
@@ -127,7 +127,7 @@
 .ForBigNY, .OutDoorNY, .KidNY{
     font-size: large;
     user-select: none;
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
+    // box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
     transition: 2s;
     &-Content{
         width: 100%;
@@ -162,7 +162,7 @@
                     justify-content: flex-start;
                     max-height: 20%;
                     position: relative;
-                    animation: move_bg 50s linear infinite alternate;
+                    animation: move_bg 35s linear infinite alternate;
                     &-Select_Card{
                         width: 15%;
                         box-shadow: 0 0 15px #00ffffb7;
@@ -219,6 +219,9 @@
     }
     &-FullIMG{
         background-color: rgba(68, 68, 68, 0.445);
+        box-shadow: 0 0 50px rgba(68, 68, 68, 0.445);
+        border: 2px solid gray;
+        border-radius: 2em 0 2em 0;;
         width: 100%;
         height: 100%;
         display: flex;
@@ -238,10 +241,9 @@
     }
 }
 .ForBigNY_Active, .OutDoorNY_Active, .KidNY_Active{
-    font-weight: bold;
-    box-shadow:  0 5px 10px rgba(255, 255, 255, 0.8);
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.8);
     color: rgba(255, 255, 255, 0.8);
-    border-radius: 0 0 .6em .6em;
+    border-radius: .6em;
     // border: 1px solid gray;
     padding: var(--padding_category_button);
     :only-child{
@@ -269,10 +271,10 @@
 @keyframes move_bg {
     from {
         background-position: 0 0;
-        right: -35em;
+        right: -25em;
     }
     to {
         background-position: 100px 0;
-        right: 65em;
+        right: 15em;
     }
 }
