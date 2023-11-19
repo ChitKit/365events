@@ -122,7 +122,12 @@ export default function Team () {
                 {images && 
                     images.map((el) => (
                         <div className="Team-Carousel-Card_Window"
-                            onClick={() => {setPersonalCardData(el)}}
+                            onClick={() => {
+                                setPersonalCardData(el); 
+                                document
+                                .querySelector("#team")
+                                .scrollIntoView({ behavior: "smooth" });
+                            }}
                         >
                             <img className="Team-Carousel-Card_Window-Img" style={{width:'100%'}} alt={el.name} src={el.source} />
                             <div >

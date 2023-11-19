@@ -2,9 +2,9 @@
     :root {
         --width-category-card_illusions: 20vw;
         --category_photo_illusions: 18vw;
-        --img_card: ;
+        --img_card: 25vw;
         --description_size_text_card: 16px;
-        --card_name: ;
+        --card_name: 1.2vw;;
         --size_tittle_font: 1.2vw;
     }
 }
@@ -12,9 +12,9 @@
     :root {
         --width-category-card_illusions: 20vw;
         --category_photo_illusions: 15vw;
-        --img_card: ;
+        --img_card: 20vw;
         --description_size_text_card: 16px;
-        --card_name: ;
+        --card_name: 1.2vw;;
         --size_tittle_font: 1.2vw;
     }
 }
@@ -22,9 +22,9 @@
     :root {
         --width-category-card_illusions: 20vw;
         --category_photo_illusions: 7vw;
-        --img_card: ;
+        --img_card: 20vw;
         --description_size_text_card: 16px;
-        --card_name: ;
+        --card_name: 1.2vw;;
         --size_tittle_font: 1.2vw;
     }
 }
@@ -34,7 +34,7 @@
         --category_photo_illusions: 30vw;
         --img_card: 50vw;
         --description_size_text_card: 12px;
-        --card_name: ;
+        --card_name: 3.5vw;
         --size_tittle_font: 3vw;
     
     }
@@ -43,9 +43,9 @@
     :root {
         --width-category-card_illusions: 18vw;
         --category_photo_illusions: 18vw;
-        --img_card: ;
+        --img_card: 30vw;
         --description_size_text_card: 12px;
-        --card_name: ;
+        --card_name: 2vw;
         --size_tittle_font: 2.5vw;
     }
 }
@@ -153,7 +153,7 @@
                 transition: 1s;
             }
             &-Name{
-                font-size: 1.2vw;
+                font-size: var(--card_name);
             }
         }
     }

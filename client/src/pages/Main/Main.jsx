@@ -22,42 +22,48 @@ export default function Main() {
     }, [])
 
     //! Get запрос на определение ip
-    // axios.get('https://api.ipify.org/')
-    // .then((response) => {
-    //     console.log(response.data);
-    //     let collection = ''
-    //     document.addEventListener("keydown", function (event) {
-    //         if (event.key === "Р") {
-    //             collection += "Р"
-    //         }
-    //         if (collection[0] === "Р" && event.key === "и") {
-    //             if (collection.length === 1) {
-    //                 collection += "и"
-    //             }
-    //         }
-    //         if (collection[0] === "Р" && collection[1] === "и" && event.key === "т") {
-    //             if (collection.length === 2) {
-    //                 collection += "т"
-    //             }
-    //         }
-    //         if (collection[0] === "Р" && collection[1] === "и" && collection[2] === "т" && event.key === "а") {
-    //             if (collection.length === 3) {
-    //                 collection += "а"
-    //                 console.log(collection.legnth);
-    //                 if (collection === "Рита") {
-    //                     setSalut(true)
-    //                     document
-    //                     .querySelector("#main")
-    //                     .scrollIntoView({ behavior: "smooth" });
-    //                 }
-    //             }
-    //         }
-    //         if (collection === "Рита" && event.key === "Escape") {
-    //             setSalut(false)
-    //         }
-    //         console.log(collection);
-    //     });
-    // });
+    axios.get('https://api.ipify.org/')
+    .then((response) => {
+        console.log(response.data);
+        let collection = ''
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Р") {
+                collection += "Р"
+            }
+            if (collection[0] === "Р" && event.key === "и") {
+                if (collection.length === 1) {
+                    collection += "и"
+                }
+            }
+            if (collection[0] === "Р" && collection[1] === "и" && event.key === "т") {
+                if (collection.length === 2) {
+                    collection += "т"
+                }
+            }
+            if (collection[0] === "Р" && collection[1] === "и" && collection[2] === "т" && event.key === "а") {
+                if (collection.length === 3) {
+                    collection += "а"
+                    console.log(collection.legnth);
+                    if (collection === "Рита") {
+                        console.log(localStorage.getItem('paschal_egg'));
+                        if (localStorage.getItem('paschal_egg') === null) {
+                            localStorage.setItem('paschal_egg', false)
+                            setSalut(true)
+                            document
+                            .querySelector("#main")
+                            .scrollIntoView({ behavior: "smooth" });
+                        }
+                    }
+                }
+            }
+            if (collection === "Рита" && event.key === "Escape") {
+                setSalut(false)
+            }
+            if (salut === true && event.key === "Escape") {
+                localStorage.setItem('paschal_egg', true)
+            }
+        });
+    });
     
 
     const goToNYhandler = () => {
@@ -135,15 +141,25 @@ export default function Main() {
                 </div>
             }
             </div>
-            <div id='about' className="Anchor-IdAbout"></div>
+            <div id='about' className="Anchor-IdAbout">
+                <img style={{width:'100%', height:'100%'}} src="/img/block_wall.png" alt="" />
+            </div>
             <About />
-            <div id='team' className="Anchor-IdTeam"></div>
+            <div id='team' className="Anchor-IdTeam">
+                <img style={{width:'100%', height:'100%'}} src="/img/block_wall.png" alt="" />
+            </div>
             <Team />
-            <div id='services' className="Anchor-IdServices"></div>
+            <div id='services' className="Anchor-IdServices">
+                <img style={{width:'100%', height:'100%'}} src="/img/block_wall.png" alt="" />
+            </div>
             <Price />
-            <div id='newYear' className="Anchor-IdNewYear"></div>
+            <div id='newYear' className="Anchor-IdNewYear">
+                <img style={{width:'100%', height:'100%'}} src="/img/block_wall.png" alt="" />
+            </div>
             <NewYearAndSanta />
-            <div id='contacts' className="Anchor-IdContacts"></div>
+            <div id='contacts' className="Anchor-IdContacts">
+                <img style={{width:'100%', height:'100%'}} src="/img/block_wall.png" alt="" />
+            </div>
             <Contacts />
             {/* <div onClick={() => {setOpenRecallMe(!openRecallMe)}} className={openRecallMe ? "RecallMe_Active" : "RecallMe"}></div> */}
         </div>

@@ -72,12 +72,22 @@ export default function Price() {
                             <>    
                                 {categoryListFirst && categoryListFirst.map((el) => {
                                     return (
-                                        <img onClick={() => {handlerChoiceCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
+                                        <img onClick={() => {
+                                            handlerChoiceCategory(el.category)
+                                            document
+                                            .querySelector("#services")
+                                            .scrollIntoView({ behavior: "smooth" });
+                                        }} className='Price-CategoryList-Card' src={el.path} alt="pic" />
                                         )
                                 })}
                                 {categoryListSecond && categoryListSecond.map((el) => {
                                     return (
-                                        <img onClick={() => {handlerChoiceCategory(el.category)}} className='Price-CategoryList-Card' src={el.path} alt="pic" />
+                                        <img onClick={() => {
+                                            handlerChoiceCategory(el.category)
+                                            document
+                                            .querySelector("#services")
+                                            .scrollIntoView({ behavior: "smooth" });
+                                        }} className='Price-CategoryList-Card' src={el.path} alt="pic" />
                                         )
                                 })}
                             </>
@@ -86,7 +96,12 @@ export default function Price() {
                         <div className='Price-CardList'>
                             {categoryPhoto && categoryPhoto.map((el) => {
                                 return (
-                                    <img onClick={() => {setServicesCardData(el)}} className="Price-CardList-CardServices" src={el.img} alt="" />
+                                    <img onClick={() => {
+                                        setServicesCardData(el)
+                                        document
+                                        .querySelector("#services")
+                                        .scrollIntoView({ behavior: "smooth" });
+                                    }} className="Price-CardList-CardServices" src={el.img} alt="" />
                                 )
                             }
                             )}

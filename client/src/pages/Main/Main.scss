@@ -165,18 +165,24 @@
 .Anchor {
     width: 100%;
     &-IdAbout {
+        background-repeat: no-repeat;
+        width: 100%;
         height: var(--height_anchor);
     }
     &-IdContacts {
+        width: 100%;
         height: var(--height_anchor);
     }
     &-IdTeam {
+        width: 100%;
         height: var(--height_anchor);
     }
     &-IdServices {
+        width: 100%;
         height: var(--height_anchor);
     }
     &-IdNewYear {
+        width: 100%;
         height: var(--height_anchor);
     }
 }
@@ -543,6 +549,7 @@ $speed: 0.5s;
 .Salut {
     z-index: 1000;
     position: absolute;
+    backdrop-filter: blur(83px);
     width: 100vw;
     height: 100vh;
     display: flex;
