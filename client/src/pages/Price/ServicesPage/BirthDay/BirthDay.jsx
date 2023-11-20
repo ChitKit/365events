@@ -7,6 +7,7 @@ import VIP from "./VIP/VIP";
 
 export default function BirthDay({ setServicesCardData }) {
     const [choiceBirthDay, setChoiceBirthDay] = useState(birthDay[0]);
+    const [fullSizeImg, setFullSizeImg] = useState(null)
     console.log();
     useEffect(() => {
         setChoiceBirthDay(birthDay[0])
@@ -14,14 +15,16 @@ export default function BirthDay({ setServicesCardData }) {
 
     return (
         <div className="Price-Services_Card BirthDay" style={{display:'flex', flexDirection:'column'}}>
-            <div
-                onClick={() => {
-                    setServicesCardData(null);
-                }}
-                className="Price-Services_Card-Button_Close"
-            >
-                <img src="/icons/icon_close.png" alt="button_Close" />
-            </div>
+            {!fullSizeImg &&
+                <div
+                    onClick={() => {
+                        setServicesCardData(null);
+                    }}
+                    className="Price-Services_Card-Button_Close"
+                >
+                    <img src="/icons/icon_close.png" alt="button_Close" />
+                </div>
+            }
             <div
                 style={{
                     width: "100%",
@@ -40,20 +43,38 @@ export default function BirthDay({ setServicesCardData }) {
                                 src={el.img}
                                 alt=""
                             /> */}
-                            <p onClick={() => {setChoiceBirthDay(el)}} >{el.name}</p>
+                            <p onClick={() => {
+                                setChoiceBirthDay(el)
+                                document
+                                .querySelector("#services")
+                                .scrollIntoView({ behavior: "smooth" });
+                                }} >{el.name}</p>
                         </div>
                     );
                 })}
             </div>
                 {
                     choiceBirthDay.name === 'Базовый' ?
-                    <Base setServicesCardData={setServicesCardData} data={choiceBirthDay}/>
+                    <Base setServicesCardData={setServicesCardData} data={choiceBirthDay} setFullSizeImg={setFullSizeImg}/>
                     :
                     choiceBirthDay.name === 'Стандарт' ?
-                    <Standart setServicesCardData={setServicesCardData} data={choiceBirthDay}/>
+                    <Standart setServicesCardData={setServicesCardData} data={choiceBirthDay} setFullSizeImg={setFullSizeImg}/>
                     :
                     choiceBirthDay.name === 'VIP' &&
-                    <VIP setServicesCardData={setServicesCardData} data={choiceBirthDay}/>
+                    <VIP setServicesCardData={setServicesCardData} data={choiceBirthDay} setFullSizeImg={setFullSizeImg}/>
+                }
+                {fullSizeImg &&
+                    <div onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG">
+                    <div
+                        onClick={() => {
+                            setFullSizeImg(null);
+                        }}
+                        className="PriceCard-FullIMG-Btn_Close"
+                    >
+                        <img src="/icons/icon_close.png" alt="button_Close" />
+                    </div>
+                        <img onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG-Img" src={fullSizeImg} alt="" />
+                    </div>
                 }
         </div>
     );

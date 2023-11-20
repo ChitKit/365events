@@ -150,7 +150,14 @@ export default function KidNY({ setIsModalCard }) {
                     return (
                         <>
                             <div className={choiceShow.title === el.title ? "KidNY_Active" : "KidNY_Choice"} >
-                                <p  onClick={() => {setChoiceShow(el)}} >{el.title}</p>
+                                <p  onClick={() => {
+                                    setChoiceShow(el)
+                                    document
+                                    .querySelector("#newYear")
+                                    .scrollIntoView({ behavior: "smooth" });
+                                }}
+                                
+                                >{el.title}</p>
                             </div>
                         </>
                     );
@@ -196,6 +203,10 @@ export default function KidNY({ setIsModalCard }) {
                                 <p className="KidNY-Content-Right_Content-Price-Text">
                                     {choiceShow.price}
                                 </p>
+                                <p
+                                    className='KidNY-Content-Right_Content-Price-Button_Buy'
+                                >Заказать</p>
+
                             </div>
                         </div>
                         {fullSizeImg &&

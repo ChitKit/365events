@@ -211,8 +211,25 @@
             }
             &-Price{
                 height: 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 &-Text{
                     font-size: var(--descryption_category_NY_size_font);
+                }
+                &-Button_Buy{
+                    width: auto;
+                    font-size:var(--card_name);
+                    padding: 0 2vw;
+                    color: green;
+                    border-radius: 2vw;
+                    box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
+                    animation: colorize 12s ease infinite;
+                }
+                &-Button_Buy:hover{
+                    cursor: pointer;
+                    animation: colorize_Focus 2s ease infinite;
+                    
                 }
             }
         }

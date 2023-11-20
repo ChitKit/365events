@@ -169,6 +169,9 @@ export default function OutDoorNY({ setIsModalCard }) {
                                 <p className="OutDoorNY-Content-Right_Content-Price-Text">
                                     {choiceShow.price}
                                 </p>
+                                <p
+                                    className='OutDoorNY-Content-Right_Content-Price-Button_Buy'
+                                >Заказать</p>
                             </div>
                         </div>
                     </div>

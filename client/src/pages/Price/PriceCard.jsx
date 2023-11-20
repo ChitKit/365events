@@ -82,6 +82,10 @@ export default function PriceCard({ dataCard, setData }) {
                                 <p className="PriceCard-Content-Right_Content-Price-Text">
                                     {dataCard.price}
                                 </p>
+                                <p
+                                    className='PriceCard-Content-Right_Content-Price-Button_Buy'
+                                >Заказать</p>
+                                
                             </div>
                         </div>
                         {fullSizeImg &&

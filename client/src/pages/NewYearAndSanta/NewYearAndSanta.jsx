@@ -93,7 +93,14 @@ export default function NewYearAndSanta() {
                             alt=""
                             /> */}
                             <img
-                                onClick={() => { setChoiceNewYearAndSanta(el); setIsModalCard(true) }}
+                                onClick={() => { 
+                                    setChoiceNewYearAndSanta(el); 
+                                    setIsModalCard(true);
+                                    document
+                                    .querySelector("#newYear")
+                                    .scrollIntoView({ behavior: "smooth" });
+                                
+                                }}
                                 className='NewYearAndSanta-Category_Card-Img'
                                 style={{
                                     width: "65%",

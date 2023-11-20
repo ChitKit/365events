@@ -6,6 +6,8 @@
         --description_size_text_card: 16px;
         --card_name: 1.2vw;;
         --size_tittle_font: 1.2vw;
+        --orientation_card: row;
+        --height_card_description: 80%;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
@@ -16,6 +18,8 @@
         --description_size_text_card: 16px;
         --card_name: 1.2vw;;
         --size_tittle_font: 1.2vw;
+        --orientation_card: row;
+        --height_card_description: 80%;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -26,6 +30,8 @@
         --description_size_text_card: 16px;
         --card_name: 1.2vw;;
         --size_tittle_font: 1.2vw;
+        --orientation_card: row;
+        --height_card_description: 80%;
     }
 }
 @media (orientation: portrait) {
@@ -36,6 +42,8 @@
         --description_size_text_card: 12px;
         --card_name: 3.5vw;
         --size_tittle_font: 3vw;
+        --orientation_card: column;
+        --height_card_description: 50%;
     
     }
 }
@@ -47,6 +55,8 @@
         --description_size_text_card: 12px;
         --card_name: 2vw;
         --size_tittle_font: 2.5vw;
+        --orientation_card: row;
+        --height_card_description: 80%;
     }
 }
 
@@ -56,6 +66,7 @@
     flex-direction: column;
     &-Services_Card {
         display: flex;
+        flex-direction: var(--orientation_card);
         justify-content: space-between;
         align-items: center;
         width: var(--width_content_price);
@@ -67,15 +78,17 @@
         box-shadow: 0 0 50px var(--font_color_app);
         transition: 0.5s;
         &-Img{
-            width: var(--img_card)
+            width: var(--img_card);
+            margin-top: 5em;
         }
         &-Info {
             width: 100%;
+            height: var(--height_card_description);
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            margin-top: 3em;
+            // margin-top: 3em;
             font-size: large;
             &-Description{
                 width: 100%;
@@ -84,7 +97,7 @@
                 &-Title{
                     margin-top: 1vw;
                     width: 50%;
-                    font-size: 2vw;
+                    font-size: var(--card_name);
                     color: #dbcb94;
                 }
                 &-Price{
@@ -96,11 +109,11 @@
                     bottom: clamp(1%, 30vw, 3%);
                     right: clamp(3%, 30vw, 20%);
                     &-Price{
-                        font-size: .9vw;
+                        font-size:var(--card_name);
                     }
                     &-Button{
-                        font-size: .9vw;
-                        padding: .2vw;
+                        font-size:var(--card_name);
+                        padding: 0 2vw;;
                         color: green;
                         border-radius: 2vw;
                         box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);

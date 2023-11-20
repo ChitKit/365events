@@ -1,7 +1,7 @@
-.Shows{
-    font-size: clamp(1px, 2vw, 15px);
-    user-select: none;
-}
+// .Shows{
+//     font-size: clamp(1px, 2vw, 15px);
+//     user-select: none;
+// }
 .Show_Active{
     font-size: 1.1vw;
     font-weight: bold;
@@ -25,5 +25,139 @@
     }
     :hover{
         cursor: pointer;
+    }
+}
+
+.Shows{
+    font-size: large;
+    user-select: none;
+    // box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
+    transition: 2s;
+    &-Content{
+        width: 100%;
+        display: flex;
+        height: calc(100% - 15px);
+        justify-content: center;
+        &-Left_Content{
+            width: 50%;
+            height: 90%;
+            &-MainPhoto{
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &-Img{
+                    width: 70%;
+                    cursor: pointer;
+                }
+            }
+            &-PhotoList{
+                overflow-x: auto;
+                display: flex;
+                overflow: hidden;
+                width: 100%;
+                max-width: 100%;
+                padding-bottom: 1em;
+                position: relative;
+                &-Slider{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: flex-start;
+                    max-height: 20%;
+                    position: relative;
+                    animation: move_bg 35s linear infinite alternate;
+                    &-Select_Card{
+                        width: 15%;
+                        box-shadow: 0 0 15px #00ffffb7;
+                        margin: 1em;
+                    }
+                    &-Card{
+                        width: 15%;
+                        margin: 1em;
+                    }
+                    :hover{
+                        cursor: pointer;
+                        box-shadow: 0 0 10px white;
+                    }
+                }
+                
+            }
+            &-PhotoList::-webkit-scrollbar {
+                height: 10px;
+                width: 2px;
+                // background-color: aqua;
+            }
+            &-PhotoList::-webkit-scrollbar-thumb{
+                border-radius: 10px;
+                background-color: #e7c862;
+                box-shadow: inset 0 0 8px #e7c862;
+            }
+        }
+        &-Right_Content{
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+            height: 90%;
+            &-Description{
+                padding: var(--padding_descryption_block);
+                width: 100%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                &-Text{
+                    font-size: var(--descryption_category_NY_size_font);
+                }
+            }
+            &-Price{
+                height: 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-Text{
+                    font-size: var(--descryption_category_NY_size_font);
+                }
+                &-Button_Buy{
+                    width: auto;
+                    font-size:var(--card_name);
+                    padding: 0 2vw;
+                    color: green;
+                    border-radius: 2vw;
+                    box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
+                    animation: colorize 12s ease infinite;
+                }
+                &-Button_Buy:hover{
+                    cursor: pointer;
+                    animation: colorize_Focus 2s ease infinite;
+                    
+                }
+            }
+        }
+    }
+    &-FullIMG{
+        background-color: rgba(68, 68, 68, 0.445);
+        box-shadow: 0 0 50px rgba(68, 68, 68, 0.445);
+        border: 2px solid gray;
+        border-radius: 2em 0 2em 0;;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        &-Img{
+            width: var(--full_size_open_img);
+        }
+        &-Btn_Close{
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
     }
 }

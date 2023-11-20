@@ -99,9 +99,15 @@ const images = [
         name: "Сергей",
         description: "Видеограф",
     },
+    //! Admin
+    {
+        source: "/imgTeam/admin.jpg",
+        role: 'Администратор',
+        name: "Маргарита",
+        description: "Администратор",
+    }
 ];
 export default function Team () {
-    const [colorPuzzleForm, setColorPuzzleForm] = useState(undefined);
     const [personalCardData, setPersonalCardData] = useState(null);
     const [viewCard, setViewCard] = useState(false);
 

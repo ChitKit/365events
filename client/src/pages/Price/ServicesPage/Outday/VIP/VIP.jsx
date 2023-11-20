@@ -1,31 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './VIP.scss'
 
-export default function VIP({ data }) {
+export default function VIP({ data, setFullSizeImg }) {
+    const [selectImage, setSelectImage] = useState(data.photo[0])
 
   return (
     <div className="VIP">
         <div className="VIP-Info">
+            <div className="VIP-Info-Main_Info_Show">
+                {data.photo &&
+                    <>
+                        <>
+                            <div className="VIP-Info-Main_Info_Show-MainPhoto">
+                                    <img className="VIP-Info-Main_Info_Show-MainPhoto-Img" onClick={() => setFullSizeImg(selectImage.card)} id="" src={selectImage.card} alt='mainPhoto' />
+                                
+                            </div>
+                            <div className="VIP-Info-Main_Info_Show-PhotoList">
+                                <div className="VIP-Info-Main_Info_Show-PhotoList-Slider">
+                                        {data.photo.map((el) => {
+                                            return (
+                                                <img onClick={() => {setSelectImage(el)}} className={selectImage.id === el.id ? "VIP-Info-Main_Info_Show-PhotoList-Slider-Select_Card" : "VIP-Info-Main_Info_Show-PhotoList-Slider-Card"} id={el.id} src={el.card} alt={`${el.card}${el.id}`} />
+                                                )
+                                        })}
+                                </div>
+                            </div>
+                        </>
+                    </>
+                }
+            </div>
             <div className="VIP-Info-Description">
                 <p>{data.description}</p>
                 <p className="VIP-Info-Description-More">Подробности <a target="_blank"  href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> </p>
-            </div>
-            <div className="VIP-Info-Main_Info_Show">
-                <img
-                    className="VIP-Info-Main_Info_Show-Img"
-                    src={data.img}
-                    alt=""
-                />
-                <img
-                    className="VIP-Info-Main_Info_Show-Img"
-                    src={data.img}
-                    alt=""
-                />
-                <img
-                    className="VIP-Info-Main_Info_Show-Img"
-                    src={data.img}
-                    alt=""
-                />
             </div>
             <div className="VIP-Info-Buy">
                 <p className="Bubble_Show-Info-Buy-Price">{data.price}</p>

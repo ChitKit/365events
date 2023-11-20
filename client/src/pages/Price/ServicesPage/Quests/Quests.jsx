@@ -6,6 +6,7 @@ import FortTreasure from "./FortTreasure/FortTreasure";
 
 export default function Quests({ setServicesCardData }) {
     const [choiceQuest, setChoiceQuest] = useState(quests[0]);
+    const [fullSizeImg, setFullSizeImg] = useState(null)
     console.log(choiceQuest);
     console.log(quests);
     useEffect(() => {
@@ -16,14 +17,16 @@ export default function Quests({ setServicesCardData }) {
 
     return (
         <div className="Price-Services_Card Quests" style={{display:'flex', flexDirection:'column'}}>
-            <div
-                onClick={() => {
-                    setServicesCardData(null);
-                }}
-                className="Price-Services_Card-Button_Close"
-            >
-                <img src="/icons/icon_close.png" alt="button_Close" />
-            </div>
+            {!fullSizeImg &&
+                <div
+                    onClick={() => {
+                        setServicesCardData(null);
+                    }}
+                    className="Price-Services_Card-Button_Close"
+                >
+                    <img src="/icons/icon_close.png" alt="button_Close" />
+                </div>
+            }
             <div
                 style={{
                     width: "100%",
@@ -41,18 +44,37 @@ export default function Quests({ setServicesCardData }) {
                                 src={el.img}
                                 alt=""
                             /> */}
-                            <p onClick={() => {setChoiceQuest(el)}} >{el.name}</p>
+                            <p onClick={() => {
+                                setChoiceQuest(el)
+                                document
+                                .querySelector("#services")
+                                .scrollIntoView({ behavior: "smooth" });
+                                }} >{el.name}</p>
                         </div>
                     );
                 })}
             </div>
             {
                 choiceQuest.name === 'Тайник Флинта' ?
-                    <Flint setServicesCardData={setServicesCardData} data={choiceQuest}/>
+                    <Flint setServicesCardData={setServicesCardData} data={choiceQuest} setFullSizeImg={setFullSizeImg}/>
                 :
                 choiceQuest.name === 'В поисках сокровища Форта' &&
-                    <FortTreasure setServicesCardData={setServicesCardData} data={choiceQuest}/>
+                    <FortTreasure setServicesCardData={setServicesCardData} data={choiceQuest} setFullSizeImg={setFullSizeImg}/>
             }
+            
+            {fullSizeImg &&
+                            <div onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG">
+                            <div
+                               onClick={() => {
+                                   setFullSizeImg(null);
+                               }}
+                               className="PriceCard-FullIMG-Btn_Close"
+                           >
+                               X
+                           </div>
+                                <img onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG-Img" src={fullSizeImg} alt="" />
+                            </div>
+                        }
         </div>
     );
 }

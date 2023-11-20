@@ -8,7 +8,7 @@
     &-Buy{
         position: absolute;
         bottom: clamp(1%, 30vw, 3%);
-        right: clamp(3%, 30vw, 20%);
+        // right: clamp(3%, 30vw, 20%);
         &-Price{
             color: #dbcb94;
             font-size: .9vw;

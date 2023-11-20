@@ -7,18 +7,21 @@ import VIP from "./VIP/VIP";
 
 export default function Outday({ setServicesCardData }) {
     const [choiceOutday, setChoiceOutday] = useState('info');
+    const [fullSizeImg, setFullSizeImg] = useState(null)
     console.log();
 
     return (
         <div className="Price-Services_Card Outday" style={{display:'flex', flexDirection:'column'}}>
-            <div
-                onClick={() => {
-                    setServicesCardData(null);
-                }}
-                className="Price-Services_Card-Button_Close"
-            >
-                <img src="/icons/icon_close.png" alt="button_Close" />
-            </div>
+            {!fullSizeImg &&
+                <div
+                    onClick={() => {
+                        setServicesCardData(null);
+                    }}
+                    className="Price-Services_Card-Button_Close"
+                >
+                    <img src="/icons/icon_close.png" alt="button_Close" />
+                </div>
+            }
             <div
                 style={{
                     width: "100%",
@@ -37,20 +40,25 @@ export default function Outday({ setServicesCardData }) {
                                 src={el.img}
                                 alt=""
                             /> */}
-                            <p onClick={() => {setChoiceOutday(el)}} >{el.name}</p>
+                            <p onClick={() => {
+                                setChoiceOutday(el)
+                                document
+                                .querySelector("#services")
+                                .scrollIntoView({ behavior: "smooth" });
+                                }} >{el.name}</p>
                         </div>
                     );
                 })}
             </div>
                 {
                     choiceOutday.name === 'Базовый' ?
-                    <Base setServicesCardData={setServicesCardData} data={choiceOutday}/>
+                    <Base setServicesCardData={setServicesCardData} data={choiceOutday} setFullSizeImg={setFullSizeImg} />
                     :
                     choiceOutday.name === 'Стандарт' ?
-                    <Standart setServicesCardData={setServicesCardData} data={choiceOutday}/>
+                    <Standart setServicesCardData={setServicesCardData} data={choiceOutday} setFullSizeImg={setFullSizeImg} />
                     :
                     choiceOutday.name === 'VIP' ?
-                    <VIP setServicesCardData={setServicesCardData} data={choiceOutday}/>
+                    <VIP setServicesCardData={setServicesCardData} data={choiceOutday} setFullSizeImg={setFullSizeImg} />
                     :
                     choiceOutday === 'info' &&
                     <>
@@ -73,9 +81,19 @@ export default function Outday({ setServicesCardData }) {
                             >Заказать</div>
                         </div>
                     </>
-                    
-
-
+                }
+                {fullSizeImg &&
+                    <div onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG">
+                    <div
+                        onClick={() => {
+                            setFullSizeImg(null);
+                        }}
+                        className="PriceCard-FullIMG-Btn_Close"
+                    >
+                        <img src="/icons/icon_close.png" alt="button_Close" />
+                    </div>
+                        <img onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG-Img" src={fullSizeImg} alt="" />
+                    </div>
                 }
         </div>
     );

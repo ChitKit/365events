@@ -160,6 +160,9 @@ export default function ForBigNY({ setIsModalCard }) {
                                 <p className="ForBigNY-Content-Right_Content-Price-Text">
                                     {choiceShow.price}
                                 </p>
+                                <p
+                                    className='ForBigNY-Content-Right_Content-Price-Button_Buy'
+                                >Заказать</p>
                             </div>
                         </div>
                         {fullSizeImg &&
