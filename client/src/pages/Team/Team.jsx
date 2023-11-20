@@ -5,7 +5,7 @@ const images = [
     //! Admin
     {
         source: "/imgTeam/admin.jpg",
-        role: 'Hamster',
+        role: 'Менеджер проектов',
         name: "Маргарита",
         description: "Администратор",
     },
