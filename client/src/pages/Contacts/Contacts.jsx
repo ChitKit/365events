@@ -12,7 +12,7 @@ export default function Contacts() {
                 </div>
                 <div>
                     <p>email:</p>
-                    <p>365events@yandex.ru</p>
+                    <p>events.365@yandex.ru</p>
                 </div>
             </div>
             <h6>Мы в социальных сетях и контакты для связи</h6>

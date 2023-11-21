@@ -2,27 +2,43 @@
     :root {
         --height_content_contacts: 80vh;
         --width_content_contacts: 70vw;
+        --width_contact_block: 80%;
+        --justify_content_Link_block_orientation: space-between;
     }
   }
-  @media screen and (min-width: 1024px) and (max-width: 1366px) {
-    :root {
-        --height_content_contacts: 80vh;
-        --width_content_contacts: 70vw;
-    }
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  :root {
+      --height_content_contacts: 80vh;
+      --width_content_contacts: 70vw;
+      --width_contact_block: 80%;
+      --justify_content_Link_block_orientation: space-between;
   }
-  @media screen and (min-width: 800px) and (max-width: 1023px) {
-    :root {
-        --height_content_contacts: 80vh;
-        --width_content_contacts: 70vw;
-    }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  :root {
+      --height_content_contacts: 80vh;
+      --width_content_contacts: 70vw;
+      --width_contact_block: 80%;
+      --justify_content_Link_block_orientation: space-between;
   }
-  @media screen and (max-width: 799px) {
-    :root {
-        --height_content_contacts: 65vh;
-        --width_content_contacts: 85vw;
-    }
+}
+@media (orientation: portrait) {
+  :root {
+    --height_content_contacts: 65vh;
+    --width_content_contacts: 85vw;
+    --width_contact_block: 100%;
+    --justify_content_Link_block_orientation: center;
   }
+}
 
+@media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
+  :root {
+    --height_content_contacts: 65vh;
+    --width_content_contacts: 85vw;
+    --width_contact_block: 100%;
+    --justify_content_Link_block_orientation: center;
+  }
+}
 .Contacts{
     // background:rgba(0, 0, 0, 0.534);
     color: var(--font_color_app);
@@ -39,7 +55,7 @@
     border-radius: 2em 0 2em 0;
     &-Data{
       display: flex;
-      width: 80%;
+      width: var(--width_contact_block);
       justify-content: space-around;
     }
     &-Title{
@@ -49,7 +65,7 @@
     &-Links{
       width: 45%;
       display: flex;
-      justify-content: space-between;
+      justify-content: var(--justify_content_Link_block_orientation);
     }
     &-Links a img:only-child{
       margin: 10px;

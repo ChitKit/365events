@@ -10,7 +10,7 @@ export default function Illusioniists({setServicesCardData}) {
         <div onClick={() => {setServicesCardData(null)}} className="Price-Services_Card-Button_Close">
             <img src="/icons/icon_close.png" alt="button_Close" />
         </div>
-        <p className='Illusionists-Tittle'>В нашем агентстве есть 3 потрясающих иллюзиониста. У каждого своя программа.</p>
+        <p className='Illusionists-Tittle'>В нашем агентстве есть потрясающие иллюзионисты. У каждого своя программа.</p>
 		<div className="Illusionists-Member_List">
 			{illusionistsList.map((el) => {
 				return (
