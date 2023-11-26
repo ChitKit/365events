@@ -428,6 +428,7 @@
             width: var(--full_size_open_img);
         }
         &-Btn_Close{
+            cursor: pointer;
             position: absolute;
             top: 1em;
             right: 1em;

@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Price.scss";
+import BuyWindow from "../../components/BuyWindow/BuyWindow";
 
 
 
 export default function PriceCard({ dataCard, setData }) {
     const [fullSizeImg, setFullSizeImg] = useState(null)
     const [selectImage, setSelectImage] = useState(dataCard.photo[0])
+    const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
 
+    const handlerOrderServices = () => {
+        setIsOpenOrderWindow(true)
+    }
     
     return (
         <div className="Price-Services_Card PriceCard" style={{display:'flex', flexDirection:'column'}}>
-            {!fullSizeImg &&
+            {!fullSizeImg && !isOpenOrderWindow &&
                 <div
                     onClick={() => {
                         setData(null);
@@ -82,7 +87,8 @@ export default function PriceCard({ dataCard, setData }) {
                                 <p className="PriceCard-Content-Right_Content-Price-Text">
                                     {dataCard.price}
                                 </p>
-                                <p
+                                <p 
+                                    onClick={handlerOrderServices}
                                     className='PriceCard-Content-Right_Content-Price-Button_Buy'
                                 >Заказать</p>
                                 
@@ -96,7 +102,7 @@ export default function PriceCard({ dataCard, setData }) {
                                }}
                                className="PriceCard-FullIMG-Btn_Close"
                            >
-                               X
+                               <img src="/icons/icon_close.png" alt="button_Close" />
                            </div>
                                 <img onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG-Img" src={fullSizeImg} alt="" />
                             </div>
@@ -104,6 +110,7 @@ export default function PriceCard({ dataCard, setData }) {
                     </div>
                 </>
             }
+            <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={dataCard.name}/>
         </div>
     );
 }

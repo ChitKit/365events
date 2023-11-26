@@ -3,7 +3,6 @@ import './Price.scss'
 import {
     artists,
     programms,
-    newYear,
     forSell,
     imgMK
 } from './servicesCatalog'
