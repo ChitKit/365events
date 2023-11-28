@@ -110,7 +110,9 @@ export default function PriceCard({ dataCard, setData }) {
                     </div>
                 </>
             }
-            <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={dataCard.name}/>
+            {isOpenOrderWindow &&
+                <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={dataCard.name}/>
+            }
         </div>
     );
 }

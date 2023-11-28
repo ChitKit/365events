@@ -24,7 +24,6 @@ const categoryList = [
 export default function NewYearAndSanta() {
 
     const [isModalCard, setIsModalCard] = useState(false)
-    const [serviceCardData, setServiceCardData] = useState(false);
     const [choiceNewYearAndSanta, setChoiceNewYearAndSanta] = useState();
 
     return (
@@ -36,21 +35,18 @@ export default function NewYearAndSanta() {
                     {
                         choiceNewYearAndSanta.title === 'Дед мороз для детей' ?
                             <KidNY
-                                serviceCardData={serviceCardData}
                                 data={choiceNewYearAndSanta}
                                 setIsModalCard={setIsModalCard}
                             />
                             :
                             choiceNewYearAndSanta.title === 'Дед мороз для взрослых' ?
                                 <ForBigNY
-                                    serviceCardData={serviceCardData}
                                     data={choiceNewYearAndSanta}
                                     setIsModalCard={setIsModalCard}
                                 />
                                 :
                                 choiceNewYearAndSanta.title === 'Дед мороз вне дома' &&
                                 <OutDoorNY
-                                    serviceCardData={serviceCardData}
                                     data={choiceNewYearAndSanta}
                                     setIsModalCard={setIsModalCard}
                                 />

@@ -23,7 +23,7 @@ export default function BuyWindow({ isOpen, setIsOpen, title }) {
                 <div className="BuyWindow-Content-Data">
                     <div>
                         <p>Телефон:</p>
-                        <p>8(989)049-04-02</p>
+                        <a href="tel:+79890490402">8(989)049-04-02</a>
                     </div>
                     <div>
                         <p>email:</p>
@@ -48,7 +48,7 @@ export default function BuyWindow({ isOpen, setIsOpen, title }) {
                     </a>
                     <a
                         target="_blank"
-                        href="https://t.me/zakaz365events"
+                        href={`https://t.me/zakaz365events`}
                         rel="noreferrer"
                     >
                         <img src="/icons/icon_TG.png" alt="image_telegram" />

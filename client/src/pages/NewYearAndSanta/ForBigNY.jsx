@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NewYearAndSanta.scss";
+import BuyWindow from "../../components/BuyWindow/BuyWindow";
 
 const forBiggest = [
     {
@@ -79,10 +80,11 @@ const forBiggest = [
     },
 ]
 
-export default function ForBigNY({ setIsModalCard }) {
+export default function ForBigNY({ setIsModalCard, data }) {
     const [fullSizeImg, setFullSizeImg] = useState(null)
     const [choiceShow, setChoiceShow] = useState(forBiggest[0]);
     const [selectImage, setSelectImage] = useState(forBiggest[0].photo[0])
+    const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
 
     return (
         <div className="Price-Services_Card ForBigNY" style={{display:'flex', flexDirection:'column'}}>
@@ -161,6 +163,7 @@ export default function ForBigNY({ setIsModalCard }) {
                                     {choiceShow.price}
                                 </p>
                                 <p
+                                    onClick={() => setIsOpenOrderWindow(true)}
                                     className='ForBigNY-Content-Right_Content-Price-Button_Buy'
                                 >Заказать</p>
                             </div>
@@ -180,6 +183,9 @@ export default function ForBigNY({ setIsModalCard }) {
                         }
                     </div>
                 </>
+            }
+            {isOpenOrderWindow &&
+                <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={data.title}/>
             }
         </div>
     );

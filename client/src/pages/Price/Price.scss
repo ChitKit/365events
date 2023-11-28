@@ -9,12 +9,15 @@
         --height_content_price: 80vh;
         --width_content_price: 70vw;
         --width_content_card: 10vw;
-        --width-category-card: 21vh;
-        --width-category-card-hover: 21.2vh;
+        --width-category-card: 22%;
+        --width-category-card-hover: 22.3%;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
         --services_card_width: 18%;
         --button_go_back_to_category: 3vw;
+        --full_size_open_img_height: 100%;
+        --size_img_mainPhoto: 70%;
+        --size_img_sliderPhoto: 15%;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
@@ -22,12 +25,15 @@
         --height_content_price: 80vh;
         --width_content_price: 70vw;
         --width_content_card: 10vw;
-        --width-category-card: 19vh;
-        --width-category-card-hover: 19.2vh;
+        --width-category-card: 22%;
+        --width-category-card-hover: 22.3%;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
         --services_card_width: 18%;
         --button_go_back_to_category: 3vw;
+        --full_size_open_img_height: 100%;
+        --size_img_mainPhoto: 70%;
+        --size_img_sliderPhoto: 15%;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -35,24 +41,30 @@
         --height_content_price: 80vh;
         --width_content_price: 70vw;
         --width_content_card: 10vw;
-        --width-category-card: 18vh;
-        --width-category-card-hover: 18.2vh;
+        --width-category-card: 22%;
+        --width-category-card-hover: 22.3%;
         --margin-category-card: 3.5vh 2.2vw;
         --margin-category-card-hover: 3.5vh 2.8vw;
         --services_card_width: 18%;
         --button_go_back_to_category: 3vw;
+        --full_size_open_img_height: 100%;
+        --size_img_mainPhoto: 70%;
+        --size_img_sliderPhoto: 15%;
     }
 }
 @media (orientation: portrait) {
     :root {
         --height_content_price: 75vh;
-        --width_content_price: 95vw;
+        --width_content_price: 100vw;
         --width_content_card: 10vw;
-        --width-category-card: 12vh;
-        --width-category-card-hover: 16vh;
+        --width-category-card: 45%;
+        --width-category-card-hover: 45.3%;
         --margin-category-card: 2vh 2vw;
         --services_card_width: 40%;
         --button_go_back_to_category: 5vw;
+        --full_size_open_img_height: 60%;
+        --size_img_mainPhoto: 40%;
+        --size_img_sliderPhoto: 30%;
     }
 }
 
@@ -61,11 +73,14 @@
         --height_content_price: 75vh;
         --width_content_price: 85vw;
         --width_content_card: 10vw;
-        --width-category-card: 12vw;
-        --width-category-card-hover: 12.2vw;
+        --width-category-card: 18%;
+        --width-category-card-hover: 18.3%;
         --margin-category-card: 1vh .5vw;
         --services_card_width: 18%;
         --button_go_back_to_category: 5vw;
+        --full_size_open_img_height: 60%;
+        --size_img_mainPhoto: 50%;
+        --size_img_sliderPhoto: 15%;
     }
 }
 
@@ -137,7 +152,7 @@
                 cursor: pointer;
                 border-radius: 0 2em;
                 box-shadow: 5px 5px 20px var(--font_color_app);
-                width: 18.4%;
+                width: calc(var(--services_card_width) + 0.3%);
                 margin: 0.8em;
                 transition: 1s;
             }
@@ -320,7 +335,7 @@
                 justify-content: center;
                 align-items: center;
                 &-Img{
-                    width: 70%;
+                    height: var(--size_img_mainPhoto);
                     cursor: pointer;
                 }
             }
@@ -333,7 +348,6 @@
                 padding-bottom: 1em;
                 position: relative;
                 &-Slider{
-                    width: 100%;
                     height: 20%;
                     display: flex;
                     justify-content: flex-start;
@@ -341,7 +355,7 @@
                     position: relative;
                     animation: move_bg 35s linear infinite alternate;
                     &-Select_Card{
-                        width: 15%;
+                        width: var(--size_img_sliderPhoto);
                         box-shadow: 0 0 15px #00ffffb7;
                         margin: 1em;
                     }
@@ -425,7 +439,8 @@
         position: absolute;
         top: 0;
         &-Img{
-            width: var(--full_size_open_img);
+            // width: var(--full_size_open_img_width);
+            height: var(--full_size_open_img_height);
         }
         &-Btn_Close{
             cursor: pointer;
