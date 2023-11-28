@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./FortTreasure.scss";
+import BuyWindow from "../../../../../components/BuyWindow/BuyWindow";
 
 export default function FortTreasure({ data, setFullSizeImg }) {
-    const [selectImage, setSelectImage] = useState(data.photo[0]);
+    const [selectImage, setSelectImage] = useState(data.photo[0])
+    const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
 
     return (
         <div className="FortTreasure">
@@ -61,10 +63,18 @@ export default function FortTreasure({ data, setFullSizeImg }) {
                     </p>
                 </div>
                 <div className="FortTreasure-Info-Buy">
-                    <p className="Bubble_Show-Info-Buy-Price">{data.price}</p>
-                    <div className="FortTreasure-Info-Buy-Button">Заказать</div>
+                    <p className="FortTreasure-Info-Buy-Text">
+                        {data.price}
+                    </p>
+                    <p 
+                        onClick={() => setIsOpenOrderWindow(true)}
+                        className='FortTreasure-Info-Buy-Button_Buy'
+                    >Заказать</p>
                 </div>
             </div>
+            {isOpenOrderWindow &&
+                <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={`Квест ${data.name}`}/>
+            }
         </div>
     );
 }

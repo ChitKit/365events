@@ -76,23 +76,27 @@
         }
         &-Buy{
             position: absolute;
-            bottom: clamp(1%, 30vw, 3%);
+            bottom: clamp(1%, 30vw, 10%);
             right: clamp(3%, 30vw, 20%);
-            &-Price{
-                font-size: .9vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 10%;
+            &-Text{
+                font-size: var(--descryption_category_NY_size_font);
             }
-            &-Button{
-                font-size: .9vw;
-                padding: .2vw;
+            &-Button_Buy{
+                width: auto;
+                font-size:var(--card_name);
+                padding: 0 2vw;
                 color: green;
                 border-radius: 2vw;
                 box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
-                animation: colorize 10s ease infinite;
+                animation: colorize 12s ease infinite;
             }
-            &-Button:hover{
+            &-Button_Buy:hover{
                 cursor: pointer;
                 animation: colorize_Focus 2s ease infinite;
-
             }
         }
     }

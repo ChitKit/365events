@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './Base.scss'
+import BuyWindow from '../../../../../components/BuyWindow/BuyWindow'
 
 export default function Base({ data, setFullSizeImg }) {
 const [selectImage, setSelectImage] = useState(data.photo[0])
+const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
   return (
     <div className="Base">
         <div className="Base-Info">
@@ -32,12 +34,18 @@ const [selectImage, setSelectImage] = useState(data.photo[0])
                 <p className="Base-Info-Description-More">Подробности <a target="_blank"  href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> </p>
             </div>
             <div className="Base-Info-Buy">
-                <p className="Bubble_Show-Info-Buy-Price">{data.price}</p>
-                <div
-                    className='Base-Info-Buy-Button'
-                >Заказать</div>
+                <p className="Base-Info-Buy-Text">
+                    {data.price}
+                </p>
+                <p 
+                    onClick={() => setIsOpenOrderWindow(true)}
+                    className='Base-Info-Buy-Button_Buy'
+                >Заказать</p>
             </div>
         </div>
+        {isOpenOrderWindow &&
+            <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={`Выпускной (${data.name})`}/>
+        }
     </div>
   )
 }

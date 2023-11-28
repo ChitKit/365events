@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./PaperShow.scss";
+import BuyWindow from "../../../../../components/BuyWindow/BuyWindow";
 
 export default function PaperShow({ data, setFullSizeImg }) {
     const [selectImage, setSelectImage] = useState(data.photo[0])
+    const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
 	
     return (
 		<div className="Paper_Show">
@@ -33,12 +35,18 @@ export default function PaperShow({ data, setFullSizeImg }) {
 					<p>{data.description}</p>
 				</div>
 				<div className="Paper_Show-Info-Buy">
-					<p className="Paper_Show-Info-Buy-Price">{data.price}</p>
-					<div
-						className='Paper_Show-Info-Buy-Button'
-					>Заказать</div>
+                    <p className="Paper_Show-Info-Buy-Text">
+                        {data.price}
+                    </p>
+                    <p 
+                        onClick={() => setIsOpenOrderWindow(true)}
+                        className='Paper_Show-Info-Buy-Button_Buy'
+                    >Заказать</p>
 				</div>
 			</div>
+            {isOpenOrderWindow &&
+                <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={data.name}/>
+            }
 		</div>
     );
 }

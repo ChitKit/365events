@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Flint.scss";
+import BuyWindow from "../../../../../components/BuyWindow/BuyWindow";
 
 export default function Flint({ data, setFullSizeImg }) {
     const [selectImage, setSelectImage] = useState(data.photo[0])
+    const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
     return (
         <div className="Flint">
             <div className="Flint-Info">
@@ -50,10 +52,19 @@ export default function Flint({ data, setFullSizeImg }) {
                     <p>{data.description}</p>
                 </div>
                 <div className="Flint-Info-Buy">
-                    <p className="Bubble_Show-Info-Buy-Price">{data.price}</p>
-                    <div className="Flint-Info-Buy-Button">Заказать</div>
+                    <p className="Flint-Info-Buy-Text">
+                        {data.price}
+                    </p>
+                    <p 
+                        onClick={() => setIsOpenOrderWindow(true)}
+                        className='Flint-Info-Buy-Button_Buy'
+                    >Заказать</p>
                 </div>
             </div>
+            
+        {isOpenOrderWindow &&
+            <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={`Квест ${data.name}`}/>
+        }
         </div>
     );
 }

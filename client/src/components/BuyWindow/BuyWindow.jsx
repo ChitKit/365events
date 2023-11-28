@@ -41,7 +41,7 @@ export default function BuyWindow({ isOpen, setIsOpen, title }) {
                     </a>
                     <a
                         target="_blank"
-                        href={`https://wa.me/+79890490402?text=Здравствуйте, хочу заказать у вас ${title}`}
+                        href={`https://wa.me/+79890490402`}
                         rel="noreferrer"
                     >
                         <img src="/icons/icon_WA.png" alt="image_whatsapp" />
