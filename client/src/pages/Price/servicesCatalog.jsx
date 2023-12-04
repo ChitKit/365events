@@ -27,11 +27,7 @@ export const artists = [
             {
                 card: "./img/Services/Artists/ShowMan.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Artists/ShowMan.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -63,11 +59,7 @@ export const artists = [
             {
                 card: "./img/Services/Artists/Artist_Services.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Artists/Artist_Services.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -96,11 +88,7 @@ export const artists = [
             {
                 card: "./img/Services/Artists/Illusions.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Artists/Illusions.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
 ]
@@ -130,11 +118,7 @@ export const programms = [
             {
                 card: "./img/Services/Programms/Show.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/Show.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -162,11 +146,7 @@ export const programms = [
             {
                 card: "./img/Services/Programms/Quest.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/Quest.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -194,11 +174,7 @@ export const programms = [
             {
                 card: "./img/Services/Programms/Quiz.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/Quiz.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -226,11 +202,7 @@ export const programms = [
             {
                 card: "./img/Services/Programms/BirthdDay.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -258,11 +230,7 @@ export const programms = [
             {
                 card: "./img/Services/Programms/KidOut.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
 ]
@@ -298,11 +266,7 @@ export const birthDay = [
             {
                 card: "./img/Services/Programms/BirthdDay.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -337,11 +301,7 @@ export const birthDay = [
             {
                 card: "./img/Services/Programms/BirthdDay.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -377,11 +337,7 @@ export const birthDay = [
             {
                 card: "./img/Services/Programms/BirthdDay.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
 ]
@@ -417,11 +373,7 @@ export const outDay = [
             {
                 card: "./img/Services/Programms/KidOut.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -457,11 +409,7 @@ export const outDay = [
             {
                 card: "./img/Services/Programms/KidOut.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -497,11 +445,7 @@ export const outDay = [
             {
                 card: "./img/Services/Programms/KidOut.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
 ]
@@ -542,11 +486,7 @@ export const quests = [
             {
                 card: "./img/Services/Programms/Quest.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/Quest.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -582,11 +522,7 @@ export const quests = [
             {
                 card: "./img/Services/Programms/Quest.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/Quest.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
 ]
@@ -621,11 +557,7 @@ export const shows = [
             {
                 card: "./img/Services/Programms/Show.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/Show.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -659,11 +591,7 @@ export const shows = [
             {
                 card: "./img/Services/Programms/Show.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/Show.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -700,11 +628,7 @@ export const shows = [
             {
                 card: "./img/Services/Programms/Show.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/Programms/Show.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
 ]
@@ -736,11 +660,7 @@ export const newYear = [
             {
                 card: "./img/Services/NewYear/InteractiveSpectacle.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/NewYear/InteractiveSpectacle.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -768,11 +688,7 @@ export const newYear = [
             {
                 card: "./img/Services/NewYear/DedMoroz.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/NewYear/DedMoroz.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
 ]
@@ -809,11 +725,7 @@ export const forSell = [
             {
                 card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -843,11 +755,7 @@ export const forSell = [
             {
                 card: "./img/Services/ForSell/PhotoZone.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/ForSell/PhotoZone.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -886,11 +794,7 @@ export const forSell = [
             {
                 card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -924,11 +828,7 @@ export const forSell = [
             {
                 card: "./img/Services/ForSell/Pinyata.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/ForSell/Pinyata.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -962,11 +862,7 @@ export const forSell = [
             {
                 card: "./img/Services/ForSell/CakePops2.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/ForSell/CakePops2.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1001,11 +897,7 @@ export const forSell = [
             {
                 card: "./img/Services/ForSell/BentaCake.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/ForSell/BentaCake.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1035,11 +927,7 @@ export const forSell = [
             {
                 card: "./img/Services/ForSell/DJ.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/ForSell/DJ.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     // {
@@ -1108,11 +996,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/CatchSleep.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/CatchSleep.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1144,11 +1028,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/ClothDecoration.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/ClothDecoration.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1184,11 +1064,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/Florarium.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/Florarium.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1221,11 +1097,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/Pryaniki2.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/Pryaniki2.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1259,11 +1131,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/CakePops.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/CakePops.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1294,11 +1162,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/Slime.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/Slime.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1332,11 +1196,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/SinelnayaRipe.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/SinelnayaRipe.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1369,11 +1229,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/Capitoshki.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/Capitoshki.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
     {
@@ -1405,11 +1261,7 @@ export const imgMK = [
             {
                 card: "./img/Services/MK/Tvisting.jpeg",
                 id: 5,
-            }, 
-            {
-                card: "./img/Services/MK/Tvisting.jpeg",
-                id: 6,
-            }
+            },
         ]
     },
 ]

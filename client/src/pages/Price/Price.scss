@@ -350,10 +350,10 @@
                 &-Slider{
                     height: 20%;
                     display: flex;
-                    justify-content: flex-start;
+                    justify-content: center;
                     max-height: 20%;
                     position: relative;
-                    animation: move_bg 35s linear infinite alternate;
+                    // animation: move_bg 35s linear infinite alternate;
                     &-Select_Card{
                         width: var(--size_img_sliderPhoto);
                         box-shadow: 0 0 15px #00ffffb7;
@@ -472,18 +472,7 @@
         cursor: pointer;
     }
 }
-.PriceCard_Active p {
+.PriceCard_Active, .PriceCard_Choice p {
     font-size: var(--size_font_category_meny);
 
-}
-
-@keyframes move_bg {
-    from {
-        background-position: 0 0;
-        right: -25em;
-    }
-    to {
-        background-position: 100px 0;
-        right: 15em;
-    }
 }

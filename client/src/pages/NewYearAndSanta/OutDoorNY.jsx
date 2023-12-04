@@ -37,10 +37,6 @@ const forLittle = [
             {
                 card: "./img/NY/DedMorozDeti.jpg",
                 id: 5,
-            }, 
-            {
-                card: "./img/NY/DedMorozVneDoma.jpg",
-                id: 6,
             }
         ]
     },
@@ -80,10 +76,6 @@ const forLittle = [
             {
                 card: "./img/NY/DedMorozDeti.jpg",
                 id: 5,
-            }, 
-            {
-                card: "./img/NY/DedMorozVneDoma.jpg",
-                id: 6,
             }
         ]
     },

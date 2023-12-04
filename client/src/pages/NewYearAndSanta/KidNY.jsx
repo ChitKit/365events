@@ -45,6 +45,14 @@ const forLittle = [
                 card: "./img/NY/DedMorozDeti.jpg",
                 id: 3,
             },
+            {
+                card: "./img/NY/DedMorozVneDoma.jpg",
+                id: 4,
+            }, 
+            {
+                card: "./img/NY/DedMorozDeti.jpg",
+                id: 5,
+            },
         ]
     },
     {
@@ -72,6 +80,18 @@ const forLittle = [
             {
                 card: "./img/NY/DedMorozVneDoma.jpg",
                 id: 2,
+            },
+            {
+                card: "./img/NY/DedMorozDeti.jpg",
+                id: 3,
+            },
+            {
+                card: "./img/NY/DedMorozVneDoma.jpg",
+                id: 4,
+            }, 
+            {
+                card: "./img/NY/DedMorozDeti.jpg",
+                id: 5,
             },
         ]
     },
@@ -112,11 +132,7 @@ const forLittle = [
             {
                 card: "./img/NY/DedMorozDeti.jpg",
                 id: 5,
-            }, 
-            {
-                card: "./img/NY/DedMorozVneDoma.jpg",
-                id: 6,
-            }
+            },
         ]
     },
 ]

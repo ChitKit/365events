@@ -6,7 +6,7 @@ export default function BuyWindow({ isOpen, setIsOpen, title }) {
         <div className={isOpen ? "BuyWindow" : "BuyWindow_Hide"}>
             {title && (
                 <div className="BuyWindow-Header">
-                    <p>Заказ</p>
+                    {/* <p>Заказ</p> */}
                     <p>"{title}"</p>
                 </div>
             )}

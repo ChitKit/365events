@@ -19,6 +19,12 @@ function App() {
     // :
     return (
         <div className="App">
+            <div id='cursor'>
+                <div className='cursor__inner cursor__inner--circle'></div>
+                <div className='cursor-inner'></div>
+                <div className='cursor__inner cursor__inner--dot'></div>
+
+            </div>
             {/* <NavBar currentImg={currentImg} currentColorForImg={currentColorForImg} /> */}
             <Header firstLoadApp={firstLoadApp} />
             <Routes>

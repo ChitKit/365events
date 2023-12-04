@@ -32,10 +32,6 @@ const forBiggest = [
             {
                 card: "./img/NY/DedMorozDeti.jpg",
                 id: 5,
-            },
-            {
-                card: "./img/NY/DedMorozVneDoma.jpg",
-                id: 6,
             }
         ]
     },
@@ -71,11 +67,7 @@ const forBiggest = [
             {
                 card: "./img/NY/DedMorozDeti.jpg",
                 id: 5,
-            }, 
-            {
-                card: "./img/NY/DedMorozVneDoma.jpg",
-                id: 6,
-            }
+            },
         ]
     },
 ]

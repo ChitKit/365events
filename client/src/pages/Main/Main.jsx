@@ -12,6 +12,7 @@ export default function Main() {
     const [salut, setSalut] = useState(false)
     const [loadDescription, setLoadDescription] = useState(false)
     const [loadNYimg, setLoadNYimg] = useState(false)
+
     useEffect(() => {
         setTimeout(() => {
             setLoadDescription(true)
@@ -76,7 +77,7 @@ export default function Main() {
     const text = 'Привет, эту пасхалку я сделал в самом начале проекта.'
     const msg = text.split()
   
-
+    
 
     return (
         <div className="Application-Content">
