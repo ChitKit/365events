@@ -3,7 +3,7 @@
 //     user-select: none;
 // }
 .Show_Active{
-    font-size: large;
+    font-size: var(--size_font_category_meny);
     box-shadow:  0 0 10px rgba(255, 255, 255, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.8);
     color: rgba(255, 255, 255, 0.8);
     border-radius: .6em;
@@ -27,7 +27,7 @@
 }
 
 .Shows{
-    font-size: large;
+    font-size: var(--size_font_category_meny);
     user-select: none;
     // box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
     transition: 2s;

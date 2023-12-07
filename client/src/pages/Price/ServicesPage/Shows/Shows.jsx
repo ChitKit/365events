@@ -16,7 +16,7 @@ export default function Shows({ setServicesCardData }) {
     }, []);
 
     return (
-        <div className="Price-Services_Card Shows" style={{display:'flex', flexDirection:'column'}}>
+        <div className="Price-Services_Card Shows" >
             
             {!fullSizeImg &&
                 <div
@@ -28,15 +28,7 @@ export default function Shows({ setServicesCardData }) {
                     <img src="/icons/icon_close.png" alt="button_Close" />
                 </div>
             }
-            <div
-                style={{
-                    width: "100%",
-                    height: "10%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
+            <div className="Price-Services_Card-Category_List">
                 {shows.map((el) => {
                     return (
                         <div className={choiceShow.name === el.name ? "Show_Active" : "Show_Choice"} >

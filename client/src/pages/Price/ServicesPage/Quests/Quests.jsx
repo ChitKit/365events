@@ -16,7 +16,7 @@ export default function Quests({ setServicesCardData }) {
     }, []);
 
     return (
-        <div className="Price-Services_Card Quests" style={{display:'flex', flexDirection:'column'}}>
+        <div className="Price-Services_Card Quests" >
             {!fullSizeImg &&
                 <div
                     onClick={() => {
@@ -27,15 +27,7 @@ export default function Quests({ setServicesCardData }) {
                     <img src="/icons/icon_close.png" alt="button_Close" />
                 </div>
             }
-            <div
-                style={{
-                    width: "100%",
-                    height: "10%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
+            <div className="Price-Services_Card-Category_List">
                 {quests.map((el) => {
                     return (
                         <div className={choiceQuest.name === el.name ? "Quest_Active" : "Quest_Choice"} >

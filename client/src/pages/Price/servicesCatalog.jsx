@@ -149,34 +149,34 @@ export const programms = [
             },
         ]
     },
-    {
-        img:'./img/Services/Programms/Quiz.jpeg', 
-        name:'Квизы',
-        description:``,
-        price:'',
-        photo: [
-            {
-                card: "./img/Services/Programms/Quiz.jpeg",
-                id: 1,
-            }, 
-            {
-                card: "./img/Services/Programms/Quiz.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/Programms/Quiz.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/Programms/Quiz.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/Quiz.jpeg",
-                id: 5,
-            },
-        ]
-    },
+    // {
+    //     img:'./img/Services/Programms/Quiz.jpeg', 
+    //     name:'Квизы',
+    //     description:``,
+    //     price:'',
+    //     photo: [
+    //         {
+    //             card: "./img/Services/Programms/Quiz.jpeg",
+    //             id: 1,
+    //         }, 
+    //         {
+    //             card: "./img/Services/Programms/Quiz.jpeg",
+    //             id: 2,
+    //         }, 
+    //         {
+    //             card: "./img/Services/Programms/Quiz.jpeg",
+    //             id: 3,
+    //         }, 
+    //         {
+    //             card: "./img/Services/Programms/Quiz.jpeg",
+    //             id: 4,
+    //         }, 
+    //         {
+    //             card: "./img/Services/Programms/Quiz.jpeg",
+    //             id: 5,
+    //         },
+    //     ]
+    // },
     {
         img:'./img/Services/Programms/BirthdDay.jpeg', 
         name:'Дни рождения',

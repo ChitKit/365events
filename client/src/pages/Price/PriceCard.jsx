@@ -14,7 +14,7 @@ export default function PriceCard({ dataCard, setData }) {
     }
     
     return (
-        <div className="Price-Services_Card PriceCard" style={{display:'flex', flexDirection:'column'}}>
+        <div className="Price-Services_Card PriceCard">
             {!fullSizeImg && !isOpenOrderWindow &&
                 <div
                     onClick={() => {
@@ -25,7 +25,7 @@ export default function PriceCard({ dataCard, setData }) {
                     <img src="/icons/icon_close.png" alt="button_Close" />
                 </div>
             }
-            <div
+            {/* <div
                 style={{
                     width: "90%",
                     height: "10%",
@@ -33,7 +33,7 @@ export default function PriceCard({ dataCard, setData }) {
                     justifyContent: "center",
                     alignItems: "center",
                 }}
-            >
+            > */}
                 {/* {dataCard.map((el, i) => {
                     return (
                         <>
@@ -43,7 +43,7 @@ export default function PriceCard({ dataCard, setData }) {
                         </>
                     );
                 })} */}
-            </div>
+            {/* </div> */}
             {dataCard &&
                 <>
                     <div className="PriceCard-Content">

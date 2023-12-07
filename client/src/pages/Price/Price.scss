@@ -6,6 +6,7 @@
 
 @media screen and (min-width: 1280px) {
     :root {
+        --margin_top_category_list: 0;
         --height_content_price: 80vh;
         --width_content_price: 70vw;
         --width_content_card: 10vw;
@@ -22,6 +23,7 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
     :root {
+        --margin_top_category_list: 0;
         --height_content_price: 80vh;
         --width_content_price: 70vw;
         --width_content_card: 10vw;
@@ -38,6 +40,7 @@
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
     :root {
+        --margin_top_category_list: 0;
         --height_content_price: 80vh;
         --width_content_price: 70vw;
         --width_content_card: 10vw;
@@ -54,6 +57,7 @@
 }
 @media (orientation: portrait) {
     :root {
+        --margin_top_category_list: 15%;
         --height_content_price: 75vh;
         --width_content_price: 100vw;
         --width_content_card: 10vw;
@@ -70,6 +74,7 @@
 
 @media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
     :root {
+        --margin_top_category_list: 10%;
         --height_content_price: 75vh;
         --width_content_price: 85vw;
         --width_content_card: 10vw;
@@ -169,6 +174,7 @@
     }
     &-Services_Card {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         width: var(--width_content_price);
@@ -179,6 +185,14 @@
         border-radius: 2em 0 2em 0;
         // box-shadow: 0 0 50px var(--font_color_app);
         transition: 0.5s;
+        &-Category_List{
+            margin-top: var(--margin_top_category_list);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 10%;
+        }
         &-Info {
             width: 50%;
             height: 100%;
@@ -190,7 +204,7 @@
             font-size: large;
             color: white;
             &-Description{
-                font-size: 1.2vw;
+                font-size: var(--descryption_category_NY_size_font);
                 color: #dbcb94;
                 &-Title{
                     margin-top: .5vw;
@@ -321,6 +335,8 @@
     user-select: none;
     // box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
     transition: 2s;
+    display: flex;
+    flex-direction: column;
     &-Content{
         width: 100%;
         display: flex;

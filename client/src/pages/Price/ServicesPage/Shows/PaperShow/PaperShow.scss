@@ -68,8 +68,8 @@
             }
         }
         &-Description{
-            width: 50%;
-            font-size: 1.2vw;
+            width: 50%;    
+            font-size: var(--size_font_category_meny);
             height: 10vw;
             max-height: 10vw;
             margin: 2em;

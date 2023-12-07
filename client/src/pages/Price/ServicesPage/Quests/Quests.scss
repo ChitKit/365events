@@ -3,7 +3,7 @@
     user-select: none;
 }
 .Quest_Active{
-    font-size: 1.1vw;
+    font-size: var(--size_font_category_meny);
     font-weight: bold;
     box-shadow:  0 5px 10px rgba(255, 217, 0, 0.8);
     color: rgba(255, 217, 0, 0.8);
@@ -15,7 +15,7 @@
     }
 }
 .Quest_Choice{
-    font-size: 1.1vw;
+    font-size: var(--size_font_category_meny);
     color: rgba(255, 217, 0, 0.5);
     margin: 0;
     // border: 1px solid gray;
