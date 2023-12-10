@@ -6,10 +6,10 @@ import Price from "../Price/Price";
 import Contacts from "../Contacts/Contacts";
 import Team from "../Team/Team";
 import NewYearAndSanta from "../NewYearAndSanta/NewYearAndSanta";
-import axios from 'axios';
+// import axios from 'axios';
 
 export default function Main() {
-    const [salut, setSalut] = useState(false)
+    // const [salut, setSalut] = useState(false)
     const [loadDescription, setLoadDescription] = useState(false)
     const [loadNYimg, setLoadNYimg] = useState(false)
 
@@ -22,51 +22,6 @@ export default function Main() {
         }, 4000);
     }, [])
 
-    //! Get запрос на определение ip
-    axios.get('https://api.ipify.org/')
-    .then((response) => {
-        console.log(response.data);
-        let collection = ''
-        document.addEventListener("keydown", function (event) {
-            if (event.key === "Р") {
-                collection += "Р"
-            }
-            if (collection[0] === "Р" && event.key === "и") {
-                if (collection.length === 1) {
-                    collection += "и"
-                }
-            }
-            if (collection[0] === "Р" && collection[1] === "и" && event.key === "т") {
-                if (collection.length === 2) {
-                    collection += "т"
-                }
-            }
-            if (collection[0] === "Р" && collection[1] === "и" && collection[2] === "т" && event.key === "а") {
-                if (collection.length === 3) {
-                    collection += "а"
-                    console.log(collection.legnth);
-                    if (collection === "Рита") {
-                        console.log(localStorage.getItem('paschal_egg'));
-                        if (localStorage.getItem('paschal_egg') === null) {
-                            localStorage.setItem('paschal_egg', false)
-                            setSalut(true)
-                            document
-                            .querySelector("#main")
-                            .scrollIntoView({ behavior: "smooth" });
-                        }
-                    }
-                }
-            }
-            if (collection === "Рита" && event.key === "Escape") {
-                setSalut(false)
-            }
-            if (salut === true && event.key === "Escape") {
-                localStorage.setItem('paschal_egg', true)
-            }
-        });
-    });
-    
-
     const goToNYhandler = () => {
         
         document
@@ -74,8 +29,8 @@ export default function Main() {
         .scrollIntoView({ behavior: "smooth" });
     }
 
-    const text = 'Привет, эту пасхалку я сделал в самом начале проекта.'
-    const msg = text.split()
+    // const text = 'Привет, эту пасхалку я сделал в самом начале проекта.'
+    // const msg = text.split()
   
     
 
@@ -128,7 +83,7 @@ export default function Main() {
                 </div>
             <img onClick={goToNYhandler} className={loadNYimg ? "MainPage-Bell_New_Year" : "MainPage-Bell_New_Year_Hide"} src="./img/NYPNG.png" alt="bell" />
             
-            {salut &&
+            {/* {salut &&
                 <div  className="Salut">
                     <div className="Salut-Container">
                         <div id="content" className="Salut-Container-Text">
@@ -140,7 +95,7 @@ export default function Main() {
                         </div>
                     </div>
                 </div>
-            }
+            } */}
             </div>
             <div id='about' className="Anchor-IdAbout">
                 <img style={{width:'100%', height:'100%'}} src="/img/block_wall.png" alt="" />
