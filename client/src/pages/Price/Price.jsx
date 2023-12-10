@@ -21,14 +21,14 @@ export default function Price() {
     const [servicesCardData, setServicesCardData] = useState(null)
 
     const categoryListFirst = [
-        {path:'./img/category/Artist.jpeg', category:'Артисты'},
-        {path:'./img/category/Programms.jpeg', category:'Программы'},
-        {path:'./img/category/MasterClass.jpeg', category:'Мастер классы'},
+        {path:'./img/Category/Artist.jpeg', category:'Артисты'},
+        {path:'./img/Category/Programms.jpeg', category:'Программы'},
+        {path:'./img/Category/MasterClass.jpeg', category:'Мастер классы'},
     ]
     const categoryListSecond = [
-        // {path:'./img/category/NewYear.jpeg', category:'Новый год'},
-        {path:'./img/category/OtherServices.jpeg', category:'Другие услуги'},
-        {path:'./img/category/ComingSoon.jpeg', category:'Готовим'},
+        // {path:'./img/Category/NewYear.jpeg', category:'Новый год'},
+        {path:'./img/Category/OtherServices.jpeg', category:'Другие услуги'},
+        {path:'./img/Category/ComingSoon.jpeg', category:'Готовим'},
     ]
 
 
