@@ -55,18 +55,18 @@ export default function Quests({ setServicesCardData }) {
             }
             
             {fullSizeImg &&
-                            <div onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG">
-                            <div
-                               onClick={() => {
-                                   setFullSizeImg(null);
-                               }}
-                               className="PriceCard-FullIMG-Btn_Close"
-                           >
-                               X
-                           </div>
-                                <img onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG-Img" src={fullSizeImg} alt="" />
-                            </div>
-                        }
+                <div onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG">
+                    <div
+                        onClick={() => {
+                            setFullSizeImg(null);
+                        }}
+                        className="PriceCard-FullIMG-Btn_Close"
+                    >
+                        <img src="/icons/icon_close.png" alt="button_Close" />
+                    </div>
+                    <img onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG-Img" src={fullSizeImg} alt="" />
+                </div>
+            }
         </div>
     );
 }

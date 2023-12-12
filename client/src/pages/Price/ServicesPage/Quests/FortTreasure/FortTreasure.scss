@@ -88,7 +88,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 10%;
+            height: var(--height_buy_block);
             &-Text{
                 font-size: var(--descryption_category_NY_size_font);
             }

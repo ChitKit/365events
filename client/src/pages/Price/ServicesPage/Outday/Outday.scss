@@ -1,47 +1,149 @@
 .Outday{
-    font-size: clamp(1px, 2vw, 15px);
+    font-size: var(--size_font_category_meny);
     user-select: none;
-    &-Info{
-        height: 90%;
-        font-size: 1.2vw;
+    // box-shadow: 0 0 50px rgba(255, 255, 255, 0.781) !important;
+    transition: 2s;
+    &-Content{
+        width: 100%;
+        display: flex;
+        height: calc(100% - 15px);
+        justify-content: center;
+        &-Left_Content{
+            width: 50%;
+            height: 90%;
+            &-MainPhoto{
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &-Img{
+                    width: 70%;
+                    cursor: pointer;
+                }
+            }
+            &-PhotoList{
+                overflow-x: auto;
+                display: flex;
+                overflow: hidden;
+                width: 100%;
+                max-width: 100%;
+                padding-bottom: 1em;
+                position: relative;
+                &-Slider{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    max-height: 20%;
+                    position: relative;
+                    // animation: move_bg 35s linear infinite alternate;
+                    &-Select_Card{
+                        width: 15%;
+                        box-shadow: 0 0 15px #00ffffb7;
+                        margin: 1em;
+                    }
+                    &-Card{
+                        width: 15%;
+                        margin: 1em;
+                    }
+                    :hover{
+                        cursor: pointer;
+                        box-shadow: 0 0 10px white;
+                    }
+                }
+                
+            }
+            &-PhotoList::-webkit-scrollbar {
+                height: 10px;
+                width: 2px;
+                // background-color: aqua;
+            }
+            &-PhotoList::-webkit-scrollbar-thumb{
+                border-radius: 10px;
+                background-color: #e7c862;
+                box-shadow: inset 0 0 8px #e7c862;
+            }
+        }
+        &-Right_Content{
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+            height: 90%;
+            &-Description{
+                padding: var(--padding_descryption_block);
+                width: 100%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                &-Text{
+                    font-size: var(--descryption_category_NY_size_font);
+                }
+            }
+            &-Price{
+                height: 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-Text{
+                    font-size: var(--descryption_category_NY_size_font);
+                }
+                &-Button_Buy{
+                    width: auto;
+                    font-size:var(--card_name);
+                    padding: 0 2vw;
+                    color: green;
+                    border-radius: 2vw;
+                    box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
+                    animation: colorize 12s ease infinite;
+                }
+                &-Button_Buy:hover{
+                    cursor: pointer;
+                    animation: colorize_Focus 2s ease infinite;
+                    
+                }
+            }
+        }
     }
-    &-Buy{
+    &-FullIMG{
+        background-color: rgba(68, 68, 68, 0.445);
+        box-shadow: 0 0 50px rgba(68, 68, 68, 0.445);
+        border: 2px solid gray;
+        border-radius: 2em 0 2em 0;;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
-        bottom: clamp(1%, 30vw, 3%);
-        // right: clamp(3%, 30vw, 20%);
-        &-Price{
-            color: #dbcb94;
-            font-size: .9vw;
+        top: 0;
+        &-Img{
+            width: var(--full_size_open_img);
         }
-        &-Button{
-            font-size: .9vw;
-            padding: .2vw;
-            color: green;
-            border-radius: 2vw;
-            box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
-            animation: colorize 12s ease infinite;
-        }
-        &-Button:hover{
-            cursor: pointer;
-            animation: colorize_Focus 2s ease infinite;
-            
+        &-Btn_Close{
+            position: absolute;
+            top: 1em;
+            right: 1em;
         }
     }
 }
 .Outday_Active{
-    font-size: 1.1vw;
-    font-weight: bold;
-    box-shadow:  0 5px 10px rgba(255, 217, 0, 0.8);
-    color: rgba(255, 217, 0, 0.8);
+    font-size: var(--size_font_category_meny);
+    box-shadow:  0 0 30px rgba(206, 167, 60, 0.2), inset 0 0 20px rgba(206, 167, 60, 0.1);
+    color: rgba(255, 255, 255, 0.8);
     border-radius: .6em;
     // border: 1px solid gray;
-    padding: .5em 1em;
+    padding: var(--padding_category_button);
     :only-child{
         margin: 0;
     }
 }
 .Outday_Choice{
-    font-size: 1.1vw;
+    font-size: var(--size_font_category_meny);
     color: rgba(255, 217, 0, 0.5);
     margin: 0;
     // border: 1px solid gray;

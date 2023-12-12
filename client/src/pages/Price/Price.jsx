@@ -52,18 +52,22 @@ export default function Price() {
 
     return (
         <div className="Price">
-            {category !== null && servicesCardData === null &&
-                <img src='/IconBack.png' alt='buttonBack' className='Price-Button_Close_Category' style={{position:'absolute', left:'20%'}} onClick={() => {setCategory(null)}} />
-            }
-            {!servicesCardData &&
-                <h1 style={{fontSize:'var(--tittle_module_font_size)'}}>
-                    {category === null ?
-                    'Наши услуги'
-                    :
-                    category
-                    }
-                </h1>
-            }
+            <div className="Price-Header">
+                {category !== null && servicesCardData === null &&
+                    <img src='/IconBack.png' alt='buttonBack' className='Price-Header-Button_Close_Category' onClick={() => {setCategory(null)}} />
+                }
+                {!servicesCardData &&
+                <div className='Price-Header-Title' style={category !== null ? {width:'80%'} : {width:'100%'}}>
+                    <h1 className='Price-Header-Title-Text'>
+                        {category === null ?
+                        'Наши услуги'
+                        :
+                        category
+                        }
+                    </h1>
+                </div>
+                }
+            </div>
             {servicesCardData === null && 
                 <>
                     { category === null ?

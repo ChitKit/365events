@@ -7,21 +7,21 @@ export default function VIP({ data, setFullSizeImg }) {
     const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
 
   return (
-    <div className="VIP">
-        <div className="VIP-Info">
-            <div className="VIP-Info-Main_Info_Show">
+    <div className="VIP_Birth_Day">
+        <div className="VIP_Birth_Day-Info">
+            <div className="VIP_Birth_Day-Info-Main_Info_Show">
                 {data.photo &&
                     <>
                         <>
-                            <div className="VIP-Info-Main_Info_Show-MainPhoto">
-                                    <img className="VIP-Info-Main_Info_Show-MainPhoto-Img" onClick={() => setFullSizeImg(selectImage.card)} id="" src={selectImage.card} alt='mainPhoto' />
+                            <div className="VIP_Birth_Day-Info-Main_Info_Show-MainPhoto">
+                                    <img className="VIP_Birth_Day-Info-Main_Info_Show-MainPhoto-Img" onClick={() => setFullSizeImg(selectImage.card)} id="" src={selectImage.card} alt='mainPhoto' />
                                 
                             </div>
-                            <div className="VIP-Info-Main_Info_Show-PhotoList">
-                                <div className="VIP-Info-Main_Info_Show-PhotoList-Slider">
+                            <div className="VIP_Birth_Day-Info-Main_Info_Show-PhotoList">
+                                <div className="VIP_Birth_Day-Info-Main_Info_Show-PhotoList-Slider">
                                         {data.photo.map((el) => {
                                             return (
-                                                <img onClick={() => {setSelectImage(el)}} className={selectImage.id === el.id ? "VIP-Info-Main_Info_Show-PhotoList-Slider-Select_Card" : "VIP-Info-Main_Info_Show-PhotoList-Slider-Card"} id={el.id} src={el.card} alt={`${el.card}${el.id}`} />
+                                                <img onClick={() => {setSelectImage(el)}} className={selectImage.id === el.id ? "VIP_Birth_Day-Info-Main_Info_Show-PhotoList-Slider-Select_Card" : "VIP_Birth_Day-Info-Main_Info_Show-PhotoList-Slider-Card"} id={el.id} src={el.card} alt={`${el.card}${el.id}`} />
                                                 )
                                         })}
                                 </div>
@@ -30,17 +30,17 @@ export default function VIP({ data, setFullSizeImg }) {
                     </>
                 }
             </div>
-            <div className="VIP-Info-Description">
+            <div className="VIP_Birth_Day-Info-Description">
                 <p>{data.description}</p>
-                <p className="VIP-Info-Description-More">Подробности <a target="_blank"  href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> </p>
+                <p className="VIP_Birth_Day-Info-Description-More">Подробности <a target="_blank"  href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> </p>
             </div>
-            <div className="VIP-Info-Buy">
-                <p className="VIP-Info-Buy-Text">
+            <div className="VIP_Birth_Day-Info-Buy">
+                <p className="VIP_Birth_Day-Info-Buy-Text">
                     {data.price}
                 </p>
                 <p 
                     onClick={() => setIsOpenOrderWindow(true)}
-                    className='VIP-Info-Buy-Button_Buy'
+                    className='VIP_Birth_Day-Info-Buy-Button_Buy'
                 >Заказать</p>
             </div>
         </div>

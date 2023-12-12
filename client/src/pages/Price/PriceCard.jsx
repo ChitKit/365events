@@ -73,6 +73,15 @@ export default function PriceCard({ dataCard, setData }) {
                                 <p className="PriceCard-Content-Right_Content-Description-Text">
                                     {dataCard.description}
                                 </p>
+                                {dataCard.inServises &&
+                                    <ul>
+                                        {dataCard.inServises.map((el) => {
+                                            return (
+                                                <li style={el.includes('-') ? {marginLeft:'20px', marginTop:'5px'} : {marginLeft:'0px', marginTop:'10px'}} className="PriceCard-Content-Right_Content-Description-Text">{el}</li>
+                                            )
+                                        })}
+                                    </ul>
+                                }
                                 {/* {dataCard.inServises &&
                                     <ul>
                                         {dataCard.inServises.map((el) => {

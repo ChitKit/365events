@@ -25,15 +25,7 @@ export default function BirthDay({ setServicesCardData }) {
                     <img src="/icons/icon_close.png" alt="button_Close" />
                 </div>
             }
-            <div
-                style={{
-                    width: "100%",
-                    height: "10%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
+            <div className="Price-Services_Card-Category_List">
                 
                 {choiceBirthDay !== null && birthDay.map((el) => {
                     return (
@@ -65,14 +57,14 @@ export default function BirthDay({ setServicesCardData }) {
                 }
                 {fullSizeImg &&
                     <div onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG">
-                    <div
-                        onClick={() => {
-                            setFullSizeImg(null);
-                        }}
-                        className="PriceCard-FullIMG-Btn_Close"
-                    >
-                        <img src="/icons/icon_close.png" alt="button_Close" />
-                    </div>
+                        <div
+                            onClick={() => {
+                                setFullSizeImg(null);
+                            }}
+                            className="PriceCard-FullIMG-Btn_Close"
+                        >
+                            <img src="/icons/icon_close.png" alt="button_Close" />
+                        </div>
                         <img onClick={() => setFullSizeImg(null)} className="PriceCard-FullIMG-Img" src={fullSizeImg} alt="" />
                     </div>
                 }

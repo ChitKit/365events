@@ -1,4 +1,4 @@
-.Base{
+.Base_Outday{
     width: 100%;
     height: 90%;
     display: flex;
@@ -10,8 +10,6 @@
         width: 98%;
         height: 100%;
         &-Main_Info_Show{
-            display: flex;
-            flex-direction: column;
             width: 50%;
             height: 90%;
             &-MainPhoto{
@@ -34,9 +32,10 @@
                 position: relative;
                 &-Slider{
                     width: 100%;
-                    height: 100%;
+                    height: 20%;
                     display: flex;
                     justify-content: center;
+                    max-height: 20%;
                     position: relative;
                     // animation: move_bg 35s linear infinite alternate;
                     &-Select_Card{
@@ -68,20 +67,14 @@
         }
         &-Description{
             width: 50%;
-            font-size: 1.2vw;
-            height: 100%;
+            font-size: var(--descryption_category_NY_size_font);
+            height: var(--height_descryption_block);
+            max-height: var(--height_descryption_block);
             margin: 2em;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            flex-direction: column;
+            justify-content: center;
             text-align: left;
-            :first-child{
-                margin-bottom: 0;
-            }
-            &-More{
-                margin-top: 0;
-            }
         }
         &-Buy{
             position: absolute;
@@ -90,7 +83,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 10%;
+            height: var(--height_buy_block);
             &-Text{
                 font-size: var(--descryption_category_NY_size_font);
             }
@@ -106,6 +99,7 @@
             &-Button_Buy:hover{
                 cursor: pointer;
                 animation: colorize_Focus 2s ease infinite;
+                
             }
         }
     }
