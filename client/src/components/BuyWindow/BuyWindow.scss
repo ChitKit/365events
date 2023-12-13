@@ -1,17 +1,52 @@
 
+@media screen and (min-width: 1280px) {
+    :root {
+        --width_block_buy: 50%;
+        --height_block_buy: 70%;
+        --font_size_phone_and_email: ;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    :root {
+        --width_block_buy: 50%;
+        --height_block_buy: 70%;
+        --font_size_phone_and_email: ;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    :root {
+        --width_block_buy: 50%;
+        --height_block_buy: 70%;
+        --font_size_phone_and_email: ;
+    }
+}
+@media (orientation: portrait) {
+    :root {
+        --width_block_buy: 90%;
+        --height_block_buy: 100%;
+        --font_size_phone_and_email: 13px;
+    }
+}
+@media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
+    :root {
+        --width_block_buy: 90%;
+        --height_block_buy: 100%;
+        --font_size_phone_and_email: ;
+    }
+}
 
 .BuyWindow_Hide{
     opacity: 0;
     position: absolute;
     background-color: rgba(26, 27, 35, 0.88);
     z-index: 10;
-    width: 50%;
-    height: 70%;
+    width: var(--width_block_buy);
+    height: var(--height_block_buy);
     padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 50px #e7c86259;;
+    box-shadow: 0 0 50px #e7c86259;
     border-radius: 1em;
     transition: 1s;
 }
@@ -21,8 +56,8 @@
     position: absolute;
     background-color: rgba(26, 27, 35, 0.88);
     z-index: 10;
-    width: 50%;
-    height: 70%;
+    width: var(--width_block_buy);
+    height: var(--height_block_buy);
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -44,7 +79,27 @@
             margin-top: 5%;
             width: 80%;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+            align-items: center;
+            &-Phone_Block{
+                font-size: var(--font_size_phone_and_email);
+                display: flex;
+                align-items: center;
+                &-Text{
+                    margin-left: 1em;
+                    font-size: var(--font_size_phone_and_email);
+                }
+            }
+            &-Email_Block{
+                font-size: var(--font_size_phone_and_email);
+                display: flex;
+                align-items: center;
+                &-Text{
+                    margin-left: 1em;
+                    font-size: var(--font_size_phone_and_email);
+                }
+            }
         }
         &-Links{
             margin-top: 5%;

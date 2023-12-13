@@ -21,13 +21,13 @@ export default function BuyWindow({ isOpen, setIsOpen, title }) {
             <div className="BuyWindow-Content">
                 <h6>Для заказа Вы можете позвонить, или написать нам!</h6>
                 <div className="BuyWindow-Content-Data">
-                    <div>
-                        <p>Телефон:</p>
-                        <a href="tel:+79890490402">8(989)049-04-02</a>
+                    <div className="BuyWindow-Content-Data-Phone_Block">
+                        <p className="BuyWindow-Content-Data-Phone_Block-Label">Телефон:</p>
+                        <a className="BuyWindow-Content-Data-Phone_Block-Text" href="tel:+79890490402">8(989)049-04-02</a>
                     </div>
-                    <div>
-                        <p>email:</p>
-                        <p>events.365@yandex.ru</p>
+                    <div className="BuyWindow-Content-Data-Email_Block">
+                        <p className="BuyWindow-Content-Data-Email_Block-Label">Email:</p>
+                        <p className="BuyWindow-Content-Data-Email_Block-Text">events.365@yandex.ru</p>
                     </div>
                 </div>
                 <h6>Или связаться с нами через социальные сети</h6>
