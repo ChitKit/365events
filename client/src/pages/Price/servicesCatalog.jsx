@@ -710,25 +710,25 @@ export const forSell = [
         price:'',
         photo: [
             {
-                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
+                card: "./img/services_card_photo/Other_Services/photo_and_video/pav.jpg",
                 id: 1,
             }, 
-            {
-                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/ForSell/PhotoAndVideo.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Other_Services/photo_and_video/PhotoAndVideo.jpeg",
+            //     id: 2,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/photo_and_video/PhotoAndVideo.jpeg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/photo_and_video/PhotoAndVideo.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/photo_and_video/PhotoAndVideo.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -740,25 +740,25 @@ export const forSell = [
         price:'Аренда – от 7500 ₽ в сутки',
         photo: [
             {
-                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                card: "./img/services_card_photo/Other_Services/photozone/PZ1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                card: "./img/services_card_photo/Other_Services/photozone/PZ2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/ForSell/PhotoZone.jpeg",
+                card: "./img/services_card_photo/Other_Services/photozone/PZ3.jpg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/ForSell/PhotoZone.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/ForSell/PhotoZone.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Other_Services/photozone/PZ4.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/photozone/PZ5.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -781,25 +781,25 @@ export const forSell = [
         price:'от 6000 ₽ за услугу',
         photo: [
             {
-                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                card: "./img/services_card_photo/Other_Services/aqua_and_beauty/AaB1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                card: "./img/services_card_photo/Other_Services/aqua_and_beauty/AaB2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
+                card: "./img/services_card_photo/Other_Services/aqua_and_beauty/AaB3.jpeg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/ForSell/AquaGrimmAndBeautyBar.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Other_Services/aqua_and_beauty/AaB4.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/aqua_and_beauty/AaB5.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -815,23 +815,23 @@ export const forSell = [
         price:'От 3500 ₽',
         photo: [
             {
-                card: "./img/Services/ForSell/Pinyata.jpeg",
+                card: "./img/services_card_photo/Other_Services/pinyata/pin1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/ForSell/Pinyata.jpeg",
+                card: "./img/services_card_photo/Other_Services/pinyata/pin2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/ForSell/Pinyata.jpeg",
+                card: "./img/services_card_photo/Other_Services/pinyata/pin3.jpeg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/ForSell/Pinyata.jpeg",
+                card: "./img/services_card_photo/Other_Services/pinyata/pin4.jpeg",
                 id: 4,
             }, 
             {
-                card: "./img/Services/ForSell/Pinyata.jpeg",
+                card: "./img/services_card_photo/Other_Services/pinyata/pin5.jpeg",
                 id: 5,
             },
         ]
@@ -849,23 +849,23 @@ export const forSell = [
         price:'От 100 ₽',
         photo: [
             {
-                card: "./img/Services/ForSell/CakePops2.jpeg",
+                card: "./img/services_card_photo/Other_Services/KP/KP1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/ForSell/CakePops2.jpeg",
+                card: "./img/services_card_photo/Other_Services/KP/KP2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/ForSell/CakePops2.jpeg",
+                card: "./img/services_card_photo/Other_Services/KP/KP3.jpg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/ForSell/CakePops2.jpeg",
+                card: "./img/services_card_photo/Other_Services/KP/KP4.jpg",
                 id: 4,
             }, 
             {
-                card: "./img/Services/ForSell/CakePops2.jpeg",
+                card: "./img/services_card_photo/Other_Services/KP/KP5.jpg",
                 id: 5,
             },
         ]
@@ -884,25 +884,25 @@ export const forSell = [
         price:'От 700 ₽',
         photo: [
             {
-                card: "./img/Services/ForSell/BentaCake.jpeg",
+                card: "./img/services_card_photo/Other_Services/BT/BT1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/ForSell/BentaCake.jpeg",
+                card: "./img/services_card_photo/Other_Services/BT/BT2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/ForSell/BentaCake.jpeg",
+                card: "./img/services_card_photo/Other_Services/BT/BT3.jpg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/ForSell/BentaCake.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/ForSell/BentaCake.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Other_Services/BT/BT4.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/BT/BT5.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -914,25 +914,25 @@ export const forSell = [
         price:'От 6000₽ в час ',
         photo: [
             {
-                card: "./img/Services/ForSell/DJ.jpeg",
+                card: "./img/services_card_photo/Other_Services/DJ.jpeg",
                 id: 1,
             }, 
-            {
-                card: "./img/Services/ForSell/DJ.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/ForSell/DJ.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/ForSell/DJ.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/ForSell/DJ.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Other_Services/DJ.jpeg",
+            //     id: 2,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/DJ.jpeg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/DJ.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Other_Services/DJ.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     // {
@@ -942,27 +942,27 @@ export const forSell = [
     //     price:'',
     //     photo: [
     //         {
-    //             card: "./img/Services/ForSell/Pryaniki",
+    //             card: "./img/services_card_photo/Other_Services/Pryaniki",
     //             id: 1,
     //         }, 
     //         {
-    //             card: "./img/Services/ForSell/Pryaniki",
+    //             card: "./img/services_card_photo/Other_Services/Pryaniki",
     //             id: 2,
     //         }, 
     //         {
-    //             card: "./img/Services/ForSell/Pryaniki",
+    //             card: "./img/services_card_photo/Other_Services/Pryaniki",
     //             id: 3,
     //         }, 
     //         {
-    //             card: "./img/Services/ForSell/Pryaniki",
+    //             card: "./img/services_card_photo/Other_Services/Pryaniki",
     //             id: 4,
     //         }, 
     //         {
-    //             card: "./img/Services/ForSell/Pryaniki",
+    //             card: "./img/services_card_photo/Other_Services/Pryaniki",
     //             id: 5,
     //         }, 
     //         {
-    //             card: "./img/Services/ForSell/Pryaniki",
+    //             card: "./img/services_card_photo/ForSell/Pryaniki",
     //             id: 6,
     //         }
     //     ]
@@ -983,23 +983,23 @@ export const imgMK = [
         price:'От 1300р  с человека',
         photo: [
             {             
-                card: "./img/Services/MK/CatchSleep.jpeg",
+                card: "./img/services_card_photo/MK/LS/Ls1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/CatchSleep.jpeg",
+                card: "./img/services_card_photo/MK/LS/Ls2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/MK/CatchSleep.jpeg",
+                card: "./img/services_card_photo/MK/LS/Ls3.jpeg",
                 id: 3,
             },
             {             
-                card: "./img/Services/MK/CatchSleep.jpeg",
+                card: "./img/services_card_photo/MK/LS/Ls4.jpg",
                 id: 4,
             }, 
             {
-                card: "./img/Services/MK/CatchSleep.jpeg",
+                card: "./img/services_card_photo/MK/LS/Ls5.jpg",
                 id: 5,
             },
         ]
@@ -1015,25 +1015,25 @@ export const imgMK = [
         price:'От 1200р с человека',
         photo: [
             {
-                card: "./img/Services/MK/ClothDecoration.jpeg",
+                card: "./img/services_card_photo/MK/Cloth/Cl1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/ClothDecoration.jpeg",
+                card: "./img/services_card_photo/MK/Cloth/Cl2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/MK/ClothDecoration.jpeg",
+                card: "./img/services_card_photo/MK/Cloth/Cl3.jpg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/MK/ClothDecoration.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/MK/ClothDecoration.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/MK/Cloth/Cl.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/MK/Cloth/Cl.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -1051,23 +1051,23 @@ export const imgMK = [
         price:'От 2500р с человека',
         photo: [
             {
-                card: "./img/Services/MK/Florarium.jpeg",
+                card: "./img/services_card_photo/MK/Flw/Flw1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/Florarium.jpeg",
+                card: "./img/services_card_photo/MK/Flw/Flw2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/MK/Florarium.jpeg",
+                card: "./img/services_card_photo/MK/Flw/Flw3.jpeg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/MK/Florarium.jpeg",
+                card: "./img/services_card_photo/MK/Flw/Flw4.jpg",
                 id: 4,
             }, 
             {
-                card: "./img/Services/MK/Florarium.jpeg",
+                card: "./img/services_card_photo/MK/Flw/Flw5.jpg",
                 id: 5,
             },
         ]
@@ -1084,25 +1084,25 @@ export const imgMK = [
         price:'От 1000р  с человека',
         photo: [
             {
-                card: "./img/Services/MK/Pryaniki2.jpeg",
+                card: "./img/services_card_photo/MK/Pryan/Pryan1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/Pryaniki2.jpeg",
+                card: "./img/services_card_photo/MK/Pryan/Pryan2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/MK/Pryaniki2.jpeg",
+                card: "./img/services_card_photo/MK/Pryan/Pryan3.jpg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/MK/Pryaniki2.jpeg",
+                card: "./img/services_card_photo/MK/Pryan/Pryan4.jpg",
                 id: 4,
             }, 
-            {
-                card: "./img/Services/MK/Pryaniki2.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/MK/Pryan/Pryan.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -1118,25 +1118,25 @@ export const imgMK = [
         price:'От 1500р с человека',
         photo: [
             {
-                card: "./img/Services/MK/CakePops.jpeg",
+                card: "./img/services_card_photo/MK/KP/KP1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/CakePops.jpeg",
+                card: "./img/services_card_photo/MK/KP/KP2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/MK/CakePops.jpeg",
+                card: "./img/services_card_photo/MK/KP/KP3.jpg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/MK/CakePops.jpeg",
+                card: "./img/services_card_photo/MK/KP/KP4.jpg",
                 id: 4,
             }, 
-            {
-                card: "./img/Services/MK/CakePops.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/MK/KP/KP.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -1149,25 +1149,25 @@ export const imgMK = [
         price:'1100р с человека',
         photo: [
             {
-                card: "./img/Services/MK/Slime.jpeg",
+                card: "./img/services_card_photo/MK/Slime/Slime1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/Slime.jpeg",
+                card: "./img/services_card_photo/MK/Slime/Slime2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/MK/Slime.jpeg",
+                card: "./img/services_card_photo/MK/Slime/Slime3.jpeg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/MK/Slime.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/MK/Slime.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/MK/Slime/Slime4.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/MK/Slime/Slime5.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -1183,25 +1183,25 @@ export const imgMK = [
         price:'От 1000р с человека',
         photo: [
             {
-                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                card: "./img/services_card_photo/MK/SP/SP1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                card: "./img/services_card_photo/MK/SP/SP2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                card: "./img/services_card_photo/MK/SP/SP3.jpg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/MK/SinelnayaRipe.jpeg",
+                card: "./img/services_card_photo/MK/SP/SP4.jpg",
                 id: 4,
             }, 
-            {
-                card: "./img/Services/MK/SinelnayaRipe.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/MK/SP/SP5.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -1216,25 +1216,25 @@ export const imgMK = [
         price:'От 700р с человека',
         photo: [
             {
-                card: "./img/Services/MK/Capitoshki.jpeg",
+                card: "./img/services_card_photo/MK/Kap/Kap1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/Capitoshki.jpeg",
+                card: "./img/services_card_photo/MK/Kap/Kap2.jpg",
                 id: 2,
             }, 
-            {
-                card: "./img/Services/MK/Capitoshki.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/MK/Capitoshki.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/MK/Capitoshki.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/MK/Kap/Kap3.jpeg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/MK/Kap/Kap4.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/MK/Kap/Kap5.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -1248,25 +1248,25 @@ export const imgMK = [
         price:'500р с человека',
         photo: [
             {
-                card: "./img/Services/MK/Tvisting.jpeg",
+                card: "./img/services_card_photo/MK/Tws/Tws1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/MK/Tvisting.jpeg",
+                card: "./img/services_card_photo/MK/Tws/Tws2.jpg",
                 id: 2,
             }, 
-            {
-                card: "./img/Services/MK/Tvisting.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/MK/Tvisting.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/MK/Tvisting.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/MK/Tws/Tws3.jpeg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/MK/Tws/Tws4.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/MK/Tws/Tws5.jpeg",
+            //     id: 5,
+            // },
         ]
     },
 ]

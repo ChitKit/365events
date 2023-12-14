@@ -34,23 +34,23 @@ const forLittle = [
         price: 'от 5000 руб.',
         photo: [
             {
-                card: "./img/NY/DedMorozVzroslym.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVzroslym.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVneDoma.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/DedMorozDeti.jpg",
                 id: 3,
             },
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVneDoma.jpg",
                 id: 4,
             }, 
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/DedMorozDeti.jpg",
                 id: 5,
             },
         ]
@@ -74,23 +74,23 @@ const forLittle = [
         price: 'от 7000 руб.',
         photo: [
             {
-                card: "./img/NY/DedMorozVzroslym.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVzroslym.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVneDoma.jpg",
                 id: 2,
             },
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/DedMorozDeti.jpg",
                 id: 3,
             },
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVneDoma.jpg",
                 id: 4,
             }, 
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/DedMorozDeti.jpg",
                 id: 5,
             },
         ]
@@ -114,23 +114,23 @@ const forLittle = [
         price: 'от 9000 руб.',
         photo: [
             {
-                card: "./img/NY/DedMorozVzroslym.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVzroslym.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVneDoma.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/DedMorozDeti.jpg",
                 id: 3,
             }, 
             {
-                card: "./img/NY/DedMorozVzroslym.jpg",
+                card: "./img/services_card_photo/NY/DedMorozVzroslym.jpg",
                 id: 4,
             }, 
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/DedMorozDeti.jpg",
                 id: 5,
             },
         ]
