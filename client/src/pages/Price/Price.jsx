@@ -114,9 +114,9 @@ export default function Price() {
             }
             
             {
-            servicesCardData && servicesCardData.name === 'Иллюзионисты' ?
-                <Illusioniists setServicesCardData={setServicesCardData} />
-            :
+            // servicesCardData && servicesCardData.name === 'Иллюзионисты' ?
+            //     <Illusioniists setServicesCardData={setServicesCardData} />
+            // :
             servicesCardData && servicesCardData.name === 'Шоу' ?
                 <Shows setServicesCardData={setServicesCardData} />
             :

@@ -18,21 +18,21 @@ const forBiggest = [
                 id: 1,
             },
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/BNY2.jpg",
                 id: 2,
-            },
+            }, 
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/BNY3.jpg",
                 id: 3,
             },
-            {
-                card: "./img/NY/DedMorozVzroslym.jpg",
-                id: 4,
-            },
-            {
-                card: "./img/NY/DedMorozDeti.jpg",
-                id: 5,
-            }
+            // {
+            //     card: "./img/services_card_photo/NY/Kid4.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/NY/Org1.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -51,23 +51,23 @@ const forBiggest = [
             {
                 card: "./img/NY/DedMorozVzroslym.jpg",
                 id: 1,
-            }, 
+            },
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/BNY2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/BNY3.jpg",
                 id: 3,
-            }, 
-            {
-                card: "./img/NY/DedMorozVzroslym.jpg",
-                id: 4,
-            }, 
-            {
-                card: "./img/NY/DedMorozDeti.jpg",
-                id: 5,
             },
+            // {
+            //     card: "./img/NY/DedMorozVzroslym.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/NY/DedMorozDeti.jpg",
+            //     id: 5,
+            // },
         ]
     },
 ]

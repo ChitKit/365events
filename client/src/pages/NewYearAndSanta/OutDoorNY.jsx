@@ -21,23 +21,23 @@ const forLittle = [
             {
                 card: "./img/NY/DedMorozVzroslym.jpg",
                 id: 1,
-            }, 
+            },
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/Street2.jpg",
                 id: 2,
-            }, 
+            },
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/Street3.jpg",
                 id: 3,
-            }, 
+            },
             {
-                card: "./img/NY/DedMorozVzroslym.jpg",
+                card: "./img/services_card_photo/NY/Street4.jpg",
                 id: 4,
             }, 
-            {
-                card: "./img/NY/DedMorozDeti.jpg",
-                id: 5,
-            }
+            // {
+            //     card: "./img/NY/DedMorozDeti.jpg",
+            //     id: 5,
+            // }
         ]
     },
     {
@@ -62,21 +62,21 @@ const forLittle = [
                 id: 1,
             }, 
             {
-                card: "./img/NY/DedMorozVneDoma.jpg",
+                card: "./img/services_card_photo/NY/Org1.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/NY/DedMorozDeti.jpg",
+                card: "./img/services_card_photo/NY/Org2.jpg",
                 id: 3,
             }, 
             {
-                card: "./img/NY/DedMorozVzroslym.jpg",
+                card: "./img/services_card_photo/NY/Org3.jpg",
                 id: 4,
             }, 
-            {
-                card: "./img/NY/DedMorozDeti.jpg",
-                id: 5,
-            }
+            // {
+            //     card: "./img/services_card_photo/NY/Street4.jpg",
+            //     id: 5,
+            // }
         ]
     },
 ]

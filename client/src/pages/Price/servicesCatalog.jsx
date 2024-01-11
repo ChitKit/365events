@@ -9,25 +9,25 @@ export const artists = [
         price:'От 7000 ₽ / час',
         photo: [
             {
-                card: "./img/Services/Artists/ShowMan.jpeg",
+                card: "./img/services_card_photo/Artists/ShowMan/SM1.jpeg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/Artists/ShowMan.jpeg",
+                card: "./img/services_card_photo/Artists/ShowMan/SM2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/Artists/ShowMan.jpeg",
+                card: "./img/services_card_photo/Artists/ShowMan/SM3.jpeg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/Artists/ShowMan.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Artists/ShowMan.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/Services/Artists/ShowMan.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/Services/Artists/ShowMan.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -41,54 +41,58 @@ export const artists = [
         price:'2500–3500 ₽ / час',
         photo: [
             {
-                card: "./img/Services/Artists/Artist_Services.jpeg",
+                card: "./img/services_card_photo/Artists/Artists/Artist1.jpeg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/Artists/Artist_Services.jpeg",
+                card: "./img/services_card_photo/Artists/Artists/Artist2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/Artists/Artist_Services.jpeg",
+                card: "./img/services_card_photo/Artists/Artists/Artist3.jpeg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/Artists/Artist_Services.jpeg",
+                card: "./img/services_card_photo/Artists/Artists/Artist4.jpeg",
                 id: 4,
             }, 
-            {
-                card: "./img/Services/Artists/Artist_Services.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/Services/Artists/Artist_Services.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
         img:'./img/Services/Artists/Illusions.jpeg', 
         name:'Иллюзионисты',
         description:
-        `В нашем агентстве есть 3 потрясающих иллюзиониста.У каждого своя программа.`,
-        price:'',
+        `В нашем агентстве выступают иллюзионисты с международным опытом, победители всероссийских конкурсов. Они радуют зрителей на телевизионных шоу и предлагают захватывающие программы для всех возрастов.
+        
+        Наши шоу продолжительностью от 30 минут включают интерактивные номера, роскошный реквизит и животных, а также мастер-классы по искусству иллюзии. Поклонникам особенно тонкой магии мы предлагаем микро-магию, которая длится не менее 60 минут.
+        
+        Для получения информации о стоимости и бронировании мероприятий, пожалуйста, свяжитесь с нами.`,
+        price:'от 15 000 ₽',
         photo: [
             {
-                card: "./img/Services/Artists/Illusions.jpeg",
+                card: "./img/services_card_photo/Artists/Illusionists/Illus2.jpeg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/Artists/Illusions.jpeg",
+                card: "./img/services_card_photo/Artists/Illusionists/Illus1.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/Artists/Illusions.jpeg",
+                card: "./img/services_card_photo/Artists/Illusionists/Illus3.jpeg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/Artists/Illusions.jpeg",
+                card: "./img/services_card_photo/Artists/Illusionists/Illus4.jpeg",
                 id: 4,
             }, 
-            {
-                card: "./img/Services/Artists/Illusions.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Artists/ShowMan/SM1.jpeg",
+            //     id: 5,
+            // },
         ]
     },
 ]
@@ -248,25 +252,25 @@ export const birthDay = [
         price:'от 30 000 руб',
         photo: [
             {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
+                card: "./img/services_card_photo/Programs/BirthDay/BD1.jpg",
                 id: 1,
             }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/Services/Programms/BirthdDay.jpeg",
+            //     id: 2,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/BirthdDay.jpeg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/BirthdDay.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/BirthdDay.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -283,25 +287,25 @@ export const birthDay = [
         price:'от 50 000 руб',
         photo: [
             {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
+                card: "./img/services_card_photo/Programs/BirthDay/BD1.jpg",
                 id: 1,
             }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Programs/BirthDay/BD1.jpg",
+            //     id: 2,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/BirthDay/BD1.jpg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/BirthDay/BD1.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/BirthDay/BD1.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -319,25 +323,25 @@ export const birthDay = [
         price:'от 80 000 руб',
         photo: [
             {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
+                card: "./img/services_card_photo/Programs/BirthDay/BD1.jpg",
                 id: 1,
             }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/BirthdDay.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/Services/Programms/BirthdDay.jpeg",
+            //     id: 2,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/BirthdDay.jpeg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/BirthdDay.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/BirthdDay.jpeg",
+            //     id: 5,
+            // },
         ]
     },
 ]
@@ -355,25 +359,25 @@ export const outDay = [
         price:'от 45 000 руб',
         photo: [
             {
-                card: "./img/Services/Programms/KidOut.jpeg",
+                card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
                 id: 1,
             }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
+            //     id: 2,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -391,25 +395,25 @@ export const outDay = [
         price:'от 60 000 руб',
         photo: [
             {
-                card: "./img/Services/Programms/KidOut.jpeg",
+                card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
                 id: 1,
             }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
+            //     id: 2,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -427,25 +431,25 @@ export const outDay = [
         price:'от 80 000 руб',
         photo: [
             {
-                card: "./img/Services/Programms/KidOut.jpeg",
+                card: "./img/services_card_photo/Programs/OutDay/OD1.jpg",
                 id: 1,
             }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/KidOut.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/Services/Programms/KidOut.jpeg",
+            //     id: 2,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/KidOut.jpeg",
+            //     id: 3,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/KidOut.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/KidOut.jpeg",
+            //     id: 5,
+            // },
         ]
     },
 ]
@@ -468,25 +472,25 @@ export const quests = [
         price:'от 30000 ₽',
         photo: [
             {
-                card: "./img/Services/Programms/Quest.jpeg",
+                card: "./img/services_card_photo/Programs/Quests/Flint/Pir1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/Programms/Quest.jpeg",
+                card: "./img/services_card_photo/Programs/Quests/Flint/Pir2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/Programms/Quest.jpeg",
+                card: "./img/services_card_photo/Programs/Quests/Flint/Pir3.jpg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/Programms/Quest.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/Quest.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/Services/Programms/Quest.jpeg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/Services/Programms/Quest.jpeg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -504,23 +508,23 @@ export const quests = [
         price:'от 20000 ₽',
         photo: [
             {
-                card: "./img/Services/Programms/Quest.jpeg",
+                card: "./img/services_card_photo/Programs/Quests/Fort/TF1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/Programms/Quest.jpeg",
+                card: "./img/services_card_photo/Programs/Quests/Fort/TF2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/Programms/Quest.jpeg",
+                card: "./img/services_card_photo/Programs/Quests/Fort/TF3.jpg",
                 id: 3,
             }, 
             {
-                card: "./img/Services/Programms/Quest.jpeg",
+                card: "./img/services_card_photo/Programs/Quests/Fort/TF4.jpg",
                 id: 4,
             }, 
             {
-                card: "./img/Services/Programms/Quest.jpeg",
+                card: "./img/services_card_photo/Programs/Quests/Fort/TF5.jpg",
                 id: 5,
             },
         ]
@@ -529,7 +533,7 @@ export const quests = [
 export const shows = [
     {
         img:'./img/Services/Programms/Show.jpeg', 
-        name:'Химическое шоу',
+        name:'Научное шоу',
         description:`Наши мастера полностью погружают гостей в 
         атмосферу науки и чудес. Каждый сможет прикоснуться к 
         экспериментам и почувствовать себя частью шоу! А в 
@@ -539,25 +543,25 @@ export const shows = [
         price:`от 9000 ₽`,
         photo: [
             {
-                card: "./img/Services/Programms/Show.jpeg",
+                card: "./img/services_card_photo/Programs/Shows/Alchym/AS1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/Programms/Show.jpeg",
+                card: "./img/services_card_photo/Programs/Shows/Alchym/AS2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/Programms/Show.jpeg",
+                card: "./img/services_card_photo/Programs/Shows/Alchym/AS3.jpeg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/Programms/Show.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/Show.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Programs/Shows/Alchym/OD1.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/Shows/Alchym/OD1.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -573,25 +577,25 @@ export const shows = [
         price:'от 12000 ₽',
         photo: [
             {
-                card: "./img/Services/Programms/Show.jpeg",
+                card: "./img/services_card_photo/Programs/Shows/Bubble/BS1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/Services/Programms/Show.jpeg",
+                card: "./img/services_card_photo/Programs/Shows/Bubble/BS2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/Services/Programms/Show.jpeg",
+                card: "./img/services_card_photo/Programs/Shows/Bubble/BS3.jpg",
                 id: 3,
             }, 
-            {
-                card: "./img/Services/Programms/Show.jpeg",
-                id: 4,
-            }, 
-            {
-                card: "./img/Services/Programms/Show.jpeg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Programs/Shows/Bubble/BS.jpg",
+            //     id: 4,
+            // }, 
+            // {
+            //     card: "./img/services_card_photo/Programs/Shows/Bubble/BS.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
@@ -983,23 +987,23 @@ export const imgMK = [
         price:'От 1300р  с человека',
         photo: [
             {             
-                card: "./img/services_card_photo/MK/LS/Ls1.jpg",
+                card: "./img/services_card_photo/MK/LS/ls1.jpg",
                 id: 1,
             }, 
             {
-                card: "./img/services_card_photo/MK/LS/Ls2.jpeg",
+                card: "./img/services_card_photo/MK/LS/ls2.jpeg",
                 id: 2,
             }, 
             {
-                card: "./img/services_card_photo/MK/LS/Ls3.jpeg",
+                card: "./img/services_card_photo/MK/LS/ls3.jpeg",
                 id: 3,
             },
             {             
-                card: "./img/services_card_photo/MK/LS/Ls4.jpg",
+                card: "./img/services_card_photo/MK/LS/ls4.jpg",
                 id: 4,
             }, 
             {
-                card: "./img/services_card_photo/MK/LS/Ls5.jpg",
+                card: "./img/services_card_photo/MK/LS/ls5.jpg",
                 id: 5,
             },
         ]
@@ -1036,42 +1040,42 @@ export const imgMK = [
             // },
         ]
     },
-    {
-        img:'./img/Services/MK/Florarium.jpeg', 
-        name:'Флорариум',
-        description:
-            `Флорариум - это целый мир внутри стеклянной емкости. Туда можно 
-            поселить гномов, причудливых существ, а деревьями и растительностью 
-            будут служить необычные суккуленты и мхи. Добавим разноцветный песок 
-            и камни для фактуры. У нас выйдет замечательный садик с живыми, но 
-            неприхотливыми цветами. Это познакомит нас с жизнью флоры и привьёт 
-            ответственность за хрупким миром природы. Материал входит в услугу 
-            Время проведения мастер-класса от 30 минут до 1 часа. Расходные 
-            материалы включены в стоимость.`,
-        price:'От 2500р с человека',
-        photo: [
-            {
-                card: "./img/services_card_photo/MK/Flw/Flw1.jpg",
-                id: 1,
-            }, 
-            {
-                card: "./img/services_card_photo/MK/Flw/Flw2.jpeg",
-                id: 2,
-            }, 
-            {
-                card: "./img/services_card_photo/MK/Flw/Flw3.jpeg",
-                id: 3,
-            }, 
-            {
-                card: "./img/services_card_photo/MK/Flw/Flw4.jpg",
-                id: 4,
-            }, 
-            {
-                card: "./img/services_card_photo/MK/Flw/Flw5.jpg",
-                id: 5,
-            },
-        ]
-    },
+    // {
+    //     img:'./img/Services/MK/Florarium.jpeg', 
+    //     name:'Флорариум',
+    //     description:
+    //         `Флорариум - это целый мир внутри стеклянной емкости. Туда можно 
+    //         поселить гномов, причудливых существ, а деревьями и растительностью 
+    //         будут служить необычные суккуленты и мхи. Добавим разноцветный песок 
+    //         и камни для фактуры. У нас выйдет замечательный садик с живыми, но 
+    //         неприхотливыми цветами. Это познакомит нас с жизнью флоры и привьёт 
+    //         ответственность за хрупким миром природы. Материал входит в услугу 
+    //         Время проведения мастер-класса от 30 минут до 1 часа. Расходные 
+    //         материалы включены в стоимость.`,
+    //     price:'От 2500р с человека',
+    //     photo: [
+    //         {
+    //             card: "./img/services_card_photo/MK/Flw/Flw1.jpg",
+    //             id: 1,
+    //         }, 
+    //         {
+    //             card: "./img/services_card_photo/MK/Flw/Flw2.jpeg",
+    //             id: 2,
+    //         }, 
+    //         {
+    //             card: "./img/services_card_photo/MK/Flw/Flw3.jpeg",
+    //             id: 3,
+    //         }, 
+    //         {
+    //             card: "./img/services_card_photo/MK/Flw/Flw4.jpg",
+    //             id: 4,
+    //         }, 
+    //         {
+    //             card: "./img/services_card_photo/MK/Flw/Flw5.jpg",
+    //             id: 5,
+    //         },
+    //     ]
+    // },
     {
         img:'./img/Services/MK/Pryaniki2.jpeg', 
         name:'Архангельские пряники',

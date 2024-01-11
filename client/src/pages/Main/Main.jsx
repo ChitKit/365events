@@ -81,7 +81,7 @@ export default function Main() {
                         </div>
                     }
                 </div>
-            <img onClick={goToNYhandler} className={loadNYimg ? "MainPage-Bell_New_Year" : "MainPage-Bell_New_Year_Hide"} src="./img/NYPNG.png" alt="bell" />
+            {/* <img onClick={goToNYhandler} className={loadNYimg ? "MainPage-Bell_New_Year" : "MainPage-Bell_New_Year_Hide"} src="./img/NYPNG.png" alt="bell" /> */}
             
             {/* {salut &&
                 <div  className="Salut">

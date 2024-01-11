@@ -48,7 +48,7 @@ export default function Shows({ setServicesCardData }) {
                 })}
             </div>
             {
-                choiceShow.name === 'Химическое шоу' ?
+                choiceShow.name === 'Научное шоу' ?
                     <AlchimyShow setServicesCardData={setServicesCardData} data={choiceShow} setFullSizeImg={setFullSizeImg} />
                 :
                 choiceShow.name === 'Шоу мыльных пузырей' ?
