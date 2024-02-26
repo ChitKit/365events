@@ -8,7 +8,7 @@ export default function PriceCard({ dataCard, setData }) {
     const [fullSizeImg, setFullSizeImg] = useState(null)
     const [selectImage, setSelectImage] = useState(dataCard.photo[0])
     const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
-
+console.log(dataCard);
     const handlerOrderServices = () => {
         setIsOpenOrderWindow(true)
     }

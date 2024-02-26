@@ -31,7 +31,7 @@ const [isOpenOrderWindow, setIsOpenOrderWindow] = useState(false)
             </div>
             <div className="Base_Outday-Info-Description">
                 <p>{data.description}</p>
-                <p className="Base_Outday-Info-Description-More">Подробности <a target="_blank"  href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> </p>
+                <p className="Base_Outday-Info-Description-More">Подробности <a target="_blank"  href="https://vk.com/uslugi-216716498?section=section&section_id=HUkaVBkGWldzRwcDWVg2&w=product-216716498_8054428%2Fquery" rel="noreferrer">здесь</a> </p>
             </div>
             <div className="Base_Outday-Info-Buy">
                 <p className="Base_Outday-Info-Buy-Text">

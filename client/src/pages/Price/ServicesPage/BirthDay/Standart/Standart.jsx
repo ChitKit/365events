@@ -32,7 +32,7 @@ export default function Standart({ data, setFullSizeImg }) {
             </div>
             <div className="Standart_Birth_Day-Info-Description">
                 <p>{data.description}</p>
-                <p className="Standart_Birth_Day-Info-Description-More">Подробности <a target="_blank" href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> </p>
+                <p className="Standart_Birth_Day-Info-Description-More">Подробности <a target="_blank" href="https://vk.com/uslugi-216716498?section=section&section_id=HUkaVBkGWldzRwcDWVg2&w=product-216716498_8074443%2Fquery" rel="noreferrer">здесь</a> </p>
             </div>
             <div className="Standart_Birth_Day-Info-Buy">
                 <p className="Standart_Birth_Day-Info-Buy-Text">

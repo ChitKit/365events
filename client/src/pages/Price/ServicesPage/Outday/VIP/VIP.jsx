@@ -32,7 +32,7 @@ export default function VIP({ data, setFullSizeImg }) {
             </div>
             <div className="VIP_Outday-Info-Description">
                 <p>{data.description}</p>
-                <p className="VIP_Outday-Info-Description-More">Подробности <a target="_blank"  href="https://vk.com/@agency365-spasaem-detskii-den-rozhdeniya" rel="noreferrer">здесь</a> </p>
+                <p className="VIP_Outday-Info-Description-More">Подробности <a target="_blank"  href="https://vk.com/uslugi-216716498?section=section&section_id=HUkaVBkGWldzRwcDWVg2&w=product-216716498_8054428%2Fquery" rel="noreferrer">здесь</a> </p>
             </div>
             <div className="VIP_Outday-Info-Buy">
                 <p className="VIP_Outday-Info-Buy-Text">

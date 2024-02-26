@@ -116,12 +116,14 @@
         border-radius: 2em 0 2em 0;
         box-shadow: 0 0 50px #e7c86250;
         transition: .5s;
+        z-index: 50 !important;
         &-Image{
             padding: 1em;
             border-radius: 2em 0em;
             width: var(--width_image_personal_card);
         }
         &-Info{
+            width: 40%;
             margin-top: 3em;
             font-size: large;
             color: white;

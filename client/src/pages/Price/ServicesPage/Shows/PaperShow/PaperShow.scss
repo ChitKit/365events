@@ -10,8 +10,6 @@
         width: 98%;
         height: 100%;
         &-Main_Info_Show{
-            display: flex;
-            flex-direction: column;
             width: 50%;
             height: 90%;
             &-MainPhoto{
@@ -68,8 +66,8 @@
             }
         }
         &-Description{
-            width: 50%;    
-            font-size: var(--size_font_category_meny);
+            width: 50%;
+            font-size: var(--descryption_category_NY_size_font);
             height: 10vw;
             max-height: 10vw;
             margin: 2em;
@@ -102,22 +100,6 @@
                 animation: colorize_Focus 2s ease infinite;
                 
             }
-            // &-Price{
-            //     font-size: .9vw;
-            // }
-            // &-Button{
-            //     font-size: .9vw;
-            //     padding: .2vw;
-            //     color: green;
-            //     border-radius: 2vw;
-            //     box-shadow: 0 0 20px rgba(218, 165, 32, 0.514);
-            //     animation: colorize 12s ease infinite;
-            // }
-            // &-Button:hover{
-            //     cursor: pointer;
-            //     animation: colorize_Focus 2s ease infinite;
-                
-            // }
         }
     }
 }

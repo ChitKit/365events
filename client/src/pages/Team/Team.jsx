@@ -4,10 +4,32 @@ import "./Team.scss";
 const images = [
     //! Admin
     {
+        source: "/imgTeam/CD.jpg",
+        role: 'Креативный директор',
+        name: "Лейли",
+        description: "Креативный директор",
+        stage: 'Стаж более 20 лет',
+    },
+    {
         source: "/imgTeam/admin.jpg",
         role: 'Менеджер проектов',
         name: "Маргарита",
         description: "Администратор",
+        stage: 'Стаж более 5 лет',
+    },
+    {
+        source: "/imgTeam/Scene.jpg",
+        role: 'Автор сценариев',
+        name: "Ася",
+        description: "Автор сценариев",
+        stage: 'Стаж более 10 лет',
+    },
+    {
+        source: "/imgTeam/Uriy_animator1.jpg",
+        role: 'Педагог актерского мастерства',
+        name: "Юрий",
+        description: `Актер и педагог актерского мастерства`,
+        stage: 'Стаж более 20 лет',
     },
     // {
     //     source: "/imgTeam/Alex_animator1.jpg",
@@ -37,14 +59,6 @@ const images = [
     //     description: `Потрясающая ведущая корпоративов и праздников, вдобавок аниматор.
     //   Обаятельная и привлекательная! С потрясающим чувством юмора и умением создать атмосферу теплоты, душевности и радости!`,
     // },
-    {
-        source: "/imgTeam/Uriy_animator1.jpg",
-        role: 'Педагог актерского мастерства',
-        name: "Юрий",
-        description: `Огромный багаж развлекательных игр и идей абсолютно для всех! Заведет кого угодно и заставит плакать от смеха! 
-      – Актёр театра и кино; 
-      –педагог актерского мастерства, постановщик спектаклей`,
-    },
     // {
     //     source: "/imgTeam/Sergey_illusionist1.jpg",
     //     role: 'Иллюзионист',
@@ -162,6 +176,7 @@ export default function Team () {
                     <div className="Team-Personal_Card-Info">
                         <p className="Team-Personal_Card-Info-Name">{personalCardData.name}</p>
                         <p className="Team-Personal_Card-Info-Description">{personalCardData.description}</p>
+                        <p className="Team-Personal_Card-Info-Description">{personalCardData.stage}</p>
                     </div>
                 </div>
             }

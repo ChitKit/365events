@@ -4,10 +4,11 @@ import {
     artists,
     programms,
     forSell,
-    imgMK
+    imgMK,
+    toDo
 } from './servicesCatalog'
 // import NewYearAndSanta from './ServicesPage/NewYearAndSanta/NewYearAndSanta'
-import Illusioniists from './ServicesPage/Artists/Illusioniists/Illusioniists'
+// import Illusioniists from './ServicesPage/Artists/Illusioniists/Illusioniists'
 import Shows from './ServicesPage/Shows/Shows'
 import Quests from './ServicesPage/Quests/Quests'
 import BirthDay from './ServicesPage/BirthDay/BirthDay'
@@ -46,7 +47,7 @@ export default function Price() {
         } else if (category === 'Другие услуги') {
             setCategoryPhoto(forSell)
         } else if (category === 'Готовим') {
-            setCategoryPhoto([])
+            setCategoryPhoto(toDo)
         }
     }
 
@@ -96,6 +97,7 @@ export default function Price() {
                             </>
                         </div>
                         :
+                        category !== "Готовим" ?
                         <div className='Price-CardList'>
                             {categoryPhoto && categoryPhoto.map((el) => {
                                 return (
@@ -105,6 +107,26 @@ export default function Price() {
                                         .querySelector("#services")
                                         .scrollIntoView({ behavior: "smooth" });
                                     }} className="Price-CardList-CardServices" src={el.img} alt="" />
+                                )
+                            }
+                            )}
+                        </div>
+                        :
+                        <div className='Price-CardList' style={{ width:'100%', display:'flex', flexWrap:'wrap'}}>
+                            {toDo && toDo.map((el) => {
+                                return (
+                                    <div 
+                                        style={{
+                                            width:'25%',
+                                            display:'flex', 
+                                            flexDirection:'column', 
+                                            justifyContent:'center', 
+                                            alignItems:'center'
+                                        }}
+                                    >
+                                        <img style={{width: '80%', cursor:'default'}} className="Price-CardList-CardServices" src={el.img} alt="" />
+                                        <p>{el.name}</p>
+                                    </div>
                                 )
                             }
                             )}

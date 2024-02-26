@@ -8,10 +8,9 @@ export default function PaperShow({ data, setFullSizeImg }) {
 	
     return (
 		<div className="Paper_Show">
-			<div className="Paper_Show-Info">
-				<div className="Paper_Show-Info-Main_Info_Show">
-					
-				{data.photo &&
+            <div className="Paper_Show-Info">
+                <div className="Paper_Show-Info-Main_Info_Show">
+                    {data.photo &&
                         <>
                             <>
                                 <div className="Paper_Show-Info-Main_Info_Show-MainPhoto">
@@ -30,10 +29,10 @@ export default function PaperShow({ data, setFullSizeImg }) {
                             </>
                         </>
                     }
-				</div>
-				<div className="Paper_Show-Info-Description">
-					<p>{data.description}</p>
-				</div>
+                </div>
+                <div className="Paper_Show-Info-Description">
+                    <p>{data.description}</p>
+                </div>
 				<div className="Paper_Show-Info-Buy">
                     <p className="Paper_Show-Info-Buy-Text">
                         {data.price}
@@ -43,10 +42,10 @@ export default function PaperShow({ data, setFullSizeImg }) {
                         className='Paper_Show-Info-Buy-Button_Buy'
                     >Заказать</p>
 				</div>
-			</div>
+            </div>
             {isOpenOrderWindow &&
                 <BuyWindow isOpen={isOpenOrderWindow} setIsOpen={setIsOpenOrderWindow} title={data.name}/>
             }
-		</div>
+        </div>
     );
 }
