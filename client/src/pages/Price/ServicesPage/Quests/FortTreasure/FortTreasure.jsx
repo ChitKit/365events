@@ -55,7 +55,7 @@ export default function FortTreasure({ data, setFullSizeImg }) {
                         Подробности{" "}
                         <a
                             target="_blank"
-                            href="https://vk.com/@agency365-v-poiskah-sokrovischa-forta"
+                            href="https://vk.com/uslugi-216716498?section=section&section_id=HUkaVBkGWldzRwcDWVg2&w=product-216716498_7841689%2Fquery"
                             rel="noreferrer"
                         >
                             тут
