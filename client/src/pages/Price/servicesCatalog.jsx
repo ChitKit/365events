@@ -797,7 +797,7 @@ export const forSell = [
         img:'./img/Services/ForSell/CakePops2.jpeg', 
         name:'Кейк-попсы',
         description:
-            `Кейк-попсы - это «торт на палочке».`,
+            `Кейк-попсы - это «мини-торт на палочке», который может приехать к вам домой в любом количестве в индивидуальной праздничной упаковке!`,
         price:'От 100 ₽',
         photo: [
             {
@@ -816,10 +816,10 @@ export const forSell = [
                 card: "./img/services_card_photo/Other_Services/KP/KP4.jpg",
                 id: 4,
             }, 
-            {
-                card: "./img/services_card_photo/Other_Services/KP/KP5.jpg",
-                id: 5,
-            },
+            // {
+            //     card: "./img/services_card_photo/Other_Services/KP/KP5.jpg",
+            //     id: 5,
+            // },
         ]
     },
     {
