@@ -229,7 +229,7 @@ export default function KidNY({ setIsModalCard, data }) {
                            >
                                X
                            </div>
-                                <img onClick={() => setFullSizeImg(null)} className="KidNY-FullIMG-Img" src={fullSizeImg} alt="" />
+                                <img style={{width:'80%'}} onClick={() => setFullSizeImg(null)} className="KidNY-FullIMG-Img" src={fullSizeImg} alt="" />
                             </div>
                         }
                     </div>

@@ -391,19 +391,23 @@
                 padding-bottom: 1em;
                 position: relative;
                 &-Slider{
+                    width: 100%;
                     height: 20%;
                     display: flex;
                     justify-content: center;
+                    flex-wrap: wrap;
                     max-height: 20%;
                     position: relative;
                     // animation: move_bg 35s linear infinite alternate;
                     &-Select_Card{
                         width: var(--size_img_sliderPhoto);
+                        height: var(--size_img_sliderPhoto);
                         box-shadow: 0 0 15px #00ffffb7;
                         margin: 1em;
                     }
                     &-Card{
-                        width: 15%;
+                        width: var(--size_img_sliderPhoto);
+                        height: var(--size_img_sliderPhoto);
                         margin: 1em;
                     }
                     :hover{

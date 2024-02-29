@@ -862,7 +862,7 @@ export const forSell = [
         price:'От 6000₽ в час ',
         photo: [
             {
-                card: "./img/services_card_photo/Other_Services/DJ.jpeg",
+                card: "./img/services_card_photo/Other_Services/DJ.jpg",
                 id: 1,
             }, 
             // {

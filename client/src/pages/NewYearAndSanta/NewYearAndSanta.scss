@@ -10,7 +10,7 @@
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: 1em 0;
-        --full_size_open_img: 38vw
+        --full_size_open_img: 80%;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
@@ -25,7 +25,7 @@
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: .4em 0;
-        --full_size_open_img: 38vw
+        --full_size_open_img: 80%;
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -40,7 +40,8 @@
         --padding_category_button: .5em 1em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: .4em 0;
-        --full_size_open_img: 38vw
+        --full_size_open_img: 80%;
+
     }
 }
 @media (orientation: portrait) {
@@ -55,7 +56,8 @@
         --padding_category_button: .3em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: .4em 0;
-        --full_size_open_img: 45vh;
+        --full_size_open_img: 80%;
+
     }
 }
 @media ( orientation: landscape) and (max-height: 428px) and (max-width: 926px)  {
@@ -70,7 +72,8 @@
         --padding_category_button: .3em;
         --button_width_category_meny: 25%;
         --margin_main_module_title: .4em 0;
-        --full_size_open_img: 45vh;
+        --full_size_open_img: 80%;
+
         
     }
 }
@@ -144,7 +147,7 @@
                 align-items: center;
                 &-Img{
                     cursor: pointer;
-                    width: clamp(50px, 30vw, 400px);
+                    width: clamp(50px, 30vw, 300px);
                 }
             }
             &-PhotoList{
@@ -160,16 +163,19 @@
                     height: 20%;
                     display: flex;
                     justify-content: center;
+                    flex-wrap: wrap;
                     max-height: 20%;
                     position: relative;
                     // animation: move_bg 35s linear infinite alternate;
                     &-Select_Card{
-                        width: 15%;
+                        width: var(--size_img_sliderPhoto);
+                        height: var(--size_img_sliderPhoto);
                         box-shadow: 0 0 15px #00ffffb7;
                         margin: 1em;
                     }
                     &-Card{
-                        width: 15%;
+                        width: var(--size_img_sliderPhoto);
+                        height: var(--size_img_sliderPhoto);
                         margin: 1em;
                     }
                     :hover{
@@ -248,7 +254,8 @@
         position: absolute;
         top: 0;
         &-Img{
-            width: var(--full_size_open_img);
+            // max-height: 80%;
+            width: 40%;
         }
         &-Btn_Close{
             position: absolute;

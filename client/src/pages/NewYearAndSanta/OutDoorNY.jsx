@@ -59,15 +59,15 @@ const forLittle = [
                 id: 1,
             }, 
             {
-                card: "./img/services_card_photo/NY/Org1.jpg",
+                card: "./img/services_card_photo/NY/Org2.jpg",
                 id: 2,
             }, 
             {
-                card: "./img/services_card_photo/NY/Org2.jpg",
+                card: "./img/services_card_photo/NY/Org3.jpg",
                 id: 3,
             }, 
             {
-                card: "./img/services_card_photo/NY/Org3.jpg",
+                card: "./img/services_card_photo/NY/Org4.jpg",
                 id: 4,
             }, 
             // {
