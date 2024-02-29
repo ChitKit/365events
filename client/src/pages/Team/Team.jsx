@@ -14,7 +14,7 @@ const images = [
         source: "/imgTeam/admin.jpg",
         role: 'Менеджер проектов',
         name: "Маргарита",
-        description: "Администратор",
+        description: "Менеджер проектов",
         stage: 'Стаж более 5 лет',
     },
     {
